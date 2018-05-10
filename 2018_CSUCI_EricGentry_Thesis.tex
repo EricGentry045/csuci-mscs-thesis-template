@@ -350,6 +350,11 @@ ALL RIGHTS RESERVED
 \newpage
 \pagenumbering{arabic}
 
+\section{Abstract}
+\label{sect-abstract}
+
+\textbf{Keywords}: Digital Forensics, Triage, Mobile, Digital Evidence Backlog, Raspberry Pi
+
 \section{Introduction}
 \label{sect-intro}
 
@@ -360,6 +365,57 @@ ALL RIGHTS RESERVED
 \label{sect-background}
 
 \subsection{Review Material and Analysis}
+
+Current challenges and future research areas for digital forensic investigation \cite{lillis2016current}\\
+\\
+
+Some of the current challenges in digital forensic investigations are directly related to the amount of data being
+created.  As Lillis et al\cite{lillis2016current} explores in their research, there are three main factors
+involved in the digital forensic backlog: increasing number of devices seized per case, increased number of cases
+involving digitial evidence, and the increasing volume of data per digital media.  This has lead to a growing
+and already substantial backlog in digital forensic investigations.\\
+
+One effect of this increased delay and backlog is that cases become inactive, waiting for new leads.  A more
+aggressive approach to solving the backlog could help prevent dismissals, cold cases, and potentially more
+societal harm from a corrupt investigation suspect.\\
+
+Raghavan\cite{raghavan2013digital} has accumulated a list of 5 major challenges that the digital forensics 
+community is facing and continue to add to the backlog problem.\\
+
+The first is the complexity of binary data aquisition, i.e. low level data aquisition through digital media
+duplication.  This challenge causes the need for sophisticated data reduction techniques.\\
+
+Another complexity is the diversity of data and lack of standard examination techniques.  The plethora of
+operating systems and file formats has been increasing and is posing a more and more significant challenge
+over time.\\
+
+The consistency and correlation problem is yet another challenge.  This is a problem resulting from the current
+digital media investigation tools not providing the entire picture to investigators.  Only part of the whole
+picture is provided when these tools find digital evidence.\\
+
+Another issue that Raghavan\cite{raghavan2013digital} proposed is the volume of data to sort through.  The sheer
+amount of data that exists per user is increasing at an alarming rate [cite?], and has lead to a very large
+backlog of digital evidence to investigate.  These delays have even caused some cases to be dismissed.  This
+challenge is exacerbated by the lack of adequate automation for digesting the data.\\
+
+The fifth, but certainly not the last, challenge proposed by Raghavan\cite{raghavan2013digital} is the timeline
+synchronization issue with digital evidence.  Since the evidence could be collected in different time zones, 
+with different timestamp formats, clock skew, etc, lining up the events in order can be challenging or
+infeasible.\\
+
+With the proliferation of Internet Of Things (IOT) devices and cloud storage, the field of digital forensics
+continues to expand.  These areas pose a great challenge, but also new opportunities.  Lillis et
+al\cite{lillis2016current} researched cloud storage and found some areas of opportunity, for instance parallel
+processing, distibuted computing, GPU/FPGA utilization, and others.  These areas for increasing the efficiency
+of ditigal forensics can be explored further due to the substantially reduced I/O limitations in cloud storage.\\
+
+The Internet of Things (IOT) also poses new challenges.  IOT devices are estimated to number near 40 billion by
+2020, contributing to the overwhelming amount of digital data.  Since these devices tend to have more 
+non-persistent memory and less storage, this causes added complexity for gathering and analysis.  In addition,
+a portion of IOT devices are battery operated and computationally challenged, leading to loss of data over
+time.\\
+
+
 Testing the harmonised digital forensic investigation process model-using an Android mobile phone \cite{omeleze2013testing}\\
 \\
 
@@ -372,8 +428,6 @@ A practical and robust approach to coping with large volumes of data submitted f
 Jailbroken iPhone Forensics for the Investigations and Controversy to Digital Evidence \cite{chang2015jailbroken}\\
 \\
 Methods and tools of digital triage in forensic context: survey and future directions \cite{jusas2017methods}\\
-\\
-Current challenges and future research areas for digital forensic investigation \cite{lillis2016current}\\
 \\
 A survey of digital forensic investigator decision processes and measurement of decisions based on enhanced preview \cite{james2013survey}\\
 \\

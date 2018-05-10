@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 MAY 2018 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 MAY 2018 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -551,62 +551,117 @@ Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 328.
 
 
 [2] [1]
-Underfull \hbox (badness 10000) in paragraph at lines 363--365
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--365
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--383
+Underfull \hbox (badness 10000) in paragraph at lines 372--377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--383
+Underfull \hbox (badness 10000) in paragraph at lines 378--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--383
+Underfull \hbox (badness 10000) in paragraph at lines 382--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--383
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--383
+Underfull \hbox (badness 10000) in paragraph at lines 388--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--383
+Underfull \hbox (badness 10000) in paragraph at lines 392--395
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--383
+Underfull \hbox (badness 10000) in paragraph at lines 396--400
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 401--405
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--383
+Underfull \hbox (badness 10000) in paragraph at lines 406--411
 
  []
 
-[2] [3] (./2018_CSUCI_EricGentry_Thesis.bbl) [4]
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--437
+
+ []
+
+[3] [4] [5] (./2018_CSUCI_EricGentry_Thesis.bbl [6]) [7]
 (./2018_CSUCI_EricGentry_Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 8094 strings out of 492995
- 110313 string characters out of 6132704
- 222969 words of memory out of 5000000
- 11448 multiletter control sequences out of 15000+600000
+ 8096 strings out of 492995
+ 110349 string characters out of 6132704
+ 223981 words of memory out of 5000000
+ 11450 multiletter control sequences out of 15000+600000
  15443 words of font info for 66 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  42i,18n,43p,3343b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -617,10 +672,10 @@ ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti12.pfb>
-Output written on 2018_CSUCI_EricGentry_Thesis.pdf (11 pages, 91617 bytes).
+Output written on 2018_CSUCI_EricGentry_Thesis.pdf (14 pages, 97286 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

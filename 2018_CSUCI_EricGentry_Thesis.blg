@@ -4,45 +4,45 @@ The top-level auxiliary file: 2018_CSUCI_EricGentry_Thesis.aux
 The style file: plain.bst
 Database file #1: references.bib
 Warning--empty year in satishforensic
-You've used 10 entries,
+You've used 11 entries,
             2118 wiz_defined-function locations,
-            554 strings with 5866 characters,
-and the built_in function-call counts, 3198 in all, are:
-= -- 314
-> -- 164
+            560 strings with 5990 characters,
+and the built_in function-call counts, 3486 in all, are:
+= -- 345
+> -- 171
 < -- 1
-+ -- 66
-- -- 54
-* -- 230
-:= -- 561
-add.period$ -- 31
-call.type$ -- 10
-change.case$ -- 57
++ -- 69
+- -- 56
+* -- 251
+:= -- 609
+add.period$ -- 34
+call.type$ -- 11
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 114
-empty$ -- 233
-format.name$ -- 54
-if$ -- 645
+cite$ -- 12
+duplicate$ -- 125
+empty$ -- 259
+format.name$ -- 56
+if$ -- 704
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 10
-newline$ -- 53
-num.names$ -- 20
-pop$ -- 48
+int.to.str$ -- 11
+missing$ -- 11
+newline$ -- 58
+num.names$ -- 22
+pop$ -- 50
 preamble$ -- 1
-purify$ -- 47
+purify$ -- 50
 quote$ -- 0
-skip$ -- 78
+skip$ -- 85
 stack$ -- 0
-substring$ -- 174
-swap$ -- 16
+substring$ -- 201
+swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
+type$ -- 44
 warning$ -- 1
-while$ -- 32
-width$ -- 12
-write$ -- 110
+while$ -- 36
+width$ -- 13
+write$ -- 121
 (There was 1 warning)
