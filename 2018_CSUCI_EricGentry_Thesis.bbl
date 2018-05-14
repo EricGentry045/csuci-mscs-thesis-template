@@ -50,6 +50,15 @@ Stacey Omeleze and Hein~S Venter.
 \newblock In {\em Information Security for South Africa, 2013}, pages 1--8.
   IEEE, 2013.
 
+\bibitem{peffers2006design}
+Ken Peffers, Tuure Tuunanen, Charles~E Gengler, Matti Rossi, Wendy Hui, Ville
+  Virtanen, and Johanna Bragge.
+\newblock The design science research process: a model for producing and
+  presenting information systems research.
+\newblock In {\em Proceedings of the first international conference on design
+  science research in information systems and technology (DESRIST 2006)}, pages
+  83--106. sn, 2006.
+
 \bibitem{raghavan2013digital}
 Sriram Raghavan.
 \newblock Digital forensic research: current state of the art.

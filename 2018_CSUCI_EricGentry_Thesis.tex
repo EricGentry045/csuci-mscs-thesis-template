@@ -355,8 +355,27 @@ ALL RIGHTS RESERVED
 
 \textbf{Keywords}: Digital Forensics, Triage, Mobile, Digital Evidence Backlog, Raspberry Pi
 
+Goals: \\
+\begin{itemize}
+  \item preserve and protect evidenciary integrity
+  \item reduce evidence gathering and triage analysis time
+  \item prevent adding more to backlog than necessary by preventing over-confiscation
+  \item reduce need for on-scene Digital Forensic Ssientists
+  \item reduce backlog of digital evidence for tackling backlog
+\end{itemize}
+
+SEAKER tradeoffs: Precision (only relevant files) vs Recall (all relevant files)
+- level of recall required at triage stage can be sacraficed\\
+
+Introduce online storage system for digital forensic metadata format to enhance sharing capabilities across
+jurisdiction boundaries and prevent sharing complexities
+
 \section{Introduction}
 \label{sect-intro}
+\vspace{0.5 cm}
+I know you are wondering what I am going to say here.  Your guess is as good as mine.  I really like
+the introduction section, because I can say whatever I want! LOL\\
+
 
 
 
@@ -366,7 +385,8 @@ ALL RIGHTS RESERVED
 
 \subsection{Review Material and Analysis}
 
-Current challenges and future research areas for digital forensic investigation \cite{lillis2016current}\\
+\vspace{0.5 cm}
+\textbf{Current challenges and future research areas for digital forensic investigation \cite{lillis2016current}}\\
 \\
 
 Some of the current challenges in digital forensic investigations are directly related to the amount of data being
@@ -414,32 +434,210 @@ The Internet of Things (IOT) also poses new challenges.  IOT devices are estimat
 non-persistent memory and less storage, this causes added complexity for gathering and analysis.  In addition,
 a portion of IOT devices are battery operated and computationally challenged, leading to loss of data over
 time.\\
+\vspace{0.5 cm}
 
-
-Testing the harmonised digital forensic investigation process model-using an Android mobile phone \cite{omeleze2013testing}\\
+\textbf{Tiered forensic methodology model for Digital Field Triage by non-digital evidence specialists - Hitchcock et al., 2016\cite{hitchcock2016tiered}}\\
 \\
 
-Forensic analysis of iPhone backups \cite{satishforensic}\\
+hi\\
+\vspace{0.5 cm}
+
+\textbf{The design science research process: a model for producing and presenting information systems research - Peffers et al., 2006\cite{peffers2006design}}\\
 \\
-Forensic analysis of social networking applications on mobile devices \cite{al2012forensic}\\
+\vspace{0.5 cm}
+
+\textbf{Testing the harmonised digital forensic investigation process model-using an Android mobile phone \cite{omeleze2013testing}}\\
 \\
-A practical and robust approach to coping with large volumes of data submitted for digital forensic examination \cite{shaw2013practical}\\
+\vspace{0.5 cm}
+
+\textbf{Forensic analysis of iPhone backups \cite{satishforensic}}\\
 \\
-Jailbroken iPhone Forensics for the Investigations and Controversy to Digital Evidence \cite{chang2015jailbroken}\\
+\vspace{0.5 cm}
+
+\textbf{Forensic analysis of social networking applications on mobile devices \cite{al2012forensic}}\\
 \\
-Methods and tools of digital triage in forensic context: survey and future directions \cite{jusas2017methods}\\
+\vspace{0.5 cm}
+
+\textbf{A practical and robust approach to coping with large volumes of data submitted for digital forensic examination \cite{shaw2013practical}}\\
 \\
-A survey of digital forensic investigator decision processes and measurement of decisions based on enhanced preview \cite{james2013survey}\\
+\vspace{0.5 cm}
+
+\textbf{Jailbroken iPhone Forensics for the Investigations and Controversy to Digital Evidence \cite{chang2015jailbroken}}\\
 \\
-Forensic examination of digital evidence: a guide for law enforcement \cite{hart2004forensic}\\
+\vspace{0.5 cm}
+
+\textbf{Methods and tools of digital triage in forensic context: survey and future directions \cite{jusas2017methods}}\\
 \\
-Tiered forensic methodology model for Digital Field Triage by non-digital evidence specialists \cite{hitchcock2016tiered}
+\vspace{0.5 cm}
+
+\textbf{A survey of digital forensic investigator decision processes and measurement of decisions based on enhanced preview \cite{james2013survey}}\\
+\\
+\vspace{0.5 cm}
+
+\textbf{Forensic examination of digital evidence: a guide for law enforcement \cite{hart2004forensic}}\\
+\\
+\vspace{0.5 cm}
+
+\section{Analysis}
+\label{sect-analysis}
+
+\subsection{Process for gathering digital evidence}
+
+First of all, never boot a computer.  That will alter the original state of the hard drive due to the operating
+system being loaded.  This may alter the data available for collection and render the digital media "spoiled" and
+therefore unusable ad evidence in a case.\\
+
+The main point here is to preserve evidentiary integrity and protect against spoilage.\\
+
+Specific training is required to be able to handle digital evidence properly.  What do digital evidence collectors
+already have to go through in terms of training?\\
+
+\subsection{SEAKER Usage Methodologies}
+\subsubsection{Connected Method}
+
+In this approach, SEAKER is hard-wired using an ethernet cable to the internet or the lab intranet.  The connection
+is utilized to connect directly to the Image Hash Storage Server (IHSS) and the Digital Evidence Storage Server (DESS).
+The digital evidence is still collected locally, but also being transmitted to the DESS and comparing image hashes
+to the IHSS.\\
+
+\subsubsection{Disconnected Method}
+
+In this approach, SEAKER is not connected to an ethernet cable and is solely being used as a wifi router for
+collecting digital evidence locally.  A unique digital collection ID will be created when connected to the DESS
+at a later time.
+
+\subsection{Automated processes during SEAKER evaluation}
+
+\subsubsection{Local processing}
+
+This section describes the local processing that takes place in both Connected and Disconnected Methods.
+\begin{itemize}
+  \item picture of digital media
+  \item picture of hosting hardward platform (laptop, computer, server, phone, etc)
+  \item file list
+  \item full log of capturing/viewing/analysis
+  \item image thumbnails
+  \item video thumbnails
+  \item browser history
+  \item emails
+  \item user profiles
+  \item deleted files
+  \item image thumbnail subsets (images with faces, bodies, documents, etc)
+  \item searches performed
+  \item anything "marked" as an "artifact"
+\end{itemize}
+
+\subsubsection{Remote processing}
+
+This section describes the remote processing that takes place only when Connected Method is in use.
+\begin{itemize}
+  \item matching hashes of images
+  \item matching hashes of videos
+  \item online storage of digital evidence collection for this case at this site and time
+\end{itemize}
 
 \newpage
 \section{Conclusion and future work}
 \label{sect-conclusion}
 
-Your work goes here
+My conclusion is going to be very fascinating and wonderful.  I can feel it.
+
+\subsection{Future work}
+\begin{itemize}
+  \item Online hard drive investigation (i.e. Cloud Forensics)
+  \item Network Traffic Investigation
+  \item Video segmentation and video image hashing
+  \item crime-specific searchs:
+  \begin{itemize}
+    \item financial crimes
+    \item credit card fraud
+    \item hacking
+    \item bullying
+    \item bloackmail
+    \item espianage
+    \item fraud
+    \item customizable (corporate / military)
+  \end{itemize}
+  \item OS lockdown (raspbian)
+  \item phone specific OS tools
+  \item phone specific apps
+  \item encrypted devices (password entry location, assessment without password)
+  \item running machine RAM assessment
+  \item utilize forensics as a service
+\end{itemize}
+
+\newpage
+\section{Code improvements}
+\begin{itemize}
+  \item Query Expansion - automatically searching for same query maybe other contexts
+  \item Synonym Matching - automatically searching for similar words to query word
+  \item collect everything in UTC time
+  \item universal way of collecting hard drive hash for verification of evidence integrity
+  \item Data Visualizations:
+  \begin{itemize}
+    \item present all data visualizations for particular drive or all hard drives
+    \item graph - size vs amount of files (one hard drive, and all hard drives)
+    \item graph - common details (like file type, etc) maybe clickable!
+    \item graph/chart - files by date
+    \item graph/chart - files by file type
+    \item chart - website visits
+    \item digital image hashes list (stored and compared)
+
+  \end{itemize}
+  \item for analysis: skip OS files, applications files, etc
+  \item lock down OS
+  \item Investigation Gathering rollup: (stored online)
+  \begin{itemize}
+    \item Database Schema
+    \item metadata
+    \item Unique "gathering ID"
+    \item case number
+    \item observation report
+    \item crime severity
+    \item potential offenses
+    \item time gathered
+    \item gatherer
+    \item suspect list
+    \item location gathered
+    \item suggestions for other research
+    \item which computer system it came from
+    \item SET of evidence
+    \item Digital Evidence item
+    \item images of item
+    \item unique item ID
+    \item file contents
+    \item ranking within set of evidence
+    \item image thumbnails
+    \item collection statistics
+    \item etc
+  \end{itemize}
+\end{itemize}
+
+\newpage
+\section{Keywords and glossary}
+\begin{itemize}
+  \item Contraband files
+  \item stages: preprocessing, storage, analysis, reporting
+  \item stages: gather (document, catalog), triage (analyze, live review, automated review, artifact storage,
+  meet threshold?), results (present, graphs, search)
+
+\end{itemize}
+
+\newpage
+\section{Graphs, Images, Figures, and tables}
+\begin{itemize}
+  \item figure - field triage flowchart
+  \item figure - each stage field triage flowchart
+  \item figure - Image analysis and hash creation flowchart
+  \item graph - aquisition time vs full
+  \item graph - investigation time vs full
+  \item graph - analysis time vs full
+  \item graph - total time from initial plug-in to decision to be evidence (threshold)
+  \item graph - current backlock in ventura county
+  \item figure - DFT vs TCU (Hitchcock\cite{hitchcock2016tiered})
+  \item graph - collection time vs number and size of files
+
+\end{itemize}
 
 \newpage
 \bibliographystyle{plain}
