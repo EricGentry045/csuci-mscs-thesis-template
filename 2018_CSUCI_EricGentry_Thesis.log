@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 MAY 2018 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 MAY 2018 14:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,81 +561,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--369
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--378
-
- []
-
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 389--391
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--391
+Underfull \hbox (badness 10000) in paragraph at lines 385--390
+
+ []
+
+[1] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 430--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--397
+Underfull \hbox (badness 10000) in paragraph at lines 430--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--401
+Underfull \hbox (badness 10000) in paragraph at lines 433--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
+Underfull \hbox (badness 10000) in paragraph at lines 439--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--407
+Underfull \hbox (badness 10000) in paragraph at lines 443--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--411
+Underfull \hbox (badness 10000) in paragraph at lines 446--448
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--415
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--420
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 421--425
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 426--431
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 439--441
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 439--441
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 445--448
-
- []
-
-[3]
 Underfull \hbox (badness 10000) in paragraph at lines 449--452
 
  []
@@ -646,76 +611,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 453--456
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--460
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--464
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 465--468
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 469--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 473--476
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 477--480
+Underfull \hbox (badness 10000) in paragraph at lines 457--461
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 486--489
+Underfull \hbox (badness 10000) in paragraph at lines 462--466
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+Underfull \hbox (badness 10000) in paragraph at lines 467--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--494
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--502
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
 
  []
 
-[5] [6] [7] [8] [9] [10] [11] (./2018_CSUCI_EricGentry_Thesis.bbl [12])
-[13] (./2018_CSUCI_EricGentry_Thesis.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--487
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 488--496
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--505
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--513
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--518
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 523--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--542
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--546
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--550
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 551--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--572
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--580
+
+ []
+
+[8] [9] [10] [11] [12] [13] [14] [15] (./2018_CSUCI_EricGentry_Thesis.bbl
+[16]) [17] (./2018_CSUCI_EricGentry_Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 8099 strings out of 492995
- 110397 string characters out of 6132704
- 223993 words of memory out of 5000000
- 11453 multiletter control sequences out of 15000+600000
+ 8101 strings out of 492995
+ 110429 string characters out of 6132704
+ 224006 words of memory out of 5000000
+ 11455 multiletter control sequences out of 15000+600000
  15443 words of font info for 66 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  42i,18n,43p,3343b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on 2018_CSUCI_EricGentry_Thesis.pdf (20 pages, 108933 bytes).
+</usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on 2018_CSUCI_EricGentry_Thesis.pdf (24 pages, 116658 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

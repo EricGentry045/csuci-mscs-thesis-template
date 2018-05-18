@@ -373,11 +373,52 @@ jurisdiction boundaries and prevent sharing complexities
 \section{Introduction}
 \label{sect-intro}
 \vspace{0.5 cm}
+
 I know you are wondering what I am going to say here.  Your guess is as good as mine.  I really like
 the introduction section, because I can say whatever I want! LOL\\
 
+\section{Meetings with Frank}
+\label{sect-frank}
+\vspace{0.5 cm}
+\subsection{May 18th, 2018}
 
+My meeting with Frank Lyu, a civilian working for the Ventura County Sherriff's department, on loan to
+the Southern California High Tech Task Force (SCHTTF) went well.  The SCHTTF is an 8 person team made up of
+four civilians and four deputies, all reporting directly to the Ventura County District Attorney's office.
+We met for lunch and I was able to ask him questions about the environment he works in as well as touch on
+ranking the high value items that this SEAKER project could provide.\\
 
+First, we talked about his work environment.  He has several responsibilities working for SCHTTF.  The first
+and foremost is his caseload, which consists of examining digital evidence using forensic techniques in his
+lab that result in a report to the District Attorney's office.  His other responsibilites include assisting
+the District Attorney and staff with evaluating defense evidence reports, studying digital forensic 
+technologies (for when he has to explain things to juries), helping other agencies identify and catalog
+evidence that they are not familiar with, helping serve warrants on critical cases, and helping to retrieve
+lost digital materials for other law enforcement agencies.
+
+He explained that following the processes and procedures is by far the most important aspect of his job.  The
+evidence handling, storage, and evaluation are critical to whether a case succeeds or is dismissed. Frank
+began to describe the intake process, which involves the evidence, the agency report, and the search warrant
+that will be used to search and evaluation the materials.  We did not go into further detail.
+
+Items he looks for during an on-site warrant are: user accounts, previewing the materials (especially in
+cases involving CP), and checking for the existence of Peer-to-Peer sharing utilities.  In addition, he 
+strives to collect the following networking information: publically broadcast SSIDs, each SSID's level of
+encryption, how many devices are connected to the router, and the external IP address for the router.
+
+Value of SEAKER in the field: Filename search utilizing regular expression, the networking information 
+specified in the last paragraph, producing a report, making an ios app instead of using a webpage, links
+for the files found, and clickable thumbnails.
+
+Value of SEAKER in the lab: Filename search utilizing regular expression and SEAKER hashes of images.  He
+also mentioned a Microsoft tool called PhotoDNA that they currently use to find naked humans.
+
+I asked about obtaining all of the statistics related to ingestion or evidence, caseload, pace at which
+evidence can be evaluated, etc.  Frank's answer was that Adam could probably provide that information
+without lab access, but that Michael should be asked to talk to Adam.
+
+Finally, Frank mentioned that sometimes in financial cases, he is asked to search computers at business
+offices, and the ability to search for specific filenames is very important there.
 
 \newpage
 \section{Background}
@@ -386,7 +427,7 @@ the introduction section, because I can say whatever I want! LOL\\
 \subsection{Review Material and Analysis}
 
 \vspace{0.5 cm}
-\textbf{Current challenges and future research areas for digital forensic investigation \cite{lillis2016current}}\\
+\textbf{Current challenges and future research areas for digital forensic investigation - Lillis et al., 2016 \cite{lillis2016current}}\\
 \\
 
 Some of the current challenges in digital forensic investigations are directly related to the amount of data being
@@ -439,7 +480,44 @@ time.\\
 \textbf{Tiered forensic methodology model for Digital Field Triage by non-digital evidence specialists - Hitchcock et al., 2016\cite{hitchcock2016tiered}}\\
 \\
 
-hi\\
+Hitchcock et al\cite{hitchcock2016tiered} has proposed and evaluated a "tiered forensic methodology" model that defines
+a process of digital forensic triage utilizing non-digital evidence specialists.  In their research, they identified
+a large and growing backlog of digital evidence.  This backlog has led to problems in the law enforcement community
+with regards to collecting, analyzing, reporting, and prosecuting.\\
+
+The summary of the research done by Hitchcock et al\cite{hitchcock2016tiered} are as follows.  They sought to expedite
+the process of sending digital evidence for analysis and results.  One of their goals is to enable more field triage
+of digital evidence to reduce the amount collected, and act specifically on pertinent information only.  They 
+recommended that some front-line crime scene investigators (non-forensic analysts) be trained in the implementation
+of digital evidence triage and evaluation.  These trained individuals would be Digital Field Triage (DTF) experts and
+have the ability perform field-level digital evidence triage.  This triage would specifically weed out the benign
+from the consequential digital evidence with high certainty, while also protecting the digital evidence from spoilage
+and preserving evidentiary integrity.\\
+
+The next tier is where the already-triaged digital evidence is sent for full evaluation.  This is a certified facility
+that can perform full digital forensic analysis, called a Technological Crime Unit (TCU).  The TCU is currently
+heavily inundated with cases needing analysis and reporting of digital evidence.\\
+
+The backlog and delays in case reporting are contributors to a common problem of time sensitivity.  Some countries 
+have given their citizens a right to a "speedy" trial.  As well, some countries have statutes of limitation (limits
+on how long after the crime was committed to resolve the case) for most crimes.  Some administrative situations are
+also contributors, for instance case prioritization based on chronological filing, crime severity, or victim needs.\\
+
+This tiered approach is based on a Computer Forensic Field Traige Process Model proposed by Rogers et al
+\cite{rogers2006computer} and the internation standard ISO 27037 (Information Technology - Security Techniques - 
+Guidelines for identification, collection, aquisition, and presentation of digital evidence). The process model 
+breaks down the six phases of digital evidence categorization, which Hitchcock et al\cite{hitchcock2016tiered} loosely
+based their four phase approach on.  The four phases are: planning, assessment, reporting, and threshold.  The ISO
+27037 standard specifically attempts to address the need to minimize the risk of potential digital evidence being
+spoiled by mis-handling, while also attempting to maximize the evidentiary value of digital evidence collection.\\
+
+This approach is not without risks.  One concern is the accidental exclusion of an item of digital evidence that is
+important to the investigation.  Another is the level of computer skills and training of the DTF expert.  The paper
+does attempt to mitigate the latter with training and management process, while providing evidence that the former
+is a common misconception in most cases.\\
+
+The research of Hitchcock et al\cite{hitchcock2016tiered} should be referenced for a good process starting point for
+digital forensic labs.
 \vspace{0.5 cm}
 
 \textbf{The design science research process: a model for producing and presenting information systems research - Peffers et al., 2006\cite{peffers2006design}}\\
@@ -620,7 +698,10 @@ My conclusion is going to be very fascinating and wonderful.  I can feel it.
   \item stages: preprocessing, storage, analysis, reporting
   \item stages: gather (document, catalog), triage (analyze, live review, automated review, artifact storage,
   meet threshold?), results (present, graphs, search)
-
+  \item Chain of Custody for digital evidence
+  \item Forensic integrity of digital evidence
+  \item artifacts = pieces of digital evidence that are of importance to the case
+  \item 
 \end{itemize}
 
 \newpage

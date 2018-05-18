@@ -64,6 +64,12 @@ Sriram Raghavan.
 \newblock Digital forensic research: current state of the art.
 \newblock {\em CSI Transactions on ICT}, 1(1):91--114, 2013.
 
+\bibitem{rogers2006computer}
+Marcus~K Rogers, James Goldman, Rick Mislan, Timothy Wedge, and Steve Debrota.
+\newblock Computer forensics field triage process model.
+\newblock In {\em Proceedings of the conference on Digital Forensics, Security
+  and Law}, page~27. Association of Digital Forensics, Security and Law, 2006.
+
 \bibitem{satishforensic}
 B~Satish.
 \newblock Forensic analysis of iphone backups.
