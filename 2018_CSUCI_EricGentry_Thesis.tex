@@ -520,6 +520,47 @@ The research of Hitchcock et al\cite{hitchcock2016tiered} should be referenced f
 digital forensic labs.
 \vspace{0.5 cm}
 
+\textbf{A practical and robust approach to coping with large volumes of data submitted for digital forensic examination \cite{shaw2013practical}}\\
+\\
+
+One digital evidence triage method proposed by Shaw et al\cite{shaw2013practical} seeks to standardize on an 
+approach they call "enhanced previewing".  Enhanced previewing seeks to solve some of the problems associated with
+typical triage approaches.  As is the case in other research, Shaw et al\cite{shaw2013practical} extolls the 
+need to reduce digital forensic evidence analysis backlogs, especially with the evolution of big data and the
+proliferation of digital devices.\\
+
+Shaw et al\cite{shaw2013practical} points out that neither digital forensic triage examination nor digital forensic
+full examination are well defined.  Triage may mean something completely different to two digital forensic
+examiners.  As well, full digital forensic examination has no robust standard to follow.\\
+
+The proposal for a practical and robust method by Shaw et al\cite{shaw2013practical} aims to stem the concerns
+of a typical triage process.  Risks still exist, for instance overlooking digital evidence, but it is argued that
+those risks are outweighed by the risks of a lengthy process due to large backlogs and the associated delays in
+evaluating that evidence.  Another concern esists that inadequately trained people will be charged with performing
+on-site digital evidence triage and mishandling or incorrectly evaluating results will cause evidence spoilage.
+Other concerns are the potential high cost of software and training.\\
+
+In order to provide a simple, yet robust mechanism, Shaw et al\cite{shaw2013practical} starts with an open source,
+CD-bootable image of GNU/Linux and enhances its features to include boot-time application launching, and a simple
+to use interface with minimal ability to deviate from task.  This bootable CD is intended to be placed into 
+evidenciary computer systems and booted using a series of BIOS modifications or boot-time interruptions.  This 
+mechanism to boot the system off of a bootable CD is difficult, and where the most problems with untrained users
+of the enhanced previewing will happen.\\
+
+The enhanced previewing concept has valuable merit, in that the collection mechanisms are thorough.  Using the
+GNU/Linux based system and having written code for it, Shaw et al\cite{shaw2013practical} utilized some well
+thought-out approaches.  First, all hard drives from the evidentiary system are mounted into the GNU/Linux
+filesystem as read-only, thereby obviating the need for write-blockers.  As well, the entire hard drive is
+evaluated, including the file system, all partitions, unallocated space, deleted files, and compressed files.  In
+addition, other mechanisms are employed that continue to enhance the previewing are employed.  One example is to
+note encrypted compressed files for review later.\\
+
+They also strongly compliance with digital forensics best practices, like the ones provided in the ACPO.  This
+standards guide is from the UK and is titled Best Practices Guide for Digital Evidence (2012).  There are four
+main practices outlined, but the main one that Shaw et al\cite{shaw2013practical} chose to point out was the
+second one regarding the integrity protection of the original digital media.
+\vspace{0.5 cm}
+
 \textbf{The design science research process: a model for producing and presenting information systems research - Peffers et al., 2006\cite{peffers2006design}}\\
 \\
 \vspace{0.5 cm}
@@ -533,10 +574,6 @@ digital forensic labs.
 \vspace{0.5 cm}
 
 \textbf{Forensic analysis of social networking applications on mobile devices \cite{al2012forensic}}\\
-\\
-\vspace{0.5 cm}
-
-\textbf{A practical and robust approach to coping with large volumes of data submitted for digital forensic examination \cite{shaw2013practical}}\\
 \\
 \vspace{0.5 cm}
 
