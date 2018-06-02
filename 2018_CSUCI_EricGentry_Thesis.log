@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUN 2018 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUN 2018 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -101,13 +101,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
+\captionmargin=\dimen112
+\captionmargin@=\dimen113
+\captionwidth=\dimen114
+\caption@tempdima=\dimen115
+\caption@indent=\dimen116
+\caption@parindent=\dimen117
+\caption@hangindent=\dimen118
+)
+\c@ContinuedFloat=\count99
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
@@ -128,10 +145,10 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count99
+\Gread@gobject=\count100
 ))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
@@ -190,14 +207,14 @@ e
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip46
 \subfigcapskip=\skip47
-\subfigcaptopadj=\dimen114
+\subfigcaptopadj=\dimen121
 \subfigbottomskip=\skip48
-\subfigcapmargin=\dimen115
+\subfigcapmargin=\dimen122
 \subfiglabelskip=\skip49
-\c@subfigure=\count100
-\c@lofdepth=\count101
-\c@subtable=\count102
-\c@lotdepth=\count103
+\c@subfigure=\count101
+\c@lofdepth=\count102
+\c@subtable=\count103
+\c@lotdepth=\count104
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -218,23 +235,23 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count104
+\lst@mode=\count105
 \lst@gtempboxa=\box28
 \lst@token=\toks20
-\lst@length=\count105
-\lst@currlwidth=\dimen116
-\lst@column=\count106
-\lst@pos=\count107
-\lst@lostspace=\dimen117
-\lst@width=\dimen118
-\lst@newlines=\count108
-\lst@lineno=\count109
-\lst@maxwidth=\dimen119
+\lst@length=\count106
+\lst@currlwidth=\dimen123
+\lst@column=\count107
+\lst@pos=\count108
+\lst@lostspace=\dimen124
+\lst@width=\dimen125
+\lst@newlines=\count109
+\lst@lineno=\count110
+\lst@maxwidth=\dimen126
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count110
-\lst@skipnumbers=\count111
+\c@lstnumber=\count111
+\lst@skipnumbers=\count112
 \lst@framebox=\box29
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
@@ -252,15 +269,15 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count112
-\c@ALG@rem=\count113
-\c@ALG@nested=\count114
+\c@ALG@line=\count113
+\c@ALG@rem=\count114
+\c@ALG@nested=\count115
 \ALG@tlm=\skip52
 \ALG@thistlm=\skip53
-\c@ALG@Lnr=\count115
-\c@ALG@blocknr=\count116
-\c@ALG@storecount=\count117
-\c@ALG@tmpcounter=\count118
+\c@ALG@Lnr=\count116
+\c@ALG@blocknr=\count117
+\c@ALG@storecount=\count118
+\c@ALG@tmpcounter=\count119
 \ALG@tmplength=\skip54
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -270,14 +287,14 @@ nment
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count119
+\c@float@type=\count120
 \float@exts=\toks21
 \float@box=\box30
 \@float@everytoks=\toks22
 \@floatcapt=\box31
 )
 \@float@every@algorithm=\toks23
-\c@algorithm=\count120
+\c@algorithm=\count121
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xypic/xy.sty
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
@@ -290,45 +307,45 @@ catcodes, docmode,
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen120
-\Y@c=\dimen121
-\U@c=\dimen122
-\D@c=\dimen123
-\L@c=\dimen124
-\R@c=\dimen125
+\X@c=\dimen127
+\Y@c=\dimen128
+\U@c=\dimen129
+\D@c=\dimen130
+\L@c=\dimen131
+\R@c=\dimen132
 \Edge@c=\toks24
-\X@p=\dimen126
-\Y@p=\dimen127
-\U@p=\dimen128
-\D@p=\dimen129
-\L@p=\dimen130
-\R@p=\dimen131
+\X@p=\dimen133
+\Y@p=\dimen134
+\U@p=\dimen135
+\D@p=\dimen136
+\L@p=\dimen137
+\R@p=\dimen138
 \Edge@p=\toks25
-\X@origin=\dimen132
-\Y@origin=\dimen133
-\X@xbase=\dimen134
-\Y@xbase=\dimen135
-\X@ybase=\dimen136
-\Y@ybase=\dimen137
-\X@min=\dimen138
-\Y@min=\dimen139
-\X@max=\dimen140
-\Y@max=\dimen141
+\X@origin=\dimen139
+\Y@origin=\dimen140
+\X@xbase=\dimen141
+\Y@xbase=\dimen142
+\X@ybase=\dimen143
+\Y@ybase=\dimen144
+\X@min=\dimen145
+\Y@min=\dimen146
+\X@max=\dimen147
+\Y@max=\dimen148
 \lastobjectbox@=\box32
 \zerodotbox@=\box33
-\almostz@=\dimen142
+\almostz@=\dimen149
  direction,
-\d@X=\dimen143
-\d@Y=\dimen144
-\K@=\count121
-\KK@=\count122
-\Direction=\count123
-\K@dXdY=\dimen145
-\K@dYdX=\dimen146
+\d@X=\dimen150
+\d@Y=\dimen151
+\K@=\count122
+\KK@=\count123
+\Direction=\count124
+\K@dXdY=\dimen152
+\K@dYdX=\dimen153
 \xyread@=\read1
 \xywrite@=\write3
-\csp@=\count124
-\quotPTK@=\dimen147
+\csp@=\count125
+\quotPTK@=\dimen154
 
 utility macros; pictures: \xy, positions,
 \swaptoks@@=\toks26
@@ -344,15 +361,15 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: All features v.3.8
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count125
+\crv@cnt@=\count126
 \crvpts@=\toks28
 \splinebox@=\box35
-\splineval@=\dimen148
-\splinedepth@=\dimen149
-\splinetol@=\dimen150
-\splinelength@=\dimen151
+\splineval@=\dimen155
+\splinedepth@=\dimen156
+\splinetol@=\dimen157
+\splinelength@=\dimen158
  circles,
-\L@=\dimen152
+\L@=\dimen159
  loaded)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xypic/xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
@@ -362,7 +379,7 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xypic/xyline.tex
  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen153
+\xylinethick@=\dimen160
  loaded)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xypic/xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
@@ -370,13 +387,13 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: Colour extension v.3.11 loaded)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xypic/xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
-\Row=\count126
-\Col=\count127
+\Row=\count127
+\Col=\count128
 \queue@=\toks29
 \queue@@=\toks30
-\qcount@=\count128
-\qcount@@=\count129
-\matrixsize@=\count130
+\qcount@=\count129
+\qcount@@=\count130
+\matrixsize@=\count131
  loaded)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xypic/xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
@@ -398,15 +415,15 @@ Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count131
-\calc@Bcount=\count132
-\calc@Adimen=\dimen154
-\calc@Bdimen=\dimen155
+\calc@Acount=\count132
+\calc@Bcount=\count133
+\calc@Adimen=\dimen161
+\calc@Bdimen=\dimen162
 \calc@Askip=\skip55
 \calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count133
+\calc@Ccount=\count134
 \calc@Cskip=\skip57
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -415,8 +432,8 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 ))
-\AM@pagewidth=\dimen156
-\AM@pageheight=\dimen157
+\AM@pagewidth=\dimen163
+\AM@pageheight=\dimen164
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
@@ -424,58 +441,63 @@ File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 \AM@pagebox=\box36
 \AM@global@opts=\toks31
 \AM@toc@title=\toks32
-\c@AM@survey=\count134
+\c@AM@survey=\count135
 \AM@templatesizebox=\box37
 )
-\c@alg=\count135
-\c@thrm=\count136
+\c@alg=\count136
+\c@thrm=\count137
 
 (./2018_CSUCI_EricGentry_Thesis.aux)
 \openout1 = `2018_CSUCI_EricGentry_Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 258.
+LaTeX Font Info:    ... okay on input line 258.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 258.
+LaTeX Font Info:    ... okay on input line 258.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 258.
+LaTeX Font Info:    ... okay on input line 258.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 258.
+LaTeX Font Info:    ... okay on input line 258.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 258.
+LaTeX Font Info:    ... okay on input line 258.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 258.
+LaTeX Font Info:    ... okay on input line 258.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
-\scratchdimen=\dimen158
+\scratchcounter=\count138
+\scratchdimen=\dimen165
 \scratchbox=\box38
-\nofMPsegments=\count138
-\nofMParguments=\count139
+\nofMPsegments=\count139
+\nofMParguments=\count140
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count140
-\MPscratchDim=\dimen159
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen166
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks34
 )
-\c@lstlisting=\count143
-LaTeX Font Info:    Try loading font information for U+lasy on input line 257.
+\c@lstlisting=\count144
+LaTeX Font Info:    Try loading font information for U+lasy on input line 258.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 257.
+LaTeX Font Info:    Try loading font information for U+msa on input line 258.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 257.
+LaTeX Font Info:    Try loading font information for U+msb on input line 258.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.47998pt on input line 257.
+Package xypdf Info: Line width: 0.47998pt on input line 258.
 \AtBeginShipoutBox=\box39
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
@@ -491,53 +513,53 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )) [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 292.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 293.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 292.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 293.
  [1] [2]
 <DistributionLicense.pdf, id=15, 614.295pt x 794.97pt>
 File: DistributionLicense.pdf Graphic file (type pdf)
 
 <use DistributionLicense.pdf>
-Package pdftex.def Info: DistributionLicense.pdf used on input line 328.
+Package pdftex.def Info: DistributionLicense.pdf used on input line 329.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
  <use DistributionLicense.pdf>
-Package pdftex.def Info: DistributionLicense.pdf used on input line 328.
+Package pdftex.def Info: DistributionLicense.pdf used on input line 329.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 <DistributionLicense.pdf, id=18, page=1, 614.295pt x 794.97pt>
 File: DistributionLicense.pdf Graphic file (type pdf)
 
 <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 328.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 329.
 
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
  <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 328.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 329.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
 
 <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 328.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 329.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
  <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 328.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 329.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
 
 <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 328.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 329.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <./DistributionLicense.pdf>] [4]
@@ -551,262 +573,276 @@ Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 328.
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--369
+Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--379
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--390
+Underfull \hbox (badness 10000) in paragraph at lines 386--391
 
  []
 
 [1] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 430--432
+Underfull \hbox (badness 10000) in paragraph at lines 431--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--432
+Underfull \hbox (badness 10000) in paragraph at lines 431--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--438
+Underfull \hbox (badness 10000) in paragraph at lines 434--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--442
+Underfull \hbox (badness 10000) in paragraph at lines 440--443
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--445
+Underfull \hbox (badness 10000) in paragraph at lines 444--446
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--448
+Underfull \hbox (badness 10000) in paragraph at lines 447--449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--452
+Underfull \hbox (badness 10000) in paragraph at lines 450--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--456
+Underfull \hbox (badness 10000) in paragraph at lines 454--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--461
+Underfull \hbox (badness 10000) in paragraph at lines 458--462
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 462--466
+Underfull \hbox (badness 10000) in paragraph at lines 463--467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--472
+Underfull \hbox (badness 10000) in paragraph at lines 468--473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--482
+Underfull \hbox (badness 10000) in paragraph at lines 481--483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--482
+Underfull \hbox (badness 10000) in paragraph at lines 481--483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--487
+Underfull \hbox (badness 10000) in paragraph at lines 484--488
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 488--496
+Underfull \hbox (badness 10000) in paragraph at lines 489--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--500
+Underfull \hbox (badness 10000) in paragraph at lines 498--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--505
+Underfull \hbox (badness 10000) in paragraph at lines 502--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--513
+Underfull \hbox (badness 10000) in paragraph at lines 507--514
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--518
+Underfull \hbox (badness 10000) in paragraph at lines 515--519
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 523--525
+Underfull \hbox (badness 10000) in paragraph at lines 524--526
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--525
+Underfull \hbox (badness 10000) in paragraph at lines 524--526
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--531
+Underfull \hbox (badness 10000) in paragraph at lines 527--532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--535
+Underfull \hbox (badness 10000) in paragraph at lines 533--536
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--542
+Underfull \hbox (badness 10000) in paragraph at lines 537--543
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--549
+Underfull \hbox (badness 10000) in paragraph at lines 544--550
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 550--557
+Underfull \hbox (badness 10000) in paragraph at lines 551--558
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--566
+Underfull \hbox (badness 10000) in paragraph at lines 565--567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--566
+Underfull \hbox (badness 10000) in paragraph at lines 565--567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--574
+Underfull \hbox (badness 10000) in paragraph at lines 568--575
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 575--581
+Underfull \hbox (badness 10000) in paragraph at lines 576--582
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--587
+Underfull \hbox (badness 10000) in paragraph at lines 583--588
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 588--597
+Underfull \hbox (badness 10000) in paragraph at lines 589--598
 
  []
 
+<CFFTPM.png, id=67, 648.4225pt x 659.46375pt>
+File: CFFTPM.png Graphic file (type png)
+ <use CFFTPM.png>
+Package pdftex.def Info: CFFTPM.png used on input line 601.
+(pdftex.def)             Requested size: 312.00119pt x 317.31381pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--605
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--612
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 606--613
+Underfull \hbox (badness 10000) in paragraph at lines 613--620
+
+ []
+
+[10 <./CFFTPM.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 628--631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--624
+Underfull \hbox (badness 10000) in paragraph at lines 632--635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--628
+Underfull \hbox (badness 10000) in paragraph at lines 636--639
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 629--632
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 633--636
+Underfull \hbox (badness 10000) in paragraph at lines 640--643
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 637--640
+Underfull \hbox (badness 10000) in paragraph at lines 644--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 641--644
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 645--648
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 649--652
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 658--661
+Underfull \hbox (badness 10000) in paragraph at lines 648--651
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 662--663
+Underfull \hbox (badness 10000) in paragraph at lines 652--655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--666
+Underfull \hbox (badness 10000) in paragraph at lines 656--659
+
+ []
+
+<SeakerCreation.png, id=79, 837.1275pt x 520.94624pt>
+File: SeakerCreation.png Graphic file (type png)
+ <use SeakerCreation.png>
+Package pdftex.def Info: SeakerCreation.png used on input line 665.
+(pdftex.def)             Requested size: 312.00119pt x 194.15407pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--677
+
+ []
+
+[12 <./SeakerCreation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--674
+Underfull \hbox (badness 10000) in paragraph at lines 680--682
 
  []
 
-[12] [13] [14] [15] [16] [17] [18] [19] (./2018_CSUCI_EricGentry_Thesis.bbl
-[20]) [21] (./2018_CSUCI_EricGentry_Thesis.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 686--690
+
+ []
+
+[13] [14] [15] [16] [17] [18] [19] [20] (./2018_CSUCI_EricGentry_Thesis.bbl
+[21]) [22] (./2018_CSUCI_EricGentry_Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 8102 strings out of 492995
- 110445 string characters out of 6132704
- 224011 words of memory out of 5000000
- 11456 multiletter control sequences out of 15000+600000
+ 9147 strings out of 492995
+ 129588 string characters out of 6132704
+ 237044 words of memory out of 5000000
+ 12493 multiletter control sequences out of 15000+600000
  15443 words of font info for 66 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  42i,18n,43p,3343b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -817,10 +853,10 @@ ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on 2018_CSUCI_EricGentry_Thesis.pdf (28 pages, 125703 bytes).
+Output written on 2018_CSUCI_EricGentry_Thesis.pdf (29 pages, 339457 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

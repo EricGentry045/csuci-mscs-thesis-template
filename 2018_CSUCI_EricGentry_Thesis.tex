@@ -10,6 +10,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amssymb}
+\usepackage{caption}
 \usepackage{graphicx}
 %\usepackage{appendix}
 %\usepackage{clrscode3e}
@@ -585,7 +586,7 @@ addition, the process is intended to protect the integrity of the evidence or po
 This process in no way supersedes the ability or need to perform a full forensic examination at a full-featured
 digital forensic lab.\\
 
-The CFFTPM is broken up into phases that have sub-phases.  The main phases consist of Planning, Triage, Usage/User
+The CFFTPM is broken up into phases that have sub-phases (see Figure 1).  The main phases consist of Planning, Triage, Usage/User
 Profiles, Chronology/Timeline, Internet Activity, and Case-Specific Evidence.  The primary machine type that this model
 covers is the standard Windows machine.  Usage/User Profiles are broken down into three sub-phases: Home Directory,
 File Properties, and Registry.  These are important and help distinguish user specific activity and permissions.  The
@@ -594,6 +595,12 @@ Messenger Artifacts.  These also help establish user activity.  Some importance 
 type of investigation and prioritizing the investigation.  This is where the SEAKER portable triage device can help by
 evaluating every aspect and prevent the on-site investigators from skipping or de-prioritizing critical potential
 evidence.\\
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.8\textwidth]{CFFTPM.png}
+  \caption{Computer Forensic Field Triage Process Model (CFFTPM)}
+\end{figure}
 
 The authors of the CFFTPM (Rogers et al\cite{rogers2006computer}) also note the important legal and technical
 considerations prior to implementing CFFTPM on a particular investigation.  The legal considerations include issues
@@ -649,6 +656,15 @@ to get any information from case-specific digital evidence.
 \textbf{Forensic examination of digital evidence: a guide for law enforcement \cite{hart2004forensic}}\\
 \\
 \vspace{0.5 cm}
+
+\section{SEAKER Creation}
+\label{sect-Creation}
+See Figure 2.
+  \begin{figure}[h]
+    \centering
+      \includegraphics[width=0.8\textwidth]{SeakerCreation.png}
+    \caption{SEAKER Creation Process}
+  \end{figure}
 
 \section{Analysis}
 \label{sect-analysis}
