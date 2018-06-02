@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 MAY 2018 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUN 2018 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -701,86 +701,126 @@ Underfull \hbox (badness 10000) in paragraph at lines 550--557
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--567
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--571
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--575
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--579
+Underfull \hbox (badness 10000) in paragraph at lines 567--574
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 580--583
+Underfull \hbox (badness 10000) in paragraph at lines 575--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--587
+Underfull \hbox (badness 10000) in paragraph at lines 582--587
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 588--591
+Underfull \hbox (badness 10000) in paragraph at lines 588--597
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--595
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--604
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 605--606
+Underfull \hbox (badness 10000) in paragraph at lines 598--605
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 607--609
+Underfull \hbox (badness 10000) in paragraph at lines 606--613
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--617
+Underfull \hbox (badness 10000) in paragraph at lines 621--624
 
  []
 
-[10] [11] [12] [13] [14] [15] [16] (./2018_CSUCI_EricGentry_Thesis.bbl [17])
-[18] (./2018_CSUCI_EricGentry_Thesis.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--628
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--632
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 633--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--640
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--644
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--648
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 649--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--661
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--666
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--674
+
+ []
+
+[12] [13] [14] [15] [16] [17] [18] [19] (./2018_CSUCI_EricGentry_Thesis.bbl
+[20]) [21] (./2018_CSUCI_EricGentry_Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 8101 strings out of 492995
- 110429 string characters out of 6132704
- 224006 words of memory out of 5000000
- 11455 multiletter control sequences out of 15000+600000
+ 8102 strings out of 492995
+ 110445 string characters out of 6132704
+ 224011 words of memory out of 5000000
+ 11456 multiletter control sequences out of 15000+600000
  15443 words of font info for 66 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  42i,18n,43p,3343b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on 2018_CSUCI_EricGentry_Thesis.pdf (25 pages, 119763 bytes).
+</usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on 2018_CSUCI_EricGentry_Thesis.pdf (28 pages, 125703 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 130 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

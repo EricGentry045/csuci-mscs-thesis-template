@@ -561,6 +561,63 @@ main practices outlined, but the main one that Shaw et al\cite{shaw2013practical
 second one regarding the integrity protection of the original digital media.
 \vspace{0.5 cm}
 
+\textbf{Computer Forensics Field Triage Process Model - Rogers et al., 2006\cite{rogers2006computer}}\\
+\\
+
+Rogers et al\cite{rogers2006computer} proposed a reliable, repeatable process model in 2006 for digital evidence
+triage in the field.  It was created in partnership with Purdue University Cyber Forensics and Computer and Information
+Technology Departments, along with the National White Collar Crime Center <NEED CITE>.  The process is derived from
+several other models including Integrated Digital Investation Process model (IDIP), Digital Crime Scene Analysis (DCSA),
+and a military Operations Order (OpOrd).  In coordination with the Southern Indiana Assistant U.S. Attorney's office,
+USADA Steve Debrota, Rogers et al\cite{rogers2006computer} implemented and reported on the success of their proposed
+model: Computer Forensics Field Triage Process Model (CFFTPM).\\
+
+The CFFTPM was created to enhance the investigators ability to obtain useful information at execution time of a 
+warrant at the suspect's dwelling or work.  The process is designed to be used in the first few hours of the 
+investigation, especially udring the first suspect interview and search execution phase of the investigation.  It is
+known that suspects are more likely to divulge more information and be more cooperative in that environment (Yeschke
+2003\cite{yeschke2003art}).  As well, location of and presentation with suspect "triggers" from the potential evidence
+increase the suspect's willingness to talk and cooperate while on site. <NEED CITE>.\\
+
+The foci of the CFFTPM are immediately finding usable evidence, identifying victims at acute risk, guiding the
+on-going investigation, identify potential charges, and accurately assess the offender's danger to society.  In
+addition, the process is intended to protect the integrity of the evidence or potential evidence in an investigation.
+This process in no way supersedes the ability or need to perform a full forensic examination at a full-featured
+digital forensic lab.\\
+
+The CFFTPM is broken up into phases that have sub-phases.  The main phases consist of Planning, Triage, Usage/User
+Profiles, Chronology/Timeline, Internet Activity, and Case-Specific Evidence.  The primary machine type that this model
+covers is the standard Windows machine.  Usage/User Profiles are broken down into three sub-phases: Home Directory,
+File Properties, and Registry.  These are important and help distinguish user specific activity and permissions.  The
+Internet Activity phase is also broken down into three sub-phases: Browser Artifacts, Email Artifacts, and Investation
+Messenger Artifacts.  These also help establish user activity.  Some importance is explicitly stated to skip based on
+type of investigation and prioritizing the investigation.  This is where the SEAKER portable triage device can help by
+evaluating every aspect and prevent the on-site investigators from skipping or de-prioritizing critical potential
+evidence.\\
+
+The authors of the CFFTPM (Rogers et al\cite{rogers2006computer}) also note the important legal and technical
+considerations prior to implementing CFFTPM on a particular investigation.  The legal considerations include issues
+related to search warrant scope and limitations, U.S. Constitutional 4th Amendment rights, etc.  The technical 
+considerations include type of case, criticality of timeliness, skillset of the on-site digital forensic examiner, 
+skillset of the suspect, having proper lab equipment on-site, scene control, etc.  This is also an area where the
+SEAKER portable triage device can help eliminate some of the potential problems, for instance technical prowess of the
+on-site investigators and proper lab equipment on-site.\\
+
+Some particular aspects of the phases are critical to investigators in revealing evidence or potential evidence for
+the SEAKER portable traige device.  Usage/User Profile information is extremely important.  This includes the need to
+be able to view and search files, folders, registry keys, and file properties associated with a particular user.  The
+Internet Activity artifacts also become very useful, especially in the case of child pornography.  The browser, email,
+and Instant Messaging artifacts can lead directly to potential charges.  Finally, a Chronology/Timeline understanding
+and ability to sort based on it can significantly narrow down the possibilities of which user information and which
+Internet Activity is the most important and critical to the investigation.\\
+
+Implementing this in the SEAKER portable triage device is crucial for simplicity and ease of use.  As well, it goes a
+long way towards having an implementation of SEAKER being understood and adopted.  Reporting is also a critical need
+and is implemented in a way that will enable digital forensic investigators to provide early information to
+investigators and prosecutors.  This helps alleviate the need to wait until the backlog of digital evidence is cleared
+to get any information from case-specific digital evidence.
+\vspace{0.5 cm}
+
 \textbf{The design science research process: a model for producing and presenting information systems research - Peffers et al., 2006\cite{peffers2006design}}\\
 \\
 \vspace{0.5 cm}
@@ -729,6 +786,18 @@ My conclusion is going to be very fascinating and wonderful.  I can feel it.
   \item find encryption Keys 
   \item bulk extractor ? 
   \item thumb strips of movies
+  \item predetermine search criteria (passwords, pw, etc)
+  \item encrypted password entry?
+  \item get file owner, MAC times
+  \item sort based on user
+  \item sort based on access time
+  \item read registry file (make available for search)
+  \item time search i.e. time=lastweek, time=5/5/18-5/15/18
+  \item internet usage timeline
+  \item autosearch/autofilter
+  \item email search
+  \item for drug search... Spreadsheets, documents, databases, internet purchase strives
+  \item for financial search... Spreadsheets, databases, MSMoney, Quicken
 
 \end{itemize}
 
@@ -747,7 +816,13 @@ My conclusion is going to be very fascinating and wonderful.  I can feel it.
   \item Image Hash Databases - dbs of digital forensic labs with image hashes
   \item obviate the need for write blockers
   \item early look intelligence gathering
-  \item 
+  \item Immediate feedback loop for onsite investigators
+  \item "Suspect's dwelling"
+  \item securing a conviction of the offender
+  \item protecting future victims
+  \item browser artifacts
+  \item onsite == in situ
+  \item adhere to proven forensic principles
 \end{itemize}
 
 \newpage
@@ -763,6 +838,7 @@ My conclusion is going to be very fascinating and wonderful.  I can feel it.
   \item graph - current backlock in ventura county
   \item figure - DFT vs TCU (Hitchcock\cite{hitchcock2016tiered})
   \item graph - collection time vs number and size of files
+  \item figure - see figures in Computer Forensic Field Triage Process model (Rogers)
 
 \end{itemize}
 
