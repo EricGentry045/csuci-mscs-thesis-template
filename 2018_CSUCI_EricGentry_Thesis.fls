@@ -234,6 +234,7 @@ OUTPUT 2018_CSUCI_EricGentry_Thesis.toc
 INPUT 2018_CSUCI_EricGentry_Thesis.lof
 INPUT 2018_CSUCI_EricGentry_Thesis.lof
 OUTPUT 2018_CSUCI_EricGentry_Thesis.lof
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT CFFTPM.png
 INPUT ./CFFTPM.png
 INPUT ./CFFTPM.png
@@ -242,7 +243,6 @@ INPUT ./SeakerCreation.png
 INPUT ./SeakerCreation.png
 INPUT 2018_CSUCI_EricGentry_Thesis.bbl
 INPUT 2018_CSUCI_EricGentry_Thesis.bbl
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT 2018_CSUCI_EricGentry_Thesis.aux
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

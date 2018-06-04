@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{ajijola2014review}
+Akinola Ajijola, Pavol Zavarsky, and Ron Ruhl.
+\newblock A review and comparative evaluation of forensics guidelines of nist
+  sp 800-101 rev. 1: 2014 and iso/iec 27037: 2012.
+\newblock In {\em Internet Security (WorldCIS), 2014 World Congress on}, pages
+  66--73. IEEE, 2014.
+
 \bibitem{al2012forensic}
 Noora Al~Mutawa, Ibrahim Baggili, and Andrew Marrington.
 \newblock Forensic analysis of social networking applications on mobile

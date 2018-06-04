@@ -354,9 +354,10 @@ ALL RIGHTS RESERVED
 \section{Abstract}
 \label{sect-abstract}
 
-\textbf{Keywords}: Digital Forensics, Triage, Mobile, Digital Evidence Backlog, Raspberry Pi
+\textbf{Keywords}: Digital Forensics, Digital Forensic Triage, Mobile, Digital Evidence Backlog, Raspberry Pi, Forensic Tools, Digital
+Evidence\\
 
-Goals: \\
+Goals:
 \begin{itemize}
   \item preserve and protect evidenciary integrity
   \item reduce evidence gathering and triage analysis time
@@ -425,8 +426,44 @@ offices, and the ability to search for specific filenames is very important ther
 \section{Background}
 \label{sect-background}
 
-\subsection{Review Material and Analysis}
+\subsection{Introduction to Terms}
+\vspace{0.5 cm}
+\subsubsection{DEFR and DES Investigation Roles}
+\vspace{0.5 cm}
+DEFR is Digital Evidence First Responder\\
 
+DES is Digital Evidence Specialiat\\
+
+\subsubsection{Digital vs. Physical Evidence}
+\vspace{0.5 cm}
+I believe there should be a section here that examines (or at least introduces) the differences and similarities
+between regular physical (non-digital) evidence and digital evidence.  Including in the analysis is the metaphore of
+how physical evidence is handled (bags, DNA, fingerprints) and how that directly relates to the digital evidence
+model.  Contamination must be avoided.\\
+
+\subsubsection{Reactive vs. Proactive Digital Forensic Investigation Processes}
+\vspace{0.5 cm}
+\textit{Reactive} digital forensic investigation processes are utilized after an offense has been committed to help
+identify the charges and suspects.  This is the most common process for digital forensics.  The \textit{proactive}
+digital forensic investigation processes are to attempt to detect before or during an active offense is committed.
+This is not a job for a typical law enforcement investigator.\\
+
+This research is based on the reactive digital forensic investigation process in the hopes of reducing the digital
+forensic lab backlogs across the country and world in two ways.  The first way is to reduce the amount of digital
+evidence acquired for the digital forensics lab by enabling efficient and effective on-site triage to occur by
+utitizing the commonality of digital evidence collection and analysis into a single step.  The SEAKER digital
+evidence triage tool enables an initial collection of information and subsequent searches by any number of local,
+on-scene investigators.  These investigators do not need extensive training in digital forensics to utilize it.\\
+
+The second way is to help reduce the existing backlog by enabling a faster, more streamlined approach to initial
+potential evidence gathering and reporting.  This approach utilizes the SEAKER digital evidence trial tool to 
+perform an initial acquisition and analysis on every exiting case to provide a "first-look" at the information.  This
+also enables a searching mechanism within a few minutes of plugging in digital evidence media to enable digital 
+forensic investigators a quick review of materials.  The process will help with prioritization of evidence, a basic
+analysis and potentially initial evidence in the form of a report that can be provided to investigators and
+prosecutors.\\
+
+\subsection{Current Research Review and Analysis}
 \vspace{0.5 cm}
 \textbf{Current challenges and future research areas for digital forensic investigation - Lillis et al., 2016 \cite{lillis2016current}}\\
 \\
@@ -625,6 +662,44 @@ investigators and prosecutors.  This helps alleviate the need to wait until the 
 to get any information from case-specific digital evidence.
 \vspace{0.5 cm}
 
+\textbf{A review and comparative evaluation of forensics guidelines of NIST SP 800-101 Rev. 1: 2014 and ISO/IEC 27037: 2012 - Ajijola et al\cite{ajijola2014review}}\\
+\\
+
+Ajijola et al, 2014\cite{ajijola2014review} provided a thorough review of the NIST SP 800-101 Rev. 1:2014 guidelines
+titled \underline{Guidelines on Mobile Devices Forensics} and ISO/IEC 27037 titled \underline{Guidelines for
+Identification, Collection, Acquisition, and Preservation of Digital Evidence}.  They also proposed a new process
+model that is a hybrid of both models with the resulting combination being much more effective than either of its 
+individual parts.\\
+
+In the research for combining the NIST and ISO guidelines, Ajijola et al\cite{ajijola2014review} explores the
+commonality, differences, and limitations of each model.  Although both models follow the Auditability,
+Repeatability, Reproducability, and Justifiability requirements, as well as the Confidentiality, Integrity, and
+Availability standards, they individually lack some necessary phases to enable them to be used separately.  The NIST
+process model lacks the Identification and Collection phases, while the ISO process model lacks Examination, Analysis,
+and Reporting aspects of a full Digital Evidence processing model.\\
+
+The ISO guidelines provide an international accepted approach, making it easier to compare, combine, and contrast
+results for out-of-jurisdiction cases and for data scientists research.  It provides a common reference line for 
+digital forensics.  However, it is not meant to replace laws or regulations.  The main purpose is to provide practical
+assistance for investigations involving potential digital evidence, while preventing digital evidence corruption.  This
+process facilitates the usability of evidence by other jurisdictions.  This guideline provided four steps for handling
+potential digital evidence: Identification, Collection, Acquisition, and Preservation.  However, this is incomplete, as
+it only addresses gathering, not actually evaluating or providing results to law enforcement investigators.\\
+
+The NIST guidelines provide an in-depth look into mobile devices, helping to explain the technology involved and its
+relationship to the forensic process.  NIST itself is a technological, non-regulatory federal agency under the U.S.
+Department of Commerce.  The NIST process model labeled NIST SP 800-101 lays out the digital evidence procedures in
+four steps: Preservation, Acquisition, Examination and Analysis, and Reporting.  These four steps provide the
+necessary steps for the digital evidence process model as a suggested way to evaluate mobile device information.  This
+is useful, but not complete for law enforcement investigators.\\
+
+The combination of these two approaches, as suggested by Ajijola et al\cite{ajijola2014review}, provides a new five 
+step approach: Identification, Collection and Acquisition, Preservation, Examination and Analysis, and Reporting.
+These steps provide a more comprehensive approach that law enforcement can use to fulfill its evidenciary duties in
+an investigation.  When both process methods are used, the goals approach a full set of tasks from initial on-scene
+evalutation to the end of the in-lab digital forensics investigation.\\
+\vspace{0.5 cm}
+
 \textbf{The design science research process: a model for producing and presenting information systems research - Peffers et al., 2006\cite{peffers2006design}}\\
 \\
 \vspace{0.5 cm}
@@ -814,7 +889,7 @@ My conclusion is going to be very fascinating and wonderful.  I can feel it.
   \item email search
   \item for drug search... Spreadsheets, documents, databases, internet purchase strives
   \item for financial search... Spreadsheets, databases, MSMoney, Quicken
-
+  \item CRC of any acquired files (for later integrity comparison)
 \end{itemize}
 
 \newpage
