@@ -41,6 +41,10 @@
 % N.B.: floatpagefraction MUST be less than topfraction !!
 \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
 
+% turn off all hyphenation
+%\hyphenpenalty 10000
+%\exhyphenpenalty 10000
+
 \newenvironment{dig}{\\ [6pt]\noindent {\bf Digression}}{~$\Box$\\ [6pt]\indent}
 \newenvironment{dig1}{\noindent {\bf Digression}}{~$\Box$\\ [6pt]\indent}
 \newtheorem{alg}{\hspace{1.3in} Algorithm}
@@ -260,7 +264,7 @@
 \begin{titlepage}
 \pagenumbering{gobble}
 \begin{center}
-{\Large \bfseries Simplified and Inexpensive Mobile Digital Forensic Device \par}
+{\Large \bfseries SEAKER:\protect\\A Mobile Digital Forensic Triage Device \par}
 
 \vspace{2 cm}
 \baselineskip = 2\baselineskip
@@ -330,13 +334,32 @@ ALL RIGHTS RESERVED
 
 \newpage
 
-\title{Simplified and Inexpensive Mobile Digital Forensic Device} 
+\title{SEAKER:\protect\\A Mobile Digital Forensic Triage Device} 
 \author{Eric Elwood Gentry}
 
 \date{\today}
 \maketitle
 
+\small{\textbf{Keywords}: Digital Forensics, Digital Forensics Triage, Mobile Digital Forensics,
+Digital Evidence, Digital Evidence, Forensic Tools, Raspberry Pi}
+\\
+
 \begin{abstract}
+As our world of digital devices continues to expand, the potential for digital evidence available to law
+enforcement during case investigation is ever increasing.  The growing amount of digital evidence, along with
+the deprived pool of Digital Forensic Investigators is causing a backlog to form at many of the digital
+forensics labs around the world.  This backlog leads to delays in evidence analysis and reporting, causing
+investigators and prosecutors to postpone or even drop on-going cases.\\
+
+The SEAKER device is a digital forensic triage tool that is designed to be simple, portable, inexpensive,
+robust, and easy to use.  SEAKER is an acronym for Storage Evaluator And Knowledge Extraction Reader.  
+Utilizing a raspberry pi, this is a novel approach to helping provide immediate feedback to investigators
+along with attempting to stem the backlog problem.  It was originally developed for on-scene investigations
+that require immediate feedback, especially in time-sensitive investigations.  It also appears to be an
+excellent tool to help reduce the backlog by preventing over-collection of digital evidence.  SEAKER is not
+meant to replace a fully-functional digital forensic lab, but instead to augment the initial investigation
+and help reduce the backlog.  This research and device overview proposes the mobile, inexpensive, digital
+triage device called SEAKER.
 \end{abstract}
 
 \newpage
@@ -351,11 +374,78 @@ ALL RIGHTS RESERVED
 \newpage
 \pagenumbering{arabic}
 
-\section{Abstract}
-\label{sect-abstract}
 
-\textbf{Keywords}: Digital Forensics, Digital Forensic Triage, Mobile, Digital Evidence Backlog, Raspberry Pi, Forensic Tools, Digital
-Evidence\\
+\section{Introduction and Literature Review}
+\label{sect-IntroAndLitReview}
+
+\subsection{Introduction}
+SCHTTF
+the need for it
+example search warrant
+contribution section (bullets?)
+\subsection{Literature Review}
+
+
+\section{Background}
+\label{sect-background}
+
+\subsection{Legal Necessity and Implications}
+Search warrant
+write blockers
+chain of evidence
+\subsection{Technical Necessity and Implications}
+Raspberry pi
+Cost 
+human expertise
+DEFR, DES, Digital Forensic 
+
+
+
+\section{Development of SEAKER Device}
+\label{sect-developmentSeakerDevice}
+great novelty
+collaboration with industry HTTF
+\subsection{Conception}
+Masters Security class
+SCHTTF project proposal
+collaborated with SCHTTF
+\subsection{Setup Script For Raspberry Pi}
+
+\subsection{Rules For Mounting}
+mention write blockers from chapter 2
+\subsection{Code for Searching Device}
+
+\subsection{Tools Used for Development}
+
+
+\section{Experimental Results}
+\label{sect-experimentalResults}
+
+\subsection{Prototype Demonstration}
+in-class example at end of semester
+\subsection{Results}
+graph of latency
+estimates of time vs data Gb
+examples of running on Frank disks
+
+
+\section{Conclusions and Future Work}
+\label{sect-conclusionAndFutureWork}
+
+
+\section{Appendix}
+\label{sect-Appendix}
+
+\subsection{SEAKER Setup}
+I want a SEAKER device, what do I do?
+\subsection{SEAKER Usage}
+I've finished setting up my SEAKER, now what?
+\subsection{Code}
+Some useful code.
+
+
+\section{STOP HERE - Abstract}
+\label{sect-abstract}
 
 Goals:
 \begin{itemize}
