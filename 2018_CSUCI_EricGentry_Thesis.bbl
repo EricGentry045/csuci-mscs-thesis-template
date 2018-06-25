@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
 \bibitem{ajijola2014review}
 Akinola Ajijola, Pavol Zavarsky, and Ron Ruhl.
@@ -7,64 +7,17 @@ Akinola Ajijola, Pavol Zavarsky, and Ron Ruhl.
 \newblock In {\em Internet Security (WorldCIS), 2014 World Congress on}, pages
   66--73. IEEE, 2014.
 
-\bibitem{al2012forensic}
-Noora Al~Mutawa, Ibrahim Baggili, and Andrew Marrington.
-\newblock Forensic analysis of social networking applications on mobile
-  devices.
-\newblock {\em Digital Investigation}, 9:S24--S33, 2012.
-
-\bibitem{chang2015jailbroken}
-Ya-Ting Chang, Ke-Chun Teng, Yu-Cheng Tso, and Shiuh-Jeng Wang.
-\newblock Jailbroken iphone forensics for the investigations and controversy to
-  digital evidence.
-\newblock {\em Journal of Computers}, 26(2), 2015.
-
-\bibitem{hart2004forensic}
-Sara~V Hart, John Ashcroft, and Deborah~J Daniels.
-\newblock Forensic examination of digital evidence: a guide for law
-  enforcement.
-\newblock {\em National Institute of Justice NIJ-US, Washington DC, USA, Tech.
-  Rep. NCJ}, 199408, 2004.
-
 \bibitem{hitchcock2016tiered}
 Ben Hitchcock, Nhien-An Le-Khac, and Mark Scanlon.
 \newblock Tiered forensic methodology model for digital field triage by
   non-digital evidence specialists.
 \newblock {\em Digital Investigation}, 16:S75--S85, 2016.
 
-\bibitem{james2013survey}
-Joshua~I James and Pavel Gladyshev.
-\newblock A survey of digital forensic investigator decision processes and
-  measurement of decisions based on enhanced preview.
-\newblock {\em Digital Investigation}, 10(2):148--157, 2013.
-
-\bibitem{jusas2017methods}
-Vacius Jusas, Darius Birvinskas, and Elvar Gahramanov.
-\newblock Methods and tools of digital triage in forensic context: survey and
-  future directions.
-\newblock {\em Symmetry}, 9(4):49, 2017.
-
 \bibitem{lillis2016current}
 David Lillis, Brett Becker, Tadhg O'Sullivan, and Mark Scanlon.
 \newblock Current challenges and future research areas for digital forensic
   investigation.
 \newblock {\em arXiv preprint arXiv:1604.03850}, 2016.
-
-\bibitem{omeleze2013testing}
-Stacey Omeleze and Hein~S Venter.
-\newblock Testing the harmonised digital forensic investigation process
-  model-using an android mobile phone.
-\newblock In {\em Information Security for South Africa, 2013}, pages 1--8.
-  IEEE, 2013.
-
-\bibitem{peffers2006design}
-Ken Peffers, Tuure Tuunanen, Charles~E Gengler, Matti Rossi, Wendy Hui, Ville
-  Virtanen, and Johanna Bragge.
-\newblock The design science research process: a model for producing and
-  presenting information systems research.
-\newblock In {\em Proceedings of the first international conference on design
-  science research in information systems and technology (DESRIST 2006)}, pages
-  83--106. sn, 2006.
 
 \bibitem{raghavan2013digital}
 Sriram Raghavan.
@@ -76,11 +29,6 @@ Marcus~K Rogers, James Goldman, Rick Mislan, Timothy Wedge, and Steve Debrota.
 \newblock Computer forensics field triage process model.
 \newblock In {\em Proceedings of the conference on Digital Forensics, Security
   and Law}, page~27. Association of Digital Forensics, Security and Law, 2006.
-
-\bibitem{satishforensic}
-B~Satish.
-\newblock Forensic analysis of iphone backups.
-\newblock {\em Securitylearn. net}.
 
 \bibitem{shaw2013practical}
 Adrian Shaw and Alan Browne.

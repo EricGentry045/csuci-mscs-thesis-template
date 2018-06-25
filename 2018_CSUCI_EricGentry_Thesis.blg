@@ -3,46 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2018_CSUCI_EricGentry_Thesis.aux
 The style file: plain.bst
 Database file #1: references.bib
-Warning--empty year in satishforensic
-You've used 15 entries,
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            584 strings with 7054 characters,
-and the built_in function-call counts, 5195 in all, are:
-= -- 512
-> -- 262
-< -- 4
-+ -- 108
-- -- 88
-* -- 362
-:= -- 877
-add.period$ -- 49
-call.type$ -- 15
-change.case$ -- 88
+            540 strings with 5426 characters,
+and the built_in function-call counts, 2420 in all, are:
+= -- 239
+> -- 114
+< -- 2
++ -- 48
+- -- 38
+* -- 164
+:= -- 406
+add.period$ -- 23
+call.type$ -- 7
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 198
-empty$ -- 389
-format.name$ -- 88
-if$ -- 1081
+cite$ -- 7
+duplicate$ -- 95
+empty$ -- 188
+format.name$ -- 38
+if$ -- 507
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 16
-newline$ -- 78
-num.names$ -- 30
-pop$ -- 92
+int.to.str$ -- 7
+missing$ -- 8
+newline$ -- 38
+num.names$ -- 14
+pop$ -- 45
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 33
 quote$ -- 0
-skip$ -- 132
+skip$ -- 61
 stack$ -- 0
-substring$ -- 279
-swap$ -- 43
-text.length$ -- 4
+substring$ -- 138
+swap$ -- 21
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
-warning$ -- 1
-while$ -- 51
-width$ -- 17
-write$ -- 167
-(There was 1 warning)
+type$ -- 26
+warning$ -- 0
+while$ -- 24
+width$ -- 8
+write$ -- 79
