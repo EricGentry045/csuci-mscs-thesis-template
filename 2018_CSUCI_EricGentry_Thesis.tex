@@ -407,10 +407,96 @@ triage device called SEAKER.
 \label{sect-IntroAndLitReview}
 
 \subsection{Introduction}
-SCHTTF\\
-example search warrant\\
-the need for a triage device\\
+Law enforcement investigations involve many aspects of criminality and need carefully thought-out
+procedures and practices.  These procedures and practices are essential to finding the evidentiary
+information necessary to determine criminal liability, but are also in place to ensure that the evidence
+collected is not tainted and is sound, viable, admissible court evidence.  Establishing and retaining the
+forensic integrity of the evidence is a required and crucial part of the investigator's task.\\
 
+Performing investigations is also a noteworthy endeavor.  There are many steps involved that require special
+training to be performed properly.  One primary example is the {\em chain of custody}.  This refers to the 
+step-by-step documentation record regarding evidence that includes details such as who had custody of
+the evidence, when they had custody, who it was transferred to, who analyzed it, etc.
+Another is the exacting
+science of collecting, labeling, itemizing, and acquiring of evidence.
+For instance, collecting physical evidence requires the
+use of gloves,
+evidence bags, fingerprint-dusting equipment, etc. to prevent cross-contamination, fingerprint smudging,
+DNA evidence mishandling, and a multitude of other evidence tainting.  Without the proper adherance to 
+guidelines,
+even conclusive evidence may not be admissible during a case.\\
+
+Digital evidence is also very essential to many investigations and cases in the modern world.
+With each passing year, more and more digital devices are collecting, storing, and uploading data.  As
+well, electronic devices for personal use appropriately labelled the Internet of Things (IoT) or
+the Internet of Everything (IoE) are becoming more and more
+ubiquitous in our everyday lives.  IOT devices are now everyday household items like refrigerators,
+thermostats, light bulbs, window coverings, garage door openers, keys, clothes, and much more.
+These devices and the massive amount of digital information that
+is being generated and collected are often helpful in criminal investigations.  The data can be used to
+construct timeframes of activity, locations of individuals, Internet activity, computer users and usages,
+and lots other potential digital information.\\
+
+One growing and particularly helpful aspect of an investigation is digital forensics.  This not only 
+involves collecting potential digital evidence, but also analyzing, 
+and reporting procedures.  This almost always requires a search warrant - a court-ordered search and
+seizure of potential evidence of a location where a suspect resides, works, or may be storing it.
+The search warrant is executed after it has been obtained from a judge and can involve physical and
+digital evidence, as well as other items of consequence.\\
+
+Search warrant investigations are often fraught with danger, intentional obscurity, hidden evidence, and
+potential mishandling of evidence.  Before anything else can be done, the location must be considered
+secure - considered safe from harming investigators and free of potential threats.  Once a scene is
+secured at a search warrant service involving electronic evidence, three activities
+take place simultaneously: the search for physical evidence, the search of the physical evidence
+itself for electronic evidence, and the interviewing of involved parties.\\
+
+The physical and digital evidence can guide the interviewing of the suspect(s), but also
+has the potential to have both positive and negative effects on the
+outcome of the investigation. If investigators do not locate any physical evidence for an examiner
+to evaluate, then intelligence is not gathered and the interviewer has less information with which
+to confront the suspect(s). If investigators present physical evidence to an examiner who is able to
+evaluate it quickly in the field, then the interviewer (who is oftentimes also the lead investigator
+on the case) can confront the suspects and potentially secure statements that lead to prosecution.\\
+
+This leads to the need for digitial forensics specialists to bring their lab equipment into the field,
+especially when serving a search warrant.  The lab equipment is specialized software and hardware
+designed to analyze, report, and maintain forensic integrity on potential digital evidence.  This
+equipment often involved a laptop, a write-blocking device, media imaging storage devices, expensive
+software, and associated cabling for connection and power.  As well, this software is designed for
+extensive and in-depth searching and often takes hours or days to analyze the evidence.  Many of the
+reports from these systems are designed to be thorough and may take a skilled digital forensic
+examiner days to pour over the material produced.  Oftentimes, this equipment is not brought
+into the field and all digital evidence is simply collected for later analysis at the law
+enforcement facilities.\\
+
+The need for a more field-friendly digital forensic {\em triage} solution will assist in the initial
+investigation tasks in multiple ways.
+\begin{enumerate}
+  \item It enables investigators a very fast digital-evidence window into the types of files
+  and information being accessed and stored on the computer equipment at the site of the search
+  warrant.
+  \item It limits the number of devices and therefore the amount of data required in the in-depth
+  analysis phase at the lab.
+  \item It minimized the impact and inconvenience to innocent parties at the site of the 
+  search warrant.  The devices that are searched and found to have no evidenciary value can be
+  deemed inconsequencial to the case and remain at the scene.
+  \item It may be used to provide initial, albeit simplified, analysis results on potential
+  digital evidence ingested into the digital forensic lab.
+\end{enumerate}
+
+The topic explored in this paper is a portable, inexpensive, efficient device, named SEAKER,
+that is intended
+to overcome the need for a full digital
+forensic lab equipment suite to be brought into the field.  The SEAKER device was conceived and 
+an initial prototype was produced at the California State University Channel Islands (CSUCI)
+campus in a 
+masters level Computer Security class (COMP 524, Summer 2017) in direct collaboration with the
+Southern California High Tech Task Force (SCHTTF) division of the Ventura Country
+District Attorney's (VCDA) office.\\
+
+
+\subsubsection{Author's Contributions}
 Contributions I have made to the SEAKER device project:
 \begin{itemize}
   \item Developed the SEAKER creation bash script to turn a Raspberry Pi into a SEAKER by programmatically
@@ -429,6 +515,7 @@ Contributions I have made to the SEAKER device project:
 
 \subsection{Literature Review}
 \subsubsection{History of Digital Evidence}
+
 Shaw et al\cite{shaw2013practical} points out that neither digital forensic triage examination nor digital forensic
 full examination are well defined.  Triage may mean something completely different to two digital forensic
 examiners.  As well, full digital forensic examination has no robust standard to follow.\\

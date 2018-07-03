@@ -243,6 +243,7 @@ OUTPUT 2018_CSUCI_EricGentry_Thesis.lof
 INPUT 2018_CSUCI_EricGentry_Thesis.lot
 INPUT 2018_CSUCI_EricGentry_Thesis.lot
 OUTPUT 2018_CSUCI_EricGentry_Thesis.lot
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT images/IOT_chart.jpg
 INPUT ./images/IOT_chart.jpg
@@ -250,7 +251,6 @@ INPUT ./images/IOT_chart.jpg
 INPUT images/CFFTPM.png
 INPUT ./images/CFFTPM.png
 INPUT ./images/CFFTPM.png
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT images/SeakerCreation.png
 INPUT ./images/SeakerCreation.png
 INPUT ./images/SeakerCreation.png
