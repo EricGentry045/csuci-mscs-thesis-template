@@ -471,9 +471,13 @@ into the field and all digital evidence is simply collected for later analysis a
 enforcement facilities.\\
 
 The need for a more field-friendly digital forensic {\em triage} solution will assist in the initial
-investigation tasks in multiple ways.
+investigation tasks in multiple ways:
 \begin{enumerate}
-  \item It enables investigators a very fast digital-evidence window into the types of files
+  \item It enforces a structured procedure and approach that is user-friendly to {\em non-digital
+  forensic aware investigators} with the goal of simple instructions for use and very simple 
+  evidence location.
+  \item It enables investigators, especially interrogators, a very fast digital-evidence overview
+  into the types of files
   and information being accessed and stored on the computer equipment at the site of the search
   warrant.
   \item It limits the number of devices and therefore the amount of data required in the in-depth
@@ -491,7 +495,7 @@ to overcome the need for a full digital
 forensic lab equipment suite to be brought into the field.  The SEAKER device was conceived and 
 an initial prototype was produced at the California State University Channel Islands (CSUCI)
 campus in a 
-masters level Computer Security class (COMP 524, Summer 2017) in direct collaboration with the
+Masters level Computer Security class (COMP 524, Summer 2017) in direct collaboration with the
 Southern California High Tech Task Force (SCHTTF) division of the Ventura Country
 District Attorney's (VCDA) office.\\
 
@@ -499,10 +503,11 @@ District Attorney's (VCDA) office.\\
 \subsubsection{Author's Contributions}
 Contributions I have made to the SEAKER device project:
 \begin{itemize}
-  \item Developed the SEAKER creation bash script to turn a Raspberry Pi into a SEAKER by programmatically
+  \item Developed the SEAKER \underline{creation} bash script to turn a standard Raspberry Pi into a
+  SEAKER by programmatically
   installing raspbian software packages, setting up WIFI as a wireless access point, adding a web server,
   and preparing the running environment with the proper fileset
-  \item Wrote custom C code to increase device searching efficiency in lieu of slower, native operating
+  \item Wrote custom C program to increase device searching efficiency in lieu of slower, native operating
   system solutions for finding content on digital media
   \item Co-presented and demonstrated the initial SEAKER prototype for the Summer 2017 Masters level CSUCI
   Security class project to SCHTTF, CSUCI department heads, and local community leaders
@@ -511,31 +516,80 @@ Contributions I have made to the SEAKER device project:
   \item Co-authored a conference paper on the SEAKER project and the technology behind it
   \item Updated and enhanced SEAKER functionality to support the latest raspbian operating system (Stretch
   Lite, April 2018 release), including enabling ethernet passthrough to the wireless access point
+  \item Co-authored by creating Logic Models and assisting with read-throughs for a United States
+  Department of Justice (DOJ)
+  grant proposal for future work on this project (SEAKER) and
+  a second, related security project (Voyager)
 \end{itemize}
 
 \subsection{Literature Review}
 \subsubsection{History of Digital Evidence}
 
-Shaw et al\cite{shaw2013practical} points out that neither digital forensic triage examination nor digital forensic
-full examination are well defined.  Triage may mean something completely different to two digital forensic
-examiners.  As well, full digital forensic examination has no robust standard to follow.\\
+The digital forensics field began in the mid 1980s with an understanding from several law enforcement
+agencies that computers would play a critical role in criminal investigations of the future.
+In 1993, the FBI hosted an international conference on computer evidence in Virginia.  This was
+the first major conference on the subject and had attendees from 26 different countries.  Much
+of the original computer
+forensics at that time related to recovering information from local computers.\\
 
-The authors of the CFFTPM (Rogers et al\cite{rogers2006computer}) also note the important legal and technical
-considerations prior to implementing CFFTPM on a particular investigation.  The legal considerations include issues
-related to search warrant scope and limitations, U.S. Constitutional 4th Amendment rights, etc.  The technical 
-considerations include type of case, criticality of timeliness, skillset of the on-site digital forensic examiner, 
+Among the early pioneers in the digital forensics field, there was a common understanding that a
+system of processes and procedures were needed to locate, record, analyze and report information.
+This process would have to be similar to how non-digital physical evidence was handled, but also
+include other computer specific preservation methods to ensure the integrity of evidence found.
+Those processes and procedures have increased in complexity over time and have suffered from the
+lack of ubiquitous adoption to a single standard.\\
+
+Even as late as 2013, Shaw et al\cite{shaw2013practical} points out that neither digital forensic
+triage examination nor digital forensic full examination are well defined.
+Digital forensic triage may mean something completely different to two digital forensic
+examiners.  As well, full digital forensic examination has no robust standard to follow, Although
+there has been no shortage of attempts.\\
+
+In 2006, Rogers et al\cite{rogers2006computer} proposed a standardization model for a portion
+of the entire process called {\em triage} for digital
+forensic examiners to follow: Computer Forensics Field Triage Process Model.
+The authors of the CFFTPM note the important legal and technical
+considerations prior to implementing CFFTPM on a particular investigation.  The legal
+considerations include issues
+related to search warrant scope and limitations, U.S. Constitutional 4th Amendment rights, etc.
+The technical 
+considerations include type of case, criticality of timeliness, skillset of the on-site
+digital forensic examiner, 
 skillset of the suspect, having proper lab equipment on-site, scene control, etc.\\
 
-Ajijola et al, 2014\cite{ajijola2014review} provided a thorough review of the NIST SP 800-101 Rev. 1:2014 guidelines
-titled \underline{Guidelines on Mobile Devices Forensics} and ISO/IEC 27037 titled \underline{Guidelines for
-Identification, Collection, Acquisition, and Preservation of Digital Evidence}.\\
+The National Institute of Standards and Technologies (NIST) published guidelines for several
+different types of digital evidence, for instance mobile phones, and computers.
+However, NIST focuses on the analysis portion of the science, but leaves the collection,
+and reporting aspects unexplored.  The International Standards Organization also published
+a set of guidelines, but primarily focused on collection and handling aspects of digital
+evidence.  
+Ajijola et al\cite{ajijola2014review} provided a thorough review in 2014 of the NIST SP
+800-101 Rev. 1:2014 guidelines
+titled Guidelines on Mobile Devices Forensics and ISO/IEC 27037 titled
+Guidelines for
+Identification, Collection, Acquisition, and Preservation of Digital Evidence.
+Their recommendation was a combined approach, though still not a fully formed solution.\\
 
-\subsubsection{Standardization by Process}
-Shaw et al\cite{shaw2013practical} also strongly suggest compliance with digital forensics best practices, like the
-ones provided in the ACPO.  This
-standards guide is from the UK and is titled Best Practices Guide for Digital Evidence (2012).  There are four
-main practices outlined, but the main one that they chose to point out was the
-second one regarding the integrity protection of the original digital media.\\
+\subsubsection{Process Standardization}
+
+Several approaches over the years have been proposed as universal processes and procedures to
+gathering, reviewing, and presenting digital evidence.  These approaches range in number of
+steps, process coverage, and overall method, 
+but all have the common goal of finding usable digital evidence for preventing future
+harm to society and preserving its
+integrity for means of presentation in court cases.\\
+
+The Association of Chief Police Officers (ACPO), a private company that helped establish and
+develop policing practices in England, Wales, and Northern Ireland for many years,
+put together a {\em Good Practice Guide for Digital Evidence}\cite{williams2012acpo} in 2012 that outlines some
+recommended procedures for dealing with digital evidence.  As with other methodologies, this guide
+explains using a four step approach: Plan, Capture, Analyze, Present.\\
+
+Other researchers have recommended similar approaches.
+Shaw et al\cite{shaw2013practical} analyzed the ACPO and focused on the second step (Capture)
+as the primary guideline for evidential integrity.  They strongly suggest compliance with
+digital forensics best practices, like the ones provided in the ACPO.  However, their final 
+recommendation \\
 
 Rogers et al\cite{rogers2006computer} proposed a reliable, repeatable process model in 2006 for digital evidence
 triage in the field.  It was created in partnership with Purdue University Cyber Forensics and Computer and Information
