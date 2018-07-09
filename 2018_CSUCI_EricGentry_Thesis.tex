@@ -539,12 +539,6 @@ include other computer specific preservation methods to ensure the integrity of 
 Those processes and procedures have increased in complexity over time and have suffered from the
 lack of ubiquitous adoption to a single standard.\\
 
-Even as late as 2013, Shaw et al\cite{shaw2013practical} points out that neither digital forensic
-triage examination nor digital forensic full examination are well defined.
-Digital forensic triage may mean something completely different to two digital forensic
-examiners.  As well, full digital forensic examination has no robust standard to follow, Although
-there has been no shortage of attempts.\\
-
 In 2006, Rogers et al\cite{rogers2006computer} proposed a standardization model for a portion
 of the entire process called {\em triage} for digital
 forensic examiners to follow: Computer Forensics Field Triage Process Model.
@@ -556,6 +550,12 @@ The technical
 considerations include type of case, criticality of timeliness, skillset of the on-site
 digital forensic examiner, 
 skillset of the suspect, having proper lab equipment on-site, scene control, etc.\\
+
+Even as late as 2013, Shaw et al\cite{shaw2013practical} points out that neither digital forensic
+triage examination nor digital forensic full examination are well defined.
+Digital forensic triage may mean something completely different to two digital forensic
+examiners.  As well, full digital forensic examination has no robust standard to follow, Although
+there has been no shortage of attempts.\\
 
 The National Institute of Standards and Technologies (NIST) published guidelines for several
 different types of digital evidence, for instance mobile phones, and computers.
@@ -570,20 +570,38 @@ Guidelines for
 Identification, Collection, Acquisition, and Preservation of Digital Evidence.
 Their recommendation was a combined approach, though still not a fully formed solution.\\
 
-\subsubsection{Process Standardization}
+\subsubsection{Process and Procedure Standardization}
 
 Several approaches over the years have been proposed as universal processes and procedures to
 gathering, reviewing, and presenting digital evidence.  These approaches range in number of
 steps, process coverage, and overall method, 
 but all have the common goal of finding usable digital evidence for preventing future
-harm to society and preserving its
+harm to society and preserving the potential digital evidence's 
 integrity for means of presentation in court cases.\\
+
+Paragraph for IDIP\\
+
+Paragraph for DCSA\\
+
+Rogers' et al\cite{rogers2006computer} proposed CFFTPM is a reliable, repeatable process 
+model designed specifically for digital evidence triage.  It was created in partnership
+with Purdue University's Cyber Forensics and Computer and Information
+Technology Departments, along with the National White Collar Crime
+Center\cite{rogers2006computer}.
+The process was derived from several other military and law enforcement models
+including Integrated Digital Investigation Process model (IDIP), 
+Digital Crime Scene Analysis (DCSA),
+and a military Operations Order (OpOrd).  In coordination with the Southern Indiana 
+Assistant U.S. Attorney's office,
+USADA Steve Debrota, Rogers et al\cite{rogers2006computer} implemented and reported
+on the success of their proposed
+model: Computer Forensics Field Triage Process Model (CFFTPM).  This \\
 
 The Association of Chief Police Officers (ACPO), a private company that helped establish and
 develop policing practices in England, Wales, and Northern Ireland for many years,
 put together a {\em Good Practice Guide for Digital Evidence}\cite{williams2012acpo} in 2012 that outlines some
 recommended procedures for dealing with digital evidence.  As with other methodologies, this guide
-explains using a four step approach: Plan, Capture, Analyze, Present.\\
+explains utilizing a four step approach: Plan, Capture, Analyze, Present.\\
 
 Other researchers have recommended similar approaches.
 Shaw et al\cite{shaw2013practical} analyzed the ACPO and focused on the second step (Capture)
@@ -591,25 +609,36 @@ as the primary guideline for evidential integrity.  They strongly suggest compli
 digital forensics best practices, like the ones provided in the ACPO.  However, their final 
 recommendation \\
 
-Rogers et al\cite{rogers2006computer} proposed a reliable, repeatable process model in 2006 for digital evidence
-triage in the field.  It was created in partnership with Purdue University Cyber Forensics and Computer and Information
-Technology Departments, along with the National White Collar Crime Center <NEED CITE>.  The process is derived from
-several other models including Integrated Digital Investation Process model (IDIP), Digital Crime Scene Analysis (DCSA),
-and a military Operations Order (OpOrd).  In coordination with the Southern Indiana Assistant U.S. Attorney's office,
-USADA Steve Debrota, Rogers et al\cite{rogers2006computer} implemented and reported on the success of their proposed
-model: Computer Forensics Field Triage Process Model (CFFTPM).\\
-
-Rogers - In
-addition, the process is intended to protect the integrity of the evidence or potential evidence in an investigation.\\
+All of these approaches are intended to help find and gather digital evidence.  They are also intended
+to maintain the forensic integrity.  Many organizations combine these approaches into a system of
+processes and procedures intended for use in their own facility.  Not having a universal standard 
+leads to complications and difficulties when digital evidence needs to be shared across other
+jurisdictions and boundaries\cite{ajijola2014review}.\\
 
 \subsubsection{Aquisition Methodology}
-Ajijola - The ISO guidelines provide an international accepted approach, making it easier to compare, combine, and contrast
-results for out-of-jurisdiction cases and for data scientists research.  It provides a common reference line for 
-digital forensics.  However, it is not meant to replace laws or regulations.  The main purpose is to provide practical
-assistance for investigations involving potential digital evidence, while preventing digital evidence corruption.  This
-process facilitates the usability of evidence by other jurisdictions.  This guideline provided four steps for handling
-potential digital evidence: Identification, Collection, Acquisition, and Preservation.  However, this is incomplete, as
-it only addresses gathering, not actually evaluating or providing results to law enforcement investigators.\\
+
+As a general approach, this paper splits the act of dealing with digital evidence into two
+separate methodologies: Aquisition and Analysis.  These are the main foci since SEAKER is 
+designed to do both in a very timely fashion.  Aquisition has multiple defintions across
+the digital forensic universe, but in this case it is meant to imply the entire process and
+procedures from training the digital forensic examiners and SEAKER users,
+to collecting the media that potential digital evidence may be stored on, 
+to the SEAKER usage for gathering the information about each device,.\\
+
+The ISO guidelines provide an attempt at an internationally accepted approach, with the goal
+of making it easier to compare, combine, and contrast
+results for out-of-jurisdiction cases and for data scientists' research.  It provides a
+common reference line for 
+digital forensics.  However, it is not meant to replace laws or regulations.  The main
+purpose is to provide practical
+assistance for investigations involving potential digital evidence, while preventing digital
+evidence corruption.  This
+process facilitates the usability of evidence by other jurisdictions.  This guideline provided
+four steps for handling
+potential digital evidence: Identification, Collection, Acquisition, and Preservation.  However,
+this is incomplete, as
+it only addresses gathering, not actually evaluating or providing results to law enforcement
+investigators.\\
 
 \subsubsection{Analysis Methodology}
 Rogers- The primary machine type
@@ -642,8 +671,7 @@ spoiled by mis-handling, while also attempting to maximize the evidentiary value
 
 This approach is not without risks.  One concern is the accidental exclusion of an item of digital evidence that is
 important to the investigation.  Another is the level of computer skills and training of the DTF expert.  The paper
-does attempt to mitigate the latter with training and management process, while providing evidence that the former
-is a common misconception in most cases.\\
+does attempt to mitigate the latter with training and management process, while providing evidence that the formeris a common misconception in most cases.\\
 
 Shaw - One example is to note encrypted compressed files for review later.\\
 

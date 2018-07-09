@@ -3,28 +3,28 @@
 \contentsline {subsubsection}{\numberline {1.1.1}Author's Contributions}{3}
 \contentsline {subsection}{\numberline {1.2}Literature Review}{4}
 \contentsline {subsubsection}{\numberline {1.2.1}History of Digital Evidence}{4}
-\contentsline {subsubsection}{\numberline {1.2.2}Process Standardization}{5}
+\contentsline {subsubsection}{\numberline {1.2.2}Process and Procedure Standardization}{5}
 \contentsline {subsubsection}{\numberline {1.2.3}Aquisition Methodology}{6}
-\contentsline {subsubsection}{\numberline {1.2.4}Analysis Methodology}{6}
+\contentsline {subsubsection}{\numberline {1.2.4}Analysis Methodology}{7}
 \contentsline {subsubsection}{\numberline {1.2.5}Combined Aquisition and Analysis Methodologies}{7}
-\contentsline {subsubsection}{\numberline {1.2.6}Digital Evidence Backlog}{8}
-\contentsline {subsubsection}{\numberline {1.2.7}Digital Evidence Triage}{10}
-\contentsline {subsubsection}{\numberline {1.2.8}How SEAKER Can Help}{13}
-\contentsline {section}{\numberline {2}Background}{13}
-\contentsline {subsection}{\numberline {2.1}Legal Necessity and Implications}{13}
+\contentsline {subsubsection}{\numberline {1.2.6}Digital Evidence Backlog}{9}
+\contentsline {subsubsection}{\numberline {1.2.7}Digital Evidence Triage}{11}
+\contentsline {subsubsection}{\numberline {1.2.8}How SEAKER Can Help}{12}
+\contentsline {section}{\numberline {2}Background}{14}
+\contentsline {subsection}{\numberline {2.1}Legal Necessity and Implications}{14}
 \contentsline {subsection}{\numberline {2.2}Technical Necessity and Implications}{14}
 \contentsline {section}{\numberline {3}Development of SEAKER Device}{14}
 \contentsline {subsection}{\numberline {3.1}Conception}{14}
 \contentsline {subsection}{\numberline {3.2}Setup Script For Raspberry Pi}{14}
 \contentsline {subsection}{\numberline {3.3}Rules For Mounting}{14}
-\contentsline {subsection}{\numberline {3.4}Code for Searching Device}{14}
-\contentsline {subsection}{\numberline {3.5}Tools Used for Development}{14}
-\contentsline {section}{\numberline {4}Experimental Results}{14}
-\contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{14}
-\contentsline {subsection}{\numberline {4.2}Results}{14}
-\contentsline {section}{\numberline {5}Conclusions and Future Work}{14}
-\contentsline {section}{\numberline {6}Appendix}{14}
-\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{14}
+\contentsline {subsection}{\numberline {3.4}Code for Searching Device}{15}
+\contentsline {subsection}{\numberline {3.5}Tools Used for Development}{15}
+\contentsline {section}{\numberline {4}Experimental Results}{15}
+\contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{15}
+\contentsline {subsection}{\numberline {4.2}Results}{15}
+\contentsline {section}{\numberline {5}Conclusions and Future Work}{15}
+\contentsline {section}{\numberline {6}Appendix}{15}
+\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{15}
 \contentsline {subsection}{\numberline {6.2}SEAKER Usage}{20}
 \contentsline {subsection}{\numberline {6.3}Code}{22}
 \contentsline {section}{\numberline {7}STOP HERE - Abstract}{24}
