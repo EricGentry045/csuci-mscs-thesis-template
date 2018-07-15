@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{ajijola2014review}
 Akinola Ajijola, Pavol Zavarsky, and Ron Ruhl.
@@ -6,6 +6,23 @@ Akinola Ajijola, Pavol Zavarsky, and Ron Ruhl.
   sp 800-101 rev. 1: 2014 and iso/iec 27037: 2012.
 \newblock In {\em Internet Security (WorldCIS), 2014 World Congress on}, pages
   66--73. IEEE, 2014.
+
+\bibitem{ballou2010electronic}
+Susan Ballou.
+\newblock {\em Electronic crime scene investigation: A guide for first
+  responders}.
+\newblock Diane Publishing, 2010.
+
+\bibitem{baryamureeba2004enhanced}
+Venansius Baryamureeba and Florence Tushabe.
+\newblock The enhanced digital investigation process model.
+\newblock In {\em Proceedings of the Fourth Digital Forensic Research
+  Workshop}, pages 1--9, 2004.
+
+\bibitem{carrier2003getting}
+Brian Carrier, Eugene~H Spafford, et~al.
+\newblock Getting physical with the digital investigation process.
+\newblock {\em International Journal of digital evidence}, 2(2):1--20, 2003.
 
 \bibitem{hitchcock2016tiered}
 Ben Hitchcock, Nhien-An Le-Khac, and Mark Scanlon.
@@ -18,6 +35,11 @@ David Lillis, Brett Becker, Tadhg O'Sullivan, and Mark Scanlon.
 \newblock Current challenges and future research areas for digital forensic
   investigation.
 \newblock {\em arXiv preprint arXiv:1604.03850}, 2016.
+
+\bibitem{noblett2000recovering}
+Michael~G Noblett, Mark~M Pollitt, and Lawrence~A Presley.
+\newblock Recovering and examining computer forensic evidence.
+\newblock {\em Forensic Science Communications}, 2(4), 2000.
 
 \bibitem{raghavan2013digital}
 Sriram Raghavan.

@@ -245,6 +245,9 @@ INPUT 2018_CSUCI_EricGentry_Thesis.lot
 OUTPUT 2018_CSUCI_EricGentry_Thesis.lot
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT images/IDIP.png
+INPUT ./images/IDIP.png
+INPUT ./images/IDIP.png
 INPUT images/IOT_chart.jpg
 INPUT ./images/IOT_chart.jpg
 INPUT ./images/IOT_chart.jpg

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 JUL 2018 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 JUL 2018 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -581,7 +581,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 372--377
 
  [2]
 (./2018_CSUCI_EricGentry_Thesis.lof
-Overfull \hbox (59.98335pt too wide) in paragraph at lines 4--4
+Overfull \hbox (59.98335pt too wide) in paragraph at lines 5--5
  [][] []\OT1/cmr/m/n/10.95 Investigator's hand-held view: us-ing a browser, con
 -nect to \OT1/cmtt/m/n/10.95 http://seaker01.local [][]  
  []
@@ -667,255 +667,281 @@ Underfull \hbox (badness 10000) in paragraph at lines 575--581
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 582--589
+
+ []
+
+[5] <images/IDIP.png, id=67, 513.92pt x 124.465pt>
+File: images/IDIP.png Graphic file (type png)
+ <use images/IDIP.png>
+Package pdftex.def Info: images/IDIP.png used on input line 628.
+(pdftex.def)             Requested size: 312.00119pt x 75.56459pt.
+
+[6 <./images/IDIP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 655--660
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--585
+Underfull \hbox (badness 10000) in paragraph at lines 661--675
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 586--599
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 600--605
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 606--611
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--617
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 620--627
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 628--642
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 644--646
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--653
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 655--659
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 660--663
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 664--671
+Underfull \hbox (badness 10000) in paragraph at lines 676--682
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 672--675
+Underfull \hbox (badness 10000) in paragraph at lines 683--690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--677
+Underfull \hbox (badness 10000) in paragraph at lines 693--698
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 678--680
+Underfull \hbox (badness 10000) in paragraph at lines 699--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--684
+Underfull \hbox (badness 10000) in paragraph at lines 705--709
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--691
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--697
+Underfull \hbox (badness 10000) in paragraph at lines 712--726
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 729--735
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--702
-
- []
-
-[8] <images/IOT_chart.jpg, id=76, 1259.70625pt x 565.11125pt>
-File: images/IOT_chart.jpg Graphic file (type jpg)
-
-<use images/IOT_chart.jpg>
-Package pdftex.def Info: images/IOT_chart.jpg used on input line 705.
-(pdftex.def)             Requested size: 312.00119pt x 139.96678pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 709--714
+Underfull \hbox (badness 10000) in paragraph at lines 736--741
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--718
+Underfull \hbox (badness 10000) in paragraph at lines 742--749
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--721
+Underfull \hbox (badness 10000) in paragraph at lines 750--756
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 758--762
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 722--724
+Underfull \hbox (badness 10000) in paragraph at lines 763--766
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--728
-
- []
-
-[9 <./images/IOT_chart.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 729--732
+Underfull \hbox (badness 10000) in paragraph at lines 767--774
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--737
+Underfull \hbox (badness 10000) in paragraph at lines 775--778
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--742
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 743--748
+Underfull \hbox (badness 10000) in paragraph at lines 781--783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--754
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 755--759
+Underfull \hbox (badness 10000) in paragraph at lines 784--787
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 761--769
+Underfull \hbox (badness 10000) in paragraph at lines 788--794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--775
+Underfull \hbox (badness 10000) in paragraph at lines 795--800
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 776--782
+Underfull \hbox (badness 10000) in paragraph at lines 802--805
+
+ []
+
+<images/IOT_chart.jpg, id=86, 1259.70625pt x 565.11125pt>
+File: images/IOT_chart.jpg Graphic file (type jpg)
+
+<use images/IOT_chart.jpg>
+Package pdftex.def Info: images/IOT_chart.jpg used on input line 808.
+(pdftex.def)             Requested size: 312.00119pt x 139.96678pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--817
+
+ []
+
+[11 <./images/IOT_chart.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 818--821
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--789
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 790--796
+Underfull \hbox (badness 10000) in paragraph at lines 822--824
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 797--803
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--806
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 807--813
-
- []
-
-<images/CFFTPM.png, id=87, 643.40375pt x 655.44875pt>
-File: images/CFFTPM.png Graphic file (type png)
- <use images/CFFTPM.png>
-Package pdftex.def Info: images/CFFTPM.png used on input line 816.
-(pdftex.def)             Requested size: 312.00119pt x 317.85225pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 821--823
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--827
-
- []
-
-[12]
 Underfull \hbox (badness 10000) in paragraph at lines 828--831
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 832--839
+Underfull \hbox (badness 10000) in paragraph at lines 832--835
 
  []
 
-[13 <./images/CFFTPM.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 840--845
+
+Underfull \hbox (badness 10000) in paragraph at lines 836--840
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 841--845
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 846--851
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 852--857
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--862
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 864--872
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 873--878
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 879--885
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--892
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--899
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 900--906
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 907--909
 
  []
 
 [14]
-Overfull \hbox (61.55296pt too wide) in paragraph at lines 925--948
+Underfull \hbox (badness 10000) in paragraph at lines 910--916
+
+ []
+
+<images/CFFTPM.png, id=99, 643.40375pt x 655.44875pt>
+File: images/CFFTPM.png Graphic file (type png)
+ <use images/CFFTPM.png>
+Package pdftex.def Info: images/CFFTPM.png used on input line 919.
+(pdftex.def)             Requested size: 312.00119pt x 317.85225pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--926
+
+ []
+
+[15 <./images/CFFTPM.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 927--930
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 935--942
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--948
+
+ []
+
+[16] [17]
+Overfull \hbox (61.55296pt too wide) in paragraph at lines 1028--1051
  [] 
  []
 
-[15] <images/SeakerCreation.png, id=102, 837.1275pt x 520.94624pt>
+[18] <images/SeakerCreation.png, id=114, 837.1275pt x 520.94624pt>
 File: images/SeakerCreation.png Graphic file (type png)
 
 <use images/SeakerCreation.png>
-Package pdftex.def Info: images/SeakerCreation.png used on input line 957.
+Package pdftex.def Info: images/SeakerCreation.png used on input line 1060.
 (pdftex.def)             Requested size: 312.00119pt x 194.15407pt.
- [16]
-Overfull \hbox (12.30379pt too wide) in paragraph at lines 964--967
+ [19 <./images/SeakerCreation.png>]
+Overfull \hbox (12.30379pt too wide) in paragraph at lines 1067--1070
 \OT1/cmr/m/n/10.95 (https://www.raspberrypi.org/downloads/raspbian/). Note the 
 lo-ca-tion where
  []
 
 
-Overfull \hbox (14.98598pt too wide) in paragraph at lines 970--971
+Overfull \hbox (14.98598pt too wide) in paragraph at lines 1073--1074
 []\OT1/cmr/m/n/10.95 prep.sh file lo-ca-tion: https://s3-us-west-2.amazonaws.co
 m/seaker/prep.sh 
  []
@@ -931,11 +957,11 @@ Missing character: There is no ‚ in font cmr8!
 Missing character: There is no Ä in font cmr8!
 Missing character: There is no ù in font cmr8!
 )
-Underfull \hbox (badness 10000) in paragraph at lines 977--982
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1085
 
  []
 
-[17 <./images/SeakerCreation.png>]
+[20]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
@@ -943,129 +969,129 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1114
 
  []
 
-[18]
-Overfull \hbox (2.01836pt too wide) in paragraph at lines 1025--1029
+
+Overfull \hbox (2.01836pt too wide) in paragraph at lines 1128--1132
 \OT1/cmr/m/n/10.95 win-dow and en-ter the com-mand be-low. Re-place the "c8:26:
 3b:d2:63:d5"
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1062
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1165
 
  []
 
 
-LaTeX Warning: Reference `fig:screen-1' on page 20 undefined on input line 1067
+LaTeX Warning: Reference `fig:screen-1' on page 23 undefined on input line 1170
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1069
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1075
+Underfull \hbox (badness 10000) in paragraph at lines 1173--1178
 
  []
 
-<images/seaker-hh-screen-2.jpg, id=118, 255.95625pt x 412.54124pt>
+<images/seaker-hh-screen-2.jpg, id=130, 255.95625pt x 412.54124pt>
 File: images/seaker-hh-screen-2.jpg Graphic file (type jpg)
 
 <use images/seaker-hh-screen-2.jpg>
-Package pdftex.def Info: images/seaker-hh-screen-2.jpg used on input line 1078.
+Package pdftex.def Info: images/seaker-hh-screen-2.jpg used on input line 1181.
 
 (pdftex.def)             Requested size: 113.81102pt x 183.43234pt.
- [20 <./images/seaker-hh-screen-2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1102
+ [23 <./images/seaker-hh-screen-2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1205
 
  []
 
-<images/seaker-hh-screen-3.jpg, id=123, 255.95625pt x 416.55624pt>
+<images/seaker-hh-screen-3.jpg, id=135, 255.95625pt x 416.55624pt>
 File: images/seaker-hh-screen-3.jpg Graphic file (type jpg)
 
 <use images/seaker-hh-screen-3.jpg>
-Package pdftex.def Info: images/seaker-hh-screen-3.jpg used on input line 1115.
+Package pdftex.def Info: images/seaker-hh-screen-3.jpg used on input line 1218.
 
 (pdftex.def)             Requested size: 113.81102pt x 185.21758pt.
- [21 <./images/seaker-hh-screen-3.jpg>]
-<images/user_process_flow.jpg, id=127, 427.5975pt x 481.8pt>
+ [24 <./images/seaker-hh-screen-3.jpg>]
+<images/user_process_flow.jpg, id=139, 427.5975pt x 481.8pt>
 File: images/user_process_flow.jpg Graphic file (type jpg)
 
 <use images/user_process_flow.jpg>
-Package pdftex.def Info: images/user_process_flow.jpg used on input line 1138.
+Package pdftex.def Info: images/user_process_flow.jpg used on input line 1241.
 (pdftex.def)             Requested size: 227.62204pt x 256.47023pt.
- [22 <./images/user_process_flow.jpg>]
-(./2018_CSUCI_EricGentry_Thesis.bbl) [23]
-Overfull \hbox (6.5347pt too wide) in paragraph at lines 1199--1200
+ [25 <./images/user_process_flow.jpg>]
+(./2018_CSUCI_EricGentry_Thesis.bbl [26]) [27]
+Overfull \hbox (6.5347pt too wide) in paragraph at lines 1302--1303
 []\OT1/cmr/m/n/10.95 prevent adding more to back-log than nec-es-sary by pre-ve
 nt-ing over-confiscation 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1206
+Underfull \hbox (badness 10000) in paragraph at lines 1307--1309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1215--1220
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1323
 
  []
 
-[24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1261--1262
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1263--1264
+[28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1267--1271
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1274--1278
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1279--1285
-
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1293
+Underfull \hbox (badness 10000) in paragraph at lines 1377--1381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1302--1305
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1388
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1307
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1308--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1314--1318
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1413
 
  []
 
-[27] [28] [29] [30] [31] [32] [33] [34] [35]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1417--1421
+
+ []
+
+[31] [32] [33] [34] [35] [36] [37] [38] [39]
 (./2018_CSUCI_EricGentry_Thesis.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1075,10 +1101,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9338 strings out of 492995
- 132501 string characters out of 6132704
- 280991 words of memory out of 5000000
- 12663 multiletter control sequences out of 15000+600000
+ 9348 strings out of 492995
+ 132689 string characters out of 6132704
+ 282831 words of memory out of 5000000
+ 12672 multiletter control sequences out of 15000+600000
  17133 words of font info for 74 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  42i,18n,52p,3343b,1142s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1092,10 +1118,10 @@ al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on 2018_CSUCI_EricGentry_Thesis.pdf (44 pages, 818725 bytes).
+Output written on 2018_CSUCI_EricGentry_Thesis.pdf (48 pages, 904622 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 223 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

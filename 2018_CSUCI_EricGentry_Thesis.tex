@@ -579,23 +579,78 @@ but all have the common goal of finding usable digital evidence for preventing f
 harm to society and preserving the potential digital evidence's 
 integrity for means of presentation in court cases.\\
 
-Paragraph for IDIP\\
+In the early years, some research facilities arose to help create and define the processes
+and procedures necessary.  Among theses were the Computer Analysis and
+Response Team (CART), the Scientific Working Group on Digital Evidence (SWGDE), the
+Technical Working Group on Digital Evidence (TWGDE), and the National Institute of
+Justice (NIJ).  Since their respective inceptions, they have all strived and 
+contributed to standardize on approaches and methods for 
+the handling and processing of digital evidence.\cite{noblett2000recovering}.\\
 
-Paragraph for DCSA\\
+In addition, the United States Department of Justice (DOJ) published 
+{\em Electronic Crime Scene Investigation: A Guide to First Responders}
+\cite{ballou2010electronic} in the early 2000s that outlines
+the necessary four steps for properly investigating digital Evidence:
 
-Rogers' et al\cite{rogers2006computer} proposed CFFTPM is a reliable, repeatable process 
-model designed specifically for digital evidence triage.  It was created in partnership
-with Purdue University's Cyber Forensics and Computer and Information
-Technology Departments, along with the National White Collar Crime
-Center\cite{rogers2006computer}.
-The process was derived from several other military and law enforcement models
-including Integrated Digital Investigation Process model (IDIP), 
-Digital Crime Scene Analysis (DCSA),
-and a military Operations Order (OpOrd).  In coordination with the Southern Indiana 
-Assistant U.S. Attorney's office,
-USADA Steve Debrota, Rogers et al\cite{rogers2006computer} implemented and reported
-on the success of their proposed
-model: Computer Forensics Field Triage Process Model (CFFTPM).  This \\
+\begin{itemize}
+  \item {\em Collection}, which involves searching for digital evidence,
+  deciphering what should be collected, acquiring the media,
+  and chain of custody documentation.
+  \item {\em Examination}, which includes searching the digital media
+  and attempting to reveal the evidence, especially when it is
+  hidden or obscured.
+  \item {\em Analysis}, intending to review the evidence for important
+  legal infringements. 
+  \item {\em Reporting}, for documenting the process used and evidence
+  uncovered in the investigation.
+\end{itemize}
+
+The 2003 {\em Integrated Digital Investigation Process} (IDIP)\cite{carrier2003getting},
+proposed by Carrier, et al is a model that in their own words, "uses the theory
+that a computer is itself a crime scene, called the digital crime scene, and applies crime scene
+investigation techniques."  It consists of five main phases (in addition, see figure \ref{fig:IDIP}):
+
+\begin{itemize}
+  \item {\em Readiness}, for training, preparedness, infrastructure and resources
+  preparation before any investigation even begins.
+  \item {\em Deployment}, which is intended to capture the process for when an 
+  incident requires digital evidence procedures and assignment of resources.
+  \item {\em Physical Crime Scene Investigation}, for processing the physical
+  evidence from the environment.
+  \item {\em Digital Crime Scene Investigation}, for collecting and
+  analyzing the digital evidence that exists in the virtual environment.
+  \item {\em Review}, for examining the process used in the investigation and
+  potential areas for improvements. 
+\end{itemize}
+
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=0.8\textwidth]{images/IDIP.png}
+  \caption{Integrated Digital Investigation Process Model (IDIP)}
+  \label{fig:IDIP}
+\end{figure}
+
+Baryamureeba and Tushabe\cite{baryamureeba2004enhanced} proposed a model based
+on the best parts of the US DOJ's {\em Electronic Crime
+Scene Investigation}, the {\em Abstract Digital Forensics Model}, and 
+the IDIP model.  Their proposal was called the
+Enhanced Integrated Digitial Investigation Process (EIDIP).
+Their model was proposed in 2004 at the annual Digital Forensic Research conference
+(DFRWS)\cite{baryamureeba2004enhanced} and included the following phases:
+
+\begin{itemize}
+  \item {\em Readiness}, same as IDIP.
+  \item {\em Deployment}, which encompasses the Deployment,
+  Physical Crime Scene Investigation, and Digital Crime Scene
+  Investigation phases from IDIP.
+  \item {\em Traceback}, that includes connecting the evidence collected
+  in the previous phase to the suspect(s).  Typically this is done with IP
+  addresses and requires the authority to gather this information.
+  \item {\em Dynamite}, which includes the reconstruction of the events
+  suggested by the evidence and  the documentation and submission to the
+  appropriate legal authories.
+  \item {\em Review}, same as IDIP.
+\end{itemize}
 
 The Association of Chief Police Officers (ACPO), a private company that helped establish and
 develop policing practices in England, Wales, and Northern Ireland for many years,
@@ -603,34 +658,63 @@ put together a {\em Good Practice Guide for Digital Evidence}\cite{williams2012a
 recommended procedures for dealing with digital evidence.  As with other methodologies, this guide
 explains utilizing a four step approach: Plan, Capture, Analyze, Present.\\
 
-Other researchers have recommended similar approaches.
+In 2006, Rogers et al\cite{rogers2006computer} proposed a reliable, repeatable process 
+model designed specifically for digital evidence triage called
+Computer Forensics Field Triage Process Model (CFFTPM). It was created in partnership
+with Purdue University's Cyber Forensics and Computer and Information
+Technology Departments, along with the National White Collar Crime
+Center\cite{rogers2006computer}.
+The process was derived from several other military and law enforcement models
+including IDIP, 
+Digital Crime Scene Analysis (DCSA),
+and a military Operations Order (OpOrd).  In coordination with the Southern Indiana 
+Assistant U.S. Attorney's office,
+USADA Steve Debrota, Rogers et al\cite{rogers2006computer} implemented and reported
+on the success of their proposal.  This amalgamation of approaches is still inspiring 
+the latest trends in Digital Forensic approaches.\\
+
 Shaw et al\cite{shaw2013practical} analyzed the ACPO and focused on the second step (Capture)
 as the primary guideline for evidential integrity.  They strongly suggest compliance with
-digital forensics best practices, like the ones provided in the ACPO.  However, their final 
-recommendation \\
+digital forensics best practices, like the ones provided in the ACPO.  Their final approach
+and recommendation was to combine Linux utilities with a simplistic interface to standardize
+the output and enable investigators who may not have full digitial forensic backgrounds
+to perform triage on potential digital evidence.\\
 
 All of these approaches are intended to help find and gather digital evidence.  They are also intended
-to maintain the forensic integrity.  Many organizations combine these approaches into a system of
-processes and procedures intended for use in their own facility.  Not having a universal standard 
+to maintain the forensic integrity.  Some organizations combine these approaches into a system of
+processes and procedures intended for use in their own facility.  Unfortunately, many organizations have
+home-grown solutions passed down from senior members of the digital forensics team to the newer
+team members.  Not having a universal standard 
 leads to complications and difficulties when digital evidence needs to be shared across other
 jurisdictions and boundaries\cite{ajijola2014review}.\\
 
 \subsubsection{Aquisition Methodology}
 
-As a general approach, this paper splits the act of dealing with digital evidence into two
-separate methodologies: Aquisition and Analysis.  These are the main foci since SEAKER is 
-designed to do both in a very timely fashion.  Aquisition has multiple defintions across
-the digital forensic universe, but in this case it is meant to imply the entire process and
+[MOVE THIS TO THE NEXT CHAPTER!!!!]
+The SEAKER tool is designed specifically for the {\em triage} phase of digital forensic
+investigations.  As a general approach, this research splits the act of dealing with digital evidence into two
+separate methodologies: {\em aquisition} and {\em analysis}.  These are the main foci since SEAKER is 
+designed to do both in a very timely fashion and are the main focus of this research.\\
+
+Aquisition has multiple definitions across
+the digital forensic universe, but in this case it is meant to imply the entire set of processes and
 procedures from training the digital forensic examiners and SEAKER users,
 to collecting the media that potential digital evidence may be stored on, 
-to the SEAKER usage for gathering the information about each device,.\\
+to the SEAKER usage for gathering the information about each device.\\
 
-The ISO guidelines provide an attempt at an internationally accepted approach, with the goal
-of making it easier to compare, combine, and contrast
+The aquisition phase specifically highlighted here is the gathering of physical digital
+media and the capturing of potential digital evidence in the triage environment.  The 
+setup and training materials for creating and using the SEAKER device are referenced in
+the appendix.\\
+
+The analysis step will be discussed in the next section.\\
+
+The ISO/IEC 27037 guidelines provide an attempt at an internationally accepted approach,
+with the goal of making it easier to compare, combine, and contrast
 results for out-of-jurisdiction cases and for data scientists' research.  It provides a
 common reference line for 
-digital forensics.  However, it is not meant to replace laws or regulations.  The main
-purpose is to provide practical
+digital forensics\cite{ajijola2014review}.  However, it is not meant to replace laws or regulations.
+The main purpose is to provide practical
 assistance for investigations involving potential digital evidence, while preventing digital
 evidence corruption.  This
 process facilitates the usability of evidence by other jurisdictions.  This guideline provided
@@ -641,8 +725,27 @@ it only addresses gathering, not actually evaluating or providing results to law
 investigators.\\
 
 \subsubsection{Analysis Methodology}
-Rogers- The primary machine type
-that this model covers is the standard Windows machine.\\
+
+The {\em Analysis} methodology is considered the second phase in the SEAKER approach and 
+can consist of both the {\em triage} analysis stage and the {\em full} analysis stage.
+Specifically, this paper and the SEAKER device focus on the triage stage of Analysis.  This
+stage can be applied in the field or at the digital forensics lab, while the full analysis
+is unlikely to be accomplished in the field.  A full analysis could take many hours or days
+and is not the first priority when serving a search warrant.\\
+
+However, digital evidence triage is a very useful part of an investigation and can be 
+implemented using the SEAKER device.  The triage analysis stage is considered in this research
+to consist of an interactive web page that detectives and investigators can use to 
+lookup search terms from the digital evidence collected from suspect devices plugged into the
+SEAKER device.\\
+
+Rogers et al\cite{rogers2006computer} research in 2006 covered the primary machine type at
+the time: the standard Windows machine.  Unfortunately, this leads to an outdated model over
+time, since the processes and procedures become obsolete as new technology arises.  Along with
+the proliferation of IOT devices, new technologies also have emerged as more mainstream that
+need to be incorporated into a more generalized approach.  Some operating systems are being
+utilized on a more regular basis, like Linux and Mac.  In fact, even our SEAKER device is
+an IOT device based on the unix spin-off of Debian.\\
 
 Ajijola et al\cite{ajijola2014review} - The NIST guidelines provide an in-depth look into mobile devices, helping to explain the technology involved and its
 relationship to the forensic process.  NIST itself is a technological, non-regulatory federal agency under the U.S.
