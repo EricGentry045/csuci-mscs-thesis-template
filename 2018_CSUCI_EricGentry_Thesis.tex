@@ -53,9 +53,9 @@
     backgroundcolor=\color{backcolour},   
     commentstyle=\color{codegreen},
     keywordstyle=\color{magenta},
-    numberstyle=\scriptsize\color{codegray},
+    numberstyle=\tiny\color{codegray},
     stringstyle=\color{codepurple},
-    basicstyle=\scriptsize,
+    basicstyle=\tiny,
     breakatwhitespace=false,         
     breaklines=true,                 
     captionpos=b,                    
@@ -680,11 +680,27 @@ and recommendation was to combine Linux utilities with a simplistic interface to
 the output and enable investigators who may not have full digitial forensic backgrounds
 to perform triage on potential digital evidence.\\
 
+The ISO/IEC 27037 guidelines provide an attempt at an internationally 
+recognized approach,
+with the goal of making it easier to compare, combine, and contrast
+results for out-of-jurisdiction cases and for data scientists' research.  It provides a
+common reference line for 
+digital forensics\cite{ajijola2014review}.  However, it is not meant to replace laws or regulations.
+The main purpose is to provide practical
+assistance for investigations involving potential digital evidence, while preventing digital
+evidence corruption.  This
+process facilitates the usability of evidence by other jurisdictions.  This guideline provided
+four steps for handling
+potential digital evidence: Identification, Collection, Acquisition, and Preservation.  However,
+this is incomplete, as
+it only addresses gathering, not actually evaluating or providing results to law enforcement
+investigators.\\
+
 All of these approaches are intended to help find and gather digital evidence.  They are also intended
 to maintain the forensic integrity.  Some organizations combine these approaches into a system of
 processes and procedures intended for use in their own facility.  Unfortunately, many organizations have
 home-grown solutions passed down from senior members of the digital forensics team to the newer
-team members.  Not having a universal standard 
+team members.  Not having a universally recognized and accepted standard 
 leads to complications and difficulties when digital evidence needs to be shared across other
 jurisdictions and boundaries\cite{ajijola2014review}.\\
 
@@ -709,20 +725,7 @@ the appendix.\\
 
 The analysis step will be discussed in the next section.\\
 
-The ISO/IEC 27037 guidelines provide an attempt at an internationally accepted approach,
-with the goal of making it easier to compare, combine, and contrast
-results for out-of-jurisdiction cases and for data scientists' research.  It provides a
-common reference line for 
-digital forensics\cite{ajijola2014review}.  However, it is not meant to replace laws or regulations.
-The main purpose is to provide practical
-assistance for investigations involving potential digital evidence, while preventing digital
-evidence corruption.  This
-process facilitates the usability of evidence by other jurisdictions.  This guideline provided
-four steps for handling
-potential digital evidence: Identification, Collection, Acquisition, and Preservation.  However,
-this is incomplete, as
-it only addresses gathering, not actually evaluating or providing results to law enforcement
-investigators.\\
+
 
 \subsubsection{Analysis Methodology}
 
@@ -1052,7 +1055,7 @@ Table~\ref{tab:RequiredSoftware}
 \end{center}
 
 The following creation process is required to setup the SEAKER device
-to the specifications outlined in this paper.  The Figure~\ref{fig:SeakerCreation} 
+to the specifications outlined in this paper.  Figure~\ref{fig:SeakerCreation} 
 outlines the general process, while the specific steps are listed below.
 
   \begin{figure}[ht]
@@ -1064,19 +1067,23 @@ outlines the general process, while the specific steps are listed below.
 \newpage
 
 \begin{enumerate}
-  \item Download the latest Raspbian Jessie Lite operating system\\
+  \item Download the latest Raspbian Stretch Lite operating system\\
   (https://www.raspberrypi.org/downloads/raspbian/).
   Note the location where file is saved.
-  \item Download the most recent copy of prep.sh and ssh. These files
-  contain SEAKER code.
+  \item Download the most recent copy of {\em prep.sh}, {\em ssh}, and the 
+  folder called {\em seakerfiles}. These files
+  contain SEAKER setup and running code.
     \begin{itemize}
       \item prep.sh file location: https://s3-us-west-2.amazonaws.com/seaker/prep.sh
       \item ssh file location: https://s3-us-west-2.amazonaws.com/seaker/ssh
+      \item seakerfiles location: https://s3-us-west-2.amazonaws.com/seaker/seakerfiles
     \end{itemize}
   \item Open prep.sh and edit the default configuration information
   (shown below). At minimum it is recommended to change the Raspberry
   Pi and WiFi passwords.
-  \lstinputlisting[language=bash]{config.sh}
+
+  \lstinputlisting[language=bash]{code/config.sh}
+
   NOTE: It is recommended to change the WIFI Name and IP Address when
   setting up multiple SEAKER environments over time to ensure each
   environment has unique identifying information.\\
@@ -1087,15 +1094,20 @@ outlines the general process, while the specific steps are listed below.
       \item Name: SEAKER02, IP Address: 192.168.102.1
       \item Name: SEAKER03, IP Address: 192.168.103.1
     \end{enumerate}
-  \item Insert micro SD card into computer. An adapter will be required.
-  \item Open disk imaging software. Map to the Raspbian Jessie Lite file
+  \item Insert micro SD card into computer (not the Raspberry Pi).
+  An adapter will likely be required.
+  \item Open disk imaging software (Etcher for Mac, or SDFormatter and 
+  Win32 Disk Imager for Windows).
+  Map to the Raspbian Stretch Lite file
   location, choose the micro SD card as the destination, and select to burn
   the image. (Refer to the chosen imaging software documentation for
-  specific instructions on using this tool)
-  \item Map to the micro SD card in file explorer. Copy ssh and prep.sh
-  onto the micro SD card.
-  \item Remove the micro SD card from the computer. Insert the card into
-  the Raspberry Pi.
+  specific instructions on using this tool.)  Do not remove the micro SD
+  card from the computer.
+  \item Map to the micro SD card (Finder for Mac, File Explorer for Windows).
+  Copy ssh, prep.sh, and the seakerfiles folder onto the micro SD card's
+  {\em boot} partition.
+  \item Remove the micro SD card from the computer.
+  \item Insert the card into the Raspberry Pi.
   \item Power on the Raspberry Pi by plugging it in with the power cord.
   \item Identify the local IP Address of the Raspberry PI:\\
   If installing with Option 1 (router):
@@ -1149,7 +1161,7 @@ outlines the general process, while the specific steps are listed below.
         (\verb|raspberry|).
       \end{itemize}
     \end{itemize}
-  \item Run the preparation script:
+  \item Run the preparation script by typing the following on the command line:
   \begin{verbatim}
     /bin/bash /boot/prep.sh
   \end{verbatim}
@@ -1163,33 +1175,36 @@ outlines the general process, while the specific steps are listed below.
 After collecting all the media devices at the scene, the investigator
 will triage them with SEAKER. Here are the steps:\\
 
-(1)~Connect the RP to the power, and after waiting for about a minute
-to let it start, connect to the RP's hotspot (WiFi network). Depending
+(1)~Connect the RP to the power and wait for about a minute
+to let it finish booting up.
+Connect to the RP's Wireless Access Point (WiFi network). Depending
 on the setup, the WiFi's SSID will be ``SEAKER01'' or ``SEAKER02''
-etc. (if there were to be more than one SEAKER at the scene). See
-Figure~\ref{fig:screen-1}. Note that the hotspot is password
-protected; again, the password may be configured.\\
+etc.  See Figure~\ref{fig:screen-1}. Note that SEAKER's Wireless Access
+Point is password
+protected and matches the one specified in the prep.sh script file.\\
+
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=4cm]{images/seaker-hh-screen-1.jpg}
+  \caption{iPhone WIFI connection to the SEAKER.}\label{fig:screen-1}
+  \end{center}
+\end{figure}
 
 (2)~At the same time the investigator may connect all the media
 devices to the RP. This may be done concurrently with the previous
-step. Note that in order to examine a HD it will be removed from the
+step. Note that in order to examine a digital media it will need to be
+removed from the
 computer, and connected to the RP; this may be done through a
 write-blocker interface but it is not necessary.\\
 
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=4cm]{images/seaker-hh-screen-2.jpg}
-\caption{Investigator's handheld view: using a browser,
-connect to {\tt http://seaker01.local}}\label{fig:screen-2}
-\end{center}
-\end{figure}
-
-(3)~Once connected to the hotspot, the investigator will open any
-web browser on their handheld, and direct it to go to
-\verb|http://seaker01.local| . We decided to allow access
-through a web browser as this is the most universal way to connect;
-any device (iPhone, iPad, Android, laptop, etc.) can connect to a
-hotspot and open a browser.  Once the browser establishes the
+(3)~Once connected to the SEAKER's Wireless Access Point,
+the investigator will open any
+web browser on their connected device and direct it to go to
+\verb|http://seaker01.local|. Access is allowed
+through a web browser, as this is the most universal way to connect
+on any device (iPhone, iPad, Android, laptop, etc.).  These
+devices and many more can connect to a Wireless Access Point
+and open a browser.  Once the browser establishes the
 connection, the user will see Figure~\ref{fig:screen-2}. Note that the
 keywords (or regular expression patterns) present in the ``Type in
 Search Terms:'' can be pre-loaded before arriving at the scene, or
@@ -1203,23 +1218,23 @@ to find words where number~9 is the last character of the line, we use
 \verb|9$|. There are a vast number of possibilities; we can also
 replace \verb|grep| with \verb|egrep| that has an even richer syntax.\\
 
-(4)~Once any storage devices that are found at a search warrant scene
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=4cm]{images/seaker-hh-screen-2.jpg}
+  \caption{Investigator's handheld view: using a browser,
+  connect to {\tt http://seaker01.local}}\label{fig:screen-2}
+  \end{center}
+\end{figure}
+
+(4)~Once any storage media devices that are found at a search warrant scene
 are connected to the RP, the investigator will typically wait for a
-few minutes (we have seen times up to 10 minutes for 1Tb disks with
-millions of files) for the file list to be built. The search will then
-be carried out very quickly: essentially, \verb|grep| browses the file
+few minutes (with some times up to 10 minutes for 1Tb disks with
+millions of files) for the file list to be built. Searches can then
+be carried out very quickly; essentially, \verb|grep| browses the file
 list, line by line, outputting those lines that conform to at least
 one pattern specified in the ``Type in Search Terms:'' window. Once
 this finishes, the investigator will have the results presented as in
 Figure~\ref{fig:screen-3}.
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=4cm]{images/seaker-hh-screen-3.jpg}
-\caption{Investigator's handheld view: the results of the search of a
-particular device.}\label{fig:screen-3}
-\end{center}
-\end{figure}
 
 The filenames themselves can be incriminating evidence, such as in
 Child Pornography (CP) cases, where the material has a commonly used
@@ -1236,15 +1251,34 @@ evidence, and one of the requirements of SEAKER was to be fast so that
 investigators can start getting intelligence quickly from the initial
 processing of the scene.
 
+\newpage
+
 \begin{figure}[ht]
-\begin{center}
-\includegraphics[width=8cm]{images/user_process_flow.jpg}
-\caption{The functionality of SEAKER from the user perspective.}
-\end{center}
+  \begin{center}
+  \includegraphics[width=4cm]{images/seaker-hh-screen-3.jpg}
+  \caption{Investigator's handheld view: the results of the search of a
+  particular device.}\label{fig:screen-3}
+  \end{center}
 \end{figure}
 
+\newpage
+(5)~The user process flow is documented in the following
+figure~\ref{fig:user_process_flow}.
+
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=8cm]{images/user_process_flow.jpg}
+  \caption{The functionality of SEAKER from the user perspective.}
+  \label{fig:user_process_flow}
+  \end{center}
+\end{figure}
+
+\newpage
 \subsection{Code}
-Some useful code.
+\subsubsection{Filename Collection Code (in C)}
+\lstinputlisting[language=bash]{code/collect_files.c}
+
+\subsubsection{Maybe other code?}
 
 
 \newpage
