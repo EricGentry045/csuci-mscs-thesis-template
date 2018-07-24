@@ -25,7 +25,15 @@
 \usepackage{algorithm}
 \usepackage[all]{xy}
 \usepackage{pdfpages}
-% \doublespacing
+
+% Glossary stuff - put definitions in defns.tex file
+\usepackage{glossaries}
+\loadglsentries{defns}
+\makenoidxglossaries
+
+% double spacing!
+\doublespacing
+
 \renewcommand{\topfraction}{0.9}	% max fraction of floats at top
 \renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
 %   Parameters for TEXT pages (not float pages):
@@ -365,7 +373,7 @@ ALL RIGHTS RESERVED
 \maketitle
 
 \small{\textbf{Keywords}: Digital Forensics, Digital Forensics Triage, Mobile Digital Forensics,
-Digital Evidence, Digital Evidence, Forensic Tools, Raspberry Pi}
+Digital Evidence, Digital Evidence, Forensic Tools, \gls{rpi}}
 \\
 
 \begin{abstract}
@@ -375,21 +383,25 @@ the deprived pool of Digital Forensic Investigators is causing a backlog to form
 forensics labs around the world.  This backlog leads to delays in evidence analysis and reporting, causing
 investigators and prosecutors to postpone or even drop on-going cases.\\
 
-The SEAKER device is a digital forensic triage tool that is designed to be simple, portable, inexpensive,
-robust, and easy to use.  SEAKER is an acronym for Storage Evaluator And Knowledge Extraction Reader.  
-Utilizing a raspberry pi, this is a novel approach to helping provide immediate feedback to investigators
+The \gls{seaker} device is a digital forensic triage tool that is designed to be simple, portable, inexpensive,
+robust, and easy to use.  \gls{seaker} is an acronym for Storage Evaluator And Knowledge Extraction Reader.  
+Utilizing a \gls{rpi}, this is a novel approach to helping provide immediate feedback to investigators
 along with attempting to stem the backlog problem.  It was originally developed for on-scene investigations
 that require immediate feedback, especially in time-sensitive investigations.  It also appears to be an
-excellent tool to help reduce the backlog by preventing over-collection of digital evidence.  SEAKER is not
+excellent tool to help reduce the backlog by preventing over-collection of digital evidence.  \gls{seaker} is not
 meant to replace a fully-functional digital forensic lab, but instead to augment the initial investigation
 and help reduce the backlog.  This research and device overview proposes the mobile, inexpensive, digital
-triage device called SEAKER.
+triage device called \gls{seaker}.
 \end{abstract}
 
 \newpage
 \pagenumbering{roman}
 
 \tableofcontents
+
+\newpage
+
+\printnoidxglossaries
 
 \newpage
 
@@ -482,17 +494,17 @@ investigation tasks in multiple ways:
   warrant.
   \item It limits the number of devices and therefore the amount of data required in the in-depth
   analysis phase at the lab.
-  \item It minimized the impact and inconvenience to innocent parties at the site of the 
+  \item It minimizes the impact and inconvenience to innocent parties at the site of the 
   search warrant.  The devices that are searched and found to have no evidenciary value can be
   deemed inconsequencial to the case and remain at the scene.
   \item It may be used to provide initial, albeit simplified, analysis results on potential
   digital evidence ingested into the digital forensic lab.
 \end{enumerate}
 
-The topic explored in this paper is a portable, inexpensive, efficient device, named SEAKER,
+The topic explored in this paper is a portable, inexpensive, efficient device, named \gls{seaker},
 that is intended
 to overcome the need for a full digital
-forensic lab equipment suite to be brought into the field.  The SEAKER device was conceived and 
+forensic lab equipment suite to be brought into the field.  The \gls{seaker} device was conceived and 
 an initial prototype was produced at the California State University Channel Islands (CSUCI)
 campus in a 
 Masters level Computer Security class (COMP 524, Summer 2017) in direct collaboration with the
@@ -501,26 +513,26 @@ District Attorney's (VCDA) office.\\
 
 
 \subsubsection{Author's Contributions}
-Contributions I have made to the SEAKER device project:
-\begin{itemize}
-  \item Developed the SEAKER \underline{creation} bash script to turn a standard Raspberry Pi into a
-  SEAKER by programmatically
+Contributions I have made to the \gls{seaker} device project:
+\begin{enumerate}
+  \item Developed the \gls{seaker} creation bash script to turn a standard \gls{rpi} into a
+  \gls{seaker} by programmatically
   installing raspbian software packages, setting up WIFI as a wireless access point, adding a web server,
   and preparing the running environment with the proper fileset
   \item Wrote custom C program to increase device searching efficiency in lieu of slower, native operating
   system solutions for finding content on digital media
-  \item Co-presented and demonstrated the initial SEAKER prototype for the Summer 2017 Masters level CSUCI
+  \item Co-presented and demonstrated the initial \gls{seaker} prototype for the Summer 2017 Masters level CSUCI
   Security class project to SCHTTF, CSUCI department heads, and local community leaders
-  \item Presented SEAKER as a thesis project at the April 2018 CSUCI Cyber Security Event to CSUCI President
+  \item Presented \gls{seaker} as a thesis project at the April 2018 CSUCI Cyber Security Event to CSUCI President
   Erika Beck, California State Assembly Member Jacqui Irwin, and local community leaders
-  \item Co-authored a conference paper on the SEAKER project and the technology behind it
-  \item Updated and enhanced SEAKER functionality to support the latest raspbian operating system (Stretch
+  \item Co-authored a conference paper on the \gls{seaker} project and the technology behind it
+  \item Updated and enhanced \gls{seaker} functionality to support the latest raspbian operating system (Stretch
   Lite, April 2018 release), including enabling ethernet passthrough to the wireless access point
   \item Co-authored by creating Logic Models and assisting with read-throughs for a United States
   Department of Justice (DOJ)
-  grant proposal for future work on this project (SEAKER) and
+  grant proposal for future work on this project (\gls{seaker}) and
   a second, related security project (Voyager)
-\end{itemize}
+\end{enumerate}
 
 \subsection{Literature Review}
 \subsubsection{History of Digital Evidence}
@@ -707,20 +719,20 @@ jurisdictions and boundaries\cite{ajijola2014review}.\\
 \subsubsection{Aquisition Methodology}
 
 [MOVE THIS TO THE NEXT CHAPTER!!!!]
-The SEAKER tool is designed specifically for the {\em triage} phase of digital forensic
+The \gls{seaker} tool is designed specifically for the {\em triage} phase of digital forensic
 investigations.  As a general approach, this research splits the act of dealing with digital evidence into two
-separate methodologies: {\em aquisition} and {\em analysis}.  These are the main foci since SEAKER is 
+separate methodologies: {\em aquisition} and {\em analysis}.  These are the main foci since \gls{seaker} is 
 designed to do both in a very timely fashion and are the main focus of this research.\\
 
 Aquisition has multiple definitions across
 the digital forensic universe, but in this case it is meant to imply the entire set of processes and
-procedures from training the digital forensic examiners and SEAKER users,
+procedures from training the digital forensic examiners and \gls{seaker} users,
 to collecting the media that potential digital evidence may be stored on, 
-to the SEAKER usage for gathering the information about each device.\\
+to the \gls{seaker} usage for gathering the information about each device.\\
 
 The aquisition phase specifically highlighted here is the gathering of physical digital
 media and the capturing of potential digital evidence in the triage environment.  The 
-setup and training materials for creating and using the SEAKER device are referenced in
+setup and training materials for creating and using the \gls{seaker} device are referenced in
 the appendix.\\
 
 The analysis step will be discussed in the next section.\\
@@ -729,25 +741,25 @@ The analysis step will be discussed in the next section.\\
 
 \subsubsection{Analysis Methodology}
 
-The {\em Analysis} methodology is considered the second phase in the SEAKER approach and 
+The {\em Analysis} methodology is considered the second phase in the \gls{seaker} approach and 
 can consist of both the {\em triage} analysis stage and the {\em full} analysis stage.
-Specifically, this paper and the SEAKER device focus on the triage stage of Analysis.  This
+Specifically, this paper and the \gls{seaker} device focus on the triage stage of Analysis.  This
 stage can be applied in the field or at the digital forensics lab, while the full analysis
 is unlikely to be accomplished in the field.  A full analysis could take many hours or days
 and is not the first priority when serving a search warrant.\\
 
 However, digital evidence triage is a very useful part of an investigation and can be 
-implemented using the SEAKER device.  The triage analysis stage is considered in this research
+implemented using the \gls{seaker} device.  The triage analysis stage is considered in this research
 to consist of an interactive web page that detectives and investigators can use to 
 lookup search terms from the digital evidence collected from suspect devices plugged into the
-SEAKER device.\\
+\gls{seaker} device.\\
 
 Rogers et al\cite{rogers2006computer} research in 2006 covered the primary machine type at
 the time: the standard Windows machine.  Unfortunately, this leads to an outdated model over
 time, since the processes and procedures become obsolete as new technology arises.  Along with
 the proliferation of IOT devices, new technologies also have emerged as more mainstream that
 need to be incorporated into a more generalized approach.  Some operating systems are being
-utilized on a more regular basis, like Linux and Mac.  In fact, even our SEAKER device is
+utilized on a more regular basis, like Linux and Mac.  In fact, even our \gls{seaker} device is
 an IOT device based on the unix spin-off of Debian.\\
 
 Ajijola et al\cite{ajijola2014review} - The NIST guidelines provide an in-depth look into mobile devices, helping to explain the technology involved and its
@@ -923,28 +935,28 @@ stated to skip based on type of investigation and prioritizing the investigation
   \caption{Computer Forensic Field Triage Process Model (CFFTPM)}
 \end{figure}
 
-\subsubsection{How SEAKER Can Help}
+\subsubsection{How \gls{seaker} Can Help}
 The research of Hitchcock et al\cite{hitchcock2016tiered} should be referenced for a good process starting point for
 digital forensic labs.\\
 
-Rogers -  This is where the SEAKER portable
+Rogers -  This is where the \gls{seaker} portable
 triage device can help by evaluating every aspect and prevent the on-site investigators from skipping or
 de-prioritizing critical potential evidence.\\
 
 Rogers - This is also an area where the
-SEAKER portable triage device can help eliminate some of the potential problems, for instance technical prowess of the
+\gls{seaker} portable triage device can help eliminate some of the potential problems, for instance technical prowess of the
 on-site investigators and proper lab equipment on-site.\\
 
 Rogers (CFFTPM) - Some particular aspects of the phases are critical to investigators in revealing evidence or potential evidence for
-the SEAKER portable traige device.  Usage/User Profile information is extremely important.  This includes the need to
+the \gls{seaker} portable traige device.  Usage/User Profile information is extremely important.  This includes the need to
 be able to view and search files, folders, registry keys, and file properties associated with a particular user.  The
 Internet Activity artifacts also become very useful, especially in the case of child pornography.  The browser, email,
 and Instant Messaging artifacts can lead directly to potential charges.  Finally, a Chronology/Timeline understanding
 and ability to sort based on it can significantly narrow down the possibilities of which user information and which
 Internet Activity is the most important and critical to the investigation.\\
 
-Rogers (CFFTPM) -Implementing this in the SEAKER portable triage device is crucial for simplicity and ease of use.  As well, it goes a
-long way towards having an implementation of SEAKER being understood and adopted.  Reporting is also a critical need
+Rogers (CFFTPM) -Implementing this in the \gls{seaker} portable triage device is crucial for simplicity and ease of use.  As well, it goes a
+long way towards having an implementation of \gls{seaker} being understood and adopted.  Reporting is also a critical need
 and is implemented in a way that will enable digital forensic investigators to provide early information to
 investigators and prosecutors.  This helps alleviate the need to wait until the backlog of digital evidence is cleared
 to get any information from case-specific digital evidence.\\
@@ -958,14 +970,14 @@ Search warrant
 write blockers
 chain of evidence
 \subsection{Technical Necessity and Implications}
-Raspberry pi
+\gls{rpi}
 Cost 
 human expertise
 DEFR, DES, Digital Forensic 
 
 
 
-\section{Development of SEAKER Device}
+\section{Development of \gls{seaker} Device}
 \label{sect-developmentSeakerDevice}
 great novelty
 collaboration with industry HTTF
@@ -973,7 +985,7 @@ collaboration with industry HTTF
 Masters Security class
 SCHTTF project proposal
 collaborated with SCHTTF
-\subsection{Setup Script For Raspberry Pi}
+\subsection{Setup Script For \gls{rpi}}
 
 \subsection{Rules For Mounting}
 mention write blockers from chapter 2
@@ -1000,29 +1012,29 @@ examples of running on Frank disks
 \section{Appendix}
 \label{sect-Appendix}
 
-\subsection{SEAKER Setup}
-The following set of instructions will detail how to setup the SEAKER
+\subsection{\gls{seaker} Setup}
+The following set of instructions will detail how to setup the \gls{seaker}
 environment for the first time. There are three install options that
-enable SEAKER creators to prepare the device.  See
+enable \gls{seaker} creators to prepare the device.  See
 Table~\ref{tab:RequiredSoftware}
 
 \begin{enumerate}
-  \item {\em Router}: This option is where the Raspberry Pi and the
+  \item {\em Router}: This option is where the \gls{rpi} and the
   secondary computer are connected directly to the same router, thus
   allowing the same local DHCP to assign the IPs of both.  The
   secondary computer is used to prepare the micro SD card and to later
-  remotely and securely connect to the Raspberry Pi to complete the
+  remotely and securely connect to the \gls{rpi} to complete the
   setup.
   
   \item {\em Direct Connect}: This option is where the Raspeberry Pi
   is connected directly to a monitor and keyboard to enable direct
   user input via the termnial.  The secondary computer is necessary to
   prepare the micro SD card, but not used to remotely connect to the
-  Raspberry Pi to complete the set up.
+  \gls{rpi} to complete the set up.
 
   \item {\em Corporate LAN}: This option is almost identical to the
   {\em Router} option, but utilizes a corporate network instead of
-  a local router to connect to the Raspberry Pi.  This option is the
+  a local router to connect to the \gls{rpi}.  This option is the
   most IT intensive, since the IP address assigned to the Raspberry
   Pi is often not easily found.
 \end{enumerate}
@@ -1035,7 +1047,7 @@ Table~\ref{tab:RequiredSoftware}
     \multicolumn{3}{c}{Hardware Required} \\
     \multicolumn{3}{c}{}\\\hline
     & & \\
-    \textbullet Raspberry Pi & \textbullet Raspberry Pi & \textbullet Raspberry Pi \\
+    \textbullet \gls{rpi} & \textbullet \gls{rpi} & \textbullet \gls{rpi} \\
     \textbullet Mac or Windows Computer & \textbullet Mac or Windows Computer & \textbullet Mac or Windows Computer\\
     \textbullet Micro SD card & \textbullet Micro SD card & \textbullet Micro SD card\\
     \textbullet Router & \textbullet Monitor\\
@@ -1051,17 +1063,17 @@ Table~\ref{tab:RequiredSoftware}
     \textbullet IP Scanning software & & \\
     & & \\\hline
   \end{tabular}
-  \captionof{table}{SEAKER set up: Required Hardware and Software}\label{tab:RequiredSoftware}
+  \captionof{table}{\gls{seaker} set up: Required Hardware and Software}\label{tab:RequiredSoftware}
 \end{center}
 
-The following creation process is required to setup the SEAKER device
+The following creation process is required to setup the \gls{seaker} device
 to the specifications outlined in this paper.  Figure~\ref{fig:SeakerCreation} 
 outlines the general process, while the specific steps are listed below.
 
   \begin{figure}[ht]
     \centering
       \includegraphics[width=0.8\textwidth]{images/SeakerCreation.png}
-    \caption{SEAKER Creation Process}\label{fig:SeakerCreation}
+    \caption{\gls{seaker} Creation Process}\label{fig:SeakerCreation}
   \end{figure}
 
 \newpage
@@ -1072,7 +1084,7 @@ outlines the general process, while the specific steps are listed below.
   Note the location where file is saved.
   \item Download the most recent copy of {\em prep.sh}, {\em ssh}, and the 
   folder called {\em seakerfiles}. These files
-  contain SEAKER setup and running code.
+  contain \gls{seaker} setup and running code.
     \begin{itemize}
       \item prep.sh file location: https://s3-us-west-2.amazonaws.com/seaker/prep.sh
       \item ssh file location: https://s3-us-west-2.amazonaws.com/seaker/ssh
@@ -1085,16 +1097,16 @@ outlines the general process, while the specific steps are listed below.
   \lstinputlisting[language=bash]{code/config.sh}
 
   NOTE: It is recommended to change the WIFI Name and IP Address when
-  setting up multiple SEAKER environments over time to ensure each
+  setting up multiple \gls{seaker} environments over time to ensure each
   environment has unique identifying information.\\
   \\
-  For example: If setting up three SEAKER environments, configuration could be:
+  For example: If setting up three \gls{seaker} environments, configuration could be:
     \begin{enumerate}
       \item Name: SEAKER01, IP Address: 192.168.101.1
       \item Name: SEAKER02, IP Address: 192.168.102.1
       \item Name: SEAKER03, IP Address: 192.168.103.1
     \end{enumerate}
-  \item Insert micro SD card into computer (not the Raspberry Pi).
+  \item Insert micro SD card into computer (not the \gls{rpi}).
   An adapter will likely be required.
   \item Open disk imaging software (Etcher for Mac, or SDFormatter and 
   Win32 Disk Imager for Windows).
@@ -1107,20 +1119,20 @@ outlines the general process, while the specific steps are listed below.
   Copy ssh, prep.sh, and the seakerfiles folder onto the micro SD card's
   {\em boot} partition.
   \item Remove the micro SD card from the computer.
-  \item Insert the card into the Raspberry Pi.
-  \item Power on the Raspberry Pi by plugging it in with the power cord.
-  \item Identify the local IP Address of the Raspberry PI:\\
+  \item Insert the card into the \gls{rpi}.
+  \item Power on the \gls{rpi} by plugging it in with the power cord.
+  \item Identify the local IP Address of the \gls{rpi}:\\
   If installing with Option 1 (router):
     \begin{enumerate}
-      \item Plug the Raspberry Pi into the same router being used by the
+      \item Plug the \gls{rpi} into the same router being used by the
       Windows or Mac computer.
       \item Use the IP Scanning tool on the computer to find the local IP
-      Address of the Raspberry Pi. The Manufacturer should be ‘Raspberry
+      Address of the \gls{rpi}. The Manufacturer should be ‘Raspberry
       Pi Foundation’.
     \end{enumerate}
   If installing with Option 2 (Direct Connect):
     \begin{enumerate}
-      \item Connect the monitor and keyboard to the Raspberry Pi.
+      \item Connect the monitor and keyboard to the \gls{rpi}.
       \item Login using the default username (pi) and password (raspberry).
       \item Enter the following command to retrieve the local IP Address:\\
       \begin{verbatim}
@@ -1129,17 +1141,17 @@ outlines the general process, while the specific steps are listed below.
     \end{enumerate}
   If installing with Option 3 (Corporate Network):
     \begin{enumerate}
-      \item The MAC Address of the Raspberry Pi is required. This can be
-      located on the original Raspberry Pi box.
+      \item The MAC Address of the \gls{rpi} is required. This can be
+      located on the original \gls{rpi} box.
       \item For Windows systems, open a command prompt and enter the command
       below. Replace the "c8:26:3b:d2:63:d5" sequence with the MAC Address
-      of the Raspberry Pi being configured.  Use the following command:
+      of the \gls{rpi} being configured.  Use the following command:
       \begin{verbatim}
         arp -a | findstr "c8:26:3b:d2:63:d5"
       \end{verbatim}
       \item For Unix or Linux systems such as Apple or Ubuntu, open a terminal
       window and enter the command below. Replace the "c8:26:3b:d2:63:d5"
-      sequence with the MAC Address of the Raspberry Pi being configured.
+      sequence with the MAC Address of the \gls{rpi} being configured.
       Use the following command:
       \begin{verbatim}
         arp -a | grep "c8:26:3b:d2:63:d5"
@@ -1147,10 +1159,10 @@ outlines the general process, while the specific steps are listed below.
     \end{enumerate}
   \item If installing with Option 1 or 3:
     \begin{itemize}
-      \item SSH into the Raspberry Pi from the laptop or desktop computer.
+      \item SSH into the \gls{rpi} from the laptop or desktop computer.
       \begin{itemize}
         \item If using a client such as Putty, enter the local IP address
-        of the Raspberry Pi, choose SSH and connect. Click \verb|OK| or
+        of the \gls{rpi}, choose SSH and connect. Click \verb|OK| or
         \verb|Yes| on the security warning.
         \item If using a command line utility such as Bash enter the
         following at the prompt:
@@ -1165,28 +1177,28 @@ outlines the general process, while the specific steps are listed below.
   \begin{verbatim}
     /bin/bash /boot/prep.sh
   \end{verbatim}
-  \item Wait for the Raspberry Pi to finish running the script and
-  rebooting. The Raspberry Pi should now be configured as a SEAKER
+  \item Wait for the \gls{rpi} to finish running the script and
+  rebooting. The \gls{rpi} should now be configured as a \gls{seaker}
   and be up and running.
 \end{enumerate}
 
 \newpage
-\subsection{SEAKER Usage}
+\subsection{\gls{seaker} Usage}
 After collecting all the media devices at the scene, the investigator
-will triage them with SEAKER. Here are the steps:\\
+will triage them with \gls{seaker}. Here are the steps:\\
 
 (1)~Connect the RP to the power and wait for about a minute
 to let it finish booting up.
 Connect to the RP's Wireless Access Point (WiFi network). Depending
 on the setup, the WiFi's SSID will be ``SEAKER01'' or ``SEAKER02''
-etc.  See Figure~\ref{fig:screen-1}. Note that SEAKER's Wireless Access
+etc.  See Figure~\ref{fig:screen-1}. Note that \gls{seaker}'s Wireless Access
 Point is password
 protected and matches the one specified in the prep.sh script file.\\
 
 \begin{figure}[ht]
   \begin{center}
   \includegraphics[width=4cm]{images/seaker-hh-screen-1.jpg}
-  \caption{iPhone WIFI connection to the SEAKER.}\label{fig:screen-1}
+  \caption{iPhone WIFI connection to the \gls{seaker}.}\label{fig:screen-1}
   \end{center}
 \end{figure}
 
@@ -1197,7 +1209,7 @@ removed from the
 computer, and connected to the RP; this may be done through a
 write-blocker interface but it is not necessary.\\
 
-(3)~Once connected to the SEAKER's Wireless Access Point,
+(3)~Once connected to the \gls{seaker}'s Wireless Access Point,
 the investigator will open any
 web browser on their connected device and direct it to go to
 \verb|http://seaker01.local|. Access is allowed
@@ -1247,7 +1259,7 @@ preceding character or expression) or simply \verb|lolita|.
 This can be used by the
 investigators to question the suspects.  The questioning usually
 takes place at the same time as the forensic examiners triage the
-evidence, and one of the requirements of SEAKER was to be fast so that
+evidence, and one of the requirements of \gls{seaker} was to be fast so that
 investigators can start getting intelligence quickly from the initial
 processing of the scene.
 
@@ -1268,7 +1280,7 @@ figure~\ref{fig:user_process_flow}.
 \begin{figure}[ht]
   \begin{center}
   \includegraphics[width=8cm]{images/user_process_flow.jpg}
-  \caption{The functionality of SEAKER from the user perspective.}
+  \caption{The functionality of \gls{seaker} from the user perspective.}
   \label{fig:user_process_flow}
   \end{center}
 \end{figure}
@@ -1338,7 +1350,7 @@ Goals:
   \item reduce backlog of digital evidence for tackling backlog
 \end{itemize}
 
-SEAKER tradeoffs: Precision (only relevant files) vs Recall (all relevant files)
+\gls{seaker} tradeoffs: Precision (only relevant files) vs Recall (all relevant files)
 - level of recall required at triage stage can be sacraficed\\
 
 Introduce online storage system for digital forensic metadata format to enhance sharing capabilities across

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 JUL 2018 13:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  23 JUL 2018 20:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -444,64 +444,239 @@ File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count135
 \AM@templatesizebox=\box37
 )
-\c@alg=\count136
-\c@thrm=\count137
+(/usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2017/01/19 v4.29 (NLCT)
 
-(./2018_CSUCI_EricGentry_Thesis.aux
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks33
+\XKV@tempa@toks=\toks34
+)
+\XKV@depth=\count136
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2016/07/31 v2.04 (NLCT)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count137
+)
+\@glsmfirst=\toks35
+\@glsmrest=\toks36
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2016/07/28 v2.27 (NLCT)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count138
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2016/07/28 v2.27 (NLCT)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count139
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count140
+\FP@xia=\count141
+\FP@xib=\count142
+\FP@xfa=\count143
+\FP@xfb=\count144
+\FP@rega=\count145
+\FP@regb=\count146
+\FP@regs=\count147
+\FP@times=\count148
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count149
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks37
+\@dtl@tmpcount=\count150
+\dtl@tmplength=\skip58
+\dtl@sortresult=\count151
+\@dtl@numgrpsepcount=\count152
+\@dtl@datatype=\count153
+\dtl@codeA=\count154
+\dtl@codeB=\count155
+\@dtl@foreach@level=\count156
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/base/glossaries-compat
+ible-307.sty
+Package: glossaries-compatible-307 2017/01/19 v4.29 (NLCT)
+)
+\gls@level=\count157
+\@gls@tmpb=\toks38
+\gls@tmplen=\skip59
+\glskeylisttok=\toks39
+\glslabeltok=\toks40
+\glsshorttok=\toks41
+\glslongtok=\toks42
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-hypern
+av.sty
+Package: glossary-hypernav 2017/01/19 v4.29 (NLCT)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-list.s
+ty
+Package: glossary-list 2017/01/19 v4.29 (NLCT)
+\glslistdottedwidth=\skip60
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-long.s
+ty
+Package: glossary-long 2017/01/19 v4.29 (NLCT)
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count158
+\LTcapwidth=\dimen165
+\LT@head=\box38
+\LT@firsthead=\box39
+\LT@foot=\box40
+\LT@lastfoot=\box41
+\LT@cols=\count159
+\LT@rows=\count160
+\c@LT@tables=\count161
+\c@LT@chunks=\count162
+\LT@p@ftn=\toks43
+)
+\glsdescwidth=\skip65
+\glspagelistwidth=\skip66
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-super.
+sty
+Package: glossary-super 2017/01/19 v4.29 (NLCT)
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count163
+\ST@wd=\dimen166
+\ST@rightskip=\skip67
+\ST@leftskip=\skip68
+\ST@parfillskip=\skip69
+\ST@pageleft=\dimen167
+\ST@headht=\dimen168
+\ST@tailht=\dimen169
+\ST@pagesofar=\dimen170
+\ST@pboxht=\dimen171
+\ST@lineht=\dimen172
+\ST@stretchht=\dimen173
+\ST@prevht=\dimen174
+\ST@toadd=\dimen175
+\ST@dimen=\dimen176
+\ST@pbox=\box42
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
+ty
+Package: glossary-tree 2017/01/19 v4.29 (NLCT)
+\glstreeindent=\skip70
+)) (./defns.tex)
+\c@alg=\count164
+\c@thrm=\count165
+ (./2018_CSUCI_EricGentry_Thesis.aux
 
 LaTeX Warning: Label `sect-background' multiply defined.
 
 )
 \openout1 = `2018_CSUCI_EricGentry_Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 286.
-LaTeX Font Info:    ... okay on input line 286.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 286.
-LaTeX Font Info:    ... okay on input line 286.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 286.
-LaTeX Font Info:    ... okay on input line 286.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 286.
-LaTeX Font Info:    ... okay on input line 286.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 286.
-LaTeX Font Info:    ... okay on input line 286.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 286.
-LaTeX Font Info:    ... okay on input line 286.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
-Package caption Info: subfigure package is loaded.
-Package caption Info: End \AtBeginDocument code.
- (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
-\scratchdimen=\dimen165
-\scratchbox=\box38
-\nofMPsegments=\count139
-\nofMParguments=\count140
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count141
-\MPscratchDim=\dimen166
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
-\everyMPtoPDFconversion=\toks34
+Package caption Info: longtable package is loaded.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
-\c@lstlisting=\count144
-LaTeX Font Info:    Try loading font information for U+lasy on input line 286.
+Package caption Info: subfigure package is loaded.
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count166
+\scratchdimen=\dimen177
+\scratchbox=\box43
+\nofMPsegments=\count167
+\nofMParguments=\count168
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count169
+\MPscratchDim=\dimen178
+\MPnumerator=\count170
+\makeMPintoPDFobject=\count171
+\everyMPtoPDFconversion=\toks45
+)
+\c@lstlisting=\count172
+LaTeX Font Info:    Try loading font information for U+lasy on input line 294.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 286.
+LaTeX Font Info:    Try loading font information for U+msa on input line 294.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 286.
+LaTeX Font Info:    Try loading font information for U+msb on input line 294.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.47998pt on input line 286.
-\AtBeginShipoutBox=\box39
+Package xypdf Info: Line width: 0.47998pt on input line 294.
+\AtBeginShipoutBox=\box44
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -515,71 +690,71 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )) [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 321.
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 329.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 321.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 329.
  [1] [2]
-<DistributionLicense.pdf, id=15, 614.295pt x 794.97pt>
+<DistributionLicense.pdf, id=18, 614.295pt x 794.97pt>
 File: DistributionLicense.pdf Graphic file (type pdf)
 
 <use DistributionLicense.pdf>
-Package pdftex.def Info: DistributionLicense.pdf used on input line 357.
+Package pdftex.def Info: DistributionLicense.pdf used on input line 365.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
  <use DistributionLicense.pdf>
-Package pdftex.def Info: DistributionLicense.pdf used on input line 357.
+Package pdftex.def Info: DistributionLicense.pdf used on input line 365.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<DistributionLicense.pdf, id=18, page=1, 614.295pt x 794.97pt>
+<DistributionLicense.pdf, id=21, page=1, 614.295pt x 794.97pt>
 File: DistributionLicense.pdf Graphic file (type pdf)
 
 <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 357.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 365.
 
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
  <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 357.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 365.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
 
 <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 357.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 365.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
  <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 357.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 365.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: DistributionLicense.pdf Graphic file (type pdf)
 
 <use DistributionLicense.pdf, page 1>
-Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 357.
+Package pdftex.def Info: DistributionLicense.pdf, page1 used on input line 365.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <./DistributionLicense.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 367--370
+Underfull \hbox (badness 10000) in paragraph at lines 375--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--377
+Underfull \hbox (badness 10000) in paragraph at lines 380--385
 
  []
 
-[4] (./2018_CSUCI_EricGentry_Thesis.toc [1])
+[4] [5] (./2018_CSUCI_EricGentry_Thesis.toc [1] [2])
 \tf@toc=\write4
 \openout4 = `2018_CSUCI_EricGentry_Thesis.toc'.
 
- [2]
+ [3] [4]
 (./2018_CSUCI_EricGentry_Thesis.lof
 Overfull \hbox (59.98335pt too wide) in paragraph at lines 6--6
  [][] []\OT1/cmr/m/n/10.95 Investigator's hand-held view: us-ing a browser, con
@@ -590,170 +765,160 @@ Overfull \hbox (59.98335pt too wide) in paragraph at lines 6--6
 \tf@lof=\write5
 \openout5 = `2018_CSUCI_EricGentry_Thesis.lof'.
 
- [3] (./2018_CSUCI_EricGentry_Thesis.lot)
+ [5] (./2018_CSUCI_EricGentry_Thesis.lot)
 \tf@lot=\write6
 \openout6 = `2018_CSUCI_EricGentry_Thesis.lot'.
 
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 410--415
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 422--427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--428
+Underfull \hbox (badness 10000) in paragraph at lines 428--440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--439
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 440--446
+Underfull \hbox (badness 10000) in paragraph at lines 441--451
 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 447--453
+Underfull \hbox (badness 10000) in paragraph at lines 452--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--461
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--472
+Underfull \hbox (badness 10000) in paragraph at lines 459--465
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 492--501
+Underfull \hbox (badness 10000) in paragraph at lines 466--473
 
  []
 
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 506.
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--484
+
+ []
+
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 528--534
+Underfull \hbox (badness 10000) in paragraph at lines 504--513
+
+ []
+
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 540--546
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--541
+Underfull \hbox (badness 10000) in paragraph at lines 547--553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--553
+Underfull \hbox (badness 10000) in paragraph at lines 554--565
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 566--571
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--559
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 560--572
+Underfull \hbox (badness 10000) in paragraph at lines 572--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--581
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--589
-
- []
-
-[5] <images/IDIP.png, id=67, 513.92pt x 124.465pt>
-File: images/IDIP.png Graphic file (type png)
- <use images/IDIP.png>
-Package pdftex.def Info: images/IDIP.png used on input line 628.
-(pdftex.def)             Requested size: 312.00119pt x 75.56459pt.
-
-[6 <./images/IDIP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 655--660
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--675
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 676--682
+Underfull \hbox (badness 10000) in paragraph at lines 587--593
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 683--698
+Underfull \hbox (badness 10000) in paragraph at lines 594--601
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 699--706
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 709--714
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 715--720
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 721--725
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 726--727
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 732--738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 739--744
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 745--752
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 753--759
-
- []
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 608.
+[8] <images/IDIP.png, id=89, 513.92pt x 124.465pt>
+File: images/IDIP.png Graphic file (type png)
+ <use images/IDIP.png>
+Package pdftex.def Info: images/IDIP.png used on input line 640.
+(pdftex.def)             Requested size: 312.00119pt x 75.56459pt.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 761--765
+Underfull \hbox (badness 10000) in paragraph at lines 667--672
+
+ []
+
+[10 <./images/IDIP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 673--687
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 766--769
+Underfull \hbox (badness 10000) in paragraph at lines 688--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--777
+Underfull \hbox (badness 10000) in paragraph at lines 695--710
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 711--718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--726
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 727--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 733--737
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 744--750
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 751--756
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 757--764
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 765--771
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 773--777
 
  []
 
@@ -763,191 +928,201 @@ Underfull \hbox (badness 10000) in paragraph at lines 778--781
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 782--783
+Underfull \hbox (badness 10000) in paragraph at lines 782--789
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 790--793
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 784--786
+Underfull \hbox (badness 10000) in paragraph at lines 794--795
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--790
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 791--797
+Underfull \hbox (badness 10000) in paragraph at lines 796--798
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--803
+Underfull \hbox (badness 10000) in paragraph at lines 799--802
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 805--808
+Underfull \hbox (badness 10000) in paragraph at lines 803--809
 
  []
 
-<images/IOT_chart.jpg, id=86, 1259.70625pt x 565.11125pt>
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 810--815
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--820
+
+ []
+
+<images/IOT_chart.jpg, id=117, 1259.70625pt x 565.11125pt>
 File: images/IOT_chart.jpg Graphic file (type jpg)
 
 <use images/IOT_chart.jpg>
-Package pdftex.def Info: images/IOT_chart.jpg used on input line 811.
+Package pdftex.def Info: images/IOT_chart.jpg used on input line 823.
 (pdftex.def)             Requested size: 312.00119pt x 139.96678pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--820
+Underfull \hbox (badness 10000) in paragraph at lines 827--832
 
  []
 
-[11 <./images/IOT_chart.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 821--824
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 825--827
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 833--836
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 828--830
+Underfull \hbox (badness 10000) in paragraph at lines 837--839
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 831--834
+Underfull \hbox (badness 10000) in paragraph at lines 840--842
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 835--838
+Underfull \hbox (badness 10000) in paragraph at lines 843--846
+
+ []
+
+[18 <./images/IOT_chart.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 847--850
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 839--843
+Underfull \hbox (badness 10000) in paragraph at lines 851--855
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 844--848
+Underfull \hbox (badness 10000) in paragraph at lines 856--860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--854
+Underfull \hbox (badness 10000) in paragraph at lines 861--866
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 855--860
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 861--865
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 867--872
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--875
+Underfull \hbox (badness 10000) in paragraph at lines 873--877
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--881
+Underfull \hbox (badness 10000) in paragraph at lines 879--887
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 882--888
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 889--895
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 888--893
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--902
+Underfull \hbox (badness 10000) in paragraph at lines 894--900
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--909
+Underfull \hbox (badness 10000) in paragraph at lines 901--907
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 908--914
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 910--912
+Underfull \hbox (badness 10000) in paragraph at lines 915--921
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 913--919
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--924
 
  []
 
-<images/CFFTPM.png, id=99, 643.40375pt x 655.44875pt>
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 925--931
+
+ []
+
+<images/CFFTPM.png, id=137, 643.40375pt x 655.44875pt>
 File: images/CFFTPM.png Graphic file (type png)
  <use images/CFFTPM.png>
-Package pdftex.def Info: images/CFFTPM.png used on input line 922.
+Package pdftex.def Info: images/CFFTPM.png used on input line 934.
 (pdftex.def)             Requested size: 312.00119pt x 317.85225pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 927--929
-
- []
-
-[15 <./images/CFFTPM.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 930--933
+Underfull \hbox (badness 10000) in paragraph at lines 939--941
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 934--937
+Underfull \hbox (badness 10000) in paragraph at lines 942--945
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--945
+Underfull \hbox (badness 10000) in paragraph at lines 946--949
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 946--951
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 950--957
 
  []
 
-[16] [17]
-Overfull \hbox (61.55296pt too wide) in paragraph at lines 1031--1054
+[24 <./images/CFFTPM.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 958--963
+
+ []
+
+[25] [26]
+Overfull \hbox (61.55296pt too wide) in paragraph at lines 1043--1066
  [] 
  []
 
-[18] <images/SeakerCreation.png, id=114, 837.1275pt x 520.94624pt>
+[27] [28] <images/SeakerCreation.png, id=158, 837.1275pt x 520.94624pt>
 File: images/SeakerCreation.png Graphic file (type png)
 
 <use images/SeakerCreation.png>
-Package pdftex.def Info: images/SeakerCreation.png used on input line 1063.
+Package pdftex.def Info: images/SeakerCreation.png used on input line 1075.
 (pdftex.def)             Requested size: 312.00119pt x 194.15407pt.
- [19 <./images/SeakerCreation.png>]
-Overfull \hbox (12.30379pt too wide) in paragraph at lines 1070--1073
+ [29 <./images/SeakerCreation.png>]
+Overfull \hbox (12.30379pt too wide) in paragraph at lines 1082--1085
 \OT1/cmr/m/n/10.95 (https://www.raspberrypi.org/downloads/raspbian/). Note the 
 lo-ca-tion where
  []
 
 
-Overfull \hbox (14.98598pt too wide) in paragraph at lines 1077--1078
+Overfull \hbox (14.98598pt too wide) in paragraph at lines 1089--1090
 []\OT1/cmr/m/n/10.95 prep.sh file lo-ca-tion: https://s3-us-west-2.amazonaws.co
 m/seaker/prep.sh 
  []
 
 
-Overfull \hbox (24.23262pt too wide) in paragraph at lines 1079--1080
+Overfull \hbox (24.23262pt too wide) in paragraph at lines 1091--1092
 []\OT1/cmr/m/n/10.95 seakerfiles lo-ca-tion: https://s3-us-west-2.amazonaws.com
 /seaker/seakerfiles 
  []
@@ -963,79 +1138,78 @@ Missing character: There is no ‚ in font cmr6!
 Missing character: There is no Ä in font cmr6!
 Missing character: There is no ù in font cmr6!
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1087--1092
+Underfull \hbox (badness 10000) in paragraph at lines 1099--1104
 
  []
 
-[20]
+[30]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1126
+ [31]
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1138
 
  []
 
 
-Overfull \hbox (2.01836pt too wide) in paragraph at lines 1140--1144
+Overfull \hbox (2.01836pt too wide) in paragraph at lines 1152--1156
 \OT1/cmr/m/n/10.95 win-dow and en-ter the com-mand be-low. Re-place the "c8:26:
 3b:d2:63:d5"
  []
 
-[21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1177
+[32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1187--1189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1178--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1190--1197
 
  []
 
-<images/seaker-hh-screen-1.jpg, id=130, 255.95625pt x 220.825pt>
+<images/seaker-hh-screen-1.jpg, id=178, 255.95625pt x 220.825pt>
 File: images/seaker-hh-screen-1.jpg Graphic file (type jpg)
 
 <use images/seaker-hh-screen-1.jpg>
-Package pdftex.def Info: images/seaker-hh-screen-1.jpg used on input line 1188.
+Package pdftex.def Info: images/seaker-hh-screen-1.jpg used on input line 1200.
 
 (pdftex.def)             Requested size: 113.81102pt x 98.18762pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1193--1199
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1211
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1213--1220
+[34 <./images/seaker-hh-screen-1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1232
 
  []
 
-[23 <./images/seaker-hh-screen-1.jpg>]
-<images/seaker-hh-screen-2.jpg, id=134, 255.95625pt x 412.54124pt>
+<images/seaker-hh-screen-2.jpg, id=182, 255.95625pt x 412.54124pt>
 File: images/seaker-hh-screen-2.jpg Graphic file (type jpg)
 
 <use images/seaker-hh-screen-2.jpg>
-Package pdftex.def Info: images/seaker-hh-screen-2.jpg used on input line 1223.
+Package pdftex.def Info: images/seaker-hh-screen-2.jpg used on input line 1235.
 
 (pdftex.def)             Requested size: 113.81102pt x 183.43234pt.
- [24 <./images/seaker-hh-screen-2.jpg>]
-<images/seaker-hh-screen-3.jpg, id=139, 255.95625pt x 416.55624pt>
+ [35] [36 <./images/seaker-hh-screen-2.jpg>] <images/seaker-hh-screen-3.jpg, id
+=191, 255.95625pt x 416.55624pt>
 File: images/seaker-hh-screen-3.jpg Graphic file (type jpg)
 
 <use images/seaker-hh-screen-3.jpg>
-Package pdftex.def Info: images/seaker-hh-screen-3.jpg used on input line 1258.
+Package pdftex.def Info: images/seaker-hh-screen-3.jpg used on input line 1270.
 
 (pdftex.def)             Requested size: 113.81102pt x 185.21758pt.
- [25 <./images/seaker-hh-screen-3.jpg>]
-<images/user_process_flow.jpg, id=143, 427.5975pt x 481.8pt>
+ [37 <./images/seaker-hh-screen-3.jpg>]
+<images/user_process_flow.jpg, id=195, 427.5975pt x 481.8pt>
 File: images/user_process_flow.jpg Graphic file (type jpg)
 
 <use images/user_process_flow.jpg>
-Package pdftex.def Info: images/user_process_flow.jpg used on input line 1270.
+Package pdftex.def Info: images/user_process_flow.jpg used on input line 1282.
 (pdftex.def)             Requested size: 227.62204pt x 256.47023pt.
- [26 <./images/user_process_flow.jpg>]
+ [38 <./images/user_process_flow.jpg>]
 (./code/collect_files.c
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
 
@@ -1046,87 +1220,87 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <6> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
-) [27]
-(./2018_CSUCI_EricGentry_Thesis.bbl [28]) [29]
-Overfull \hbox (6.5347pt too wide) in paragraph at lines 1336--1337
+) [39]
+(./2018_CSUCI_EricGentry_Thesis.bbl [40]) [41]
+Overfull \hbox (6.5347pt too wide) in paragraph at lines 1348--1349
 []\OT1/cmr/m/n/10.95 prevent adding more to back-log than nec-es-sary by pre-ve
 nt-ing over-confiscation 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1343
+Underfull \hbox (badness 10000) in paragraph at lines 1353--1355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1352--1357
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1369
 
  []
 
-[30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1399
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1401
+[42] [43] [44]
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1404--1408
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1413
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1411--1415
+Underfull \hbox (badness 10000) in paragraph at lines 1416--1420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1416--1422
+Underfull \hbox (badness 10000) in paragraph at lines 1423--1427
 
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1430
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1439--1442
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1443--1444
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1445--1447
+Underfull \hbox (badness 10000) in paragraph at lines 1451--1454
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 1455--1456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1451--1455
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1459
 
  []
 
-[33] [34] [35] [36] [37] [38] [39] [40] [41]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1463--1467
+
+ []
+
+[47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57]
 (./2018_CSUCI_EricGentry_Thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9412 strings out of 492995
- 133640 string characters out of 6132704
- 343016 words of memory out of 5000000
- 12724 multiletter control sequences out of 15000+600000
+ 13307 strings out of 492995
+ 193403 string characters out of 6132704
+ 459189 words of memory out of 5000000
+ 16508 multiletter control sequences out of 15000+600000
  17884 words of font info for 78 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 42i,18n,52p,3343b,1196s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,18n,100p,3343b,1256s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
@@ -1139,10 +1313,10 @@ texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on 2018_CSUCI_EricGentry_Thesis.pdf (50 pages, 964965 bytes).
+Output written on 2018_CSUCI_EricGentry_Thesis.pdf (70 pages, 971511 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
+ 303 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
