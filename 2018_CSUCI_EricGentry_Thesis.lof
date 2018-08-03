@@ -1,8 +1,8 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Integrated Digital Investigation Process Model (IDIP)\relax }}{10}
 \contentsline {figure}{\numberline {2}{\ignorespaces IOT Device Data Growth\relax }}{18}
 \contentsline {figure}{\numberline {3}{\ignorespaces Computer Forensic Field Triage Process Model (CFFTPM)\relax }}{24}
-\contentsline {figure}{\numberline {4}{\ignorespaces \gls {seaker} Creation Process\relax }}{29}
-\contentsline {figure}{\numberline {5}{\ignorespaces iPhone WIFI connection to the \gls {seaker}.\relax }}{34}
-\contentsline {figure}{\numberline {6}{\ignorespaces Investigator's handheld view: using a browser, connect to {\tt http://seaker01.local}\relax }}{36}
-\contentsline {figure}{\numberline {7}{\ignorespaces Investigator's handheld view: the results of the search of a particular device.\relax }}{37}
-\contentsline {figure}{\numberline {8}{\ignorespaces The functionality of \gls {seaker} from the user perspective.\relax }}{38}
+\contentsline {figure}{\numberline {4}{\ignorespaces \gls {seaker} Creation Process\relax }}{30}
+\contentsline {figure}{\numberline {5}{\ignorespaces iPhone WIFI connection to the \gls {seaker}.\relax }}{35}
+\contentsline {figure}{\numberline {6}{\ignorespaces Using a browser to connect to {\tt http://seaker01.local}\relax }}{37}
+\contentsline {figure}{\numberline {7}{\ignorespaces The results of the search of a particular device.\relax }}{38}
+\contentsline {figure}{\numberline {8}{\ignorespaces The functionality of \gls {seaker} from the user perspective.\relax }}{39}
