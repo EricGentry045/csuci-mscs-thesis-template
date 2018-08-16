@@ -998,18 +998,88 @@ In a coordinated effort with SCHTTF, this research is an attempt to help
 solve some of the field environment limitations of digital forensics investigators.
 
 
-\subsection{Legal Necessity and Implications}
-Search warrants are necessary for 
+\subsection{Legal Details}
+In order for digital forensic investigators to obtain the data from a digital device,
+a search warrant for that device must be obtained.  As well, law enforcement must
+obtain a search warrant to acquire the device for searching in the first place.\\
 
-write blockers
-chain of evidence
-\subsection{Technical Necessity and Implications}
-\gls{rpi}
-Cost 
-human expertise
-DEFR, DES, Digital Forensic 
+Search warrants are necessary for law enforcement to obtain crucial evidence in many
+cases.  A search warrant is obtained by a judge's order.  Law enforcement must 
+provide probable cause that a crime 
+was committed and that items connected to that crime are likely to be found 
+in the place specified by the warrant.  The judge will review the matter and if
+they are in agreement, will authorize law enforcement to search a particular location
+for specific items which are declared in the search warrant.\\
 
+When law enforcement aquires the digital devices for an investigation, there is
+an important document that must also accompany them.  This is called the chain of
+evidence or chain of custody, which is used to track who currently has control
+of the evidence and
+who has had control chronologically since it was originally seized.
+The information in the chain
+of evidence is date, time, and location of acquiring, securing authority, and who is
+gaining posession of the device(s).\\
 
+After a digital device has been acquired by digital forensic investigators, they
+must take special care not to alter the device's information in any way.  This 
+requirement figuratively mimics the care a physical forensic investigator must
+take to preserve physical evidence.  Special processes must be followed to ensure
+that the potential digital evidence is not altered and, in fact, must be able to 
+be proven if the matter ends up in a trial.  This is critical to ensure that the
+evidence obtained from the device is admissible in court.\\
+
+One device to aid in the proper handling of digital evidence is called a
+write-blocker.  Digital forensic investigators use this device as an intermediary
+between the devices and the computer systems they plug the devices into for
+investigation.  The typical first step when a device is acquired by a digital
+forensic lab is for the device to imaged (or copied bit by bit) so that the
+image can be used for further evidence searching.  This provides an extra level of
+abstraction, so that the actual device is kept in pristine digital condition.\\
+
+For this research, the SEAKER device is intended to be used for triage investigation
+on digital devices to perfom an initial search for potential digital evidence.
+Instead of having a separate write-blocker device, the \gls{rpi} is setup with
+write-blocking capabilities when digital devices are connected to it.  This
+configuration enables a software-write-blocker to prevent any digital alteration
+to the device.\\
+
+\subsection{Technical Details}
+
+Choosing the \gls{rpi} as the base platform for the SEAKER device was intentional
+and guided by some of the principals of the originating company.\\
+
+\gls{rpi} is manufactured by the Raspberry Pi Foundation in the United Kingdom
+for the purpose of teaching Computer Science in schools and around the world.  It
+is a fully functional CPU with RAM, input and output connections and the ability
+to be powered by batteries, USB, or an electrical wall socket connection.
+The form factor is small and the cost is kept to a minimum for ease of
+aquisition, use, and adaptability.  As of this writing,
+the most powerful version of the \gls{rpi} is \$35.  Uses for the \gls{rpi}
+device are numerous and growing.\\
+
+The SEAKER device project is yet another adaptation of how the \gls{rpi} device
+can be utilized from concept to fully featured digital evidence triage device.\\
+
+Another goal of the SEAKER project is to enable investigators without 
+digitial evidence training or with limited computer training to utilize it
+on-site at the execution of a search warrant.  The SEAKER device is designed to
+be self-sufficient and automatically self-preparing when it is plugged into a 
+power source.  The device will boot, prepare the web server, the wifi hotspot
+and be enabled to handle digital devices that are attached to its USB port.
+Once a digital device is plugged in, it is automatically mounted and scanned.
+A web-page interface was created for accessing the scanned devices when a portable
+wifi-enabled phone or tablet are connected to SEAKER.\\
+
+These attempts to make the process as simple as possible are intentional and 
+make the process of digital evidence triage collection and searching accessible
+to investigators with or without specialized computer knowledge or training.\\
+
+Some specialized training is available to those investigators who want to 
+become digital forensic investigators.  The typical learning takes place over
+a full year of classes and hands-on work through one of several federal or 
+law enforcement agencies.  These lead to certifications like Digital Evidence
+First Responder (DEFR), Digital Evidence Specialist (DES), or Digital Forensic
+Investigator (DFI).\\
 
 \section{Development of \gls{seaker} Device}
 \label{sect-developmentSeakerDevice}
