@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 AUG 2018 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 AUG 2018 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1195,40 +1195,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 1124--1129
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1148
+Underfull \hbox (badness 10000) in paragraph at lines 1147--1153
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1150
-
- []
-
-[32] [33]
-Overfull \hbox (61.55296pt too wide) in paragraph at lines 1214--1237
+[32] [33] [34]
+Overfull \hbox (61.55296pt too wide) in paragraph at lines 1217--1240
  [] 
  []
 
-[34] [35] <images/SeakerCreation.png, id=181, 837.1275pt x 520.94624pt>
+[35] <images/SeakerCreation.png, id=181, 837.1275pt x 520.94624pt>
 File: images/SeakerCreation.png Graphic file (type png)
 
 <use images/SeakerCreation.png>
-Package pdftex.def Info: images/SeakerCreation.png used on input line 1246.
+Package pdftex.def Info: images/SeakerCreation.png used on input line 1249.
 (pdftex.def)             Requested size: 312.00119pt x 194.15407pt.
  [36 <./images/SeakerCreation.png>]
-Overfull \hbox (12.30379pt too wide) in paragraph at lines 1253--1256
+Overfull \hbox (12.30379pt too wide) in paragraph at lines 1256--1259
 \OT1/cmr/m/n/10.95 (https://www.raspberrypi.org/downloads/raspbian/). Note the 
 lo-ca-tion where
  []
 
 
-Overfull \hbox (14.98598pt too wide) in paragraph at lines 1260--1261
+Overfull \hbox (14.98598pt too wide) in paragraph at lines 1263--1264
 []\OT1/cmr/m/n/10.95 prep.sh file lo-ca-tion: https://s3-us-west-2.amazonaws.co
 m/seaker/prep.sh 
  []
 
 
-Overfull \hbox (24.23262pt too wide) in paragraph at lines 1262--1263
+Overfull \hbox (24.23262pt too wide) in paragraph at lines 1265--1266
 []\OT1/cmr/m/n/10.95 seakerfiles lo-ca-tion: https://s3-us-west-2.amazonaws.com
 /seaker/seakerfiles 
  []
@@ -1244,7 +1239,7 @@ Missing character: There is no ‚ in font cmr6!
 Missing character: There is no Ä in font cmr6!
 Missing character: There is no ù in font cmr6!
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1275
+Underfull \hbox (badness 10000) in paragraph at lines 1273--1278
 
  []
 
@@ -1256,23 +1251,23 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
  [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1308--1309
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1312
 
  []
 
 
-Overfull \hbox (2.01836pt too wide) in paragraph at lines 1323--1327
+Overfull \hbox (2.01836pt too wide) in paragraph at lines 1326--1330
 \OT1/cmr/m/n/10.95 win-dow and en-ter the com-mand be-low. Re-place the ``c8:26
 :3b:d2:63:d5''
  []
 
 [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1358--1360
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1361--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1371
 
  []
 
@@ -1280,16 +1275,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1361--1368
 File: images/seaker-hh-screen-1.jpg Graphic file (type jpg)
 
 <use images/seaker-hh-screen-1.jpg>
-Package pdftex.def Info: images/seaker-hh-screen-1.jpg used on input line 1371.
+Package pdftex.def Info: images/seaker-hh-screen-1.jpg used on input line 1374.
 
 (pdftex.def)             Requested size: 113.81102pt x 98.18762pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1376--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1379--1385
 
  []
 
 [41 <./images/seaker-hh-screen-1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1396--1403
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1406
 
  []
 
@@ -1297,7 +1292,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1396--1403
 File: images/seaker-hh-screen-2.jpg Graphic file (type jpg)
 
 <use images/seaker-hh-screen-2.jpg>
-Package pdftex.def Info: images/seaker-hh-screen-2.jpg used on input line 1406.
+Package pdftex.def Info: images/seaker-hh-screen-2.jpg used on input line 1409.
 
 (pdftex.def)             Requested size: 113.81102pt x 183.43234pt.
  [42] [43 <./images/seaker-hh-screen-2.jpg>] <images/seaker-hh-screen-3.jpg, id
@@ -1305,7 +1300,7 @@ Package pdftex.def Info: images/seaker-hh-screen-2.jpg used on input line 1406.
 File: images/seaker-hh-screen-3.jpg Graphic file (type jpg)
 
 <use images/seaker-hh-screen-3.jpg>
-Package pdftex.def Info: images/seaker-hh-screen-3.jpg used on input line 1441.
+Package pdftex.def Info: images/seaker-hh-screen-3.jpg used on input line 1444.
 
 (pdftex.def)             Requested size: 113.81102pt x 185.21758pt.
  [44 <./images/seaker-hh-screen-3.jpg>]
@@ -1313,7 +1308,7 @@ Package pdftex.def Info: images/seaker-hh-screen-3.jpg used on input line 1441.
 File: images/user_process_flow.jpg Graphic file (type jpg)
 
 <use images/user_process_flow.jpg>
-Package pdftex.def Info: images/user_process_flow.jpg used on input line 1453.
+Package pdftex.def Info: images/user_process_flow.jpg used on input line 1456.
 (pdftex.def)             Requested size: 227.62204pt x 256.47023pt.
  [45 <./images/user_process_flow.jpg>]
 (./code/collect_files.c
@@ -1328,68 +1323,68 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 ) [46]
 (./2018_CSUCI_EricGentry_Thesis.bbl [47]) [48]
-Overfull \hbox (6.5347pt too wide) in paragraph at lines 1519--1520
+Overfull \hbox (6.5347pt too wide) in paragraph at lines 1522--1523
 []\OT1/cmr/m/n/10.95 prevent adding more to back-log than nec-es-sary by pre-ve
 nt-ing over-confiscation 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1524--1526
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1529
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1535--1540
+Underfull \hbox (badness 10000) in paragraph at lines 1538--1543
 
  []
 
 [49] [50] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 1581--1582
+Underfull \hbox (badness 10000) in paragraph at lines 1584--1585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1583--1584
+Underfull \hbox (badness 10000) in paragraph at lines 1586--1587
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1587--1591
+Underfull \hbox (badness 10000) in paragraph at lines 1590--1594
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1594--1598
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1601
 
  []
 
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 1599--1605
+Underfull \hbox (badness 10000) in paragraph at lines 1602--1608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1606--1613
+Underfull \hbox (badness 10000) in paragraph at lines 1609--1616
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1622--1625
+Underfull \hbox (badness 10000) in paragraph at lines 1625--1628
 
  []
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 1626--1627
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1628--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1631--1633
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1634--1638
+Underfull \hbox (badness 10000) in paragraph at lines 1637--1641
 
  []
 
@@ -1419,7 +1414,7 @@ texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on 2018_CSUCI_EricGentry_Thesis.pdf (77 pages, 981138 bytes).
+Output written on 2018_CSUCI_EricGentry_Thesis.pdf (77 pages, 981568 bytes).
 PDF statistics:
  326 PDF objects out of 1000 (max. 8388607)
  217 compressed objects within 3 object streams
