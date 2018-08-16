@@ -208,8 +208,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/supertabular/supertabular.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/supertabular/supertabular.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-INPUT defns.tex
-INPUT defns.tex
+INPUT definitions.tex
+INPUT definitions.tex
 INPUT 2018_CSUCI_EricGentry_Thesis.aux
 INPUT 2018_CSUCI_EricGentry_Thesis.aux
 OUTPUT 2018_CSUCI_EricGentry_Thesis.aux

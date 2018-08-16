@@ -4,27 +4,27 @@
 \contentsline {subsection}{\numberline {1.2}Literature Review}{6}
 \contentsline {subsubsection}{\numberline {1.2.1}History of Digital Evidence}{6}
 \contentsline {subsubsection}{\numberline {1.2.2}Process and Procedure Standardization}{8}
-\contentsline {subsubsection}{\numberline {1.2.3}Aquisition Methodology}{12}
-\contentsline {subsubsection}{\numberline {1.2.4}Analysis Methodology}{13}
+\contentsline {subsubsection}{\numberline {1.2.3}Aquisition Methodology}{13}
+\contentsline {subsubsection}{\numberline {1.2.4}Analysis Methodology}{14}
 \contentsline {subsubsection}{\numberline {1.2.5}Combined Aquisition and Analysis Methodologies}{15}
 \contentsline {subsubsection}{\numberline {1.2.6}Digital Evidence Backlog}{17}
-\contentsline {subsubsection}{\numberline {1.2.7}Digital Evidence Triage}{20}
-\contentsline {subsubsection}{\numberline {1.2.8}How \gls {seaker} Can Help}{23}
-\contentsline {section}{\numberline {2}Background}{25}
+\contentsline {subsubsection}{\numberline {1.2.7}Digital Evidence Triage}{21}
+\contentsline {subsubsection}{\numberline {1.2.8}How \gls {seaker} Can Help}{24}
+\contentsline {section}{\numberline {2}Background}{26}
 \contentsline {subsection}{\numberline {2.1}Legal Necessity and Implications}{26}
-\contentsline {subsection}{\numberline {2.2}Technical Necessity and Implications}{26}
-\contentsline {section}{\numberline {3}Development of \gls {seaker} Device}{26}
-\contentsline {subsection}{\numberline {3.1}Conception}{26}
+\contentsline {subsection}{\numberline {2.2}Technical Necessity and Implications}{27}
+\contentsline {section}{\numberline {3}Development of \gls {seaker} Device}{27}
+\contentsline {subsection}{\numberline {3.1}Conception}{27}
 \contentsline {subsection}{\numberline {3.2}Setup Script For \gls {rpi}}{27}
 \contentsline {subsection}{\numberline {3.3}Rules For Mounting}{27}
 \contentsline {subsection}{\numberline {3.4}Code for Searching Device}{27}
 \contentsline {subsection}{\numberline {3.5}Tools Used for Development}{27}
 \contentsline {section}{\numberline {4}Experimental Results}{27}
 \contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{27}
-\contentsline {subsection}{\numberline {4.2}Results}{27}
-\contentsline {section}{\numberline {5}Conclusions and Future Work}{27}
-\contentsline {section}{\numberline {6}Appendix}{27}
-\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{27}
+\contentsline {subsection}{\numberline {4.2}Results}{28}
+\contentsline {section}{\numberline {5}Conclusions and Future Work}{28}
+\contentsline {section}{\numberline {6}Appendix}{28}
+\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{28}
 \contentsline {subsection}{\numberline {6.2}\gls {seaker} Usage}{35}
 \contentsline {subsection}{\numberline {6.3}Code}{40}
 \contentsline {subsubsection}{\numberline {6.3.1}Filename Collection Code (in C)}{40}
