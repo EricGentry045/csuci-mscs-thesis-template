@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex 2018_CSUCI_EricGentry_Thesis"] 1534441173 "2018_CSUCI_EricGentry_Thesis.aux" "2018_CSUCI_EricGentry_Thesis.bbl" "2018_CSUCI_EricGentry_Thesis" 1534441174
+["bibtex 2018_CSUCI_EricGentry_Thesis"] 1534457752 "2018_CSUCI_EricGentry_Thesis.aux" "2018_CSUCI_EricGentry_Thesis.bbl" "2018_CSUCI_EricGentry_Thesis" 1534457868
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "2018_CSUCI_EricGentry_Thesis.aux" 1534441174 15736 506eee3cca5074c8427f3ee0078a50bb ""
+  "2018_CSUCI_EricGentry_Thesis.aux" 1534457868 16209 57a3c17eb6758401e11822cc294508aa ""
   "references.bib" 1534433503 6775 793a5dc4a96ceaf6647618a032c703dd ""
   (generated)
-  "2018_CSUCI_EricGentry_Thesis.bbl"
   "2018_CSUCI_EricGentry_Thesis.blg"
-["pdflatex"] 1534441173 "/Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.tex" "2018_CSUCI_EricGentry_Thesis.pdf" "2018_CSUCI_EricGentry_Thesis" 1534441174
-  "/Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.tex" 1534441171 82458 c8defcb0ae59ad7b0fa481524a763a39 ""
+  "2018_CSUCI_EricGentry_Thesis.bbl"
+["pdflatex"] 1534457867 "/Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.tex" "2018_CSUCI_EricGentry_Thesis.pdf" "2018_CSUCI_EricGentry_Thesis" 1534457868
+  "/Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.tex" 1534457867 85570 cbf7523cc5908f931fabae2902770185 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -177,12 +177,12 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "2018_CSUCI_EricGentry_Thesis.aux" 1534441174 15736 506eee3cca5074c8427f3ee0078a50bb ""
-  "2018_CSUCI_EricGentry_Thesis.bbl" 1534441173 2825 306fd0f384f575ed2f6e73039db8178d "bibtex 2018_CSUCI_EricGentry_Thesis"
-  "2018_CSUCI_EricGentry_Thesis.lof" 1534441174 905 413da80280b78a78fd22abb697b5d269 ""
-  "2018_CSUCI_EricGentry_Thesis.lot" 1534441174 118 9edd992f751f7f303d45abe9b5e30e3a ""
-  "2018_CSUCI_EricGentry_Thesis.tex" 1534441171 82458 c8defcb0ae59ad7b0fa481524a763a39 ""
-  "2018_CSUCI_EricGentry_Thesis.toc" 1534441174 3856 31e7c45d1aa4c8aa650c0e4cba96826a ""
+  "2018_CSUCI_EricGentry_Thesis.aux" 1534457868 16209 57a3c17eb6758401e11822cc294508aa ""
+  "2018_CSUCI_EricGentry_Thesis.bbl" 1534457752 2825 306fd0f384f575ed2f6e73039db8178d "bibtex 2018_CSUCI_EricGentry_Thesis"
+  "2018_CSUCI_EricGentry_Thesis.lof" 1534457868 905 43dc680c93e392778875669e28550c67 ""
+  "2018_CSUCI_EricGentry_Thesis.lot" 1534457868 118 0c92b13e37167c0a49740dc536c22af5 ""
+  "2018_CSUCI_EricGentry_Thesis.tex" 1534457867 85570 cbf7523cc5908f931fabae2902770185 ""
+  "2018_CSUCI_EricGentry_Thesis.toc" 1534457868 4044 22fe508f8a0d4c3bfddfe0bbb35ea150 ""
   "DistributionLicense.pdf" 1525750267 12952 2542255ea66f72678a13dbc390914a58 ""
   "code/collect_files.c" 1531687543 680 8566566719b64bd23f3977ef0c62e8ac ""
   "code/config.sh" 1531687567 369 224ce1a6b79a2a2618300a4d975710e0 ""
@@ -196,9 +196,9 @@
   "images/seaker-hh-screen-3.jpg" 1529000294 43883 52ab1c1eee089c750a31ec4d3e0444a9 ""
   "images/user_process_flow.jpg" 1529000433 46629 14ae46c1532253dfc6382f3d9678ab3c ""
   (generated)
-  "2018_CSUCI_EricGentry_Thesis.toc"
   "2018_CSUCI_EricGentry_Thesis.aux"
-  "2018_CSUCI_EricGentry_Thesis.log"
-  "2018_CSUCI_EricGentry_Thesis.lot"
   "2018_CSUCI_EricGentry_Thesis.lof"
+  "2018_CSUCI_EricGentry_Thesis.log"
+  "2018_CSUCI_EricGentry_Thesis.toc"
   "2018_CSUCI_EricGentry_Thesis.pdf"
+  "2018_CSUCI_EricGentry_Thesis.lot"

@@ -502,12 +502,11 @@ investigation tasks in multiple ways:
 \end{enumerate}
 
 The topic explored in this paper is a portable, inexpensive, efficient device, named \gls{seaker},
-that is intended
-to overcome the need for a full digital
+that is intended to overcome the need for a full digital
 forensic lab equipment suite to be brought into the field.  The \gls{seaker} device was conceived and 
 an initial prototype was produced at the California State University Channel Islands (CSUCI)
 campus in a 
-Masters level Computer Security class (COMP 524, Summer 2017) in direct collaboration with the
+Masters level Cyber Security class (COMP 524, Summer 2017) in direct collaboration with the
 Southern California High Tech Task Force (SCHTTF) division of the Ventura Country
 District Attorney's (VCDA) office.\\
 
@@ -1050,7 +1049,8 @@ and guided by some of the principals of the originating company.\\
 
 \gls{rpi} is manufactured by the Raspberry Pi Foundation in the United Kingdom
 for the purpose of teaching Computer Science in schools and around the world.  It
-is a fully functional CPU with RAM, input and output connections and the ability
+is a fully functional CPU with RAM, input and output connections, status lights
+and the ability
 to be powered by batteries, USB, or an electrical wall socket connection.
 The form factor is small and the cost is kept to a minimum for ease of
 aquisition, use, and adaptability.  As of this writing,
@@ -1083,17 +1083,84 @@ Investigator (DFI).\\
 
 \section{Development of \gls{seaker} Device}
 \label{sect-developmentSeakerDevice}
-great novelty
-collaboration with industry HTTF
+
+great novelty\\
+
+collaboration with industry HTTF\\
+
 \subsection{Conception}
-Masters Security class
-SCHTTF project proposal
-collaborated with SCHTTF
+
+The SEAKER device project came to be in the Masters level Cyber Security class (COMP 524)
+at CSUCI in the Summer semester of 2017.  It was proposed to the class by professor 
+Dr. Michael Soltys during one of the initial lectures as the final project for the
+course.  The attending students agreed and work began on it, in addition to the other
+assignments due in the course.  Dr. Soltys broke down the problem into categories so
+that teams could form and work on each piece individually.  The categories were:
+
+\begin{itemize}
+  \item Connecting hd to a RP/NUC, sensing OS and mounting (2 teams together)
+  \item Searching in the mounted file system (2 teams together)
+  \item Sending report to an iPad/laptop/handheld
+  \item Documentation and troubleshooting
+  \item Testing
+\end{itemize}
+
+This breakdown helped guide each team to get started on their contribution to the
+final project.  However, before the students could begin, the device platform to use,
+the technological method for input and output, and the feature set had to be agreed on.\\
+
+The device platform chosen was the \gls{rpi}.  This enabled the students to work on the platform
+independently, due to the inexpensive nature of it.  As well, two \glspl{rpi} were provided
+for the classroom by SCHTTF and Dr. Soltys, respectively.\\
+
+The input method chosen was setup for two types of input.  The first type was connecting
+the digital devices to the SEAKER device.  This was agreed upon to be either with the USB
+port that was built into the \gls{rpi} or via a USB to SATA converter cable.  This enabled
+the digital device to be mounted by the Raspbian Operating System and automatically 
+searched for content via the mounting rules.  The second type of input was human input
+for a set of terms to search.  The search terms were agreed to be put into a web form that
+would be submitted to the on-board web-server.\\
+
+The output method clearly needed to match the input method in terms of technology, so the
+use of the on-board web-server was chosen to be the output method.  When investigators are
+using the SEAKER device, they would be shown a webpage asking them to submit a 
+set of search criteria.  The results would be given back to the phone or tablet in HTML.
+This also enabled quick building of the HTML framework and response mechanisms.\\
+
+Finally, the feature set needed to be agreed to.  With direct guidance from the SCHTTF,
+specifically Frank Lyu, the class agreed to the following:
+
+\begin{itemize}
+  \item Write-blocking of attached digital evidence devices
+  \item SATA and USB storage devices
+  \item FAT, NTFS and EXT* file systems to be read from storage devices
+  \item Filename-keyword filter
+  \begin{itemize}
+    \item Prepopulated keyword list
+    \item Customization of keyword list
+  \end{itemize}
+  \item Status lights for power, and device status
+  \item Wireless connection to a phone or tablet for keyword input and results
+  \item Ability to find and display search results and digital device hardware information
+\end{itemize}
+
+SCHTTF project proposal\\
+
+collaborated with SCHTTF\\
+
 \subsection{Setup Script For \gls{rpi}}
 
+\subsubsection{Web Server}
+
+\subsubsection{WIFI Setup}
+
 \subsection{Rules For Mounting}
+
 mention write blockers from chapter 2
+
 \subsection{Code for Searching Device}
+
+\subsection{Web Code}
 
 \subsection{Tools Used for Development}
 
