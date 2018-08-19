@@ -180,6 +180,14 @@
 \def\LEN{\tt{LEN}}
 \newcommand{\dd}{\mathinner{\ldotp\ldotp}}
 
+% verbatim single quote fixer
+\makeatletter
+\let \@sverbatim \@verbatim
+\def \@verbatim {\@sverbatim \verbatimplus}
+{\catcode`'=13 \gdef \verbatimplus{\catcode`'=13 \chardef '=13 }} 
+\makeatother
+
+
 \newif\ifShow
 \Showfalse
 % MATH -----------------------------------------------------------
@@ -626,7 +634,7 @@ proposed by Carrier, et al is a model that in their own words:
 that a computer is itself a crime scene, called the digital crime scene, and applies crime scene
 investigation techniques.''
 \end{quote}
-It consists of five main phases (in addition, see figure \ref{fig:IDIP}):
+It consists of five main phases (in addition, see Figure~\ref{fig:IDIP}):
 
 \begin{enumerate}
   \item {\em Readiness}, for training, preparedness, infrastructure and resources
@@ -1164,9 +1172,80 @@ triage larger amounts of devices.\\
 
 \subsection{Setup Script For \gls{rpi}}
 
+The idea of a setup script for the \gls{rpi} was conceived early by the author, since
+each team was assigned to work independently and the deadline of implementation was
+extremely short.  This was, after all, a summer class.  In order to get everyone in
+the class up and running and able to do work on their individual pieces, there
+needed to be a baseline for everyone to start working with.  Starting with the 
+base operating system image, called Raspbian, the setup script was meant to modify
+it to handle the scenarios we were attempting to create.\\
+
+First, there needed to be some initial setup for keyboard, timezone, SSH, hostname,
+and installing some additional packages.  To prevent unnecessary 
+software from occupying the local Micro SD card, the ``lite'' version of Raspbian
+was chosen as the base operating system.  However, that meant that additional
+Raspbian packages needed to be added; for instance, the Apache web server, a DHCP
+server, PHP, the software to convert the wireless NIC card to an access point, and
+the device drivers for FAT32, NTFS, HFS, EXT*, etc.\\
+
+Next, the setup script needed to customize the SEAKER device based on user
+parameters.  These include hostname, IP address, DHCP supported range, Raspbian
+user {\em pi}'s password, and the wireless access point password.\\
+
+The setup script then prepares the \gls{rpi} access point configuration, web server
+configuration, mounting rules, default web-pages, and compiles the custom C code
+for searching (listed in appendix).\\
+
+Finally, in order to avoid simple hacking and password locations, the setup
+script clears the history, sets itself up to be deleted at boot time, and removes
+any other reminants from the original setup.\\
+
+Most of this was done by the author and published to the class so that they could
+begin using the \gls{rpi} as a SEAKER device and begin their work to implement the
+rest of the functionality.
+
 \subsubsection{Web Server}
 
+The Apache web server was chosen, since it is a standard Unix-based operating system
+choice for serving web pages.  It also supports backend coding opportunities when 
+coupled with a server-side code execution program like PHP.  Setting this up was
+included as a part of the setup script.\\
+
+A couple of steps were needed to implement the web server.  The first was to
+load the Apache and PHP packages coinciding with the Raspbian operating system.  
+Since it is a branch off of Debian operating system, these were easily found and
+worked well.  The next step was to load all of the files that were needed for
+the HTML and PHP to display and operate properly.  The final step was to modify
+the access to each of the files to be specifically accessible by the web
+server daemon account.  This was necessary to ensure the files could be read and
+served up by the web server when requested.\\
+
+In addition, the {\em collection} code for searching the drive needed to have 
+access to a shared location for the filename and folder searching algorithm.
+The {\em \textbackslash{}tmp} folder was chosen as a suitable location, since
+both the collection program and the web server have access to it.  An extra
+feature of using {\em \textbackslash{}tmp} is that the operating systesm clears
+out the entire folder everytime it boots up, causing the previous data to no
+longer show up.\\
+
 \subsubsection{WIFI Setup}
+
+The wireless NIC also needed to be setup to be a wireless access point so that
+investigators could connect with a phone or tablet and use the web page access
+to perform searches on the digital devices.  The main idea here was to have a 
+password-protected closed network where the potential evidence could be searched.
+This was included as a part of the setup script.\\
+
+The steps involved here were complicated and difficult to setup properly.  As
+with the web server, the proper Raspbian operating system packages needed to be
+acquired and installed.  In addition, the setup of those packages required 
+setting up DHCP, WPA, the wireless NIC, and the access point daemon.  Setting
+these up mainly required adding and altering text configuration files.  
+Unfortunately, the Internet was not much help, leading to a lot of trial and 
+error testing to make sure it all worked.\\
+
+Finally, this process required a reboot, which was able to be postponed until
+the end of the setup script.\\
 
 \subsection{Rules For Mounting}
 
@@ -1174,9 +1253,79 @@ mention write blockers from chapter 2, Guidance Software, Tableau product lines
 
 \subsection{Code for Searching Device}
 
+The code for searching the digital devices was specifically aimed at gathering
+every filename and location into a searchable file and storing it so that
+those drive contents could be searched, even after the digital device had been
+disconnected from the SEAKER device.\\
+
+There were several options for searching for files.  The simplest way is to use
+the built-in operating system mechanisms, for instance {\em ls} or {\em find}.
+Another way is to code a simple C program that does the same thing.  There is
+another built-in operating system mechanism that is much faster when used on
+standard unix-based environments called {\em locate}, however, that utilizes
+an index that is built up over time and does not work well with newly
+attached devices.\\
+
+Since one of the goals of the SEAKER project was speed of collection, a test
+was performed that
+measured the built-in mechanisms vs the simple C program.  The simple C program
+was by far the fastest, beating the other two methods by an average of 26\%
+(see Table~\ref{tab:CollectionAlgorithmData} for data).
+My theory on why is that the other programs have many
+built-in options and functionalities that are not utilized.  However,
+those extra functionalities have unnecessary code switches and therefore extra
+execution paths that are not necessary for this file and directory collection
+application.\\
+
 \subsection{Web Code}
 
+HTML and PHP were chosen as a simple interface for quick development.  It also
+allows for easy access via many different devices through a standard web 
+browser.\\
+
+The main page (Figure~\ref{fig:MainPage}) was designed to be very easy to use and as automatic as possible.
+The list of searchable devices is populated at the load-time of the page.  As
+well, the page refreshes itself until searchable media is found.  The 
+default keyword search list is also shown on the page.  Each keyword is
+searched independently and are entered one per line on the input keyword
+text form.  The keyword search list is read in using
+PHP from a pre-determined file that resides on the Micro SD card.\\
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=6cm]{images/seaker-hh-screen-2.png}
+  \caption{Main Page}
+  \label{fig:MainPage}
+  \end{center}
+\end{figure}
+
+When triggered using a {\em Search} button, the media list and the
+keyword list to search are passed to the web server via a webpage POST.  The
+results page is then dynamically created using PHP to read each media's file
+and directory list and write the matching results to the returned webpage.
+The Raspbian operating system built-in command {\em grep} is utilized to
+find the results on the server side.\\
+
+The resulting page (Figure~\ref{fig:ResultsPage}) is then displayed to the user 
+using a simple HTML expand/collapse tool.  Each media searched and each search
+criteria are accessible via this tree-like tool.\\
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=6cm]{images/seaker-hh-screen-3.png}
+  \caption{Results Page}
+  \label{fig:ResultsPage}
+  \end{center}
+\end{figure}
+
+In addition, some special keywords can also be used to obtain information
+about the media.  The search term {\em driveinfo} can be used to list the exact details of
+the media, including serial number, size, and other information.
+The search term {\em searchtime} can also be used to show the time needed to find the
+full drive information as well as the time for the particular search.\\
+
 \subsection{Tools Used for Development}
+
 
 
 \section{Experimental Results}
@@ -1192,12 +1341,114 @@ examples of running on Frank disks
 
 \section{Conclusions and Future Work}
 \label{sect-conclusionAndFutureWork}
-LibForensics http://code.google.com/p/libforensics/
-Volatile Memory search (Volatility: http://code.google.com/p/volatility/)
-  (WindowsSCOPE: http://www.windowsscope.com/)
-Oxygen for mobile http://www.oxygen-forensic.com/en/features
-multi-partitioned media
-WIFI signal analysis (what wifi networks are local and available)
+
+The potential uses for the SEAKER device are great with the existing set of
+functionality.  However, the future potential functionalities are even greater.\\
+
+The general implementation and code have some limitations.  For instance,
+in addition to the regular expressions, there could also be fuzzy matching, size
+grouping, internet browser data, registry, swap file, and email searching, and
+many others.\\
+
+Another potential area for improvements to existing code could be a location for
+entering passwords obtained from suspects.  These could be used to unlock entire
+drives, zip files, PDFs, user folders, files, email, website usage, etc.  This
+could also be extended to find online account passwords, especially in the case
+of browsers that allow saving site-specific usernames and passwords.\\
+
+The SCHTTF has asked for some new functionality as well.  They would like the
+ability to search multiple partitions, local WIFI networks and access levels, 
+thumbnails of images and videos, support newer operating systems (APFS and
+HFS Plus), and extract IP addresses from known suspect configuration files and 
+other locations.  These are just a few of the requests, but seemed to be at
+the top of their list.\\
+
+As well, there are many different libraries that could be included and built
+into a searching algorithm.  Be aware that these will slow down the gathering
+process and could be more useful if searched in stages.  Here are a few:
+
+\begin{itemize}
+  \item LibForensics http://code.google.com/p/libforensics/
+  \item Volatile Memory search (Volatility: http://code.google.com/p/volatility/) and (WindowsSCOPE: http://www.windowsscope.com/)
+  \item Oxygen for mobile http://www.oxygen-forensic.com/en/features
+\end{itemize}
+
+In researching this topic a lot of other potential improvement features
+came to mind.  This is by no means a comprehensive list, but it is a start:
+
+\begin{itemize}
+  \item Online hard drive investigation (i.e. Cloud Forensics)
+  \item Network Traffic Investigation
+  \item Video segmentation and video image hashing
+  \item Crime-specific searchs:
+  \begin{itemize}
+    \item financial crimes
+    \item credit card fraud
+    \item hacking
+    \item bullying
+    \item bloackmail
+    \item espianage
+    \item fraud
+    \item customizable (corporate / military)
+  \end{itemize}
+  \item OS lockdown (raspbian)
+  \item Decrypting encrypted devices (password entry location, assessment without password)
+  \item Utilize forensics as a service
+  \item Integrate with Microsoft's photoDNA cloud service
+  \item Build an iPad app to simpler, more guided use
+  \item Query Expansion - automatically searching for same query maybe other contexts
+  \item Synonym Matching - automatically searching for similar words to query word
+  \item Collect everything in UTC time for chronology matching
+  \item Universal way of collecting hard drive hash for verification of evidence integrity
+  \item Data Visualizations:
+  \begin{itemize}
+    \item present all data visualizations for particular drive or all hard drives
+    \item graph - size vs amount of files (one hard drive, and all hard drives)
+    \item graph - common details (like file type, etc) maybe clickable!
+    \item graph/chart - files by date
+    \item graph/chart - files by file type
+    \item chart - website visits
+    \item digital image hashes list (stored and compared)
+    \item many others...
+  \end{itemize}
+  \item Improve analysis speed: skip known OS files, known applications files, etc.
+  \item Investigation Gathering rollup: (possibly stored online or in a report)
+  \begin{itemize}
+    \item Database Schema for storing case specific data
+    \item metadata
+    \item Unique ``gathering ID''
+    \item case number
+    \item observation report
+    \item crime severity
+    \item potential offenses
+    \item time gathered
+    \item gatherer
+    \item suspect list
+    \item location gathered
+    \item suggestions for other research
+    \item which computer system it came from
+    \item Set of evidence
+    \item Digital Evidence item
+    \item images of item
+    \item unique item ID
+    \item file contents
+    \item ranking within set of evidence
+    \item image thumbnails
+    \item collection statistics
+    \item etc
+  \end{itemize}
+  \item Find encryption Keys 
+  \item Thumb strips of videos
+  \item Predetermined search criteria (passwords, pw, etc)
+  \item Output more file information: file owner, MAC times
+  \item Sorting ability, for instance based on user or access times
+  \item Ability to search by time, i.e. time=lastweek, time=5/5/18-5/15/18
+  \item Internet usage timeline
+  \item Auto-search / Auto-filter
+  \item For drug related crimes, search... Spreadsheets, documents, databases, internet purchase strives
+  \item For financial related crimes, search... Spreadsheets, databases, MSMoney, Quicken
+  \item CRC of any acquired files (for later integrity comparison)
+\end{itemize}
 
 
 \section{Appendix}
@@ -1481,7 +1732,54 @@ figure~\ref{fig:user_process_flow}.
 \subsubsection{Filename Collection Code (in C)}
 \lstinputlisting[language=bash]{code/collect_files.c}
 
-\subsubsection{Maybe other code?}
+\newpage
+\subsection{Results of Testing}
+\subsubsection{Collection Timing}
+
+For testing purposes, ls was optimized to utilize as few time-consuming
+options as possible, including the {\em -f} option that prevents sorting
+and {\em -A} for skipping current and parent directories (. and ..)
+in the results.
+Here are the actual functions used:
+
+\vspace{0.2 cm}
+\begin{verbatim}
+  sudo sh -c 'cd /mnt/usb && time ls -ARf1 > ~/ls_time.txt'
+  sudo sh -c 'cd /mnt/usb && time find / -print > ~/find_time.txt'
+  sudo sh -c 'cd /mnt/usb && time ~/collect > ~/collect_time.txt'
+\end{verbatim}
+\vspace{0.2 cm}
+
+Testing results for the custom collection code vs. operating system file
+and directory listing applications:
+
+\begin{center}
+  \tiny
+    \begin{tabular}{|l|r|r|r|r|r|l|}
+    \hline
+    \textbf{}                        & \multicolumn{1}{l|}{\textbf{SSD}} & \multicolumn{1}{l|}{\textbf{SSD}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}WD 2.5'\\ SATA HDD\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}iOmega 3.5'\\ IDE HDD\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Samsung 3.5'\\ SATA HDD\end{tabular}}} & \textbf{}                          \\ \hline
+    \textbf{Size GB}                 & 500                               & 500                               & 500                                                                                      & 1000                                                                                        & 1000                                                                                          &                                    \\ \hline
+    \textbf{Consumed GB}             & 94.22                             & 239.83                            & 456                                                                                      & 474.2                                                                                       & 316.6                                                                                         &                                    \\ \hline
+    \textbf{\% Consumed}             & 18.84\%                           & 47.97\%                           & 91.20\%                                                                                  & 47.42\%                                                                                     & 31.66\%                                                                                       &                                    \\ \hline
+    \textbf{\# files}                & 1,244,699                         & 1,561,132                         & 14,487                                                                                   & 216,356                                                                                     & 21,556                                                                                        &                                    \\ \hline
+    \textbf{\# directories}          & 254,473                           & 317,876                           & 145                                                                                      & 10,603                                                                                      & 2,222                                                                                         &                                    \\ \hline
+    \textbf{ls t1}                   & 62.142                            & 112.627                           & 0.942                                                                                    & 8.398                                                                                       & 1.400                                                                                         &                                    \\ \hline
+    \textbf{ls t2}                   & 62.025                            & 116.978                           & 0.899                                                                                    & 8.252                                                                                       & 1.375                                                                                         &                                    \\ \hline
+    \textbf{ls t3}                   & 68.376                            & 115.833                           & 0.903                                                                                    & 8.229                                                                                       & 1.324                                                                                         &                                    \\ \hline
+    \textbf{ls ave time (secs)}      & \textbf{64.181}                   & \textbf{115.146}                  & \textbf{0.915}                                                                           & \textbf{8.293}                                                                              & \textbf{1.366}                                                                                & \textbf{}                          \\ \hline
+    \textbf{find t1}                 & 43.914                            & 90.693                            & 1.004                                                                                    & 9.090                                                                                       & 1.733                                                                                         &                                    \\ \hline
+    \textbf{find t2}                 & 44.958                            & 97.619                            & 1.014                                                                                    & 8.315                                                                                       & 1.667                                                                                         &                                    \\ \hline
+    \textbf{find t2}                 & 43.214                            & 96.499                            & 1.015                                                                                    & 8.347                                                                                       & 1.672                                                                                         &                                    \\ \hline
+    \textbf{find ave time (secs)}    & \textbf{44.029}                   & \textbf{94.937}                   & \textbf{1.011}                                                                           & \textbf{8.584}                                                                              & \textbf{1.691}                                                                                & \textbf{}                          \\ \hline
+    \textbf{col t1}                  & 20.893                            & 68.270                            & 0.834                                                                                    & 7.541                                                                                       & 1.281                                                                                         &                                    \\ \hline
+    \textbf{col t2}                  & 18.103                            & 82.091                            & 0.832                                                                                    & 7.548                                                                                       & 1.260                                                                                         &                                    \\ \hline
+    \textbf{col t3}                  & 19.381                            & 84.823                            & 0.804                                                                                    & 7.531                                                                                       & 1.248                                                                                         &                                    \\ \hline
+    \textbf{collect ave time (secs)} & \textbf{19.459}                   & \textbf{78.395}                   & \textbf{0.823}                                                                           & \textbf{7.540}                                                                              & \textbf{1.263}                                                                                & \textbf{Average:}                  \\ \hline
+    \textbf{\% faster than ls}       & 70\%                              & 32\%                              & 10\%                                                                                     & 9\%                                                                                         & 8\%                                                                                           & \multicolumn{1}{r|}{\textbf{26\%}} \\ \hline
+    \textbf{\% faster than find}     & 56\%                              & 17\%                              & 19\%                                                                                     & 12\%                                                                                        & 25\%                                                                                          & \multicolumn{1}{r|}{\textbf{26\%}} \\ \hline
+    \end{tabular}
+  \captionof{table}{Collection Algorithm Timing Data}\label{tab:CollectionAlgorithmData}
+\end{center}
 
 
 \newpage
@@ -1647,143 +1945,6 @@ The main point here is to preserve evidentiary integrity and protect against spo
 
 Specific training is required to be able to handle digital evidence properly.  What do digital evidence collectors
 already have to go through in terms of training?\\
-
-\subsection{SEAKER Usage Methodologies}
-\subsubsection{Connected Method}
-
-In this approach, SEAKER is hard-wired using an ethernet cable to the internet or the lab intranet.  The connection
-is utilized to connect directly to the Image Hash Storage Server (IHSS) and the Digital Evidence Storage Server (DESS).
-The digital evidence is still collected locally, but also being transmitted to the DESS and comparing image hashes
-to the IHSS.\\
-
-\subsubsection{Disconnected Method}
-
-In this approach, SEAKER is not connected to an ethernet cable and is solely being used as a wifi router for
-collecting digital evidence locally.  A unique digital collection ID will be created when connected to the DESS
-at a later time.
-
-\subsection{Automated processes during SEAKER evaluation}
-
-\subsubsection{Local processing}
-
-This section describes the local processing that takes place in both Connected and Disconnected Methods.
-\begin{itemize}
-  \item picture of digital media
-  \item picture of hosting hardward platform (laptop, computer, server, phone, etc)
-  \item file list
-  \item full log of capturing/viewing/analysis
-  \item image thumbnails
-  \item video thumbnails
-  \item browser history
-  \item emails
-  \item user profiles
-  \item deleted files
-  \item image thumbnail subsets (images with faces, bodies, documents, etc)
-  \item searches performed
-  \item anything ``marked'' as an ``artifact''
-\end{itemize}
-
-\subsubsection{Remote processing}
-
-This section describes the remote processing that takes place only when Connected Method is in use.
-\begin{itemize}
-  \item matching hashes of images
-  \item matching hashes of videos
-  \item online storage of digital evidence collection for this case at this site and time
-\end{itemize}
-
-\newpage
-\section{Conclusion and future work}
-
-\subsection{Future work}
-\begin{itemize}
-  \item Online hard drive investigation (i.e. Cloud Forensics)
-  \item Network Traffic Investigation
-  \item Video segmentation and video image hashing
-  \item crime-specific searchs:
-  \begin{itemize}
-    \item financial crimes
-    \item credit card fraud
-    \item hacking
-    \item bullying
-    \item bloackmail
-    \item espianage
-    \item fraud
-    \item customizable (corporate / military)
-  \end{itemize}
-  \item OS lockdown (raspbian)
-  \item phone specific OS tools
-  \item phone specific apps
-  \item encrypted devices (password entry location, assessment without password)
-  \item running machine RAM assessment
-  \item utilize forensics as a service
-  \item integrate with Microsoft's photoDNA cloud service
-  \item examine local wifi broadcasts
-  \item build an iPad app to simpler, more guided use
-\end{itemize}
-
-\newpage
-\section{Code improvements}
-\begin{itemize}
-  \item Query Expansion - automatically searching for same query maybe other contexts
-  \item Synonym Matching - automatically searching for similar words to query word
-  \item collect everything in UTC time
-  \item universal way of collecting hard drive hash for verification of evidence integrity
-  \item Data Visualizations:
-  \begin{itemize}
-    \item present all data visualizations for particular drive or all hard drives
-    \item graph - size vs amount of files (one hard drive, and all hard drives)
-    \item graph - common details (like file type, etc) maybe clickable!
-    \item graph/chart - files by date
-    \item graph/chart - files by file type
-    \item chart - website visits
-    \item digital image hashes list (stored and compared)
-  \end{itemize}
-  \item for analysis: skip OS files, applications files, etc
-  \item lock down OS
-  \item Investigation Gathering rollup: (stored online)
-  \begin{itemize}
-    \item Database Schema
-    \item metadata
-    \item Unique ``gathering ID''
-    \item case number
-    \item observation report
-    \item crime severity
-    \item potential offenses
-    \item time gathered
-    \item gatherer
-    \item suspect list
-    \item location gathered
-    \item suggestions for other research
-    \item which computer system it came from
-    \item SET of evidence
-    \item Digital Evidence item
-    \item images of item
-    \item unique item ID
-    \item file contents
-    \item ranking within set of evidence
-    \item image thumbnails
-    \item collection statistics
-    \item etc
-  \end{itemize}
-  \item swap file review
-  \item find encryption Keys 
-  \item bulk extractor ? 
-  \item thumb strips of movies
-  \item predetermine search criteria (passwords, pw, etc)
-  \item encrypted password entry?
-  \item get file owner, MAC times
-  \item sort based on user
-  \item sort based on access time
-  \item read registry file (make available for search)
-  \item time search i.e. time=lastweek, time=5/5/18-5/15/18
-  \item internet usage timeline
-  \item autosearch/autofilter
-  \item email search
-  \item for drug search... Spreadsheets, documents, databases, internet purchase strives
-  \item for financial search... Spreadsheets, databases, MSMoney, Quicken
-  \item CRC of any acquired files (for later integrity comparison)
-\end{itemize}
 
 \newpage
 \section{Keywords and glossary}

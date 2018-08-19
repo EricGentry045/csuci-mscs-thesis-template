@@ -319,6 +319,12 @@ INPUT ./images/IOT_chart.jpg
 INPUT images/CFFTPM.png
 INPUT ./images/CFFTPM.png
 INPUT ./images/CFFTPM.png
+INPUT images/seaker-hh-screen-2.png
+INPUT ./images/seaker-hh-screen-2.png
+INPUT ./images/seaker-hh-screen-2.png
+INPUT images/seaker-hh-screen-3.png
+INPUT ./images/seaker-hh-screen-3.png
+INPUT ./images/seaker-hh-screen-3.png
 INPUT images/SeakerCreation.png
 INPUT ./images/SeakerCreation.png
 INPUT ./images/SeakerCreation.png
@@ -351,11 +357,13 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT 2018_CSUCI_EricGentry_Thesis.bbl
 INPUT 2018_CSUCI_EricGentry_Thesis.bbl
 INPUT 2018_CSUCI_EricGentry_Thesis.aux
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
