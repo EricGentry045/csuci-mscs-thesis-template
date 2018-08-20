@@ -1377,6 +1377,38 @@ In researching this topic a lot of other potential improvement features
 came to mind.  This is by no means a comprehensive list, but it is a start:
 
 \begin{itemize}
+  \item More supported media types
+  \item Add AJAX (or similar technology) to give live feedback for search and collection
+  \item Create RESTful API for using Raspberry Pi
+  \item Clean up HTML code, use CSS
+  \item Write SEAKER iPhone/iPad/Android apps to connect to Raspberry Pi and perform searches, edit keywords, etc.
+  \item Use heap memory for path
+  \item Better way to skip . and .. (possibly always skip first two entries?)
+  \item Reduce size of file/directory listing file. This may involve changing how to grep or implementing custom grep
+  \item Possibly store files in database instead of a file
+  \item Implement the ability to connect to Raspberry Pi using Bluetooth instead of WIFI
+  \item Customize web pages for device type
+  \item Use a better wireless network adapter for better range. These adapters are inexpensive.
+  \item Implement Linux setup with puppet/cfengine/salt/etc
+  \item Better error messages about why drive could not be read
+  \item Add a “Blinkt!” light panel to show visual status of the Raspberry Pi
+  \item Check the health (SMART status) of the hard drive before scanning
+  \item Add support for RAID, mSATA, SCSI hard drives (mdadm)
+  \item Read directly from rawdisk to find file list to speed up collect
+  \item Make SEAKER an available Raspbian/Debian package
+  \item Support unicode filenames
+  \item Auto-unmount the hard drive at the end of collection
+  \item Support multiple partitions gracefully
+  \item Search for filename matches only
+  \item Search for path matches only
+  \item Offer option via checkbox for searching inside compressed files
+  \item Offer option via checkbox for searching inside text files
+  \item Find all deleted files (foremost, ntfsundelete)
+  \item Search deleted partitions and unpartitioned space
+  \item Build another web page for troubleshooting/access/administration/etc
+  \item Search on-media virtual hard drives (vhd, vdi, vmdk) (vmware, virtual pc, parallels, hyper-v)
+  \item Search on-media hard drive images (.iso)
+  \item Searching the raw drive instead of using the on-media operating system
   \item Online hard drive investigation (i.e. Cloud Forensics)
   \item Network Traffic Investigation
   \item Video segmentation and video image hashing
@@ -1512,13 +1544,12 @@ The following creation process is required to setup the \gls{seaker} device
 to the specifications outlined in this paper.  Figure~\ref{fig:SeakerCreation} 
 outlines the general process, while the specific steps are listed below.
 
-  \begin{figure}[ht]
-    \centering
-      \includegraphics[width=0.8\textwidth]{images/SeakerCreation.png}
-    \caption{\gls{seaker} Creation Process}\label{fig:SeakerCreation}
-  \end{figure}
-
-\newpage
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=14cm]{images/SeakerCreation.png}
+  \caption{SEAKER Creation Process}\label{fig:SeakerCreation}
+  \end{center}
+\end{figure}
 
 \begin{enumerate}
   \item Download the latest Raspbian Stretch Lite operating system\\
@@ -1534,7 +1565,7 @@ outlines the general process, while the specific steps are listed below.
     \end{itemize}
   \item Open prep.sh and edit the default configuration information
   (shown below). At minimum it is recommended to change the Raspberry
-  Pi and WiFi passwords.
+  Pi and WiFi passwords.\\
 
   \lstinputlisting[language=bash]{code/config.sh}
 
@@ -1626,8 +1657,10 @@ outlines the general process, while the specific steps are listed below.
 
 \newpage
 \subsection{\gls{seaker} Usage}
+
 After collecting all the media devices at the scene, the investigator
-will triage them with \gls{seaker}. Here are the steps:\\
+will triage them with \gls{seaker}.  Each step of the process is broken
+down and discussed in detail below.\\
 
 (1)~Connect the RP to the power and wait for about a minute
 to let it finish booting up.
@@ -1639,7 +1672,7 @@ protected and matches the one specified in the prep.sh script file.\\
 
 \begin{figure}[ht]
   \begin{center}
-  \includegraphics[width=4cm]{images/seaker-hh-screen-1.jpg}
+  \includegraphics[width=6cm]{images/seaker-hh-screen-1.jpg}
   \caption{iPhone WIFI connection to the \gls{seaker}.}\label{fig:screen-1}
   \end{center}
 \end{figure}
@@ -1662,7 +1695,15 @@ and open a browser.  Once the browser establishes the
 connection, the user will see Figure~\ref{fig:screen-2}. Note that the
 keywords (or regular expression patterns) present in the ``Type in
 Search Terms:'' can be pre-loaded before arriving at the scene, or
-changed/updated at the scene.
+changed/updated at the scene.\\
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=6cm]{images/seaker-hh-screen-2.jpg}
+  \caption{Using a browser to connect to {\tt http://seaker01.local}}
+  \label{fig:screen-2}
+  \end{center}
+\end{figure}
 
 The regular expression can be given using the syntax of the
 \verb|grep| utility. For example, if we want to find occurrences of
@@ -1671,14 +1712,6 @@ word that start with capital letters, we use \verb|^[A-Z]|; if we want
 to find words where number~9 is the last character of the line, we use
 \verb|9$|. There are a vast number of possibilities; we can also
 replace \verb|grep| with \verb|egrep| that has an even richer syntax.\\
-
-\begin{figure}[ht]
-  \begin{center}
-  \includegraphics[width=4cm]{images/seaker-hh-screen-2.jpg}
-  \caption{Using a browser to connect to {\tt http://seaker01.local}}
-  \label{fig:screen-2}
-  \end{center}
-\end{figure}
 
 (4)~Once any storage media devices that are found at a search warrant scene
 are connected to the RP, the investigator will typically wait for a
@@ -1689,6 +1722,14 @@ list, line by line, outputting those lines that conform to at least
 one pattern specified in the ``Type in Search Terms:'' window. Once
 this finishes, the investigator will have the results presented as in
 Figure~\ref{fig:screen-3}.
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=6cm]{images/seaker-hh-screen-3.jpg}
+  \caption{The results of the search of a particular device.}
+  \label{fig:screen-3}
+  \end{center}
+\end{figure}
 
 The filenames themselves can be incriminating evidence, such as in
 Child Pornography (CP) cases, where the material has a commonly used
@@ -1703,25 +1744,14 @@ investigators to question the suspects.  The questioning usually
 takes place at the same time as the forensic examiners triage the
 evidence, and one of the requirements of \gls{seaker} was to be fast so that
 investigators can start getting intelligence quickly from the initial
-processing of the scene.
+processing of the scene.\\
 
-\newpage
-
-\begin{figure}[ht]
-  \begin{center}
-  \includegraphics[width=4cm]{images/seaker-hh-screen-3.jpg}
-  \caption{The results of the search of a particular device.}
-  \label{fig:screen-3}
-  \end{center}
-\end{figure}
-
-\newpage
 (5)~The user process flow is documented in the following
 figure~\ref{fig:user_process_flow}.
 
 \begin{figure}[ht]
   \begin{center}
-  \includegraphics[width=8cm]{images/user_process_flow.jpg}
+  \includegraphics[width=10cm]{images/user_process_flow.jpg}
   \caption{The functionality of \gls{seaker} from the user perspective.}
   \label{fig:user_process_flow}
   \end{center}
@@ -1729,7 +1759,7 @@ figure~\ref{fig:user_process_flow}.
 
 \newpage
 \subsection{Code}
-\subsubsection{Filename Collection Code (in C)}
+\subsubsection{Directory and Filename Collection Code (in C)}
 \lstinputlisting[language=bash]{code/collect_files.c}
 
 \newpage

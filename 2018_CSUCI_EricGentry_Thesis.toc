@@ -26,23 +26,23 @@
 \contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{41}
 \contentsline {subsection}{\numberline {4.2}Results}{41}
 \contentsline {section}{\numberline {5}Conclusions and Future Work}{41}
-\contentsline {section}{\numberline {6}Appendix}{46}
-\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{46}
-\contentsline {subsection}{\numberline {6.2}\gls {seaker} Usage}{54}
-\contentsline {subsection}{\numberline {6.3}Code}{59}
-\contentsline {subsubsection}{\numberline {6.3.1}Filename Collection Code (in C)}{59}
-\contentsline {subsection}{\numberline {6.4}Results of Testing}{60}
-\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{60}
-\contentsline {section}{\numberline {7}STOP HERE - Abstract}{63}
-\contentsline {section}{\numberline {8}Meetings with Frank}{63}
-\contentsline {subsection}{\numberline {8.1}May 18th, 2018}{63}
-\contentsline {section}{\numberline {9}Background}{66}
-\contentsline {subsection}{\numberline {9.1}Introduction to Terms}{66}
-\contentsline {subsubsection}{\numberline {9.1.1}DEFR and DES Investigation Roles}{66}
-\contentsline {subsubsection}{\numberline {9.1.2}Digital vs. Physical Evidence}{66}
-\contentsline {subsubsection}{\numberline {9.1.3}Reactive vs. Proactive Digital Forensic Investigation Processes}{66}
-\contentsline {section}{\numberline {10}SEAKER Creation}{68}
-\contentsline {section}{\numberline {11}Analysis}{68}
-\contentsline {subsection}{\numberline {11.1}Process for gathering digital evidence}{68}
-\contentsline {section}{\numberline {12}Keywords and glossary}{69}
-\contentsline {section}{\numberline {13}Graphs, Images, Figures, and tables}{71}
+\contentsline {section}{\numberline {6}Appendix}{48}
+\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{48}
+\contentsline {subsection}{\numberline {6.2}\gls {seaker} Usage}{56}
+\contentsline {subsection}{\numberline {6.3}Code}{61}
+\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{61}
+\contentsline {subsection}{\numberline {6.4}Results of Testing}{62}
+\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{62}
+\contentsline {section}{\numberline {7}STOP HERE - Abstract}{65}
+\contentsline {section}{\numberline {8}Meetings with Frank}{65}
+\contentsline {subsection}{\numberline {8.1}May 18th, 2018}{65}
+\contentsline {section}{\numberline {9}Background}{68}
+\contentsline {subsection}{\numberline {9.1}Introduction to Terms}{68}
+\contentsline {subsubsection}{\numberline {9.1.1}DEFR and DES Investigation Roles}{68}
+\contentsline {subsubsection}{\numberline {9.1.2}Digital vs. Physical Evidence}{68}
+\contentsline {subsubsection}{\numberline {9.1.3}Reactive vs. Proactive Digital Forensic Investigation Processes}{68}
+\contentsline {section}{\numberline {10}SEAKER Creation}{70}
+\contentsline {section}{\numberline {11}Analysis}{70}
+\contentsline {subsection}{\numberline {11.1}Process for gathering digital evidence}{70}
+\contentsline {section}{\numberline {12}Keywords and glossary}{71}
+\contentsline {section}{\numberline {13}Graphs, Images, Figures, and tables}{73}
