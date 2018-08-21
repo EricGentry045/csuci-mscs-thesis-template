@@ -1043,12 +1043,20 @@ forensic lab is for the device to imaged (or copied bit by bit) so that the
 image can be used for further evidence searching.  This provides an extra level of
 abstraction, so that the actual device is kept in pristine digital condition.\\
 
+Write-blocking has been implemented in digital forensics labs with an in-line 
+piece of hardware.  Companies like Guidance Software and others have created
+write-blocking devices that are added to the list of hardware necessary to 
+prevent modification of any kind to the potential digital evidence.  The Tableau
+product line is a great set of these types of devices.  Although they are made
+to be simple and easy to use, they create yet another piece of the lab that must
+be carried into the field and required to be plugged in and used.\\
+
 For this research, the SEAKER device is intended to be used for triage investigation
 on digital devices to perfom an initial search for potential digital evidence.
-Instead of having a separate write-blocker device, the \gls{rpi} is setup with
+Instead of having a separate write-blocking device, the \gls{rpi} is setup with
 write-blocking capabilities when digital devices are connected to it.  This
-configuration enables a software-write-blocker to prevent any digital alteration
-to the device.\\
+configuration enables the SEAKER's own system to act as a software-write-blocker
+to prevent any digital alteration to the device.\\
 
 \subsection{Technical Details}
 
@@ -1249,7 +1257,21 @@ the end of the setup script.\\
 
 \subsection{Rules For Mounting}
 
-mention write blockers from chapter 2, Guidance Software, Tableau product lines
+During the setup script for the SEAKER device, auto-mounting is setup to
+automatically mount new digital media devices that are plugged into the USB
+port.  Another script was written to handle the post-mounting {\em collection}
+of the applicable drive contents.  The post-mounting script is also
+configured to run once any new digital media devices are plugged in.\\
+
+In order to accommodate the request to ensure the forensic integrity of the
+suspected digital evidence, special mounting options were required.  There
+are two different aspects for how a drive can be written to.  The first is
+the standard {\em writable} option, which allows the content of files and
+folders to be created and modified.  The second is called {\em journaling},
+which is an operating system concept for logging when and what the OS 
+did to the drive.  Both options, {\em ro} and {\em noload}, are applied to
+the mounting options.  This makes the SEAKER device functionally consistent
+with a write-blocking device, as mentioned earlier in Chapter 2.\\
 
 \subsection{Code for Searching Device}
 
@@ -1283,7 +1305,8 @@ HTML and PHP were chosen as a simple interface for quick development.  It also
 allows for easy access via many different devices through a standard web 
 browser.\\
 
-The main page (Figure~\ref{fig:MainPage}) was designed to be very easy to use and as automatic as possible.
+The main page (Figure~\ref{fig:MainPage}) was designed to be very easy to use
+and as automatic as possible.
 The list of searchable devices is populated at the load-time of the page.  As
 well, the page refreshes itself until searchable media is found.  The 
 default keyword search list is also shown on the page.  Each keyword is
@@ -1324,7 +1347,80 @@ the media, including serial number, size, and other information.
 The search term {\em searchtime} can also be used to show the time needed to find the
 full drive information as well as the time for the particular search.\\
 
+\subsection{Process Flow}
+
+The SEAKER device usage involves two main flows.  The first is the 
+process of {\em collection}, which involves plugging it in to power
+and then attaching digital media devices to it to be scanned.
+The second process is {\em searching}, as discussed in a
+previous section.
+See Figure~\ref{fig:ProcessFlow} for details.
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=11cm]{images/ProcessFlow.png}
+  \caption{General Process Flow}
+  \label{fig:ProcessFlow}
+  \end{center}
+\end{figure}
+
+The process flow of SEAKER is a very simple design. After turning on
+the Raspberry Pi, the two processes happen simultaneously. Immediately
+when the drive(s) are connected to the Raspberry Pi, the file names
+and their paths are collected and copied to a text file. Meanwhile,
+the user must connect to the Raspberry Pi via WIFI on a separate
+wireless-enabled device. The user must then open the SEAKER web page.
+As shown in General Process Flow of Figure~\ref{fig:ProcessFlow},
+the web page will refresh every 3 seconds, looking for new drives to
+be connected to the Pi. The first drive will be automatically added
+to the list of drives available on the webpage to be searched. All
+additional drives will appear in the list when the user refreshes
+the page manually.\\
+
+All user selected drives will then go through the search process as
+shown in the lower section of the General Process Flow of
+Figure~\ref{fig:ProcessFlow}. Each drive will be processed one at a
+time. For example, the list of files for the drive will be scanned
+for any matches to the first keyword in the list. The search is done
+using the regular expression tool embedded in the Raspbian Linux
+operating system called {\em grep}. All files that are found to match
+that keyword will be added to the output HTML. Once the entire file
+list has been searched for that keyword, the process will begin again
+with the next keyword in the list. This process will continue until
+there are no more keywords to be searched. If multiple drives have
+been selected to be searched, the same process will repeat itself
+for each drive. Finally, the PHP engine will finish processing and
+the HTML response page is finalized and sent back to the user's
+mobile device.
+
+
 \subsection{Tools Used for Development}
+
+\subsubsection{Programming Languages and Scripting}
+
+TODO:\\
+bash\\
+c\\
+HTML\\
+CSS\\
+PHP\\
+JavaScript\\
+JQuery\\
+Regular Expressions via grep\\
+Rules file for auto-mounting\\
+Raspbian Linux (a Debian distro)\\
+
+
+
+\subsubsection{Collaboration Tools}
+
+TODO:\\
+Gliffy for flowcharting\\
+Slack for instant messaging and group chatting\\
+AWS for S3 bucket\\
+github for code sharing\\
+Dropbox Paper for documentation collabortation\\
+
 
 
 
@@ -1332,15 +1428,87 @@ full drive information as well as the time for the particular search.\\
 \label{sect-experimentalResults}
 
 \subsection{Prototype Demonstration}
-in-class example at end of semester
+
+TODO: in-class example at end of semester\\
+
 \subsection{Results}
-graph of latency
-estimates of time vs data Gb
-examples of running on Frank disks
+
+TODO: graph of latency\\
+
+TODO: estimates of time vs data Gb\\
+
+TODO: examples of running on Frank disks\\
 
 
 \section{Conclusions and Future Work}
 \label{sect-conclusionAndFutureWork}
+
+SEAKER is currently a prototype; there are many improvements to be made, and we will discuss
+some of them in this section. These improvements may be implemented by future students, or by digital
+forensics professionals. We encourage anyone who implements them to share their work; the main bash
+script for the SEAKER device is available on github at https://github.com/michaelsoltys/seaker.\\
+
+First, SEAKER supports a select few filesystems. Namely, NTFS and FAT (exfat, FAT32, FAT16...).
+There are likely bugs to be worked out in the supported filesystems, and there is certainly work to be
+done in expanding the list of supported systems.\\
+
+If an unsupported filesystem is in use, it may simply fail to mount, and not show up on the SEAKER
+site at all. Similarly, drives from which files are currently being collected do not appear; the site displays
+them only when files have been collected. Here there is opportunity for improvement; as opposed to
+displaying drives for which collection is complete, SEAKER could display all drives, and a status next
+to each. This status only requires three states: failed search (for unsupported systems), collection in
+progress, and collection complete.\\
+
+It can be difficult to match a hard drive to its corresponding search results. Partitions are uniquely
+identified by a UUID, and some properties (capacity, for example) are displayed with the search results,
+but these properties do not provide a perfect way to determine which physical device corresponds to
+which mounted partition or device. Storage devices generally have a serial number of sorts, but this
+serial number is not visible to SEAKER. This is a problem which requires some creativity to solve well.
+SEAKER could take a picture when a drive is plugged in, and associate that picture with the search
+results, for instance, but this solution requires that investigators position each storage device in front of
+a camera; this approach requires a camera, and moreover it is tedious and error-prone.\\
+
+When a search finds a hit (i.e., a matched expression or file extension), investigators may want to
+view the corresponding file. Currently, this would require them to manually find and open the file. Speed
+and ease of use are priorities, so it would be best if investigators could select a file in the search results
+and have SEAKER fetch a copy of it for them. This function inevitably requires that the storage device
+being queried is still connected—assuming that this condition is met, copying and viewing a file should
+not be too complex.\\
+
+Similarly, it would be useful if investigators could view thumbnails of images and videos in the search
+results. One example of the motivation here is child pornography cases; incriminating images may have
+innocuous names, but thumbnails would indicated the true content.\\
+
+This leads to another issue: as incriminating files may be named innocuously, investigators will often
+want to search simply for all images, videos, etc. SEAKER could minimize the work necessary by
+allowing for preset groups of search terms, which can be created and edited by administrators. For
+example, an admin could create an “images” group which causes SEAKER to include jpg, pdf, png...\\
+
+We are very interested in a “Data Carving” option. Data carving is the identification and extraction
+of files from unallocated clusters using file signatures. A file signature, also commonly referred to as a
+magic number, is a constant numerical or text value used to identify a file format. The object of carving
+is to identify and extract (carve) the file based on this signature information alone. We are interested in
+hidden files (which are sometimes easy to locate, as for example in UNIX with {\em ls -a} command) and
+deleted files, which is more tricky as the files can partially overwritten. A partially overwritten file may
+still constitute valuable evidence: for example, a portion of an image can be taken as solid evidence that
+the entire image was on the disk at some point. How can one establish whether a portion of an image
+comes from a particular image? It seems that the only way to accomplish that is by visual inspection,
+and having an investigator recognize the original image. In order to automate this process one could
+attempt one of two things: build a massive database of frequently circulating (say, CP) images, and
+hashing different formats of these images (.pdf, .jpg, .giff, .tiff, etc.), as well as different resolutions,
+and chunks of standard sizes (say, 64Kb). This still seems like a shot in the dark. The second approach
+is to define something akin to fuzzy hashes, the type of hashes that are used to recognize variants of the
+same malware. This new type of fuzzy hashing would be invariant under different formats, or standard
+resolutions, and chunks of an image could be identified by close proximity to the original hash. Hits
+would be still confirmed visually to avoid false positives; a bigger issue would be false negatives.\\
+
+Finally, documentation is important in any investigation. When triage reveals media which motivates
+investigators to confiscate the corresponding storage device, they should document this motivation. As
+such, it would aid investigators if SEAKER could generate a search report for a selected drive from
+the search results screen. This report could be downloaded to the investigator’s device or saved on the
+SEAKER unit for later access by an administrator. It should contain the search results along with some
+circumstantial information, such as the date, the name(s) of investigator(s) requesting the report, and
+their reason for confiscating the device.\\
 
 The potential uses for the SEAKER device are great with the existing set of
 functionality.  However, the future potential functionalities are even greater.\\
@@ -1481,6 +1649,34 @@ came to mind.  This is by no means a comprehensive list, but it is a start:
   \item For financial related crimes, search... Spreadsheets, databases, MSMoney, Quicken
   \item CRC of any acquired files (for later integrity comparison)
 \end{itemize}
+
+\vspace{0.4 cm}
+The SEAKER project was a successful collaboration between two different institutions in the public
+sector: law enforcement and academia. The former has many interesting problems to offer, but as they
+are overwhelmed with cases they typically do not have the man power to do research and development.
+The latter is happy to do research and development, as it enhances the educational experience of the students to be learning
+in the context of applications to real life problems. It is a fortuitous and symbiotic relationship, and we
+plan to embark on other such projects in the future.\\
+
+SEAKER is also the testament to the fact that supremely useful devices, meeting the needs of
+practitioners, can be constructed from relatively simple components; what is required is expertise and
+enthusiasm, which in the best cases academia possesses in ample measure. RPs are a revolution in
+embedded controllers, and we are just scratching the surface of their applicability. They are inexpensive,
+but wield the power of the Linux OS.\\
+
+For the students, the experience was invaluable. Perhaps the most important aspect was non-technical:
+how to work well in a large team. There were eighteen students in the group; a composition of different
+backgrounds, talents and strengths. We divided the task into five different but interconnected teams:
+Task 1 was connecting the external devices to the RP; Task 2 was searching the contents of the
+devices; Task 3 was responsible for sending the query and retrieving the results of the search to the
+handheld; Task 4 was responsible for the documentation of the project (both a user set up and guide,
+as well as the technical documentation of the solution); Task 5 was responsible for testing.\\
+
+Digital forensics and academia would both benefit greatly from increased collaboration; students can
+offer relatively inexpensive development in exchange for real-world experience and the opportunity to
+create something which will be used. As a side effect more students would consider digital forensics
+as a career, resulting in some level of alleviation of the problems mentioned in the second quote in the
+introduction\cite{hitchcock2016tiered}.
 
 
 \section{Appendix}
@@ -1772,13 +1968,13 @@ and {\em -A} for skipping current and parent directories (. and ..)
 in the results.
 Here are the actual functions used:
 
-\vspace{0.2 cm}
+\vspace{0.1 cm}
 \begin{verbatim}
   sudo sh -c 'cd /mnt/usb && time ls -ARf1 > ~/ls_time.txt'
   sudo sh -c 'cd /mnt/usb && time find / -print > ~/find_time.txt'
   sudo sh -c 'cd /mnt/usb && time ~/collect > ~/collect_time.txt'
 \end{verbatim}
-\vspace{0.2 cm}
+\vspace{0.1 cm}
 
 Testing results for the custom collection code vs. operating system file
 and directory listing applications:
@@ -1811,6 +2007,7 @@ and directory listing applications:
   \captionof{table}{Collection Algorithm Timing Data}\label{tab:CollectionAlgorithmData}
 \end{center}
 
+TODO: add more result data\\
 
 \newpage
 \bibliographystyle{plain}
