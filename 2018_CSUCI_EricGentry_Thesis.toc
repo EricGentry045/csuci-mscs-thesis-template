@@ -21,31 +21,34 @@
 \contentsline {subsection}{\numberline {3.3}Rules For Mounting}{37}
 \contentsline {subsection}{\numberline {3.4}Code for Searching Device}{37}
 \contentsline {subsection}{\numberline {3.5}Web Code}{38}
-\contentsline {subsection}{\numberline {3.6}Process Flow}{41}
-\contentsline {subsection}{\numberline {3.7}Tools Used for Development}{44}
-\contentsline {subsubsection}{\numberline {3.7.1}Programming Languages and Scripting}{44}
-\contentsline {subsubsection}{\numberline {3.7.2}Collaboration Tools}{44}
-\contentsline {section}{\numberline {4}Experimental Results}{45}
-\contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{45}
-\contentsline {subsection}{\numberline {4.2}Results}{45}
-\contentsline {section}{\numberline {5}Conclusions and Future Work}{45}
-\contentsline {section}{\numberline {6}Appendix}{57}
-\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{57}
-\contentsline {subsection}{\numberline {6.2}\gls {seaker} Usage}{65}
-\contentsline {subsection}{\numberline {6.3}Code}{70}
-\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{70}
-\contentsline {subsection}{\numberline {6.4}Results of Testing}{71}
-\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{71}
-\contentsline {section}{\numberline {7}STOP HERE - Abstract}{75}
-\contentsline {section}{\numberline {8}Meetings with Frank}{75}
-\contentsline {subsection}{\numberline {8.1}May 18th, 2018}{75}
-\contentsline {section}{\numberline {9}Background}{78}
-\contentsline {subsection}{\numberline {9.1}Introduction to Terms}{78}
-\contentsline {subsubsection}{\numberline {9.1.1}DEFR and DES Investigation Roles}{78}
-\contentsline {subsubsection}{\numberline {9.1.2}Digital vs. Physical Evidence}{78}
-\contentsline {subsubsection}{\numberline {9.1.3}Reactive vs. Proactive Digital Forensic Investigation Processes}{78}
-\contentsline {section}{\numberline {10}SEAKER Creation}{80}
-\contentsline {section}{\numberline {11}Analysis}{80}
-\contentsline {subsection}{\numberline {11.1}Process for gathering digital evidence}{80}
-\contentsline {section}{\numberline {12}Keywords and glossary}{81}
-\contentsline {section}{\numberline {13}Graphs, Images, Figures, and tables}{83}
+\contentsline {subsection}{\numberline {3.6}Process Flow}{42}
+\contentsline {subsection}{\numberline {3.7}Tools Used for Development}{45}
+\contentsline {subsubsection}{\numberline {3.7.1}Hardware}{45}
+\contentsline {subsubsection}{\numberline {3.7.2}Programming Languages and Scripting}{45}
+\contentsline {subsubsection}{\numberline {3.7.3}Raspbian Operating System}{46}
+\contentsline {subsubsection}{\numberline {3.7.4}Collaboration Tools}{46}
+\contentsline {subsubsection}{\numberline {3.7.5}Setup Tools}{46}
+\contentsline {section}{\numberline {4}Experimental Results}{47}
+\contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{47}
+\contentsline {subsection}{\numberline {4.2}Results}{47}
+\contentsline {section}{\numberline {5}Conclusions and Future Work}{47}
+\contentsline {section}{\numberline {6}Appendix}{59}
+\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{59}
+\contentsline {subsection}{\numberline {6.2}\gls {seaker} Usage}{67}
+\contentsline {subsection}{\numberline {6.3}Code}{72}
+\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{72}
+\contentsline {subsection}{\numberline {6.4}Results of Testing}{73}
+\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{73}
+\contentsline {section}{\numberline {7}STOP HERE - Abstract}{77}
+\contentsline {section}{\numberline {8}Meetings with Frank}{77}
+\contentsline {subsection}{\numberline {8.1}May 18th, 2018}{77}
+\contentsline {section}{\numberline {9}Background}{80}
+\contentsline {subsection}{\numberline {9.1}Introduction to Terms}{80}
+\contentsline {subsubsection}{\numberline {9.1.1}DEFR and DES Investigation Roles}{80}
+\contentsline {subsubsection}{\numberline {9.1.2}Digital vs. Physical Evidence}{80}
+\contentsline {subsubsection}{\numberline {9.1.3}Reactive vs. Proactive Digital Forensic Investigation Processes}{80}
+\contentsline {section}{\numberline {10}SEAKER Creation}{82}
+\contentsline {section}{\numberline {11}Analysis}{82}
+\contentsline {subsection}{\numberline {11.1}Process for gathering digital evidence}{82}
+\contentsline {section}{\numberline {12}Keywords and glossary}{83}
+\contentsline {section}{\numberline {13}Graphs, Images, Figures, and tables}{85}

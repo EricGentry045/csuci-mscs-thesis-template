@@ -1347,6 +1347,20 @@ the media, including serial number, size, and other information.
 The search term {\em searchtime} can also be used to show the time needed to find the
 full drive information as well as the time for the particular search.\\
 
+An administration page was also created for editing the default search keywords.
+This page was intended to be password protected, but was instead conceiled by not
+providing a link to it.  The full path to it (http://seaker01.local/keywords.php)
+is required for access.  Once changed, the default search keywords remain permanently
+altered for the SEAKER device.  See Figure~\ref{fig:DefaultKeywords}:\\
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=6cm]{images/DefaultKeywords.png}
+  \caption{Default Keywords page}
+  \label{fig:DefaultKeywords}
+  \end{center}
+\end{figure}
+
 \subsection{Process Flow}
 
 The SEAKER device usage involves two main flows.  The first is the 
@@ -1396,6 +1410,16 @@ mobile device.
 
 \subsection{Tools Used for Development}
 
+\subsubsection{Hardware}
+
+TODO:\\
+Raspberry Pi and power cord\\
+Micro SD Card\\
+Powered USB to SATA controller\\
+Router or switch\\
+Ethernet cable\\
+
+
 \subsubsection{Programming Languages and Scripting}
 
 TODO:\\
@@ -1407,21 +1431,33 @@ PHP\\
 JavaScript\\
 JQuery\\
 Regular Expressions via grep\\
-Rules file for auto-mounting\\
-Raspbian Linux (a Debian distro)\\
 
+\subsubsection {Raspbian Operating System}
+
+TODO:\\
+Raspbian Linux (a Debian distro)\\
+grep\\
+apt-get for os packages\\
+Apache for web server\\
+PHP add-on for Apache\\
+Rules file for auto-mounting\\
 
 
 \subsubsection{Collaboration Tools}
 
 TODO:\\
-Gliffy for flowcharting\\
+Gliffy for charts and graphs\\
 Slack for instant messaging and group chatting\\
 AWS for S3 bucket\\
 github for code sharing\\
 Dropbox Paper for documentation collabortation\\
 
+\subsubsection{Setup Tools}
 
+TODO:\\
+Hardwire connection to the internet\\
+Macintosh: etcher, ssh, terminal, Paragon NTFS\\
+Windows: Win32DiskImager, command line, putty (for ssh)\\
 
 
 \section{Experimental Results}
