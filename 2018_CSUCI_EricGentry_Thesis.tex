@@ -730,7 +730,30 @@ team members.  Not having a universally recognized and accepted standard
 leads to complications and difficulties when digital evidence needs to be shared across other
 jurisdictions and boundaries\cite{ajijola2014review}.\\
 
+\subsubsection{Reactive vs. Proactive Digital Forensic Investigation Processes}
+
+\textit{Reactive} digital forensic investigation processes are utilized after an offense has been committed to help
+identify the charges and suspects.  This is the most common process for digital forensics.  The \textit{proactive}
+digital forensic investigation processes are to attempt to detect before or during an active offense is committed.
+This is not a job for a typical law enforcement investigator.\\
+
+This research is based on the reactive digital forensic investigation process in the hopes of reducing the digital
+forensic lab backlogs across the country and world in two ways.  The first way is to reduce the amount of digital
+evidence acquired for the digital forensics lab by enabling efficient and effective on-site triage to occur by
+utitizing the commonality of digital evidence collection and analysis into a single step.  The SEAKER digital
+evidence triage tool enables an initial collection of information and subsequent searches by any number of local,
+on-scene investigators.  These investigators do not need extensive training in digital forensics to utilize it.\\
+
+The second way is to help reduce the existing backlog by enabling a faster, more streamlined approach to initial
+potential evidence gathering and reporting.  This approach utilizes the SEAKER digital evidence trial tool to 
+perform an initial acquisition and analysis on every exiting case to provide a ``first-look'' at the information.  This
+also enables a searching mechanism within a few minutes of plugging in digital evidence media to enable digital 
+forensic investigators a quick review of materials.  The process will help with prioritization of evidence, a basic
+analysis and potentially initial evidence in the form of a report that can be provided to investigators and
+prosecutors.\\
+
 \subsubsection{Aquisition Methodology}
+TODO: finish this section\\
 
 [MOVE THIS TO THE NEXT CHAPTER!!!!]
 The \gls{seaker} tool is designed specifically for the {\em triage} phase of digital forensic
@@ -754,6 +777,7 @@ The analysis step will be discussed in the next section.\\
 
 
 \subsubsection{Analysis Methodology}
+TODO: finish this section\\
 
 The {\em Analysis} methodology is considered the second phase in the \gls{seaker} approach and 
 can consist of both the {\em triage} analysis stage and the {\em full} analysis stage.
@@ -785,6 +809,7 @@ necessary steps for the digital evidence process model as a suggested way to eva
 is useful, but not complete for law enforcement investigators.\\
 
 \subsubsection{Combined Aquisition and Analysis Methodologies}
+TODO: finish this section\\
 Hitchcock et al\cite{hitchcock2016tiered} has proposed and evaluated a ``tiered forensic methodology'' model that defines
 a process of digital forensic triage utilizing non-digital evidence specialists.  In their research, they identified
 a large and growing backlog of digital evidence.  This backlog has led to problems in the law enforcement community
@@ -830,6 +855,7 @@ an investigation.  When both process methods are used, the goals approach a full
 evalutation to the end of the in-lab digital forensics investigation.\\
 
 \subsubsection{Digital Evidence Backlog}
+TODO: finish this section\\
 IDC forecasts that by 2025 the global datasphere will grow to 163ZB (see Figure 1) (that is a trillion gigabytes).
 That's ten times the 16.1ZB of data generated in 2016. All this data will unlock unique user experiences and
 a new world of business opportunities.\\
@@ -892,6 +918,7 @@ on how long after the crime was committed to resolve the case) for most crimes. 
 also contributors, for instance case prioritization based on chronological filing, crime severity, or victim needs.\\
 
 \subsubsection{Digital Evidence Triage}
+TODO: finish this section\\
 The summary of the research done by Hitchcock et al\cite{hitchcock2016tiered} are as follows.  They sought to expedite
 the process of sending digital evidence for analysis and results.  One of their goals is to enable more field triage
 of digital evidence to reduce the amount collected, and act specifically on pertinent information only.  They 
@@ -952,6 +979,8 @@ stated to skip based on type of investigation and prioritizing the investigation
 \end{figure}
 
 \subsubsection{How \gls{seaker} Can Help}
+TODO: finish this section\\
+
 The research of Hitchcock et al\cite{hitchcock2016tiered} should be referenced for a good process starting point for
 digital forensic labs.\\
 
@@ -1412,52 +1441,201 @@ mobile device.
 
 \subsubsection{Hardware}
 
-TODO:\\
-Raspberry Pi and power cord\\
-Micro SD Card\\
-Powered USB to SATA controller\\
-Router or switch\\
-Ethernet cable\\
+(1)~{\em Raspberry Pi and power cord} - A powerful educational and research
+tool that consists of an affordable, very small form factor, medium-powered
+computer.  It follows the standard ``von Neumann architecture'' by 
+incorporating three main components: input/output devices, memory, and a 
+central processing unit.  Models 3 and 3 B+ of the \gls{rpi} were used
+for creation and testing of the SEAKER project. More information can be
+found at http://raspberrypi.org.
+
+(2)~{\em Micro SD Card} - A solid state storage device that when combined
+with a \gls{rpi} becomes a local hard drive for operating system, programs,
+and storage while the SEAKER device is powered on.  The range of Micro SD
+cards available are by storage size and speed of reading and writing
+(denoted by ``class'' designation).  For
+the SEAKER device, the faster the write speed, the faster the
+{\em collection} phase happens because of having to store the results.
+A ``class 10'' or better cards have produced results more quickly than
+other cards with slower write speeds.
+
+(3)~{\em Powered USB to SATA adaptor} - These devices are faily common, and
+allow a SATA style hard drive to be connected to a computer through the
+standard USB port.  This enables SATA style hard drives to be connected
+to the SEAKER device.  It is important to note that the USB ports on the
+\gls{rpi} do not have enough power to support powering larger hard
+drives.
+
+(4)~{\em Router or switch} - A router or switch allows multiple computers
+to connect to each other using specialized software through network
+interface cards.  During the setup phase of the SEAKER device,
+one of these is necessary to be able to connect to \gls{rpi} with
+another computer.  Remotely logging into the \gls{rpi} and running the
+setup script is a required step (see setup steps in the appendix).
+
+(5)~{\em Ethernet cable} - This is a hard-wire cable designed to connect
+a computer to a network.  Since the setup process alters the wireless
+network interface card, wireless setup is not an option for the SEAKER
+device.
 
 
 \subsubsection{Programming Languages and Scripting}
 
-TODO:\\
-bash\\
-c\\
-HTML\\
-CSS\\
-PHP\\
-JavaScript\\
-JQuery\\
-Regular Expressions via grep\\
+(1)~{\em bash} - A unix-based shell, command language, and shell
+scripting language used to gather and run a set of operating system
+commands together.  Bash is used in several places in the SEAKER
+project, including for the setup script, as an auto-mount script
+for automatic {\em collection} and in the PHP code to obtain and
+push search details to the output HTML.
+
+(2)~{\em c} - The c programming language is a mid to high level
+language for writing computer programs.  This was used in two
+locations to provide programs for media content {\em collection}
+and for a late added feature to control a light-bar of LEDs that
+plugs into the GPIO port of the \gls{rpi}.
+
+(3)~{\em HTML} - A tag (or element) based system of organizing
+information to be shown in a web browser.
+
+(4)~{\em CSS} - An HTML styling language that simplifies the
+ability to modify how HTML is displayed in modern web browsers.
+
+(5)~{\em PHP} - A server-side programming langauge, typically
+associated with dynamic web page creation.  For the SEAKER
+project, this was a vital component of creating the search and
+results web pages.
+
+(6)~{\em JavaScript} - A client-side programming language that 
+enables web developers to make web pages more interactive without
+having to access server-side resources.
+
+(7)~{\em JQuery} - A standard JavaScript library of useful
+functions to simplify and expand the ability to make a web page
+more interactive.
+
+(8)~{\em Regular Expressions via grep} - Regular expressions are
+a complex way to specify a search or replace pattern.  {\em grep}
+is a unix-based operating system command-line utility that is
+used to search for regular expression patterns in plain-text
+files.  This is a very critical part of the SEAKER device, since
+the searching mechanism plays a vital role in the project.
 
 \subsubsection {Raspbian Operating System}
 
-TODO:\\
-Raspbian Linux (a Debian distro)\\
-grep\\
-apt-get for os packages\\
-Apache for web server\\
-PHP add-on for Apache\\
-Rules file for auto-mounting\\
+(1)~{\em Raspbian Linux (a Debian distro)} - One of the standard
+operating systems that support the \gls{rpi} hardware.  It is
+derived from the Debian operating system.  There are two versions
+available for every release: Full and Lite.  The full version
+provides lots of useful default packages, a built-in user interface
+and a very simple to use guided setup.  The lite version provides
+only a minimum of packages, no built-in user interface (with the
+exception of a command line), and no initial guided setup.  In
+order to keep the SEAKER project as uncomplicated as possible, 
+the lite version of the Raspbian operating system was chosen.
 
+(2)~{\em grep} - A command-line utility included
+with almost every unix-based operating system.  It is widely
+known as a very powerful tool for finding regular expression
+patterns in plain-text files.  In the Raspbian operating system,
+the initial configuration contains some useful features that
+colorize the results of grep.  Unfortunately, this also slows
+down the grep mechanism due to the extra code burden.  The
+SEAKER setup script removes the color features of grep to 
+enable the fastest searching experience.  It also changes the
+default searching mechanism to ASCII search,
+enabling an even faster grep result.
+
+(3)~{\em apt-get for os packages} - Advanced Packaging Tool
+packages are automatically searched, downloaded, and installed
+using the apt-get command-line utility.  It is a tool based
+on the Debian software packaging system.  The SEAKER project
+uses this tool inside the setup script to add necessary
+packages to the Raspbian lite operating system.
+
+(4)~{\em Apache HTTP server} - An industry standard web
+server application that is open source and cross platform.
+
+(5)~{\em PHP add-on for Apache} - Hypertext Preprocessor utility
+that enables a programming language for server-side coding.
+
+(6)~{\em Rules file for auto-mounting} - The {\em udev} utility 
+is a userspace device manager for Linux-based operating systems. 
+One mechanism of device control is to write a simple script file
+called a ``rules'' file
+(similar to a shell script) that enables the device manager
+to automatically control the specified device(s).  Because 
+the SEAKER project intended to auto-mount digital media and
+launch a {\em collection} script to gather the information
+from it, a rules file was created during the setup script
+that enables the device manager to automatically perform
+these tasks.
 
 \subsubsection{Collaboration Tools}
 
-TODO:\\
-Gliffy for charts and graphs\\
-Slack for instant messaging and group chatting\\
-AWS for S3 bucket\\
-github for code sharing\\
-Dropbox Paper for documentation collabortation\\
+(1)~{\em Gliffy} - A free Google Chrome application that enables diagramming
+charts, graphs, flowcharts, and other drawing templates.  This tool
+has a simple drag and drop interface that allows for online collaboration 
+and sharing during diagram creation.  The SEAKER project participants
+utilized this for creating flowcharts describing the user and process
+flows.
+
+(2)~{\em Slack} - An online instant messaging and group chatting platform
+freely available for simple use.  The SEAKER project participants utilized
+this for collaborating, setting up meetings, online video discussions, and
+some initial document sharing.
+
+(3)~{\em AWS S3} - Amazon Web Services' Simple Storage Service (S3) is for online
+storage of files.  The SEAKER project utilized this for beta versions of
+the setup script and eventually storage of the final working version along
+with the documentation to accompany it.
+
+(4)~{\em GitHub} - An online code sharing, repository, and version control
+system.  It is widely known to host many open source projects and repositories.
+The SEAKER project used it during development to share the code base and
+create an informational readme file that is displayed in {\em GitHub} on
+the main repository page.
+
+(5)~{\em Dropbox Paper} - An online document repository and collaboration
+tool that enables multiple people to edit the same document simultaneously.
+The SEAKER project team utilized this tool for writing up the setup guide, 
+user guide, technical specification, and presentations.
 
 \subsubsection{Setup Tools}
 
-TODO:\\
-Hardwire connection to the internet\\
-Macintosh: etcher, ssh, terminal, Paragon NTFS\\
-Windows: Win32DiskImager, command line, putty (for ssh)\\
+(1)~{\em Hardwire Connection to the Internet} - The SEAKER setup script
+requires a connection to the internet in order to download the necessary
+operating system packages.  The ideal SEAKER setup environment is to 
+connect the \gls{rpi} to a router or switch that is also connected to 
+the internet without a proxy server.  This allows another computer to
+securely connect to it as well as having a connection to the Internet.
+
+(2)~{\em Other Hardware} - Please see the Hardware section earlier in this
+chapter.
+
+(3)~{\em Apple Computer System: Etcher, Paragon NTFS, terminal, ssh} - The secondary
+computer required to remotely access the \gls{rpi} in order to run the
+setup script can be an Apple computer or a Windows computer.  In order to load
+the initial Raspbian lite operating system onto the Micro SD card, a program like
+{\em Etcher} can be used.  It is a tool for copying a disk image from a file to a 
+Micro SD card.  Another necessary tool is an NTFS reader/writer driver like {\em Paragon
+NTFS} in order to access the newly copied image of Raspbian lite on the Micro SD Card.
+This is necessary to copy the setup script and enable SSH access to the \gls{rpi}.
+Finally, a command line program like {\em terminal} can be used to remotely and
+securely connect to the \gls{rpi} after the Micro SD card is installed and the 
+system is booted.
+
+(4)~{\em Windows Computer System: Win32DiskImager, Windows Explorer, Putty} - 
+The secondary
+computer required to remotely access the \gls{rpi} in order to run the
+setup script can be a Windows computer or an Apple computer.  In order to load
+the initial Raspbian lite operating system onto the Micro SD card, a program like
+{\em Win32DiskImager} can be used.  It is a tool for copying a disk image from a file to a 
+Micro SD card.  Another required action is to access the newly copied image of
+Raspbian lite on the Micro SD Card. This is necessary to copy the setup script
+and enable SSH access to the \gls{rpi}.
+Finally, a SSH program like {\em Putty} can be used to remotely and
+securely connect to the \gls{rpi} after the Micro SD card is installed and the 
+system is booted.
 
 
 \section{Experimental Results}
@@ -1465,7 +1643,38 @@ Windows: Win32DiskImager, command line, putty (for ssh)\\
 
 \subsection{Prototype Demonstration}
 
-TODO: in-class example at end of semester\\
+As the final project in the summer 2017 Cyber Security class, the SEAKER device
+project was presented to the SCHTTF representatives and other faculty and
+administration from CSUCI.\\
+
+The SEAKER device presentation consisted of an introduction from Dr. Soltys, a 
+slide presentation from every student team, a recommendation for hardware to 
+use for real-world SEAKER implementations, and a live demonstration of SEAKER's 
+functionalities with prepared, never-before-attempted digital media provided by the
+SCHTTF.  The introduction and slide presentations were explanatory in nature
+and provided a good basis of understanding for the live demonstration.\\
+
+As ambitious as the project was, the live demonstration was intended to be fully
+functional and prove that a prototype could be created using the described
+parameters and features requested.  The audience was also encouraged to participate
+as ``detectives'' using their personal phones to experience the SEAKER functionality
+first hand.  As well, an Apple iPad was projected onto the presentation screen at
+the front of the room.\\
+
+After the prototype of the SEAKER device was up and running, an initial test with a
+known tested digital media device was performed.  After attaching it to the SEAKER
+device, the auto-mount script was run and the information was properly collected
+and searchable.  The auto-refresh functionality on the webpage worked as expected
+and showed the attached media as a selectable drive.  A quick search also was 
+successful and the product was demonstrated without flaw.\\
+
+Finally, the SCHTTF prepared digital media was presented in the form of three
+different devices: two USB storage drives and a SATA hard drive.  All three devices
+were able to be auto-mounted and searched.  The search criteria was also provided
+live after the drive information was collected.  The final phase was to perform the
+search and see if the proper fileset was exposed in the results.  The conclusion
+of the live demonstration was that the fileset was properly found and the SEAKER
+device was properly working and ready to experiment more in a real-world situation.
 
 \subsection{Results}
 
@@ -2091,138 +2300,15 @@ TODO: add more result data\\
 \newpage
 
 \section{STOP HERE - Abstract}
-\label{sect-abstract}
+\label{sect-StopHere}
 
-Goals:
-\begin{itemize}
-  \item preserve and protect evidenciary integrity
-  \item reduce evidence gathering and triage analysis time
-  \item prevent adding more to backlog than necessary by preventing over-confiscation
-  \item reduce need for on-scene Digital Forensic Ssientists
-  \item reduce backlog of digital evidence for tackling backlog
-\end{itemize}
-
-\gls{seaker} tradeoffs: Precision (only relevant files) vs Recall (all relevant files)
-- level of recall required at triage stage can be sacraficed\\
-
-Introduce online storage system for digital forensic metadata format to enhance sharing capabilities across
-jurisdiction boundaries and prevent sharing complexities
-
-\section{Meetings with Frank}
-\label{sect-frank}
-\vspace{0.5 cm}
-\subsection{May 18th, 2018}
-
-My meeting with Frank Lyu, a civilian working for the Ventura County Sherriff's department, on loan to
-the Southern California High Tech Task Force (SCHTTF) went well.  The SCHTTF is an 8 person team made up of
-four civilians and four deputies, all reporting directly to the Ventura County District Attorney's office.
-We met for lunch and I was able to ask him questions about the environment he works in as well as touch on
-ranking the high value items that this SEAKER project could provide.\\
-
-First, we talked about his work environment.  He has several responsibilities working for SCHTTF.  The first
-and foremost is his caseload, which consists of examining digital evidence using forensic techniques in his
-lab that result in a report to the District Attorney's office.  His other responsibilites include assisting
-the District Attorney and staff with evaluating defense evidence reports, studying digital forensic 
-technologies (for when he has to explain things to juries), helping other agencies identify and catalog
-evidence that they are not familiar with, helping serve warrants on critical cases, and helping to retrieve
-lost digital materials for other law enforcement agencies.
-
-He explained that following the processes and procedures is by far the most important aspect of his job.  The
-evidence handling, storage, and evaluation are critical to whether a case succeeds or is dismissed. Frank
-began to describe the intake process, which involves the evidence, the agency report, and the search warrant
-that will be used to search and evaluation the materials.  We did not go into further detail.
-
-Items he looks for during an on-site warrant are: user accounts, previewing the materials (especially in
-cases involving CP), and checking for the existence of Peer-to-Peer sharing utilities.  In addition, he 
-strives to collect the following networking information: publically broadcast SSIDs, each SSID's level of
-encryption, how many devices are connected to the router, and the external IP address for the router.
-
-Value of SEAKER in the field: Filename search utilizing regular expression, the networking information 
-specified in the last paragraph, producing a report, making an ios app instead of using a webpage, links
-for the files found, and clickable thumbnails.
-
-Value of SEAKER in the lab: Filename search utilizing regular expression and SEAKER hashes of images.  He
-also mentioned a Microsoft tool called PhotoDNA that they currently use to find naked humans.
-
-I asked about obtaining all of the statistics related to ingestion or evidence, caseload, pace at which
-evidence can be evaluated, etc.  Frank's answer was that Adam could probably provide that information
-without lab access, but that Michael should be asked to talk to Adam.
-
-Finally, Frank mentioned that sometimes in financial cases, he is asked to search computers at business
-offices, and the ability to search for specific filenames is very important there.
-
-\newpage
-\section{Background}
-\label{sect-background}
-
-\subsection{Introduction to Terms}
-\vspace{0.5 cm}
-\subsubsection{DEFR and DES Investigation Roles}
-\vspace{0.5 cm}
-DEFR is Digital Evidence First Responder\\
-
-DES is Digital Evidence Specialiat\\
-
-\subsubsection{Digital vs. Physical Evidence}
-\vspace{0.5 cm}
-I believe there should be a section here that examines (or at least introduces) the differences and similarities
-between regular physical (non-digital) evidence and digital evidence.  Including in the analysis is the metaphore of
-how physical evidence is handled (bags, DNA, fingerprints) and how that directly relates to the digital evidence
-model.  Contamination must be avoided.\\
-
-\subsubsection{Reactive vs. Proactive Digital Forensic Investigation Processes}
-\vspace{0.5 cm}
-\textit{Reactive} digital forensic investigation processes are utilized after an offense has been committed to help
-identify the charges and suspects.  This is the most common process for digital forensics.  The \textit{proactive}
-digital forensic investigation processes are to attempt to detect before or during an active offense is committed.
-This is not a job for a typical law enforcement investigator.\\
-
-This research is based on the reactive digital forensic investigation process in the hopes of reducing the digital
-forensic lab backlogs across the country and world in two ways.  The first way is to reduce the amount of digital
-evidence acquired for the digital forensics lab by enabling efficient and effective on-site triage to occur by
-utitizing the commonality of digital evidence collection and analysis into a single step.  The SEAKER digital
-evidence triage tool enables an initial collection of information and subsequent searches by any number of local,
-on-scene investigators.  These investigators do not need extensive training in digital forensics to utilize it.\\
-
-The second way is to help reduce the existing backlog by enabling a faster, more streamlined approach to initial
-potential evidence gathering and reporting.  This approach utilizes the SEAKER digital evidence trial tool to 
-perform an initial acquisition and analysis on every exiting case to provide a ``first-look'' at the information.  This
-also enables a searching mechanism within a few minutes of plugging in digital evidence media to enable digital 
-forensic investigators a quick review of materials.  The process will help with prioritization of evidence, a basic
-analysis and potentially initial evidence in the form of a report that can be provided to investigators and
-prosecutors.\\
-
-\section{SEAKER Creation}
-\label{sect-Creation}
-
-\section{Analysis}
-\label{sect-analysis}
-
-\subsection{Process for gathering digital evidence}
-
-First of all, never boot a computer.  That will alter the original state of the hard drive due to the operating
-system being loaded.  This may alter the data available for collection and render the digital media ``spoiled'' and
-therefore unusable ad evidence in a case.\\
-
-The main point here is to preserve evidentiary integrity and protect against spoilage.\\
-
-Specific training is required to be able to handle digital evidence properly.  What do digital evidence collectors
-already have to go through in terms of training?\\
-
-\newpage
 \section{Keywords and glossary}
 \begin{itemize}
   \item Contraband files
-  \item stages: preprocessing, storage, analysis, reporting
-  \item stages: gather (document, catalog), triage (analyze, live review, automated review, artifact storage,
-  meet threshold?), results (present, graphs, search)
-  \item Chain of Custody for digital evidence
   \item Forensic integrity of digital evidence
   \item artifacts = pieces of digital evidence that are of importance to the case
   \item enhanced previewing - better than triage (full drive)
   \item Indecent Image of Children
-  \item Image Hash Databases - dbs of digital forensic labs with image hashes
-  \item obviate the need for write blockers
   \item early look intelligence gathering
   \item Immediate feedback loop for onsite investigators
   \item ``Suspect's dwelling''
@@ -2233,12 +2319,8 @@ already have to go through in terms of training?\\
   \item adhere to proven forensic principles
 \end{itemize}
 
-\newpage
 \section{Graphs, Images, Figures, and tables}
 \begin{itemize}
-  \item figure - field triage flowchart
-  \item figure - each stage field triage flowchart
-  \item figure - Image analysis and hash creation flowchart
   \item graph - aquisition time vs full
   \item graph - investigation time vs full
   \item graph - analysis time vs full
@@ -2246,7 +2328,6 @@ already have to go through in terms of training?\\
   \item graph - current backlock in ventura county
   \item figure - DFT vs TCU (Hitchcock\cite{hitchcock2016tiered})
   \item graph - collection time vs number and size of files
-  \item figure - see figures in Computer Forensic Field Triage Process model (Rogers)
   \item graph - speed of collecting evidence from same drive based on microSD card used
 
 \end{itemize}
