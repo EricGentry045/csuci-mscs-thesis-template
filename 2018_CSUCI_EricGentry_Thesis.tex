@@ -737,7 +737,7 @@ identify the charges and suspects.  This is the most common process for digital 
 digital forensic investigation processes are to attempt to detect before or during an active offense is committed.
 This is not a job for a typical law enforcement investigator.\\
 
-This research is based on the reactive digital forensic investigation process in the hopes of reducing the digital
+This SEAKER research is based on the reactive digital forensic investigation process in the hopes of reducing the digital
 forensic lab backlogs across the country and world in two ways.  The first way is to reduce the amount of digital
 evidence acquired for the digital forensics lab by enabling efficient and effective on-site triage to occur by
 utitizing the commonality of digital evidence collection and analysis into a single step.  The SEAKER digital
@@ -753,31 +753,35 @@ analysis and potentially initial evidence in the form of a report that can be pr
 prosecutors.\\
 
 \subsubsection{Aquisition Methodology}
-TODO: finish this section\\
 
-[MOVE THIS TO THE NEXT CHAPTER!!!!]
 The \gls{seaker} tool is designed specifically for the {\em triage} phase of digital forensic
 investigations.  As a general approach, this research splits the act of dealing with digital evidence into two
-separate methodologies: {\em aquisition} and {\em analysis}.  These are the main foci since \gls{seaker} is 
-designed to do both in a very timely fashion and are the main focus of this research.\\
+separate methodologies: {\em aquisition} and {\em analysis}.  These are the main foci since the \gls{seaker}
+device is designed to do both in a very timely fashion, with comprehensive searching results.\\
 
-Aquisition has multiple definitions across
-the digital forensic universe, but in this case it is meant to imply the entire set of processes and
-procedures from training the digital forensic examiners and \gls{seaker} users,
+{\em Aquisition} has multiple definitions across the digital forensic universe.
+Some define this as the process of gathering the digital devices, logging them using the 
+{\em chain of custody} paperwork, and removing them from the location denoted in the
+search warrant.  Others define this as the collection of potential evidence from the digital
+devices.  However, in this case it is meant to imply the entire set of processes and
+procedures from training the digital forensic examiners and \gls{seaker} users
 to collecting the media that potential digital evidence may be stored on, 
-to the \gls{seaker} usage for gathering the information about each device.\\
+to the gathering of potential evidence from each digital device.\\
 
-The aquisition phase specifically highlighted here is the gathering of physical digital
-media and the capturing of potential digital evidence in the triage environment.  The 
-setup and training materials for creating and using the \gls{seaker} device are referenced in
-the appendix.\\
+The set of processes and procedures for training and usage of the \gls{seaker} device is well
+documented in the appendix, but could also be supplemented by more specific guidelines that
+combine the digital forensic lab's procedures with the usage documents.\\
 
-The analysis step will be discussed in the next section.\\
+When a search warrant is being executed, the SEAKER device is intended to be used to help
+manage the triage process of the potential digital evidence.  This helps on-scene investigators
+determine priority, worthiness of custody, and documentation of the digital media\cite{hitchcock2016tiered}.\\ 
 
-
+The {\em collection} phase of aquisition specifically highlighted here is the gathering
+of physical digital media information and the capturing of potential digital evidence content
+in the triage environment.  The setup and training materials for creating and using the
+\gls{seaker} device are referenced in the appendix.\\
 
 \subsubsection{Analysis Methodology}
-TODO: finish this section\\
 
 The {\em Analysis} methodology is considered the second phase in the \gls{seaker} approach and 
 can consist of both the {\em triage} analysis stage and the {\em full} analysis stage.
@@ -786,27 +790,39 @@ stage can be applied in the field or at the digital forensics lab, while the ful
 is unlikely to be accomplished in the field.  A full analysis could take many hours or days
 and is not the first priority when serving a search warrant.\\
 
-However, digital evidence triage is a very useful part of an investigation and can be 
+Digital evidence triage analysis is a very useful part of an investigation and can be 
 implemented using the \gls{seaker} device.  The triage analysis stage is considered in this research
 to consist of an interactive web page that detectives and investigators can use to 
 lookup search terms from the digital evidence collected from suspect devices plugged into the
-\gls{seaker} device.\\
+\gls{seaker} device.  It also consists of the reports that are generated and stored on the
+\gls{seaker} device.  The reports consist mainly of the metadata about the digital media and the
+collection statistics, but does not include specific digital media content.\\
 
-Rogers et al\cite{rogers2006computer} research in 2006 covered the primary machine type at
+Some previous versions of analysis included specific types of operating systems.
+Rogers' et al\cite{rogers2006computer} research in 2006 covered the primary machine type at
 the time: the standard Windows machine.  Unfortunately, this leads to an outdated model over
 time, since the processes and procedures become obsolete as new technology arises.  Along with
 the proliferation of IOT devices, new technologies also have emerged as more mainstream that
-need to be incorporated into a more generalized approach.  Some operating systems are being
-utilized on a more regular basis, like Linux and Mac.  In fact, even our \gls{seaker} device is
-an IOT device based on the unix spin-off of Debian.\\
+need to be incorporated into a more generalized approach.  More operating systems are being
+utilized on a regular basis, like Linux, unix versions, and Apple OS.  In fact, even our
+\gls{seaker} device is an IOT device based on a unix variant of Debian.\\
 
-Ajijola et al\cite{ajijola2014review} - The NIST guidelines provide an in-depth look into mobile
-devices, helping to explain the technology involved and its
-relationship to the forensic process.  NIST itself is a technological, non-regulatory federal agency under the U.S.
-Department of Commerce.  The NIST process model labeled NIST SP 800-101 lays out the digital evidence procedures in
-four steps: Preservation, Acquisition, Examination and Analysis, and Reporting.  These four steps provide the
-necessary steps for the digital evidence process model as a suggested way to evaluate mobile device information.  This
-is useful, but not complete for law enforcement investigators.\\
+Other versions of analysis research deal directly with specific types of devices.
+Ajijola et al\cite{ajijola2014review} reviewed the NIST guidelines that provide an in-depth
+look into mobile devices, helping to explain the technology involved and its
+relationship to the forensic process.  NIST itself is a technological, non-regulatory
+federal agency under the U.S. Department of Commerce.  The NIST process model labeled NIST
+SP 800-101 lays out the digital evidence procedures in four steps: Preservation, Acquisition,
+Examination and Analysis, and Reporting\cite{ajijola2014review}.  These four steps provide the
+necessary steps for the digital evidence process model as a suggested way to evaluate mobile
+device information.  This is useful, but not complete for law enforcement investigators.\\
+
+The \gls{seaker} device achieves the goal of being device and operating system agnostic in
+terms of being able to collect content information from digital media.  It currently supports
+multiple operating systems, as well as multiple device types (provided there is a way to 
+adapt the device to USB).  The only other limitation to the \gls{seaker} device's ability to
+read the content is the availablity of a device driver that allows mounting on Raspbian lite's
+operating system.\\
 
 \subsubsection{Combined Aquisition and Analysis Methodologies}
 TODO: finish this section\\
@@ -1678,12 +1694,13 @@ device was properly working and ready to experiment more in a real-world situati
 
 \subsection{Results}
 
-TODO: graph of latency\\
+TODO:\\
 
-TODO: estimates of time vs data Gb\\
+graph of latency\\
 
-TODO: examples of running on Frank disks\\
+estimates of time vs data Gb\\
 
+examples of running on Frank disks\\
 
 \section{Conclusions and Future Work}
 \label{sect-conclusionAndFutureWork}
