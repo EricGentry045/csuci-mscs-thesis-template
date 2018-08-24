@@ -442,7 +442,7 @@ science of collecting, labeling, itemizing, and acquiring of evidence.
 For instance, collecting physical evidence requires the
 use of gloves,
 evidence bags, fingerprint-dusting equipment, etc. to prevent cross-contamination, fingerprint smudging,
-DNA evidence mishandling, and a multitude of other evidence tainting.  Without the proper adherance to 
+DNA evidence mishandling, and a multitude of other evidence tainting.  Without the proper adherence to 
 guidelines,
 even conclusive evidence may not be admissible during a case.\\
 
@@ -825,53 +825,115 @@ read the content is the availablity of a device driver that allows mounting on R
 operating system.\\
 
 \subsubsection{Combined Aquisition and Analysis Methodologies}
+
+The \gls{seaker} project is intended to cover the areas of {\em aquisition} and {\em analysis}
+with regards to the triage stage of an investigation.  In order to simplify the process and
+enable non-digital evidence specialists to utilize the \gls{seaker} device, both the
+aquisition and analysis phases are combined.\\
+
+In addition, the users are well guided along the path of aquisition.  Most of this process is
+automated for ease of use and successful digital media content gathering.  The steps involved
+are:
+
+\begin{enumerate}
+  \item plug in the \gls{seaker} device
+  \item wait 20-30 seconds
+  \item plug in the potential evidence via USB to the \gls{seaker} device
+  \item wait until the light stops flashing
+\end{enumerate}
+
+The analysis side of the equation is also simple and well guided.  The user interface is 
+designed to very easy to use (see the Appendix section for exact usage details).  The steps
+involved here are:
+
+\begin{enumerate}
+  \item connect to the \gls{seaker} WIFI Access Point
+  \item bring up the webpage: http://seaker01.local
+  \item choose which digital media devices to search
+  \item select Search based on default or custom search criteria
+  \item view results (expand/collapse tree-based format)
+\end{enumerate}
+
+The combination of these two phases and the straightforward nature of the procedures to use
+the \gls{seaker} device make it an ideal digital forensics triage device.  The ability for
+non-digitial forensic specialists to apply this technology is crucial to its feasability.
+Hitchcock et al\cite{hitchcock2016tiered} proposed and evaluated a ``tiered forensic
+methodology'' model that defines a process of digital forensic triage utilizing non-digital
+evidence specialists.  They would be considered the first tier of investigation and their
+contributions are considered extremely helpful in the initial stages of a search warrant.
+The next tier is when the already-triaged digital evidence is sent for full evaluation from
+a fully trained and qualified digital evidence specialist.
+The potential evidence would be sent to a certified facility that can perform full digital
+forensic analysis, called a Technological Crime Unit (TCU).\\
+
+This tiered approach is based on a Computer Forensic Field Triage Process Model proposed
+by Rogers et al \cite{rogers2006computer} and the internation standard ISO 27037
+(Information Technology - Security Techniques - Guidelines for identification, collection,
+aquisition, and presentation of digital evidence). The process model breaks down the six
+phases of digital evidence categorization, which Hitchcock et al\cite{hitchcock2016tiered}
+loosely based their four phase approach on.  The four phases are: planning, assessment,
+reporting, and threshold.  The ISO 27037 standard specifically attempts to address the need
+to minimize the risk of potential digital evidence being spoiled by mishandling, while also
+attempting to maximize the evidentiary value of digital evidence collection.\\
+
+Utilizing a tiered approach is not without risks.  One concern is the accidental exclusion
+of an item of digital evidence that is important to the investigation.  Another is the
+level of computer skills and training of the DTF expert.  An attempt could be made to
+mitigate the latter with training and management process, while providing evidence that
+the former is a common misconception in most cases\cite{rogers2006computer}.\\
+
+Of course, the simplification of aquisition and analysis for use in a triage phase is also
+not a full analysis. Certain factors related to recent advancement in technologies can cause
+the \gls{seaker} device to under-inform and potentially miss critical information.  One
+example of missing potential evidence is when encrypted, compressed files or folders
+are located\cite{shaw2013practical}.  Others include hidden or encrypted partitions,
+password protected files and folders, images and videos obscured by significantly altering
+the filenames and extensions, and use of rare, specialized operating systems. However,
+these issues can all easily be overcome by marking the digital media as suspect and noting
+it for review in the second tier at the lab.\\
+
+This process cannot and does not supersede the ability or need to perform a full forensic
+examination at a full-featured digital forensic lab\cite{rogers2006computer} or TCU.  This
+step is essential and necessary to fully consider all of the digital evidence that can
+be obtained by full analysis.\\
+
+Other research also indicates that combining the best pieces of process models and reviewing
+latest digital forensic devices and methods is a great way to maintain adherence to 
+good practices\cite{ajijola2014review}.  Ajijola et al, 2014\cite{ajijola2014review}
+proposed a new process model that is a hybrid of both NIST recommendations and ISO standards
+with the resulting combination being much more effective than either of its individual parts.\\
+
+In the research for combining the NIST and ISO guidelines, Ajijola et al\cite{ajijola2014review}
+explores the commonality, differences, and limitations of each model.  Although both models
+follow the Auditability, Repeatability, Reproducability, and Justifiability requirements, as
+well as the Confidentiality, Integrity, and Availability standards, they individually lack some
+necessary phases to enable them to be used separately.  The NIST process model lacks the
+Identification and Collection phases, while the ISO process model lacks Examination, Analysis,
+and Reporting aspects of a full Digital Evidence processing model.\\
+
+The combination of these two approaches, as suggested by Ajijola et al\cite{ajijola2014review},
+provides a new five step approach: Identification, Collection and Acquisition, Preservation,
+Examination and Analysis, and Reporting. These steps provide a more comprehensive approach that
+law enforcement can use to fulfill its evidenciary duties in an investigation.  When both
+process methods are used, the goals approach a full set of tasks from initial on-scene
+evalutation to the end of the in-lab digital forensics investigation.\\
+
+The combining of steps, approaches, and methodologies is encouraged.  The combination of 
+aquisition and analysis works well in the \gls{seaker} model because they are closely related,
+function well as a pair, and encourage everyone to be able to use the tool for initial digital
+media investigation.\\
+
+\subsubsection{Digital Evidence Backlog}
 TODO: finish this section\\
-Hitchcock et al\cite{hitchcock2016tiered} has proposed and evaluated a ``tiered forensic methodology'' model that defines
+
+The TCU is currently
+heavily inundated with cases needing analysis and reporting of digital evidence.
+
+Hitchcock et al\cite{hitchcock2016tiered} proposed and evaluated a ``tiered forensic methodology'' model that defines
 a process of digital forensic triage utilizing non-digital evidence specialists.  In their research, they identified
 a large and growing backlog of digital evidence.  This backlog has led to problems in the law enforcement community
 with regards to collecting, analyzing, reporting, and prosecuting.\\
 
-The next tier is when the already-triaged digital evidence is sent for full evaluation.  This is a certified facility
-that can perform full digital forensic analysis, called a Technological Crime Unit (TCU).  The TCU is currently
-heavily inundated with cases needing analysis and reporting of digital evidence.\\
-
-This tiered approach is based on a Computer Forensic Field Triage Process Model proposed by Rogers et al
-\cite{rogers2006computer} and the internation standard ISO 27037 (Information Technology - Security Techniques - 
-Guidelines for identification, collection, aquisition, and presentation of digital evidence). The process model 
-breaks down the six phases of digital evidence categorization, which Hitchcock et al\cite{hitchcock2016tiered} loosely
-based their four phase approach on.  The four phases are: planning, assessment, reporting, and threshold.  The ISO
-27037 standard specifically attempts to address the need to minimize the risk of potential digital evidence being
-spoiled by mishandling, while also attempting to maximize the evidentiary value of digital evidence collection.\\
-
-This approach is not without risks.  One concern is the accidental exclusion of an item of digital evidence that is
-important to the investigation.  Another is the level of computer skills and training of the DTF expert.  The paper ???
-does attempt to mitigate the latter with training and management process, while providing evidence that the former
-is a common misconception in most cases.\\
-
-Shaw - One example is to note encrypted compressed files for review later.\\
-
-Rogers - This process in no way supersedes the ability or need to perform a full forensic examination at a full-featured
-digital forensic lab.\\
-
-Ajijola et al, 2014\cite{ajijola2014review} also proposed a new process
-model that is a hybrid of both models with the resulting combination being much more effective than either of its 
-individual parts.\\
-
-In the research for combining the NIST and ISO guidelines, Ajijola et al\cite{ajijola2014review} explores the
-commonality, differences, and limitations of each model.  Although both models follow the Auditability,
-Repeatability, Reproducability, and Justifiability requirements, as well as the Confidentiality, Integrity, and
-Availability standards, they individually lack some necessary phases to enable them to be used separately.  The NIST
-process model lacks the Identification and Collection phases, while the ISO process model lacks Examination, Analysis,
-and Reporting aspects of a full Digital Evidence processing model.\\
-
-The combination of these two approaches, as suggested by Ajijola et al\cite{ajijola2014review}, provides a new five 
-step approach: Identification, Collection and Acquisition, Preservation, Examination and Analysis, and Reporting.
-These steps provide a more comprehensive approach that law enforcement can use to fulfill its evidenciary duties in
-an investigation.  When both process methods are used, the goals approach a full set of tasks from initial on-scene
-evalutation to the end of the in-lab digital forensics investigation.\\
-
-\subsubsection{Digital Evidence Backlog}
-TODO: finish this section\\
 IDC forecasts that by 2025 the global datasphere will grow to 163ZB (see Figure 1) (that is a trillion gigabytes).
 That's ten times the 16.1ZB of data generated in 2016. All this data will unlock unique user experiences and
 a new world of business opportunities.\\
@@ -995,33 +1057,25 @@ stated to skip based on type of investigation and prioritizing the investigation
 \end{figure}
 
 \subsubsection{How \gls{seaker} Can Help}
-TODO: finish this section\\
 
-The research of Hitchcock et al\cite{hitchcock2016tiered} should be referenced for a good process starting point for
-digital forensic labs.\\
+The \gls{seaker} device is portable in size, inexpensive to obtain (even in multiples),
+simple to create, easy to use, effective in on-scene triage, efficient in collecting and
+searching digital media, and very well suited to handle the required purview of a digital
+forensic device.\\
 
-Rogers -  This is where the \gls{seaker} portable
-triage device can help by evaluating every aspect and prevent the on-site investigators from skipping or
-de-prioritizing critical potential evidence.\\
+The research of Hitchcock et al\cite{hitchcock2016tiered} should be referenced as a good
+process starting point for digital forensic labs.  As well, the \gls{seaker} device is a 
+great tools to enhance the existing law enforcement arsenal of digital forensic tools.\\
 
-Rogers - This is also an area where the
-\gls{seaker} portable triage device can help eliminate some of the potential problems, for instance technical prowess of the
-on-site investigators and proper lab equipment on-site.\\
+The \gls{seaker} portable triage device can help by evaluating crucial
+aspects of the file system and prevent the on-site investigators from skipping or
+de-prioritizing critical potential evidence\cite{rogers2006computer}.\\
 
-Rogers (CFFTPM) - Some particular aspects of the phases are critical to investigators in revealing evidence or potential evidence for
-the \gls{seaker} portable traige device.  Usage/User Profile information is extremely important.  This includes the need to
-be able to view and search files, folders, registry keys, and file properties associated with a particular user.  The
-Internet Activity artifacts also become very useful, especially in the case of child pornography.  The browser, email,
-and Instant Messaging artifacts can lead directly to potential charges.  Finally, a Chronology/Timeline understanding
-and ability to sort based on it can significantly narrow down the possibilities of which user information and which
-Internet Activity is the most important and critical to the investigation.\\
-
-Rogers (CFFTPM) -Implementing this in the \gls{seaker} portable triage device is crucial for simplicity and ease of use.  As well, it goes a
-long way towards having an implementation of \gls{seaker} being understood and adopted.  Reporting is also a critical need
-and is implemented in a way that will enable digital forensic investigators to provide early information to
-investigators and prosecutors.  This helps alleviate the need to wait until the backlog of digital evidence is cleared
-to get any information from case-specific digital evidence.\\
-
+The \gls{seaker} portable triage device can help eliminate some of the existing and
+potential future problems that many jurisdictions face.  With shrinking budgets,
+the lack of digital forensics specialists, coupled with the lack of technical prowess
+of the on-site investigators and proper on-scene lab equipment\cite{rogers2006computer},
+this new technology can easily and immediately benefit the law enforcement community.\\
 
 \section{Background}
 \label{sect-background}
