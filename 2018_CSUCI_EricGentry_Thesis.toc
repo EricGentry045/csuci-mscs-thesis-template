@@ -12,16 +12,16 @@
 \contentsline {subsubsection}{\numberline {1.2.8}Digital Evidence Triage}{25}
 \contentsline {subsubsection}{\numberline {1.2.9}How \gls {seaker} Can Help}{29}
 \contentsline {section}{\numberline {2}Background}{30}
-\contentsline {subsection}{\numberline {2.1}Legal Details}{30}
+\contentsline {subsection}{\numberline {2.1}Legal Details}{31}
 \contentsline {subsection}{\numberline {2.2}Technical Details}{33}
-\contentsline {section}{\numberline {3}Development of \gls {seaker} Device}{34}
-\contentsline {subsection}{\numberline {3.1}Conception}{35}
+\contentsline {section}{\numberline {3}Development of \gls {seaker} Device}{35}
+\contentsline {subsection}{\numberline {3.1}Conception}{36}
 \contentsline {subsection}{\numberline {3.2}Setup Script For \gls {rpi}}{38}
-\contentsline {subsubsection}{\numberline {3.2.1}Web Server}{39}
-\contentsline {subsubsection}{\numberline {3.2.2}WIFI Setup}{40}
+\contentsline {subsubsection}{\numberline {3.2.1}Web Server}{40}
+\contentsline {subsubsection}{\numberline {3.2.2}WIFI Setup}{41}
 \contentsline {subsection}{\numberline {3.3}Rules For Mounting}{41}
-\contentsline {subsection}{\numberline {3.4}Code for Searching Device}{41}
-\contentsline {subsection}{\numberline {3.5}Web Code}{42}
+\contentsline {subsection}{\numberline {3.4}Code for Searching Device}{42}
+\contentsline {subsection}{\numberline {3.5}Web Code}{43}
 \contentsline {subsection}{\numberline {3.6}Process Flow}{46}
 \contentsline {subsection}{\numberline {3.7}Tools Used for Development}{49}
 \contentsline {subsubsection}{\numberline {3.7.1}Hardware}{49}

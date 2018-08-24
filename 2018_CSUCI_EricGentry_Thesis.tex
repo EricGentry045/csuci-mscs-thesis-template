@@ -924,137 +924,195 @@ function well as a pair, and encourage everyone to be able to use the tool for i
 media investigation.\\
 
 \subsubsection{Digital Evidence Backlog}
-TODO: finish this section\\
 
-The TCU is currently
-heavily inundated with cases needing analysis and reporting of digital evidence.
-
-Hitchcock et al\cite{hitchcock2016tiered} proposed and evaluated a ``tiered forensic methodology'' model that defines
-a process of digital forensic triage utilizing non-digital evidence specialists.  In their research, they identified
-a large and growing backlog of digital evidence.  This backlog has led to problems in the law enforcement community
-with regards to collecting, analyzing, reporting, and prosecuting.\\
-
-IDC forecasts that by 2025 the global datasphere will grow to 163ZB (see Figure 1) (that is a trillion gigabytes).
-That's ten times the 16.1ZB of data generated in 2016. All this data will unlock unique user experiences and
+Digital forensic labs and TCUs are currently heavily inundated with cases needing
+analysis and reporting of digital evidence.  To compound the problem, the amount of
+data being created is growing astronomically.  The International Data Corporation
+(IDC) forecasts that by 2025 the global datasphere will grow to 163ZB (see
+Figure~\ref{fig:IOT}) (that is a trillion gigabytes)\cite{IDCDataAge2017}. That's ten times the 16.1ZB
+of data generated in 2016. All this data will unlock unique user experiences and
 a new world of business opportunities.\\
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \centering
-    \includegraphics[width=0.8\textwidth]{images/IOT_chart.jpg}
+    \includegraphics[width=\textwidth]{images/IOT_chart.jpg}
   \caption{IOT Device Data Growth}
+  \label{fig:IOT}
 \end{figure}
 
-Some of the current challenges in digital forensic investigations are directly related to the amount of data being
-created.  As Lillis et al\cite{lillis2016current} explores in their research, there are three main factors
-involved in the digital forensic backlog: increasing number of devices seized per case, increased number of cases
-involving digitial evidence, and the increasing volume of data per digital media.  This has lead to a growing
-and already substantial backlog in digital forensic investigations.\\
+Some of the current challenges in digital forensic investigations are directly
+related to the amount of data being created.  As Lillis et al\cite{lillis2016current}
+explores in their research, there are three main factors involved in the digital
+forensic backlog: increasing number of devices seized per case, increased number of
+cases involving digitial evidence, and the increasing volume of data per digital
+media.  This has lead to a growing and already substantial backlog in digital
+forensic investigations.\\
 
-One effect of this increased delay and backlog is that cases become inactive, waiting for new leads.  A more
-aggressive approach to solving the backlog could help prevent dismissals, cold cases, and potentially more
-societal harm from a corrupt investigation suspect.\\
+As well, in Hitchcock's et al\cite{hitchcock2016tiered} research, they identified
+a large and growing backlog of digital evidence.  They indicated that the extra
+time required due to the backlog has led to problems in the law enforcement
+community with regards to collecting, analyzing, reporting, and prosecuting.\\
 
-Raghavan\cite{raghavan2013digital} has accumulated a list of 5 major challenges that the digital forensics 
-community is facing and continue to add to the backlog problem.\\
+Another effect of this increased delay and backlog is that cases become inactive,
+waiting for new leads.  A more aggressive approach to solving the backlog could
+help prevent dismissals, cold cases, and potentially more societal harm from a
+potentially corrupt suspect of investigation.\\
 
-The first is the complexity of binary data aquisition, i.e. low level data aquisition through digital media
-duplication.  This challenge causes the need for sophisticated data reduction techniques.\\
+Raghavan\cite{raghavan2013digital} has accumulated a list of 5 major challenges
+that the digital forensics community is facing and continue to add to the backlog
+problem.  The first is the complexity of binary data aquisition, i.e. low level
+data aquisition through digital media duplication.  This challenge causes the need
+for sophisticated data reduction techniques.\\
 
-Another complexity is the diversity of data and lack of standard examination techniques.  The plethora of
-operating systems and file formats has been increasing and is posing a more and more significant challenge
-over time.\\
+Another complexity is the diversity of data and lack of standard examination
+techniques.  The plethora of operating systems and file formats has been
+increasing and is posing a more and more significant challenge over time.\\
 
-The consistency and correlation problem is yet another challenge.  This is a problem resulting from the current
-digital media investigation tools not providing the entire picture to investigators.  Only part of the whole
-picture is provided when these tools find digital evidence.\\
+The consistency and correlation problem is yet another challenge.  This is a
+problem resulting from the current digital media investigation triage tools not
+providing the entire picture to investigators.  Only part of the whole picture
+is provided when these tools find digital evidence.\\
 
-Another issue that Raghavan\cite{raghavan2013digital} proposed is the volume of data to sort through.  The sheer
-amount of data that exists per user is increasing at an alarming rate [cite?], and has lead to a very large
-backlog of digital evidence to investigate.  These delays have even caused some cases to be dismissed.  This
-challenge is exacerbated by the lack of adequate automation for digesting the data.\\
+Another issue that Raghavan\cite{raghavan2013digital} proposed is the volume of
+data to sort through.  The sheer amount of data that exists per user is increasing
+at an alarming rate [cite?], and has lead to a very large backlog of digital
+evidence to investigate.  These delays have even caused some cases to be dismissed.
+This challenge is exacerbated by the lack of adequate automation for digesting the
+data.\\
 
-The fifth, but certainly not the last, challenge proposed by Raghavan\cite{raghavan2013digital} is the timeline
-synchronization issue with digital evidence.  Since the evidence could be collected in different time zones, 
-with different timestamp formats, clock skew, etc, lining up the events in order can be challenging or
-infeasible.\\
+The last challenge proposed by Raghavan\cite{raghavan2013digital} is the timeline
+synchronization issue with digital evidence.  Since the evidence could be
+collected in different time zones, with different timestamp formats, clock skew,
+etc, lining up the events in order can be challenging or infeasible.\\
 
-With the proliferation of Internet Of Things (IOT) devices and cloud storage, the field of digital forensics
-continues to expand.  These areas pose a great challenge, but also new opportunities.  Lillis et
-al\cite{lillis2016current} researched cloud storage and found some areas of opportunity, for instance parallel
-processing, distibuted computing, GPU/FPGA utilization, and others.  These areas for increasing the efficiency
-of ditigal forensics can be explored further due to the substantially reduced I/O limitations in cloud storage.\\
+These are all contributing factors, but some are reduced or eliminated when 
+the digital evidence triage phase is implements.  Even more issues are taken care
+of when digital media devices are prioritized, excluded (due to lack of
+evidentiary leads), and the back log is reduced.\\
 
-The Internet of Things (IOT) also poses new challenges.  IOT devices are estimated to number near 40 billion by
-2020, contributing to the overwhelming amount of digital data.  Since these devices tend to have more 
-non-persistent memory and less storage, this causes added complexity for gathering and analysis.  In addition,
-a portion of IOT devices are battery operated and computationally challenged, leading to loss of data over
-time.\\
+The Internet of Things (IOT) also poses new challenges and could significantly
+increase the backlog.  IOT devices are estimated to number near 40 billion by
+2020, contributing to the overwhelming amount of digital data.  Since these devices
+tend to have more non-persistent memory and less storage, this causes added
+complexity for gathering and analysis.  This is a good case for expanding the 
+potential uses of the \gls{seaker} device to include more digital media devices.
+In addition, a portion of IOT devices are battery operated and computationally
+challenged, leading to loss of data over time, and the necessity of implementing
+on-scene triage.\\
 
-Hitchcock et al\cite{hitchcock2016tiered} - The backlog and delays in case reporting are contributors to a common problem of time sensitivity.  Some countries 
-have given their citizens a right to a ``speedy'' trial.  As well, some countries have statutes of limitation (limits
-on how long after the crime was committed to resolve the case) for most crimes.  Some administrative situations are
-also contributors, for instance case prioritization based on chronological filing, crime severity, or victim needs.\\
+The backlog and delays in case reporting are contributors to a common problem of
+time sensitivity\cite{hitchcock2016tiered}, especially related to being charged
+with a crime and the legal process.  Some countries have given their citizens a
+right to a ``speedy'' trial.  As well, some of the same countries have statutes
+of limitation (limits on how long after the crime was committed to resolve the
+case) for most crimes.  Some administrative situations are also contributors to
+the backlog problem, for instance case prioritization based on chronological
+filing, crime severity, or victim needs.\\
+
+Everything that can be done to reduce or eliminate backlogs at digital forensic labs
+or TCUs should be fully utilized.  The \gls{seaker} device is a great option for
+many law enforcement organizations to begin the process.\\
 
 \subsubsection{Digital Evidence Triage}
-TODO: finish this section\\
-The summary of the research done by Hitchcock et al\cite{hitchcock2016tiered} are as follows.  They sought to expedite
-the process of sending digital evidence for analysis and results.  One of their goals is to enable more field triage
-of digital evidence to reduce the amount collected, and act specifically on pertinent information only.  They 
-recommended that some front-line crime scene investigators (non-forensic analysts) be trained in the implementation
-of digital evidence triage and evaluation.  These trained individuals would be Digital Field Triage (DTF) experts and
-have the ability perform field-level digital evidence triage.  This triage would specifically weed out the benign
-from the consequential digital evidence with high certainty, while also protecting the digital evidence from spoilage
-and preserving evidentiary integrity.\\
 
-One digital evidence triage method proposed by Shaw et al\cite{shaw2013practical} seeks to standardize on an 
-approach they call ``enhanced previewing''.  Enhanced previewing seeks to solve some of the problems associated with
-typical triage approaches.  As is the case in other research, Shaw et al\cite{shaw2013practical} extolls the 
-need to reduce digital forensic evidence analysis backlogs, especially with the evolution of big data and the
-proliferation of digital devices.\\
-
-The proposal for a practical and robust methodology by Shaw et al\cite{shaw2013practical} aims to stem the concerns
-of a typical triage process.  Risks still exist, for instance overlooking digital evidence, but it is argued that
-those risks are outweighed by the risks of a lengthy process due to large backlogs and the associated delays in
-evaluating that evidence.  Another concern exists that inadequately trained people will be charged with performing
-on-site digital evidence triage and mishandling or incorrectly evaluating results will cause evidence spoilage.
-Other concerns are the potential high cost of software and training.\\
-
-In order to provide a simple, yet robust mechanism, Shaw et al\cite{shaw2013practical} starts with an open source,
-CD-bootable image of GNU/Linux and enhances its features to include boot-time application launching, and a simple
-to use interface with minimal ability to deviate from task.  This bootable CD is intended to be placed into 
-evidenciary computer systems and booted using a series of BIOS modifications or boot-time interruptions.  This 
-mechanism to boot the system off of a bootable CD is difficult, and where the most problems with untrained users
-of the enhanced previewing will happen.\\
-
-The enhanced previewing concept has valuable merit, in that the collection mechanisms are thorough.  Using the
-GNU/Linux based system and having written code for it, Shaw et al\cite{shaw2013practical} utilized some well
-thought-out approaches.  First, all hard drives from the evidentiary system are mounted into the GNU/Linux
-filesystem as read-only, thereby eliminating the need for write-blockers.  As well, the entire hard drive is
-evaluated, including the file system, all partitions, unallocated space, deleted files, and compressed files.  In
-addition, other mechanisms are employed that continue to enhance the previewing are employed.\\
-
-Rogers - The CFFTPM was created to enhance the investigators ability to obtain useful information at execution time of a 
-warrant at the suspect's dwelling or work.  The process is designed to be used in the first few hours of the 
-investigation, especially during the first suspect interview and search execution phase of the investigation.  It is
-known that suspects are more likely to divulge more information and be more cooperative in that environment (Yeschke
-2003\cite{yeschke2003art}).  As well, location of and presentation with suspect ``triggers'' from the potential evidence
-increase the suspect's willingness to talk and cooperate while on site.\cite{rogers2006computer}\\
-
-The foci of the CFFTPM are immediately finding usable evidence, identifying victims at acute risk, guiding the
-on-going investigation, identify potential charges, and accurately assess the offender's danger to society.\\
-
-Rogers - The CFFTPM is broken up into phases, two of which have sub-phases (see Figure 2).  The main phases consist of Planning, Triage,
-Usage/User Profiles, Chronology/Timeline, Internet Activity, and Case-Specific Evidence.   Usage/User Profiles are broken down into three sub-phases:
-Home Directory, File Properties, and Registry.  These are important and help distinguish user specific activity and
-permissions.  The Internet Activity phase is also broken down into three sub-phases: Browser Artifacts, Email
-Artifacts, and Instant Messenger Artifacts.  These also help establish user activity.  Some importance is explicitly
-stated to skip based on type of investigation and prioritizing the investigation.\\ 
+Rogers et al\cite{rogers2006computer} seems to be among the first researchers to 
+formally propose a traige phase in digital forensic investigations.  The process 
+(CFFTPM) is broken up into phases, two of which have sub-phases (see
+Figure~\ref{fig:CFFTPM}).  The main phases consist of Planning, Triage, Usage/User
+Profiles, Chronology/Timeline, Internet Activity, and Case-Specific Evidence.
+Usage/User Profiles are broken down into three sub-phases: Home Directory, File
+Properties, and Registry.  These are important and help distinguish user specific
+activity and permissions.  The Internet Activity phase is also broken down into three
+sub-phases: Browser Artifacts, Email Artifacts, and Instant Messenger Artifacts.
+These also help establish user activity.  Some importance is explicitly stated to skip
+based on type of investigation and prioritizing the investigation.  The \gls{seaker}
+project combines the triage aquisition phase proposed here along with the analysis
+phase, which is the rest of the CFFTPM on-scene process, into the full functionality
+of the device.\\ 
 
 \begin{figure}[ht]
   \centering
     \includegraphics[width=0.8\textwidth]{images/CFFTPM.png}
   \caption{Computer Forensic Field Triage Process Model (CFFTPM)}
+  \label{fig:CFFTPM}
 \end{figure}
+
+The process of triaging digital evidence is an especially effective method
+when implemented on-scene at search warrant execution time.  The CFFTPM  proposed
+by Rogers et al\cite{rogers2006computer} was created to enhance the investigators
+ability to obtain useful information at execution time of a warrant at the
+suspect's dwelling or place of work.  The process is designed to be used in the first
+few hours of the investigation, especially during the first suspect interview and
+search execution phase of the investigation.  It is known that suspects are more
+likely to divulge more information and be more cooperative in that environment
+(Yeschke 2003\cite{yeschke2003art}).  As well, location of and presentation with
+suspect ``triggers'' from the potential evidence increase the suspect's willingness
+to talk and cooperate while on site\cite{rogers2006computer}.\\
+
+The research done by Hitchcock et al\cite{hitchcock2016tiered} also
+concludes that on-scene triage is useful.  They sought to expedite the process of
+sending digital evidence for analysis and results.  One of their goals is to enable
+more field triage of digital evidence to reduce the amount collected, and act
+specifically on pertinent digital information.  They recommended that some
+front-line crime scene investigators (non-forensic analysts) be trained in the
+implementation of digital evidence triage and evaluation.  These trained individuals
+would be Digital Field Triage (DTF) experts and have the ability perform field-level
+digital evidence triage.  This triage would specifically weed out the benign from
+the consequential digital evidence with high certainty, while also protecting the
+digital evidence from spoilage and preserving evidentiary integrity.\\
+
+In addition, as presented in the previous section, utilizing triage also helps
+reduce the potential backlog and associated delays in digital evidence gathering.
+With the proliferation of Internet Of Things (IOT) devices and cloud storage, the
+field of digital forensics continues to expand.  These areas pose a great challenge,
+but also new opportunities.  Lillis et al\cite{lillis2016current} researched cloud
+storage and found some areas of opportunity, for instance parallel processing,
+distibuted computing, GPU/FPGA utilization, and others.  These areas for increasing
+the efficiency of ditigal forensics can be explored further due to the substantially
+reduced I/O limitations in cloud storage.  Digital forensics triage, especially with
+the \gls{seaker} device, has the opportunity to expand it's influence on the initial
+investigation phase by expanding to IOT and cloud storage devices.\\
+
+Another potential augmentation to the digital evidence triage method was proposed by
+Shaw et al\cite{shaw2013practical} and seeks to standardize on an approach they dubbed
+``enhanced previewing''.  Enhanced previewing seeks to solve some of the problems
+associated with typical triage approaches.  As is the case in other research, Shaw et
+al\cite{shaw2013practical} extolls the need to reduce digital forensic evidence
+analysis backlogs, especially with the evolution of big data and the proliferation of
+digital devices.\\
+
+The proposal for a practical and robust enhanced previewing methodology aims to stem
+the concerns of a typical triage process.  Risks still exist, for instance overlooking
+digital evidence, but it is argued that those risks are outweighed by the risks of a
+lengthy process due to large backlogs and the associated delays in evaluating that
+evidence.  Another concern exists that inadequately trained people will be charged
+with performing on-scene digital evidence triage and mishandling or incorrectly
+evaluating results will cause evidence spoilage. Other concerns are the potential high
+cost of software and training\cite{shaw2013practical}.\\
+
+Shaw's et al\cite{shaw2013practical} enhanced previewing starts with an open source,
+CD-bootable image of GNU/Linux and enhances its features to include boot-time
+application launching, and a simple to use interface with minimal ability to deviate
+from task.  This bootable CD is intended to be placed into evidenciary computer
+systems and booted using a series of BIOS modifications or boot-time interruptions.
+This mechanism to boot the system off of a bootable CD is difficult, and where the
+most problems with untrained users of the enhanced previewing will happen.\\
+
+The enhanced previewing concept has valuable merit, in that the collection mechanisms
+are thorough.  Using the GNU/Linux based system and having written code for it, Shaw 
+et al\cite{shaw2013practical} utilized some well thought-out approaches.  First, all
+hard drives from the evidentiary system are mounted into the GNU/Linux filesystem as
+read-only, thereby eliminating the need for write-blockers.  As well, the entire hard
+drive is evaluated, including the file system, all partitions, unallocated space,
+deleted files, and compressed files.  In addition, other mechanisms are employed that
+continue to enhance the previewing are employed.\\
+
+Although useful, this is not the approach taken in the \gls{seaker} project.  Instead
+of attempting to put together an alternate operating system that uses the potentially
+tainted computer system, the \gls{seaker} device evaluates individual digital media
+devices after being removed from the computer system it was originally from.  This
+eliminates the possibility of self-deleting media, virus infection, and other 
+potential hardware-related problems that may exist as evidence eliminating utilities.\\
 
 \subsubsection{How \gls{seaker} Can Help}
 
