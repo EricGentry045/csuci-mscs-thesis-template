@@ -4,42 +4,39 @@
 \contentsline {subsection}{\numberline {1.2}Literature Review}{6}
 \contentsline {subsubsection}{\numberline {1.2.1}History of Digital Evidence}{6}
 \contentsline {subsubsection}{\numberline {1.2.2}Process and Procedure Standardization}{8}
-\contentsline {subsubsection}{\numberline {1.2.3}Reactive vs. Proactive Digital Forensic Investigation Processes}{13}
-\contentsline {subsubsection}{\numberline {1.2.4}Aquisition Methodology}{14}
-\contentsline {subsubsection}{\numberline {1.2.5}Analysis Methodology}{15}
-\contentsline {subsubsection}{\numberline {1.2.6}Combined Aquisition and Analysis Methodologies}{17}
-\contentsline {subsubsection}{\numberline {1.2.7}Digital Evidence Backlog}{21}
-\contentsline {subsubsection}{\numberline {1.2.8}Digital Evidence Triage}{25}
-\contentsline {subsubsection}{\numberline {1.2.9}How \gls {seaker} Can Help}{29}
-\contentsline {section}{\numberline {2}Background}{30}
-\contentsline {subsection}{\numberline {2.1}Legal Details}{31}
-\contentsline {subsection}{\numberline {2.2}Technical Details}{33}
-\contentsline {section}{\numberline {3}Development of \gls {seaker} Device}{35}
-\contentsline {subsection}{\numberline {3.1}Conception}{36}
-\contentsline {subsection}{\numberline {3.2}Setup Script For \gls {rpi}}{38}
-\contentsline {subsubsection}{\numberline {3.2.1}Web Server}{40}
-\contentsline {subsubsection}{\numberline {3.2.2}WIFI Setup}{41}
-\contentsline {subsection}{\numberline {3.3}Rules For Mounting}{41}
-\contentsline {subsection}{\numberline {3.4}Code for Searching Device}{42}
-\contentsline {subsection}{\numberline {3.5}Web Code}{43}
-\contentsline {subsection}{\numberline {3.6}Process Flow}{46}
-\contentsline {subsection}{\numberline {3.7}Tools Used for Development}{49}
-\contentsline {subsubsection}{\numberline {3.7.1}Hardware}{49}
-\contentsline {subsubsection}{\numberline {3.7.2}Programming Languages and Scripting}{50}
-\contentsline {subsubsection}{\numberline {3.7.3}Raspbian Operating System}{51}
-\contentsline {subsubsection}{\numberline {3.7.4}Collaboration Tools}{52}
-\contentsline {subsubsection}{\numberline {3.7.5}Setup Tools}{53}
-\contentsline {section}{\numberline {4}Experimental Results}{55}
-\contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{55}
-\contentsline {subsection}{\numberline {4.2}Results}{56}
-\contentsline {section}{\numberline {5}Conclusions and Future Work}{57}
-\contentsline {section}{\numberline {6}Appendix}{69}
-\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{69}
-\contentsline {subsection}{\numberline {6.2}\gls {seaker} Usage}{76}
-\contentsline {subsection}{\numberline {6.3}Code}{81}
-\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{81}
-\contentsline {subsection}{\numberline {6.4}Results of Testing}{82}
-\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{82}
-\contentsline {section}{\numberline {7}STOP HERE - Abstract}{86}
-\contentsline {section}{\numberline {8}Keywords and glossary}{86}
-\contentsline {section}{\numberline {9}Graphs, Images, Figures, and tables}{86}
+\contentsline {subsubsection}{\numberline {1.2.3}Reactive Digital Forensic Investigation Processes}{14}
+\contentsline {subsubsection}{\numberline {1.2.4}Aquisition Methodology}{15}
+\contentsline {subsubsection}{\numberline {1.2.5}Analysis Methodology}{16}
+\contentsline {subsubsection}{\numberline {1.2.6}Combined Aquisition and Analysis Methodologies}{18}
+\contentsline {subsubsection}{\numberline {1.2.7}Digital Evidence Backlog}{22}
+\contentsline {subsubsection}{\numberline {1.2.8}Digital Evidence Triage}{26}
+\contentsline {subsubsection}{\numberline {1.2.9}How \gls {seaker} Can Help}{30}
+\contentsline {section}{\numberline {2}Background}{31}
+\contentsline {subsection}{\numberline {2.1}Legal Details}{32}
+\contentsline {subsection}{\numberline {2.2}Technical Details}{34}
+\contentsline {section}{\numberline {3}Development of \gls {seaker} Device}{36}
+\contentsline {subsection}{\numberline {3.1}Conception}{37}
+\contentsline {subsection}{\numberline {3.2}Setup Script For \gls {rpi}}{39}
+\contentsline {subsubsection}{\numberline {3.2.1}Web Server}{41}
+\contentsline {subsubsection}{\numberline {3.2.2}WIFI Setup}{42}
+\contentsline {subsection}{\numberline {3.3}Rules For Mounting}{42}
+\contentsline {subsection}{\numberline {3.4}Code for Searching Device}{43}
+\contentsline {subsection}{\numberline {3.5}Web Code}{44}
+\contentsline {subsection}{\numberline {3.6}Process Flow}{47}
+\contentsline {subsection}{\numberline {3.7}Tools Used for Development}{50}
+\contentsline {subsubsection}{\numberline {3.7.1}Hardware}{50}
+\contentsline {subsubsection}{\numberline {3.7.2}Programming Languages and Scripting}{51}
+\contentsline {subsubsection}{\numberline {3.7.3}Raspbian Operating System}{52}
+\contentsline {subsubsection}{\numberline {3.7.4}Collaboration Tools}{53}
+\contentsline {subsubsection}{\numberline {3.7.5}Setup Tools}{54}
+\contentsline {section}{\numberline {4}Experimental Results}{56}
+\contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{56}
+\contentsline {subsection}{\numberline {4.2}Results}{57}
+\contentsline {section}{\numberline {5}Conclusions and Future Work}{58}
+\contentsline {section}{\numberline {6}Appendix}{70}
+\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{70}
+\contentsline {subsection}{\numberline {6.2}\gls {seaker} Usage}{77}
+\contentsline {subsection}{\numberline {6.3}Code}{82}
+\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{82}
+\contentsline {subsection}{\numberline {6.4}Results of Testing}{83}
+\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{83}

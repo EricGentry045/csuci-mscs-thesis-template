@@ -26,6 +26,10 @@
 \usepackage[all]{xy}
 \usepackage{pdfpages}
 
+% provide a way to have breaking undelines
+% use \uline instead of \underline
+\usepackage[normalem]{ulem}
+
 % Glossary stuff - put definitions in defns.tex file
 \usepackage{glossaries}
 \loadglsentries{definitions}
@@ -385,21 +389,27 @@ Digital Evidence, Digital Evidence, Forensic Tools, \gls{rpi}}
 \\
 
 \begin{abstract}
-As our world of digital devices continues to expand, the potential for digital evidence available to law
-enforcement during case investigation is ever increasing.  The growing amount of digital evidence, along with
-the deprived pool of Digital Forensic Investigators is causing a backlog to form at many of the digital
-forensics labs around the world.  This backlog leads to delays in evidence analysis and reporting, causing
+As our world of digital devices continues to expand, the potential for
+digital evidence available to law enforcement during case investigation is
+ever increasing.  The growing amount of digital evidence, along with
+the deprived pool of Digital Forensic Investigators\cite{hitchcock2016tiered}
+is causing a backlog to form at many of the digital forensics labs around the
+world.  This backlog leads to delays in evidence analysis and reporting, causing
 investigators and prosecutors to postpone or even drop on-going cases.\\
 
-The \gls{seaker} device is a digital forensic triage tool that is designed to be simple, portable, inexpensive,
-robust, and easy to use.  \gls{seaker} is an acronym for Storage Evaluator And Knowledge Extraction Reader.  
-Utilizing a \gls{rpi}, this is a novel approach to helping provide immediate feedback to investigators
-along with attempting to stem the backlog problem.  It was originally developed for on-scene investigations
-that require immediate feedback, especially in time-sensitive investigations.  It also appears to be an
-excellent tool to help reduce the backlog by preventing over-collection of digital evidence.  \gls{seaker} is not
-meant to replace a fully-functional digital forensic lab, but instead to augment the initial investigation
-and help reduce the backlog.  This research and device overview proposes the mobile, inexpensive, digital
-triage device called \gls{seaker}.
+The \gls{seaker} device is a digital forensic triage tool that is designed to
+be simple, portable, inexpensive, robust, and easy to use.  \gls{seaker} is an
+acronym for Storage Evaluator And Knowledge Extraction Reader.  Utilizing a
+\gls{rpi}, this digital forensic triage device is a novel approach to providing
+immediate feedback to investigators.  It is also intended to help stem the backlog
+problem in digital forensics labs worldwide\cite{hitchcock2016tiered}.
+It was originally developed for on-scene investigations that require immediate
+feedback, especially in time-sensitive investigations.  It also appears to be an excellent
+tool to help reduce the digital evidence backlog by preventing over-collection
+of digital evidence.  \gls{seaker} is not meant to replace a fully-functional
+digital forensic lab, but instead to augment the initial investigation and help
+reduce the backlog.  This research and device overview proposes the mobile,
+inexpensive, digital triage device called \gls{seaker}.
 \end{abstract}
 
 \newpage
@@ -429,15 +439,14 @@ triage device called \gls{seaker}.
 \subsection{Introduction}
 Law enforcement investigations involve many aspects of criminality and need carefully thought-out
 procedures and practices.  These procedures and practices are essential to finding the evidentiary
-information necessary to determine criminal liability, but are also in place to ensure that the evidence
+information necessary to determine criminal liability.  They are also in place to ensure that the evidence
 collected is not tainted and is sound, viable, admissible court evidence.  Establishing and retaining the
 forensic integrity of the evidence is a required and crucial part of the investigator's task.\\
 
 Performing investigations is also a noteworthy endeavor.  There are many steps involved that require special
 training to be performed properly.  One primary example is the {\em chain of custody}.  This refers to the 
 step-by-step documentation record regarding evidence that includes details such as who had custody of
-the evidence, when they had custody, who it was transferred to, who analyzed it, etc.
-Another is the exacting
+the evidence, when they had custody, who it was transferred to, who analyzed it, etc. Another is the exacting
 science of collecting, labeling, itemizing, and acquiring of evidence.
 For instance, collecting physical evidence requires the
 use of gloves,
@@ -446,7 +455,7 @@ DNA evidence mishandling, and a multitude of other evidence tainting.  Without t
 guidelines,
 even conclusive evidence may not be admissible during a case.\\
 
-Digital evidence is also very essential to many investigations and cases in the modern world.
+Digital evidence is very essential to many investigations and cases in the modern world.
 With each passing year, more and more digital devices are collecting, storing, and uploading data.  As
 well, electronic devices for personal use appropriately labelled the Internet of Things (IoT) or
 the Internet of Everything (IoE) are becoming more and more
@@ -455,19 +464,19 @@ thermostats, light bulbs, window coverings, garage door openers, keys, clothes, 
 These devices and the massive amount of digital information that
 is being generated and collected are often helpful in criminal investigations.  The data can be used to
 construct timeframes of activity, locations of individuals, Internet activity, computer users and usages,
-and lots other potential digital information.\\
+and other potential digital information.\\
 
-One growing and particularly helpful aspect of an investigation is digital forensics.  This not only 
-involves collecting potential digital evidence, but also analyzing, 
-and reporting procedures.  This almost always requires a search warrant - a court-ordered search and
+One growing and particularly helpful aspect of an investigation is digital forensics.
+This involves collecting potential digital evidence, analyzing, and reporting procedures.
+Collecting and analyzing evidence almost always requires a search warrant - a court-ordered search and
 seizure of potential evidence of a location where a suspect resides, works, or may be storing it.
-The search warrant is executed after it has been obtained from a judge and can involve physical and
+A search warrant is executed after it has been obtained from a judge and can involve physical and
 digital evidence, as well as other items of consequence.\\
 
 Search warrant investigations are often fraught with danger, intentional obscurity, hidden evidence, and
-potential mishandling of evidence.  Before anything else can be done, the location must be considered
-secure - considered safe from harming investigators and free of potential threats.  Once a scene is
-secured at a search warrant service involving electronic evidence, three activities
+the potential mishandling of evidence.  Before anything can be done, the location must be considered
+secure and free of potential threats for the investigators.  Once a scene is
+secured at a location involving electronic evidence, three activities
 take place simultaneously: the search for physical evidence, the search of the physical evidence
 itself for electronic evidence, and the interviewing of involved parties.\\
 
@@ -482,19 +491,19 @@ on the case) can confront the suspects and potentially secure statements that le
 This leads to the need for digitial forensics specialists to bring their lab equipment into the field,
 especially when serving a search warrant.  The lab equipment is specialized software and hardware
 designed to analyze, report, and maintain forensic integrity on potential digital evidence.  This
-equipment often involved a laptop, a write-blocking device, media imaging storage devices, expensive
+equipment often involves a laptop, a write-blocking device, media imaging storage devices, expensive
 software, and associated cabling for connection and power.  As well, this software is designed for
 extensive and in-depth searching and often takes hours or days to analyze the evidence.  Many of the
 reports from these systems are designed to be thorough and may take a skilled digital forensic
 examiner days to pour over the material produced.  Oftentimes, this equipment is not brought
-into the field and all digital evidence is simply collected for later analysis at the law
+into the field and the digital evidence is simply collected for later analysis at the law
 enforcement facilities.\\
 
-The need for a more field-friendly digital forensic {\em triage} solution will assist in the initial
+A more field-friendly digital forensic {\em triage} solution like \gls{seaker} will assist in the initial
 investigation tasks in multiple ways:
 \begin{enumerate}
   \item It enforces a structured procedure and approach that is user-friendly to {\em non-digital
-  forensic aware investigators} with the goal of simple instructions for use and very simple 
+  forensic trained investigators} with the goal of simple instructions for use and very simple 
   evidence location.
   \item It enables investigators, especially interrogators, a very fast digital-evidence overview
   into the types of files
@@ -506,13 +515,13 @@ investigation tasks in multiple ways:
   search warrant.  The devices that are searched and found to have no evidenciary value can be
   deemed inconsequencial to the case and not be taken into custody.
   \item It may be used to provide initial, albeit simplified, analysis results on potential
-  digital evidence ingested into the digital forensic lab.
+  digital evidence received by digital forensic labs.
 \end{enumerate}
 
-The topic explored in this paper is a portable, inexpensive, efficient device, named \gls{seaker},
+This paper presents a portable, inexpensive, efficient device, named \gls{seaker},
 that is intended to overcome the need for a full digital
 forensic lab equipment suite to be brought into the field.  The \gls{seaker} device was conceived and 
-an initial prototype was produced at the California State University Channel Islands (CSUCI)
+produced at the California State University Channel Islands (CSUCI)
 campus in a 
 Masters level Cyber Security class (COMP 524, Summer 2017) in direct collaboration with the
 Southern California High Tech Task Force (SCHTTF) division of the Ventura Country
@@ -538,10 +547,8 @@ Author's direct contributions to the \gls{seaker} device project:
   \item Co-authored a conference paper on the \gls{seaker} project and the technology behind it
   \item Updated and enhanced the \gls{seaker} device functionality to support the latest raspbian operating system (Stretch
   Lite, April 2018 release), including enabling ethernet passthrough to the wireless access point
-  \item Co-authored by creating Logic Models and assisting with read-throughs for a United States
-  Department of Justice (DOJ)
-  grant proposal for future work on this project (\gls{seaker}) and
-  a second, related security project (Voyager)
+  \item Co-authored a United States Department of Justice (DOJ) grant proposal, providing Logic Models
+  for (\gls{seaker}) and Voyager (another similar digital forensic tool project at CSUCI)
 \end{enumerate}
 
 \subsection{Literature Review}
@@ -563,8 +570,8 @@ lack of unanimous adoption to a single standard.\\
 
 In 2006, Rogers et al\cite{rogers2006computer} proposed a standardization model for a portion
 of the entire process called {\em triage} for digital
-forensic examiners to follow: Computer Forensics Field Triage Process Model.
-The authors of the CFFTPM note the important legal and technical
+forensic examiners to follow: Computer Forensics Field Triage Process Model (CFFTPM).
+The authors of the CFFTPM noted the important legal and technical
 considerations prior to implementing CFFTPM on a particular investigation.  The legal
 considerations include issues
 related to search warrant scope and its limitations, U.S. Constitutional 4th Amendment rights, etc.
@@ -576,32 +583,41 @@ skillset of the suspect, having proper lab equipment on-site, scene control, etc
 Even as late as 2013, Shaw et al\cite{shaw2013practical} points out that neither digital forensic
 triage examination nor digital forensic full examination are well defined.
 Digital forensic triage may mean something completely different to two digital forensic
-examiners.  As well, full digital forensic examination has no robust standard to follow, Although
+examiners.  As well, full digital forensic examination has no robust standard to follow, although
 there has been no shortage of attempts.\\
 
-The National Institute of Standards and Technologies (NIST) published guidelines for several
-different types of digital evidence, for instance mobile phones, and computers.
-However, NIST focuses on the analysis portion of the science, but leaves the collection,
-and reporting aspects unexplored.  The International Standards Organization also published
-a set of guidelines, but primarily focused on collection and handling aspects of digital
-evidence.  
+National Institute of Standards and Technologies (NIST) is a technological, non-regulatory
+federal agency under the U.S. Department of Commerce.  The NIST process model (labeled NIST
+SP 800-101) lays out the digital evidence procedures in four steps: Preservation, Acquisition,
+Examination and Analysis, and Reporting\cite{ajijola2014review}.  These four steps provide the
+forensic steps for the digital evidence process model as a suggested way to evaluate mobile
+device information.\\
+
+The NIST guidelines\cite{ayers2014guidelines} documenting a digital forensics process were published
+in 2014 and included several different types of digital evidence such as mobile phones and computers.
+However, NIST focuses on the analysis portion of the science, but leaves the collection
+and reporting aspects unexplored.\\
+
+The International Standards Organization (ISO) published a set of guidelines\cite{ISO27037}
+in 2012 that primarily focused on collection and handling aspects of digital evidence.\\
+
 Ajijola et al\cite{ajijola2014review} provided a thorough review in 2014 of the NIST SP
-800-101 Rev. 1:2014 guidelines
-titled Guidelines on Mobile Devices Forensics and ISO/IEC 27037 titled
-Guidelines for
-Identification, Collection, Acquisition, and Preservation of Digital Evidence.
-Their recommendation was a combined approach, though still not a fully formed solution.\\
+800-101 Revision 1 guidelines titled \uline{Guidelines on Mobile Devices Forensics} and
+ISO/IEC 27037 titled \uline{Guidelines for Identification, Collection, Acquisition, and
+Preservation of Digital Evidence}.  Their recommendation was a combined approach that 
+incorporates both guidelines for maximum effect.  Even with the recommendation of a 
+combined guidelines approach, the solution was still not fully formed.\\
 
 \subsubsection{Process and Procedure Standardization}
 
-Several approaches over the years have been proposed as universal processes and procedures to
+Over the years, several different approaches have been proposed as universal processes and procedures to
 gathering, reviewing, and presenting digital evidence.  These approaches range in number of
 steps, process coverage, and overall methodology, 
 but all have the common goal of finding usable digital evidence for preventing future
 harm to society and preserving the potential digital evidence's 
 integrity for means of presentation in court cases.\\
 
-In the early years, some research facilities arose to help create and define the processes
+In the early years (circa 1990), some research facilities arose to help create and define the processes
 and procedures necessary.  Among these were the Computer Analysis and
 Response Team (CART), the Scientific Working Group on Digital Evidence (SWGDE), the
 Technical Working Group on Digital Evidence (TWGDE), and the National Institute of
@@ -609,74 +625,82 @@ Justice (NIJ).  Since their respective inceptions, they have all strived and
 contributed to standardization on approaches and methods for 
 the handling and processing of all digital evidence.\cite{noblett2000recovering}.\\
 
-In addition, the United States Department of Justice (DOJ) published 
-{\em Electronic Crime Scene Investigation: A Guide to First Responders}
-\cite{ballou2010electronic} in the early 2000s that outlines
-the necessary four steps for properly investigating digital Evidence:
+In addition, the United States Department of Justice (DOJ) first published 
+\uline{Electronic Crime Scene Investigation: A Guide to First Responders}
+\cite{ballou2010electronic} in 2001 (with several revisions since) that outlines
+the necessary four steps for properly investigating digital evidence:
 
+\vspace{0.5 cm}
 \begin{enumerate}
-  \item {\em Collection}, which involves searching for digital evidence,
-  deciphering what should be collected, acquiring the media,
+  \item {\em Collection} -- which involves physically searching for digital evidence,
+  deciphering what should be collected, acquiring the media devices,
   and chain of custody documentation.
-  \item {\em Examination}, which includes searching the digital media
+  \item {\em Examination} -- which includes searching the digital media
   and attempting to reveal the evidence, especially when it is
   hidden or obscured.
-  \item {\em Analysis}, intending to review the evidence for important
+  \item {\em Analysis} -- intending to review the evidence for important
   legal infringements. 
-  \item {\em Reporting}, for documenting the process used and evidence
+  \item {\em Reporting} -- for documenting the process used and evidence
   uncovered in the investigation.
 \end{enumerate}
+\vspace{0.5 cm}
 
-The 2003 {\em Integrated Digital Investigation Process} (IDIP)\cite{carrier2003getting},
-proposed by Carrier, et al is a model that in their own words:
+Another approach to investigating digital evidence was the 2003
+{\em Integrated Digital Investigation Process} (IDIP)\cite{carrier2003getting},
+proposed by Carrier, et al.  This was different from the DOJ proposal and
+is a model that in their own words:
 \begin{quote}
-``uses the theory
-that a computer is itself a crime scene, called the digital crime scene, and applies crime scene
+``uses the theory that a computer is itself a crime scene,
+called the digital crime scene, and applies crime scene
 investigation techniques.''
 \end{quote}
 It consists of five main phases (in addition, see Figure~\ref{fig:IDIP}):
 
+\vspace{0.5 cm}
 \begin{enumerate}
-  \item {\em Readiness}, for training, preparedness, infrastructure and resources
+  \item {\em Readiness} -- training, preparedness, infrastructure and resources
   preparation before any investigation even begins.
-  \item {\em Deployment}, which is intended to capture the process for when an 
+  \item {\em Deployment} -- which is intended to capture the process for when an 
   incident requires digital evidence procedures and assignment of resources.
-  \item {\em Physical Crime Scene Investigation}, for processing the physical
-  evidence from the environment.
-  \item {\em Digital Crime Scene Investigation}, for collecting and
+  \item {\em Physical Crime Scene Investigation} -- for processing the physical
+  evidence from the search warrant location.
+  \item {\em Digital Crime Scene Investigation} -- for collecting and
   analyzing the digital evidence that exists in the virtual environment.
-  \item {\em Review}, for examining the process used in the investigation and
+  \item {\em Review} -- for examining the process used in the investigation and
   potential areas for improvements. 
 \end{enumerate}
+\vspace{0.5 cm}
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \centering
     \includegraphics[width=0.8\textwidth]{images/IDIP.png}
   \caption{Integrated Digital Investigation Process Model (IDIP)}
   \label{fig:IDIP}
 \end{figure}
 
-Baryamureeba and Tushabe\cite{baryamureeba2004enhanced} proposed a model based
-on the best parts of the US DOJ's {\em Electronic Crime
-Scene Investigation}, the {\em Abstract Digital Forensics Model}, and 
+Baryamureeba and Tushabe\cite{baryamureeba2004enhanced} proposed a new model 
+based on the best parts of the US DOJ's \uline{Electronic Crime
+Scene Investigation}, the \uline{Abstract Digital Forensics Model}, and 
 the IDIP model.  Their proposal was called the
 Enhanced Integrated Digitial Investigation Process (EIDIP).
-Their model was proposed in 2004 at the annual Digital Forensic Research conference
+This model was proposed in 2004 at the annual Digital Forensic Research conference
 (DFRWS)\cite{baryamureeba2004enhanced} and included the following phases:
 
+\vspace{0.5 cm}
 \begin{enumerate}
-  \item {\em Readiness}, same as IDIP.
-  \item {\em Deployment}, which encompasses the Deployment,
+  \item {\em Readiness} -- same as IDIP.
+  \item {\em Deployment} -- which encompasses the Deployment,
   Physical Crime Scene Investigation, and Digital Crime Scene
   Investigation phases from IDIP.
-  \item {\em Traceback}, that includes connecting the evidence collected
+  \item {\em Traceback} -- that includes connecting the evidence collected
   in the previous phase to the suspect(s).  Typically this is done with IP
   addresses and requires the authority to gather this information.
-  \item {\em Dynamite}, which includes the reconstruction of the events
+  \item {\em Dynamite} -- which includes the reconstruction of the events
   suggested by the evidence and  the documentation and submission to the
   appropriate legal authories.
-  \item {\em Review}, same as IDIP.
+  \item {\em Review} -- same as IDIP.
 \end{enumerate}
+\vspace{0.5 cm}
 
 In 2006, Rogers et al\cite{rogers2006computer} proposed a reliable, repeatable process 
 model designed specifically for digital evidence triage called
@@ -688,30 +712,31 @@ The process was derived from several other military and law enforcement models
 including IDIP, 
 Digital Crime Scene Analysis (DCSA),
 and a military Operations Order (OpOrd).  In coordination with the Southern Indiana 
-Assistant U.S. Attorney's office,
+Assistant U.S. Attorney's office and 
 USADA Steve Debrota, Rogers et al\cite{rogers2006computer} implemented and reported
-on the success of their proposal.  This amalgamation of approaches is still inspiring 
+on the success of the CFFTPM.  This amalgamation of approaches is still inspiring 
 the latest trends in Digital Forensic approaches.\\
 
-Shaw et al\cite{shaw2013practical} analyzed the ACPO and focused on the second step (Capture)
-as the primary guideline for evidential integrity.  They strongly suggest compliance with
+Another researched, Shaw et al, analyzed the Association of Chief Police Officers (ACPO)
+and focused on the second step (Capture) as the primary guideline for evidential
+integrity\cite{shaw2013practical}.  They strongly suggest compliance with
 digital forensics best practices, like the ones provided in the ACPO.  Their final approach
 and recommendation was to combine Linux utilities with a simplistic interface to standardize
 the output and enable investigators who may not have full digitial forensic backgrounds
 to perform triage on potential digital evidence.\\
 
-The Association of Chief Police Officers (ACPO), a private company that helped establish and
+The ACPO, a private company that helped establish and
 develop policing practices in England, Wales, and Northern Ireland for many years,
-put together a {\em Good Practice Guide for Digital Evidence}\cite{williams2012acpo} in 2012 that outlines some
+put together a \uline{Good Practice Guide for Digital Evidence}\cite{williams2012acpo} in 2012 that outlines some
 recommended procedures for dealing with digital evidence.  As with other methodologies, this guide
 explains utilizing a four step approach: Plan, Capture, Analyze, Present.\\
 
-The ISO/IEC 27037 guidelines provide an attempt at an internationally 
+The ISO/IEC 27037 guidelines (completed in 2012) provide an attempt at an internationally 
 recognized approach,
 with the goal of making it easier to compare, combine, and contrast
-results for out-of-jurisdiction cases and for data scientists' research.  It provides a
+results for out-of-jurisdiction cases and for data scientists' research\cite{ISO27037}.  It provides a
 common reference line for 
-digital forensics\cite{ajijola2014review}.  However, it is not meant to replace laws or regulations.
+digital forensics\cite{ajijola2014review}.  But, it is not meant to replace laws or regulations.
 The main purpose is to provide practical
 assistance for investigations involving potential digital evidence, while preventing digital
 evidence corruption.  This
@@ -722,59 +747,64 @@ this is incomplete, as
 it only addresses gathering, not actually evaluating or providing results to law enforcement
 investigators.\\
 
-All of these approaches are intended to help find and gather digital evidence.  They are also intended
-to maintain the forensic integrity.  Some organizations combine these approaches into a system of
-processes and procedures intended for use in their own facilities.  Unfortunately, many organizations have
-home-grown solutions passed down from senior members of the digital forensics team to the newer
-team members.  Not having a universally recognized and accepted standard 
+All of these different guidelines and approaches are intended to help find and gather digital evidence.
+They are also intended to maintain the forensic integrity of the media devices.  Unfortunately, there 
+is not a universally agreed upon approach. Some organizations combine these approaches
+into a system of processes and procedures intended for use in their own facilities.  
+Many organizations have home-grown solutions passed down from senior members of the digital forensics
+team to the newer team members.  Not having a universally recognized and accepted standard 
 leads to complications and difficulties when digital evidence needs to be shared across other
 jurisdictions and boundaries\cite{ajijola2014review}.\\
 
-\subsubsection{Reactive vs. Proactive Digital Forensic Investigation Processes}
+The \gls{seaker} device could be utilized to standardize on an approach to the triage phase of 
+digital media device investigation.  It is also easily altered to conform to an existing reporting
+standard, if circumstances warrant it.\\
+
+\subsubsection{Reactive Digital Forensic Investigation Processes}
 
 \textit{Reactive} digital forensic investigation processes are utilized after an offense has been committed to help
-identify the charges and suspects.  This is the most common process for digital forensics.  The \textit{proactive}
-digital forensic investigation processes are to attempt to detect before or during an active offense is committed.
-This is not a job for a typical law enforcement investigator.\\
+identify the charges and suspects.  This is the most common process for digital forensics.\\
 
-This SEAKER research is based on the reactive digital forensic investigation process in the hopes of reducing the digital
-forensic lab backlogs across the country and world in two ways.  The first way is to reduce the amount of digital
-evidence acquired for the digital forensics lab by enabling efficient and effective on-site triage to occur by
-utitizing the commonality of digital evidence collection and analysis into a single step.  The SEAKER digital
-evidence triage tool enables an initial collection of information and subsequent searches by any number of local,
+The SEAKER digital evidence triage tool is designed to help the reactive process.  
+It is based on the reactive digital forensic investigation process with the goal of reducing the digital
+forensic lab backlogs across the world in two ways.  The first way is to reduce the amount of digital
+evidence acquired for the digital forensics lab.  This is done by enabling efficient and effective on-site triage to occur by
+combining digital evidence collection and analysis into a single step.  The SEAKER device enables an initial
+collection of information and subsequent searches by any number of local,
 on-scene investigators.  These investigators do not need extensive training in digital forensics to utilize it.\\
 
-The second way is to help reduce the existing backlog by enabling a faster, more streamlined approach to initial
+The second way \gls{seaker} will reduce digital forensics backlogs is by enabling a faster, more streamlined approach to initial
 potential evidence gathering and reporting.  This approach utilizes the SEAKER digital evidence trial tool to 
-perform an initial acquisition and analysis on every exiting case to provide a ``first-look'' at the information.  This
-also enables a searching mechanism within a few minutes of plugging in digital evidence media to enable digital 
+perform an initial acquisition and analysis on every existing case to provide a ``first-look'' at the information.
+Within a few minutes of plugging in digital evidence media, \gls{seaker} will enable digital 
 forensic investigators a quick review of materials.  The process will help with prioritization of evidence, a basic
 analysis and potentially initial evidence in the form of a report that can be provided to investigators and
 prosecutors.\\
 
 \subsubsection{Aquisition Methodology}
 
-The \gls{seaker} tool is designed specifically for the {\em triage} phase of digital forensic
-investigations.  As a general approach, this research splits the act of dealing with digital evidence into two
-separate methodologies: {\em aquisition} and {\em analysis}.  These are the main foci since the \gls{seaker}
-device is designed to do both in a very timely fashion, with comprehensive searching results.\\
-
 {\em Aquisition} has multiple definitions across the digital forensic universe.
 Some define this as the process of gathering the digital devices, logging them using the 
 {\em chain of custody} paperwork, and removing them from the location denoted in the
 search warrant.  Others define this as the collection of potential evidence from the digital
 devices.  However, in this case it is meant to imply the entire set of processes and
-procedures from training the digital forensic examiners and \gls{seaker} users
-to collecting the media that potential digital evidence may be stored on, 
-to the gathering of potential evidence from each digital device.\\
+procedures.  These include training the digital forensic examiners and \gls{seaker} users, 
+collecting the media that potential digital evidence may be stored on, and
+gathering of potential evidence from each digital device.\\
 
-The set of processes and procedures for training and usage of the \gls{seaker} device is well
-documented in the appendix, but could also be supplemented by more specific guidelines that
-combine the digital forensic lab's procedures with the usage documents.\\
+The \gls{seaker} tool is designed specifically for the {\em triage} phase of digital forensic
+investigations.  As a general approach, this research will split the act of dealing with digital evidence into two
+separate methodologies: {\em aquisition} and {\em analysis} (discussed in the next section).
+These are the main foci since the \gls{seaker}
+device is designed to do both in a very timely fashion, with comprehensive searching results.\\
 
 When a search warrant is being executed, the SEAKER device is intended to be used to help
 manage the triage process of the potential digital evidence.  This helps on-scene investigators
 determine priority, worthiness of custody, and documentation of the digital media\cite{hitchcock2016tiered}.\\ 
+
+The set of processes and procedures for training and usage of the \gls{seaker} device is well
+documented in the appendix, but could also be supplemented by more specific guidelines that
+combine the digital forensic lab's procedures with the usage documents.\\
 
 The {\em collection} phase of aquisition specifically highlighted here is the gathering
 of physical digital media information and the capturing of potential digital evidence content
@@ -783,12 +813,16 @@ in the triage environment.  The setup and training materials for creating and us
 
 \subsubsection{Analysis Methodology}
 
+Comprehensive forensic analysis of digital media is an arduous and time-consuming task.  A full
+analysis could take many hours or even days and is not the first priority when serving a search
+warrant.  The \gls{seaker} device is intended to reduce the time this takes down to minutes,
+especially during the triage stage of a search warrant execution.\\
+
 The {\em Analysis} methodology is considered the second phase in the \gls{seaker} approach and 
 can consist of both the {\em triage} analysis stage and the {\em full} analysis stage.
-Specifically, this paper and the \gls{seaker} device focus on the triage stage of Analysis.  This
+Specifically, this research and the \gls{seaker} device focus on the triage stage of Analysis.  This
 stage can be applied in the field or at the digital forensics lab, while the full analysis
-is unlikely to be accomplished in the field.  A full analysis could take many hours or days
-and is not the first priority when serving a search warrant.\\
+is unlikely to be accomplished in the field.\\
 
 Digital evidence triage analysis is a very useful part of an investigation and can be 
 implemented using the \gls{seaker} device.  The triage analysis stage is considered in this research
@@ -798,7 +832,7 @@ lookup search terms from the digital evidence collected from suspect devices plu
 \gls{seaker} device.  The reports consist mainly of the metadata about the digital media and the
 collection statistics, but does not include specific digital media content.\\
 
-Some previous versions of analysis included specific types of operating systems.
+Previous versions of analysis included specific types of operating systems.
 Rogers' et al\cite{rogers2006computer} research in 2006 covered the primary machine type at
 the time: the standard Windows machine.  Unfortunately, this leads to an outdated model over
 time, since the processes and procedures become obsolete as new technology arises.  Along with
@@ -810,19 +844,15 @@ utilized on a regular basis, like Linux, unix versions, and Apple OS.  In fact, 
 Other versions of analysis research deal directly with specific types of devices.
 Ajijola et al\cite{ajijola2014review} reviewed the NIST guidelines that provide an in-depth
 look into mobile devices, helping to explain the technology involved and its
-relationship to the forensic process.  NIST itself is a technological, non-regulatory
-federal agency under the U.S. Department of Commerce.  The NIST process model labeled NIST
-SP 800-101 lays out the digital evidence procedures in four steps: Preservation, Acquisition,
-Examination and Analysis, and Reporting\cite{ajijola2014review}.  These four steps provide the
-necessary steps for the digital evidence process model as a suggested way to evaluate mobile
-device information.  This is useful, but not complete for law enforcement investigators.\\
+relationship to the forensic process. This is useful, but not a complete analysis
+guideline for law enforcement investigators.\\
 
-The \gls{seaker} device achieves the goal of being device and operating system agnostic in
-terms of being able to collect content information from digital media.  It currently supports
-multiple operating systems, as well as multiple device types (provided there is a way to 
-adapt the device to USB).  The only other limitation to the \gls{seaker} device's ability to
-read the content is the availablity of a device driver that allows mounting on Raspbian lite's
-operating system.\\
+The \gls{seaker} device currently supports multiple operating systems, as well as multiple
+device types (provided there is a way to adapt the device to USB). It achieves the goal of
+being device and operating system agnostic in terms of being able to collect content
+information from digital media. The only limitation to the \gls{seaker} device's ability
+to read the content is the availablity of a device driver that allows mounting on Raspbian
+lite's operating system.\\
 
 \subsubsection{Combined Aquisition and Analysis Methodologies}
 
@@ -832,27 +862,31 @@ enable non-digital evidence specialists to utilize the \gls{seaker} device, both
 aquisition and analysis phases are combined.\\
 
 In addition, the users are well guided along the path of aquisition.  Most of this process is
-automated for ease of use and successful digital media content gathering.  The steps involved
-are:
+automated for ease of use and successful digital media content gathering.  The aquisition 
+steps involved are:
 
+\vspace{0.5 cm}
 \begin{enumerate}
-  \item plug in the \gls{seaker} device
-  \item wait 20-30 seconds
-  \item plug in the potential evidence via USB to the \gls{seaker} device
-  \item wait until the light stops flashing
+  \item Plug in the \gls{seaker} device
+  \item Wait 20-30 seconds
+  \item Plug in the potential evidence via USB to the \gls{seaker} device
+  \item Wait until the light stops flashing
 \end{enumerate}
+\vspace{0.5 cm}
 
 The analysis side of the equation is also simple and well guided.  The user interface is 
 designed to very easy to use (see the Appendix section for exact usage details).  The steps
 involved here are:
 
+\vspace{0.5 cm}
 \begin{enumerate}
-  \item connect to the \gls{seaker} WIFI Access Point
-  \item bring up the webpage: http://seaker01.local
-  \item choose which digital media devices to search
-  \item select Search based on default or custom search criteria
-  \item view results (expand/collapse tree-based format)
+  \item Connect to the \gls{seaker} WIFI Access Point
+  \item Bring up the webpage: http://seaker01.local
+  \item Choose which digital media devices to search
+  \item Select {\em Search} based on default or custom search criteria
+  \item View results (expand/collapse tree-based format)
 \end{enumerate}
+\vspace{0.5 cm}
 
 The combination of these two phases and the straightforward nature of the procedures to use
 the \gls{seaker} device make it an ideal digital forensics triage device.  The ability for
@@ -878,9 +912,9 @@ attempting to maximize the evidentiary value of digital evidence collection.\\
 
 Utilizing a tiered approach is not without risks.  One concern is the accidental exclusion
 of an item of digital evidence that is important to the investigation.  Another is the
-level of computer skills and training of the DTF expert.  An attempt could be made to
-mitigate the latter with training and management process, while providing evidence that
-the former is a common misconception in most cases\cite{rogers2006computer}.\\
+level of computer skills and training of the Digital Field Triage (DFT) expert.  An attempt
+could be made to mitigate the latter with training and management process, while providing
+evidence that the former is a common misconception in most cases\cite{rogers2006computer}.\\
 
 Of course, the simplification of aquisition and analysis for use in a triage phase is also
 not a full analysis. Certain factors related to recent advancement in technologies can cause
@@ -898,7 +932,7 @@ step is essential and necessary to fully consider all of the digital evidence th
 be obtained by full analysis.\\
 
 Other research also indicates that combining the best pieces of process models and reviewing
-latest digital forensic devices and methods is a great way to maintain adherence to 
+latest digital forensic devices and methods are great ways to maintain adherence to 
 good practices\cite{ajijola2014review}.  Ajijola et al, 2014\cite{ajijola2014review}
 proposed a new process model that is a hybrid of both NIST recommendations and ISO standards
 with the resulting combination being much more effective than either of its individual parts.\\
@@ -986,9 +1020,9 @@ collected in different time zones, with different timestamp formats, clock skew,
 etc, lining up the events in order can be challenging or infeasible.\\
 
 These are all contributing factors, but some are reduced or eliminated when 
-the digital evidence triage phase is implements.  Even more issues are taken care
+the digital evidence triage phase is implemented.  Even more issues are taken care
 of when digital media devices are prioritized, excluded (due to lack of
-evidentiary leads), and the back log is reduced.\\
+evidentiary leads), and the digitial forensics backlog can be reduced.\\
 
 The Internet of Things (IOT) also poses new challenges and could significantly
 increase the backlog.  IOT devices are estimated to number near 40 billion by
@@ -1000,7 +1034,7 @@ In addition, a portion of IOT devices are battery operated and computationally
 challenged, leading to loss of data over time, and the necessity of implementing
 on-scene triage.\\
 
-The backlog and delays in case reporting are contributors to a common problem of
+The backlog and delays in case reporting are contributing to a common problem of
 time sensitivity\cite{hitchcock2016tiered}, especially related to being charged
 with a crime and the legal process.  Some countries have given their citizens a
 right to a ``speedy'' trial.  As well, some of the same countries have statutes
@@ -1056,7 +1090,7 @@ more field triage of digital evidence to reduce the amount collected, and act
 specifically on pertinent digital information.  They recommended that some
 front-line crime scene investigators (non-forensic analysts) be trained in the
 implementation of digital evidence triage and evaluation.  These trained individuals
-would be Digital Field Triage (DTF) experts and have the ability perform field-level
+would be DFT experts and have the ability perform field-level
 digital evidence triage.  This triage would specifically weed out the benign from
 the consequential digital evidence with high certainty, while also protecting the
 digital evidence from spoilage and preserving evidentiary integrity.\\
@@ -1281,6 +1315,7 @@ course.  The attending students agreed and work began on it, in addition to the 
 assignments due in the course.  Dr. Soltys broke down the problem into categories so
 that teams could form and work on each piece individually.  The categories were:
 
+\vspace{0.5 cm}
 \begin{itemize}
   \item Connecting hd to a RP/NUC, sensing OS and mounting (2 teams together)
   \item Searching in the mounted file system (2 teams together)
@@ -1288,6 +1323,7 @@ that teams could form and work on each piece individually.  The categories were:
   \item Documentation and troubleshooting
   \item Testing
 \end{itemize}
+\vspace{0.5 cm}
 
 This breakdown helped guide each team to get started on their contribution to the
 final project.  However, before the students could begin, the device platform to use,
@@ -1314,6 +1350,7 @@ This also enabled quick building of the HTML framework and response mechanisms.\
 Finally, the feature set needed to be agreed to.  With direct guidance from the SCHTTF,
 specifically Frank Lyu, the class agreed to the following:
 
+\vspace{0.5 cm}
 \begin{itemize}
   \item Write-blocking of attached digital evidence devices
   \item SATA and USB storage devices
@@ -1327,6 +1364,7 @@ specifically Frank Lyu, the class agreed to the following:
   \item Wireless connection to a phone or tablet for keyword input and results
   \item Ability to find and display search results and digital device hardware information
 \end{itemize}
+\vspace{0.5 cm}
 
 The proposal for the SEAKER device project initially came from the SCHTTF.  They wanted
 a device that could quickly ascertain potential evidence and enable on-scene investigators
@@ -1909,15 +1947,18 @@ As well, there are many different libraries that could be included and built
 into a searching algorithm.  Be aware that these will slow down the gathering
 process and could be more useful if searched in stages.  Here are a few:
 
+\vspace{0.5 cm}
 \begin{itemize}
-  \item LibForensics http://code.google.com/p/libforensics/
-  \item Volatile Memory search (Volatility: http://code.google.com/p/volatility/) and (WindowsSCOPE: http://www.windowsscope.com/)
-  \item Oxygen for mobile http://www.oxygen-forensic.com/en/features
+  \item LibForensics -- http://code.google.com/p/libforensics/
+  \item Volatile Memory search -- (Volatility: http://code.google.com/p/volatility/) and (WindowsSCOPE: http://www.windowsscope.com/)
+  \item Oxygen for mobile -- http://www.oxygen-forensic.com/en/features
 \end{itemize}
+\vspace{0.5 cm}
 
 In researching this topic a lot of other potential improvement features
 came to mind.  This is by no means a comprehensive list, but it is a start:
 
+\vspace{0.5 cm}
 \begin{itemize}
   \item More supported media types
   \item Add AJAX (or similar technology) to give live feedback for search and collection
@@ -2023,8 +2064,8 @@ came to mind.  This is by no means a comprehensive list, but it is a start:
   \item For financial related crimes, search... Spreadsheets, databases, MSMoney, Quicken
   \item CRC of any acquired files (for later integrity comparison)
 \end{itemize}
+\vspace{0.5 cm}
 
-\vspace{0.4 cm}
 The SEAKER project was a successful collaboration between two different institutions in the public
 sector: law enforcement and academia. The former has many interesting problems to offer, but as they
 are overwhelmed with cases they typically do not have the man power to do research and development.
@@ -2062,26 +2103,28 @@ environment for the first time. There are three install options that
 enable \gls{seaker} creators to prepare the device.  See
 Table~\ref{tab:RequiredSoftware}
 
+\vspace{0.5 cm}
 \begin{enumerate}
-  \item {\em Router}: This option is where the \gls{rpi} and the
+  \item {\em Router} -- This option is where the \gls{rpi} and the
   secondary computer are connected directly to the same router, thus
   allowing the same local DHCP to assign the IPs of both.  The
   secondary computer is used to prepare the micro SD card and to later
   remotely and securely connect to the \gls{rpi} to complete the
   setup.
   
-  \item {\em Direct Connect}: This option is where the Raspeberry Pi
+  \item {\em Direct Connect} -- This option is where the Raspeberry Pi
   is connected directly to a monitor and keyboard to enable direct
   user input via the termnial.  The secondary computer is necessary to
   prepare the micro SD card, but not used to remotely connect to the
   \gls{rpi} to complete the set up.
 
-  \item {\em Corporate LAN}: This option is almost identical to the
+  \item {\em Corporate LAN} -- This option is almost identical to the
   {\em Router} option, but utilizes a corporate network instead of
   a local router to connect to the \gls{rpi}.  This option is the
   most IT intensive, since the IP address assigned to the Raspberry
   Pi is often not easily found.
 \end{enumerate}
+\vspace{0.5 cm}
 
 \begin{center}
   \begin{tabular}{l|l|l}\hline\hline
@@ -2243,7 +2286,8 @@ protected and matches the one specified in the prep.sh script file.\\
 \begin{figure}[ht]
   \begin{center}
   \includegraphics[width=6cm]{images/seaker-hh-screen-1.jpg}
-  \caption{iPhone WIFI connection to the \gls{seaker}.}\label{fig:screen-1}
+  \caption{iPhone WIFI connection to the \gls{seaker}.}
+  \label{fig:screen-1}
   \end{center}
 \end{figure}
 
@@ -2386,80 +2430,6 @@ TODO: add more result data\\
 \newpage
 \bibliographystyle{plain}
 \bibliography{references}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newpage
-
-\section{STOP HERE - Abstract}
-\label{sect-StopHere}
-
-\section{Keywords and glossary}
-\begin{itemize}
-  \item Contraband files
-  \item Forensic integrity of digital evidence
-  \item artifacts = pieces of digital evidence that are of importance to the case
-  \item enhanced previewing - better than triage (full drive)
-  \item Indecent Image of Children
-  \item early look intelligence gathering
-  \item Immediate feedback loop for onsite investigators
-  \item ``Suspect's dwelling''
-  \item securing a conviction of the offender
-  \item protecting future victims
-  \item browser artifacts
-  \item onsite == in situ
-  \item adhere to proven forensic principles
-\end{itemize}
-
-\section{Graphs, Images, Figures, and tables}
-\begin{itemize}
-  \item graph - aquisition time vs full
-  \item graph - investigation time vs full
-  \item graph - analysis time vs full
-  \item graph - total time from initial plug-in to decision to be evidence (threshold)
-  \item graph - current backlock in ventura county
-  \item figure - DFT vs TCU (Hitchcock\cite{hitchcock2016tiered})
-  \item graph - collection time vs number and size of files
-  \item graph - speed of collecting evidence from same drive based on microSD card used
-
-\end{itemize}
 
 \end{document}
 

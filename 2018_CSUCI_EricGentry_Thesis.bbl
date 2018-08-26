@@ -2,10 +2,15 @@
 
 \bibitem{ajijola2014review}
 Akinola Ajijola, Pavol Zavarsky, and Ron Ruhl.
-\newblock A review and comparative evaluation of forensics guidelines of nist
-  sp 800-101 rev. 1: 2014 and iso/iec 27037: 2012.
+\newblock {A review and comparative evaluation of forensics guidelines of NIST
+  SP 800-101 Rev. 1: 2014 and ISO/IEC 27037: 2012}.
 \newblock In {\em Internet Security (WorldCIS), 2014 World Congress on}, pages
   66--73. IEEE, 2014.
+
+\bibitem{ayers2014guidelines}
+R~Ayers, W~Jansen, and S~Brothers.
+\newblock {Guidelines on mobile device forensics (NIST Special Publication
+  800-101 Revision 1), 1, 85}, 2014.
 
 \bibitem{ballou2010electronic}
 Susan Ballou.
@@ -15,59 +20,66 @@ Susan Ballou.
 
 \bibitem{baryamureeba2004enhanced}
 Venansius Baryamureeba and Florence Tushabe.
-\newblock The enhanced digital investigation process model.
+\newblock {The enhanced digital investigation process model}.
 \newblock In {\em Proceedings of the Fourth Digital Forensic Research
   Workshop}, pages 1--9, 2004.
 
 \bibitem{carrier2003getting}
 Brian Carrier, Eugene~H Spafford, et~al.
-\newblock Getting physical with the digital investigation process.
+\newblock {Getting physical with the digital investigation process}.
 \newblock {\em International Journal of digital evidence}, 2(2):1--20, 2003.
 
 \bibitem{hitchcock2016tiered}
 Ben Hitchcock, Nhien-An Le-Khac, and Mark Scanlon.
-\newblock Tiered forensic methodology model for digital field triage by
-  non-digital evidence specialists.
+\newblock {Tiered forensic methodology model for Digital Field Triage by
+  non-digital evidence specialists}.
 \newblock {\em Digital Investigation}, 16:S75--S85, 2016.
+
+\bibitem{ISO27037}
+{Information technology -- Security techniques -- Guidelines for
+  identification, collection, acquisition and preservation of digital
+  evidence}.
+\newblock Standard, International Organization for Standardization, Geneva,
+  Switzerland, October 2012.
 
 \bibitem{lillis2016current}
 David Lillis, Brett Becker, Tadhg O'Sullivan, and Mark Scanlon.
-\newblock Current challenges and future research areas for digital forensic
-  investigation.
+\newblock {Current challenges and future research areas for digital forensic
+  investigation}.
 \newblock {\em arXiv preprint arXiv:1604.03850}, 2016.
 
 \bibitem{noblett2000recovering}
 Michael~G Noblett, Mark~M Pollitt, and Lawrence~A Presley.
-\newblock Recovering and examining computer forensic evidence.
-\newblock {\em Forensic Science Communications}, 2(4), 2000.
+\newblock {Recovering and examining computer forensic evidence}.
+\newblock {\em {Forensic Science Communications}}, 2(4), 2000.
 
 \bibitem{raghavan2013digital}
 Sriram Raghavan.
-\newblock Digital forensic research: current state of the art.
+\newblock {Digital forensic research: current state of the art}.
 \newblock {\em CSI Transactions on ICT}, 1(1):91--114, 2013.
 
 \bibitem{rogers2006computer}
 Marcus~K Rogers, James Goldman, Rick Mislan, Timothy Wedge, and Steve Debrota.
-\newblock Computer forensics field triage process model.
+\newblock {Computer forensics field triage process model}.
 \newblock In {\em Proceedings of the conference on Digital Forensics, Security
   and Law}, page~27. Association of Digital Forensics, Security and Law, 2006.
 
 \bibitem{shaw2013practical}
 Adrian Shaw and Alan Browne.
-\newblock A practical and robust approach to coping with large volumes of data
-  submitted for digital forensic examination.
+\newblock {A practical and robust approach to coping with large volumes of data
+  submitted for digital forensic examination}.
 \newblock {\em Digital Investigation}, 10(2):116--128, 2013.
 
 \bibitem{IDCDataAge2017}
 IDC~Custom Solutions.
-\newblock {\em IDC Thought Leadership Practice Case Study, Data Age 2025:
-  Seagate}, 2017.
+\newblock {IDC Thought Leadership Practice Case Study, Data Age 2025: Seagate},
+  2017.
 \newblock
   https://www.idc.com/prodserv/custom-solutions/RESOURCES/ATTACHMENTS/thought-leadership-cs.pdf.
 
 \bibitem{williams2012acpo}
 J~Williams.
-\newblock {ACPO} good practice guide for digital evidence.
+\newblock {ACPO Good Practice Guide for Digital Evidence}.
 \newblock {\em Metropolitan Police Service, Association of chief police
   officers, GB}, 2012.
 

@@ -147,6 +147,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -232,7 +235,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm

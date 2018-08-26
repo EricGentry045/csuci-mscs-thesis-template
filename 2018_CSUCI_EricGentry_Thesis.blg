@@ -3,44 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2018_CSUCI_EricGentry_Thesis.aux
 The style file: plain.bst
 Database file #1: references.bib
-You've used 13 entries,
+Warning--empty author in ISO27037
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            574 strings with 6463 characters,
-and the built_in function-call counts, 4029 in all, are:
-= -- 394
-> -- 184
+            584 strings with 6887 characters,
+and the built_in function-call counts, 4457 in all, are:
+= -- 434
+> -- 203
 < -- 3
-+ -- 77
-- -- 60
-* -- 256
-:= -- 685
-add.period$ -- 41
-call.type$ -- 13
-change.case$ -- 65
++ -- 82
+- -- 66
+* -- 281
+:= -- 752
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 77
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 166
-empty$ -- 322
-format.name$ -- 60
-if$ -- 842
+cite$ -- 16
+duplicate$ -- 179
+empty$ -- 364
+format.name$ -- 66
+if$ -- 937
 int.to.chr$ -- 0
-int.to.str$ -- 13
+int.to.str$ -- 15
 missing$ -- 14
-newline$ -- 68
-num.names$ -- 26
-pop$ -- 76
+newline$ -- 76
+num.names$ -- 28
+pop$ -- 94
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 63
 quote$ -- 0
-skip$ -- 111
+skip$ -- 124
 stack$ -- 0
-substring$ -- 201
+substring$ -- 208
 swap$ -- 34
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
-warning$ -- 0
-while$ -- 41
-width$ -- 15
-write$ -- 142
+type$ -- 56
+warning$ -- 1
+while$ -- 43
+width$ -- 17
+write$ -- 160
+(There was 1 warning)
