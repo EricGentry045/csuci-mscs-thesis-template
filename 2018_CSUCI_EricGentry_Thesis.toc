@@ -10,13 +10,13 @@
 \contentsline {subsubsection}{\numberline {1.2.6}Combined Aquisition and Analysis Methodologies}{18}
 \contentsline {subsubsection}{\numberline {1.2.7}Digital Evidence Backlog}{22}
 \contentsline {subsubsection}{\numberline {1.2.8}Digital Evidence Triage}{26}
-\contentsline {subsubsection}{\numberline {1.2.9}How \gls {seaker} Can Help}{30}
+\contentsline {subsubsection}{\numberline {1.2.9}How SEAKER Can Help}{30}
 \contentsline {section}{\numberline {2}Background}{31}
 \contentsline {subsection}{\numberline {2.1}Legal Details}{32}
 \contentsline {subsection}{\numberline {2.2}Technical Details}{34}
-\contentsline {section}{\numberline {3}Development of \gls {seaker} Device}{36}
+\contentsline {section}{\numberline {3}Development of SEAKER Device}{36}
 \contentsline {subsection}{\numberline {3.1}Conception}{37}
-\contentsline {subsection}{\numberline {3.2}Setup Script For \gls {rpi}}{39}
+\contentsline {subsection}{\numberline {3.2}Setup Script For Raspberry Pi}{39}
 \contentsline {subsubsection}{\numberline {3.2.1}Web Server}{41}
 \contentsline {subsubsection}{\numberline {3.2.2}WIFI Setup}{42}
 \contentsline {subsection}{\numberline {3.3}Rules For Mounting}{42}
@@ -34,8 +34,8 @@
 \contentsline {subsection}{\numberline {4.2}Results}{57}
 \contentsline {section}{\numberline {5}Conclusions and Future Work}{58}
 \contentsline {section}{\numberline {6}Appendix}{70}
-\contentsline {subsection}{\numberline {6.1}\gls {seaker} Setup}{70}
-\contentsline {subsection}{\numberline {6.2}\gls {seaker} Usage}{77}
+\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{70}
+\contentsline {subsection}{\numberline {6.2}SEAKER Usage}{77}
 \contentsline {subsection}{\numberline {6.3}Code}{82}
 \contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{82}
 \contentsline {subsection}{\numberline {6.4}Results of Testing}{83}
