@@ -448,12 +448,12 @@ training to be performed properly.  One primary example is the {\em chain of cus
 step-by-step documentation record regarding evidence that includes details such as who had custody of
 the evidence, when they had custody, who it was transferred to, who analyzed it, etc. Another is the exacting
 science of collecting, labeling, itemizing, and acquiring of evidence.
-For instance, collecting physical evidence requires the
-use of gloves,
-evidence bags, fingerprint-dusting equipment, etc. to prevent cross-contamination, fingerprint smudging,
-DNA evidence mishandling, and a multitude of other evidence tainting.  Without the proper adherence to 
-guidelines,
-even conclusive evidence may not be admissible during a case.\\
+For instance, collecting physical evidence requires the use of gloves,
+evidence bags, fingerprint-dusting equipment, etc. to prevent
+cross-contamination, fingerprint smudging, DNA evidence mishandling,
+and a multitude of other potential evidence tainting.  Without the
+proper adherence to  guidelines, even conclusive evidence may not be
+admissible during a trial.\\
 
 Digital evidence is very essential to many investigations and cases in the modern world.
 With each passing year, more and more digital devices are collecting, storing, and uploading data.  As
@@ -881,7 +881,7 @@ involved here are:
   \item Connect to the SEAKER \gls{wifi} Access Point
   \item Bring up the webpage: http://seaker01.local
   \item Choose which digital media devices to search
-  \item Select {\em Search} based on default or custom search criteria
+  \item \verb|Search| based on default or custom search criteria
   \item View results (expand/collapse tree-based format)
 \end{enumerate}
 \vspace{0.5 cm}
@@ -1381,7 +1381,7 @@ needed to be a baseline for everyone to start working with.  Starting with the
 base operating system image, called Raspbian, the setup script was meant to modify
 it to handle the scenarios we were attempting to create.\\
 
-First, there needed to be some initial setup for keyboard, timezone, SSH, hostname,
+First, there needed to be some initial setup for keyboard, timezone, \gls{ssh}, hostname,
 and installing some additional packages.  To prevent unnecessary 
 software from occupying the local Micro SD card, the ``lite'' version of Raspbian
 was chosen as the base operating system.  However, that meant that additional
@@ -1776,14 +1776,14 @@ securely connect to it as well as having a connection to the Internet.
 (2)~{\em Other Hardware} - Please see the Hardware section earlier in this
 chapter.
 
-(3)~{\em Apple Computer System: Etcher, Paragon NTFS, terminal, ssh} - The secondary
+(3)~{\em Apple Computer System: Etcher, Paragon NTFS, terminal, \gls{ssh}} - The secondary
 computer required to remotely access the \gls{rpi} in order to run the
 setup script can be an Apple computer or a Windows computer.  In order to load
 the initial Raspbian lite operating system onto the Micro SD card, a program like
 {\em Etcher} can be used.  It is a tool for copying a disk image from a file to a 
 Micro SD card.  Another necessary tool is an NTFS reader/writer driver like {\em Paragon
 NTFS} in order to access the newly copied image of Raspbian lite on the Micro SD Card.
-This is necessary to copy the setup script and enable SSH access to the \gls{rpi}.
+This is necessary to copy the setup script and enable \gls{ssh} access to the \gls{rpi}.
 Finally, a command line program like {\em terminal} can be used to remotely and
 securely connect to the \gls{rpi} after the Micro SD card is installed and the 
 system is booted.
@@ -1796,8 +1796,8 @@ the initial Raspbian lite operating system onto the Micro SD card, a program lik
 {\em Win32DiskImager} can be used.  It is a tool for copying a disk image from a file to a 
 Micro SD card.  Another required action is to access the newly copied image of
 Raspbian lite on the Micro SD Card. This is necessary to copy the setup script
-and enable SSH access to the \gls{rpi}.
-Finally, a SSH program like {\em Putty} can be used to remotely and
+and enable \gls{ssh} access to the \gls{rpi}.
+Finally, a \gls{ssh} program like {\em Putty} can be used to remotely and
 securely connect to the \gls{rpi} after the Micro SD card is installed and the 
 system is booted.
 
@@ -2106,14 +2106,14 @@ Table~\ref{tab:RequiredSoftware}
   \item {\em Router} -- This option is where the \gls{rpi} and the
   secondary computer are connected directly to the same router, thus
   allowing the same local DHCP to assign the IPs of both.  The
-  secondary computer is used to prepare the micro SD card and to later
+  secondary computer is used to prepare the Micro SD card and to later
   remotely and securely connect to the \gls{rpi} to complete the
   setup.
   
   \item {\em Direct Connect} -- This option is where the Raspeberry Pi
   is connected directly to a monitor and keyboard to enable direct
   user input via the termnial.  The secondary computer is necessary to
-  prepare the micro SD card, but not used to remotely connect to the
+  prepare the Micro SD card, but not used to remotely connect to the
   \gls{rpi} to complete the set up.
 
   \item {\em Corporate LAN} -- This option is almost identical to the
@@ -2143,7 +2143,7 @@ Table~\ref{tab:RequiredSoftware}
     \multicolumn{3}{c}{}\\\hline
     & & \\
     \textbullet Raspian Stretch Lite & \textbullet Raspian Stretch Lite & \textbullet Raspian Stretch Lite \\
-    \textbullet ssh client & \textbullet ssh client & \textbullet ssh client\\
+    \textbullet \gls{ssh} client & \textbullet \gls{ssh} client & \textbullet \gls{ssh} client\\
     \textbullet Disk Imaging software & \textbullet Disk Imaging software & \textbullet Disk Imaging software\\
     \textbullet \gls{ip} Scanning software & & \\
     & & \\\hline
@@ -2168,13 +2168,13 @@ outlines the general process, while the specific steps are listed below.
   \item Download the latest Raspbian Stretch Lite operating system\\
   (https://www.raspberrypi.org/downloads/raspbian/).
   Note the location where file is saved.
-  \item Download the most recent copy of {\em prep.sh}, {\em ssh}, and the 
+  \item Download the most recent copy of {\em prep.sh}, {\em \gls{ssh}}, and the 
   folder called {\em seakerfiles}. These files
   contain SEAKER setup and running code.
     \begin{itemize}
-      \item prep.sh file location: https://s3-us-west-2.amazonaws.com/seaker/prep.sh
-      \item ssh file location: https://s3-us-west-2.amazonaws.com/seaker/ssh
-      \item seakerfiles location: https://s3-us-west-2.amazonaws.com/seaker/seakerfiles
+      \item \verb|prep.sh| file location: https://s3-us-west-2.amazonaws.com/seaker/prep.sh
+      \item \verb|ssh| file location: https://s3-us-west-2.amazonaws.com/seaker/ssh
+      \item \verb|seakerfiles| location: https://s3-us-west-2.amazonaws.com/seaker/seakerfiles
     \end{itemize}
   \item Open prep.sh and edit the default configuration information
   (shown below). At minimum it is recommended to change the Raspberry
@@ -2192,19 +2192,19 @@ outlines the general process, while the specific steps are listed below.
       \item Name: SEAKER02, IP Address: 192.168.102.1
       \item Name: SEAKER03, IP Address: 192.168.103.1
     \end{enumerate}
-  \item Insert micro SD card into computer (not the \gls{rpi}).
+  \item Insert Micro SD card into computer (not the \gls{rpi}).
   An adapter will likely be required.
   \item Open disk imaging software (Etcher for Mac, or SDFormatter and 
   Win32 Disk Imager for Windows).
   Map to the Raspbian Stretch Lite file
-  location, choose the micro SD card as the destination, and select to burn
+  location, choose the Micro SD card as the destination, and select to burn
   the image. (Refer to the chosen imaging software documentation for
   specific instructions on using this tool.)  Do not remove the micro SD
   card from the computer.
-  \item Map to the micro SD card (Finder for Mac, File Explorer for Windows).
-  Copy ssh, prep.sh, and the seakerfiles folder onto the micro SD card's
+  \item Map to the Micro SD card (Finder for Mac, File Explorer for Windows).
+  Copy \verb|ssh|, \verb|prep.sh|, and the \verb|seakerfiles| folder onto the Micro SD card's
   {\em boot} partition.
-  \item Remove the micro SD card from the computer.
+  \item Remove the Micro SD card from the computer.
   \item Insert the card into the \gls{rpi}.
   \item Power on the \gls{rpi} by plugging it in with the power cord.
   \item Identify the local \gls{ip} Address of the \gls{rpi}:\\
@@ -2245,10 +2245,10 @@ outlines the general process, while the specific steps are listed below.
     \end{enumerate}
   \item If installing with Option 1 or 3:
     \begin{itemize}
-      \item SSH into the \gls{rpi} from the laptop or desktop computer.
+      \item \gls{ssh} into the \gls{rpi} from the laptop or desktop computer.
       \begin{itemize}
         \item If using a client such as Putty, enter the local \gls{ip} address
-        of the \gls{rpi}, choose SSH and connect. Click \verb|OK| or
+        of the \gls{rpi}, choose \gls{ssh} and connect. Click \verb|OK| or
         \verb|Yes| on the security warning.
         \item If using a command line utility such as Bash enter the
         following at the prompt:
