@@ -315,12 +315,12 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT images/IDIP.png
 INPUT ./images/IDIP.png
 INPUT ./images/IDIP.png
-INPUT images/IOT_chart.jpg
-INPUT ./images/IOT_chart.jpg
-INPUT ./images/IOT_chart.jpg
 INPUT images/CFFTPM.png
 INPUT ./images/CFFTPM.png
 INPUT ./images/CFFTPM.png
+INPUT images/IOT_chart.jpg
+INPUT ./images/IOT_chart.jpg
+INPUT ./images/IOT_chart.jpg
 INPUT images/seaker-hh-screen-2.png
 INPUT ./images/seaker-hh-screen-2.png
 INPUT ./images/seaker-hh-screen-2.png

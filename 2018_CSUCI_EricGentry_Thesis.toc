@@ -3,40 +3,40 @@
 \contentsline {subsubsection}{\numberline {1.1.1}Author's Contributions}{5}
 \contentsline {subsection}{\numberline {1.2}Literature Review}{6}
 \contentsline {subsubsection}{\numberline {1.2.1}History of Digital Evidence}{6}
-\contentsline {subsubsection}{\numberline {1.2.2}Process and Procedure Standardization}{8}
+\contentsline {subsubsection}{\numberline {1.2.2}Process and Procedure Standardization}{9}
 \contentsline {subsubsection}{\numberline {1.2.3}Reactive Digital Forensic Investigation Processes}{14}
-\contentsline {subsubsection}{\numberline {1.2.4}Aquisition Methodology}{15}
-\contentsline {subsubsection}{\numberline {1.2.5}Analysis Methodology}{16}
-\contentsline {subsubsection}{\numberline {1.2.6}Combined Aquisition and Analysis Methodologies}{18}
-\contentsline {subsubsection}{\numberline {1.2.7}Digital Evidence Backlog}{22}
-\contentsline {subsubsection}{\numberline {1.2.8}Digital Evidence Triage}{26}
-\contentsline {subsubsection}{\numberline {1.2.9}How SEAKER Can Help}{30}
-\contentsline {section}{\numberline {2}Background}{31}
-\contentsline {subsection}{\numberline {2.1}Legal Details}{32}
-\contentsline {subsection}{\numberline {2.2}Technical Details}{34}
-\contentsline {section}{\numberline {3}Development of SEAKER Device}{36}
-\contentsline {subsection}{\numberline {3.1}Conception}{37}
-\contentsline {subsection}{\numberline {3.2}Setup Script For Raspberry Pi}{39}
-\contentsline {subsubsection}{\numberline {3.2.1}Web Server}{41}
-\contentsline {subsubsection}{\numberline {3.2.2}WIFI Setup}{42}
-\contentsline {subsection}{\numberline {3.3}Rules For Mounting}{42}
-\contentsline {subsection}{\numberline {3.4}Code for Searching Device}{43}
-\contentsline {subsection}{\numberline {3.5}Web Code}{44}
-\contentsline {subsection}{\numberline {3.6}Process Flow}{47}
-\contentsline {subsection}{\numberline {3.7}Tools Used for Development}{50}
-\contentsline {subsubsection}{\numberline {3.7.1}Hardware}{50}
-\contentsline {subsubsection}{\numberline {3.7.2}Programming Languages and Scripting}{51}
-\contentsline {subsubsection}{\numberline {3.7.3}Raspbian Operating System}{52}
-\contentsline {subsubsection}{\numberline {3.7.4}Collaboration Tools}{53}
-\contentsline {subsubsection}{\numberline {3.7.5}Setup Tools}{54}
-\contentsline {section}{\numberline {4}Experimental Results}{56}
-\contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{56}
-\contentsline {subsection}{\numberline {4.2}Results}{57}
-\contentsline {section}{\numberline {5}Conclusions and Future Work}{58}
-\contentsline {section}{\numberline {6}Appendix}{70}
-\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{70}
-\contentsline {subsection}{\numberline {6.2}SEAKER Usage}{77}
-\contentsline {subsection}{\numberline {6.3}Code}{82}
-\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{82}
-\contentsline {subsection}{\numberline {6.4}Results of Testing}{83}
-\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{83}
+\contentsline {subsubsection}{\numberline {1.2.4}Digital Evidence Triage}{15}
+\contentsline {subsubsection}{\numberline {1.2.5}Aquisition Methodology}{19}
+\contentsline {subsubsection}{\numberline {1.2.6}Analysis Methodology}{21}
+\contentsline {subsubsection}{\numberline {1.2.7}Combined Aquisition and Analysis Methodologies}{23}
+\contentsline {subsubsection}{\numberline {1.2.8}Digital Evidence Backlog}{27}
+\contentsline {subsubsection}{\numberline {1.2.9}How SEAKER Can Help}{31}
+\contentsline {section}{\numberline {2}Background}{33}
+\contentsline {subsection}{\numberline {2.1}Legal Details}{34}
+\contentsline {subsection}{\numberline {2.2}Technical Details}{35}
+\contentsline {section}{\numberline {3}Development of SEAKER Device}{37}
+\contentsline {subsection}{\numberline {3.1}Conception}{38}
+\contentsline {subsection}{\numberline {3.2}Setup Script For Raspberry Pi}{40}
+\contentsline {subsubsection}{\numberline {3.2.1}Web Server}{42}
+\contentsline {subsubsection}{\numberline {3.2.2}WIFI Setup}{43}
+\contentsline {subsection}{\numberline {3.3}Rules For Mounting}{44}
+\contentsline {subsection}{\numberline {3.4}Code for Searching Device}{45}
+\contentsline {subsection}{\numberline {3.5}Web Code}{46}
+\contentsline {subsection}{\numberline {3.6}Process Flow}{49}
+\contentsline {subsection}{\numberline {3.7}Tools Used for Development}{52}
+\contentsline {subsubsection}{\numberline {3.7.1}Hardware}{52}
+\contentsline {subsubsection}{\numberline {3.7.2}Programming Languages and Scripting}{53}
+\contentsline {subsubsection}{\numberline {3.7.3}Raspbian Operating System}{54}
+\contentsline {subsubsection}{\numberline {3.7.4}Collaboration Tools}{55}
+\contentsline {subsubsection}{\numberline {3.7.5}Setup Tools}{56}
+\contentsline {section}{\numberline {4}Experimental Results}{58}
+\contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{58}
+\contentsline {subsection}{\numberline {4.2}Results}{59}
+\contentsline {section}{\numberline {5}Conclusions and Future Work}{60}
+\contentsline {section}{\numberline {6}Appendix}{72}
+\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{72}
+\contentsline {subsection}{\numberline {6.2}SEAKER Usage}{79}
+\contentsline {subsection}{\numberline {6.3}Code}{84}
+\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{84}
+\contentsline {subsection}{\numberline {6.4}Results of Testing}{85}
+\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{85}
