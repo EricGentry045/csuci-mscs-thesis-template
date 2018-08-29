@@ -1390,7 +1390,7 @@ specifically Frank Lyu, the class agreed to the following:
 
 \subsection{Setup Script For Raspberry Pi}
 
-The idea of a setup script for the \gls{rpi} was conceived by Eric Gentry 
+The idea of a setup script for the \gls{rpi} was conceived by the author 
 very quickly after the project was presented to the class, since
 each team was assigned to work independently and the deadline of implementation was
 extremely short.  In order to get everyone in
@@ -1419,17 +1419,17 @@ Finally, in order to avoid simple hacking and password locations, the setup
 script clears the history, sets itself up to be deleted at boot time, and removes
 any other reminants from the original setup.\\
 
-Once Eric Gentry finished programming the setup script to properly configuring the
+Once the author finished programming the setup script to properly configuring the
 device with a majority of the features, it was published to the class so that they could
 begin using the \gls{rpi} as a SEAKER device and complete the minor bits of
 functionality left.\\
 
 \subsubsection{Web Server}
 
-Eric Gentry chose the Apache web server, since it is a standard Unix-based operating system
+The author chose the Apache web server, since it is a standard Unix-based operating system
 choice for serving web pages.  It also supports backend coding opportunities when 
-coupled with a server-side code execution program like PHP.  Setting this up also
-done by Eric Gentry and was included as a part of the setup script.\\
+coupled with a server-side code execution program like PHP.  Setting this up was
+done by the author and was included as a part of the setup script.\\
 
 A few steps were needed to implement the web server.  The first was to
 load the Apache and PHP packages coinciding with the Raspbian operating system.  
@@ -1442,7 +1442,7 @@ served up by the web server when requested.\\
 
 In addition, the {\em aquisition} code for searching the drive needed to have 
 access to a shared location for the filename and folder searching algorithm.
-The \textbackslash{}\verb|tmp| folder was chosen by Eric Gentry as a suitable location, since
+The \textbackslash{}\verb|tmp| folder was chosen by the author as a suitable location, since
 both the collection program and the web server have access to it.  An extra
 feature of using \textbackslash{}\verb|tmp| is that the operating system clears
 out the entire folder everytime it boots up, causing the previous data to no
@@ -1462,7 +1462,7 @@ acquired and installed.  In addition, the setup of those packages required
 setting up DHCP, WPA, the wireless NIC, and the access point daemon.  Setting
 these up mainly required adding and altering text configuration files.  
 Unfortunately, researching the Internet was not much help, which lead to a
-lot of trial and error testing by Eric Gentry to make sure it all worked.\\
+lot of trial and error testing by the author to make sure it all worked.\\
 
 Finally, this process required a reboot, which was able to be postponed until
 the end of the setup script.\\
@@ -1504,11 +1504,11 @@ an index that is built up over time and does not work well with newly
 attached devices.\\
 
 Since one of the goals of the SEAKER project was speed of collection, a test
-was performed by Eric Gentry that
+was performed by the author that
 measured the built-in mechanisms vs the simple C program.  The simple C program
 was by far the fastest, beating the other two methods by an average of 26\%
 (see Table~\ref{tab:CollectionAlgorithmData} for data).
-Eric Gentry's theory on why this is the case is that the other programs have many
+The author's theory on why this is the case is that the other programs have many
 built-in options and functionalities that are not utilized.  Those extra
 functionalities have unnecessary code switches and therefore extra
 execution paths that are not necessary for this file and directory collection
