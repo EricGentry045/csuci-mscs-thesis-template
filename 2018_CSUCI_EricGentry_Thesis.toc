@@ -27,16 +27,16 @@
 \contentsline {subsubsection}{\numberline {3.7.1}Hardware}{52}
 \contentsline {subsubsection}{\numberline {3.7.2}Programming Languages and Scripting}{53}
 \contentsline {subsubsection}{\numberline {3.7.3}Raspbian Operating System}{54}
-\contentsline {subsubsection}{\numberline {3.7.4}Collaboration Tools}{55}
-\contentsline {subsubsection}{\numberline {3.7.5}Setup Tools}{56}
+\contentsline {subsubsection}{\numberline {3.7.4}Collaboration Tools}{56}
+\contentsline {subsubsection}{\numberline {3.7.5}Setup Tools}{57}
 \contentsline {section}{\numberline {4}Experimental Results}{58}
 \contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{58}
-\contentsline {subsection}{\numberline {4.2}Results}{59}
+\contentsline {subsection}{\numberline {4.2}Results}{60}
 \contentsline {section}{\numberline {5}Conclusions and Future Work}{60}
-\contentsline {section}{\numberline {6}Appendix}{72}
-\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{72}
-\contentsline {subsection}{\numberline {6.2}SEAKER Usage}{79}
-\contentsline {subsection}{\numberline {6.3}Code}{84}
-\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{84}
-\contentsline {subsection}{\numberline {6.4}Results of Testing}{85}
-\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{85}
+\contentsline {section}{\numberline {6}Appendix}{71}
+\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{71}
+\contentsline {subsection}{\numberline {6.2}SEAKER Usage}{77}
+\contentsline {subsection}{\numberline {6.3}Code}{81}
+\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{81}
+\contentsline {subsection}{\numberline {6.4}Results of Testing}{83}
+\contentsline {subsubsection}{\numberline {6.4.1}Collection Timing}{83}
