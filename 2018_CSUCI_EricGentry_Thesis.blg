@@ -3,46 +3,48 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2018_CSUCI_EricGentry_Thesis.aux
 The style file: plain.bst
 Database file #1: references.bib
+Warning--string name "june" is undefined
+--line 12 of file references.bib
 Warning--empty author in ISO27037
-You've used 16 entries,
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            591 strings with 7105 characters,
-and the built_in function-call counts, 4763 in all, are:
-= -- 462
-> -- 221
+            605 strings with 7723 characters,
+and the built_in function-call counts, 5562 in all, are:
+= -- 534
+> -- 274
 < -- 3
-+ -- 89
-- -- 72
-* -- 306
-:= -- 807
-add.period$ -- 48
-call.type$ -- 16
-change.case$ -- 83
++ -- 110
+- -- 90
+* -- 352
+:= -- 950
+add.period$ -- 56
+call.type$ -- 19
+change.case$ -- 102
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 190
-empty$ -- 386
-format.name$ -- 72
-if$ -- 998
+cite$ -- 20
+duplicate$ -- 212
+empty$ -- 445
+format.name$ -- 90
+if$ -- 1160
 int.to.chr$ -- 0
-int.to.str$ -- 16
+int.to.str$ -- 19
 missing$ -- 15
-newline$ -- 81
-num.names$ -- 30
-pop$ -- 98
+newline$ -- 95
+num.names$ -- 36
+pop$ -- 124
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 83
 quote$ -- 0
-skip$ -- 131
+skip$ -- 151
 stack$ -- 0
-substring$ -- 219
-swap$ -- 35
+substring$ -- 234
+swap$ -- 37
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
+type$ -- 72
 warning$ -- 1
-while$ -- 46
-width$ -- 18
-write$ -- 171
-(There was 1 warning)
+while$ -- 52
+width$ -- 21
+write$ -- 201
+(There were 2 warnings)

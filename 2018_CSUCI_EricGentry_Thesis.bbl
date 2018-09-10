@@ -29,6 +29,23 @@ Brian Carrier, Eugene~H Spafford, et~al.
 \newblock {Getting physical with the digital investigation process}.
 \newblock {\em International Journal of digital evidence}, 2(2):1--20, 2003.
 
+\bibitem{soltys2018dojgrant}
+Terry Dobrosky, Eric Gentry, Michael Soltys, and Adam Wittkins.
+\newblock {Digital Forensic Tools for ICAC Investigators}.
+\newblock {DOJ Grant Proposal}, California State University Channel Islands,
+  Southern California High Technology Task Force, 1 University Dr., Camarillo,
+  California 93012, 2018.
+
+\bibitem{abi2014iot}
+ABI~Research for visionaries.
+\newblock {Market Research: Internet of Everyting Market Tracker}, 2014.
+\newblock
+  https://www.abiresearch.com/market-research/product/1017637-internet-of-everything-market-tracker/.
+
+\bibitem{gentry2018seaker}
+Eric Gentry, Ryan McIntyre, Michael Soltys, and Frank Lyu.
+\newblock {SEAKER: A Tool for Fast Digital Forensic Triage}, 2018.
+
 \bibitem{hitchcock2016tiered}
 Ben Hitchcock, Nhien-An Le-Khac, and Mark Scanlon.
 \newblock {Tiered forensic methodology model for Digital Field Triage by

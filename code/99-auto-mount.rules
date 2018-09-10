@@ -1,0 +1,25 @@
+KERNEL!="sd[a-z][0-9]", GOTO="auto_mount_usb_storage_by_label_end"
+
+# import FS infos
+IMPORT{program}="/sbin/blkid -o udev -p %N"
+
+# Get a label if present, otherwise specify one
+ENV{dir_name}="usbhd-%k"
+
+# Global mount options
+ACTION=="add", ENV{mount_options}="ro"
+
+# Filesystem-specific mount options INCOMPLETE
+ACTION=="add", ENV{ID_FS_TYPE}=="ntfs|exfat", ENV{mount_options}="$env{mount_options},user_id=1000,group_id=1000,ntfs-3g"
+ACTION=="add", ENV{ID_FS_TYPE}!="ntfs|exfat", ENV{mount_options}="$env{mount_options},uid=1000,gid=1000"
+ACTION=="add", ENV{ID_FS_TYPE}=="ext3|ext4|ntfs", ENV{mount_options}="$env{mount_options},noload"
+
+# Mount the device ADD SEARCH TO LIST PATHS HERE
+ACTION=="add", ENV{ID_FS_TYPE}!="ntfs|exfat", RUN+="/bin/mkdir -p /mnt/%E{dir_name}", RUN+="/bin/mount -o $env{mount_options} /dev/%k /mnt/%E{dir_name}", RUN+="/home/pi/seaker_collect.sh %E{dir_name} | at now"
+ACTION=="add", ENV{ID_FS_TYPE}=="ntfs|exfat", RUN+="/bin/mkdir -p /mnt/%E{dir_name}", RUN+="/home/pi/mount_ntfs.sh %k %E{dir_name}"
+
+# Clean up after removal
+ACTION=="remove", ENV{dir_name}!="", RUN+="/bin/umount -l /mnt/%E{dir_name}", RUN+="/bin/rmdir /mnt/%E{dir_name}"
+
+# Exit
+LABEL="auto_mount_usb_storage_by_label_end"

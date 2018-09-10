@@ -350,12 +350,12 @@ ALL RIGHTS RESERVED
 \vspace{1.5 cm}
 
 \hrulefill\\
-{\large \bfseries Advisor: Advisor Name \hfill Date \par}
+{\large \bfseries Advisor: Dr. Michael Soltys \hfill Date \par}
 
 \vspace{1.5 cm}
 
 \hrulefill\\
-{\large \bfseries Name \hfill Date \par}
+{\large \bfseries Adam Wittkins \hfill Date \par}
 
 \vspace{1.5 cm}
 
@@ -392,7 +392,7 @@ Digital Evidence, Forensic Tools, Raspberry Pi}
 As our world of digital devices continues to expand, the potential for
 digital evidence available to law enforcement during case investigation is
 ever increasing.  The growing amount of digital evidence, along with
-the considerable lack of Digital Forensic Investigators\cite{hitchcock2016tiered}
+the considerable lack of Digital Forensic Investigators \cite{hitchcock2016tiered}
 is causing a backlog to form at many of the digital forensics labs around the
 world.  This backlog leads to delays in evidence analysis and reporting, causing
 investigators and prosecutors to postpone or even drop on-going cases.\\
@@ -402,12 +402,12 @@ be simple, portable, inexpensive, robust, and easy to use.  SEAKER is an
 acronym for Storage Evaluator And Knowledge Extraction Reader.  Utilizing a
 Raspberry Pi, this digital forensic triage device is a novel approach to providing
 immediate feedback to investigators.  It is also intended to help stem the backlog
-problem in digital forensics labs worldwide\cite{hitchcock2016tiered}.
+problem in digital forensics labs worldwide \cite{hitchcock2016tiered}.
 It was originally developed for on-scene investigations that require immediate
 feedback, especially in time-sensitive investigations.  It also appears to be an excellent
 tool to help reduce the digital evidence backlog by preventing over-collection
 of digital evidence.  SEAKER is not meant to replace a fully-functional
-digital forensic lab, but instead to augment the initial investigation and help
+digital forensic lab, but instead to augment the initial triage and help
 reduce the backlog.  This research and device overview has lead to the
 development of the inexpensive, mobile, digital triage device called SEAKER.
 \end{abstract}
@@ -449,7 +449,7 @@ step-by-step documentation record regarding evidence that includes details such 
 the evidence, when they had custody, who it was transferred to, who analyzed it, etc. Another is the exacting
 science of collecting, labeling, itemizing, and acquiring of evidence.
 For instance, collecting physical evidence requires the use of gloves,
-evidence bags, fingerprint-dusting equipment, etc. to prevent
+evidence bags, fingerprint-dusting equipment, etc., to prevent
 cross-contamination, fingerprint smudging, DNA evidence mishandling,
 and a multitude of other potential evidence tainting.  Without the
 proper adherence to  guidelines, even conclusive evidence may not be
@@ -459,8 +459,8 @@ Digital evidence is very essential to many investigations and cases in the moder
 With each passing year, more and more digital devices are collecting, storing, and uploading data.  As
 well, electronic devices for personal use appropriately labelled the \gls{iot} or
 the \gls{ioe} are becoming more and more
-ubiquitous in our everyday lives.  \gls{iot} devices are now everyday household items like refrigerators,
-thermostats, light bulbs, window coverings, garage door openers, keys, clothes, and much more.
+ubiquitous in our everyday lives.  \gls{iot} devices are now everyday household items like GoPro\texttrademark cameras,
+refrigerators, thermostats, light bulbs, window coverings, garage door openers, keys, clothes, and much more.
 These devices and the massive amount of digital information that
 is being generated and collected are often helpful in criminal investigations.  The data can be used to
 construct timeframes of activity, locations of individuals, Internet activity, computer users and usages,
@@ -531,7 +531,7 @@ The author's direct contributions to the SEAKER device project:
 \begin{enumerate}
   \item Developed the bash script to turn a standard \gls{rpi} into a
   SEAKER device by programmatically
-  installing raspbian software packages, setting up \gls{wifi} as a wireless access point, adding a web server,
+  installing Raspbian software packages, setting up \gls{wifi} as a wireless access point, adding a web server,
   and preparing the running environment with the proper fileset
   \item Wrote a custom executable using the C programming language to increase the SEAKER device's 
   searching efficiency in lieu of slower, native operating
@@ -542,10 +542,10 @@ The author's direct contributions to the SEAKER device project:
   to \gls{csuci} President
   Erika Beck, California State Assembly Member Jacqui Irwin, Ventura County Sherriff's Department,
   and other local community leaders
-  \item Co-authored a conference paper on the SEAKER project and the technology behind it
-  \item Updated and enhanced the SEAKER device functionality to support the latest raspbian operating system (Stretch
+  \item Co-authored a conference paper \cite{gentry2018seaker} on the SEAKER project and the technology behind it
+  \item Updated and enhanced the SEAKER device functionality to support the latest Raspbian operating system (Stretch
   Lite, April 2018 release), including enabling ethernet passthrough to the wireless access point
-  \item Co-authored a \gls{doj} grant proposal, providing Logic Models
+  \item Co-authored a \gls{doj} grant proposal \cite{soltys2018dojgrant}, providing Logic Models
   for (SEAKER) and Voyager (another digital forensic tool project at \gls{csuci})
 \end{enumerate}
 
@@ -553,7 +553,7 @@ The author's direct contributions to the SEAKER device project:
 \subsubsection{History of Digital Evidence}
 
 The digital forensics field began in the mid 1980s with an understanding from several law enforcement
-agencies that computers would play a critical role in future criminal investigations of the future.
+agencies that computers would play a critical role in future criminal investigations.
 In 1993, the \gls{fbi} hosted an international conference on computer evidence in Virginia.  This was
 the first major conference on the subject and had attendees from 26 different countries.  Much
 of the original computer
@@ -567,7 +567,7 @@ Those processes and procedures have increased in complexity over time and have s
 lack of unanimous adoption to a single standard.\\
 
 In 2006, Rogers et al proposed a standardization model for a portion of the entire process called
-triage for digital forensic examiners to follow: \gls{cfftpm}\cite{rogers2006computer}.
+triage for digital forensic examiners to follow: \gls{cfftpm} \cite{rogers2006computer}.
 The authors of the \gls{cfftpm} noted the important legal and technical
 considerations prior to implementing \gls{cfftpm} on a particular investigation.  The legal
 considerations include issues
@@ -578,27 +578,37 @@ digital forensic examiner,
 skillset of the suspect, having proper lab equipment on-site, scene control, etc.\\
 
 Even as late as 2013, Shaw et al points out that neither digital forensic
-triage examination nor digital forensic full examination are well defined\cite{shaw2013practical}.
+triage examination nor digital forensic full examination are well defined \cite{shaw2013practical}.
 Digital forensic triage may mean something completely different to two digital forensic
 examiners.  As well, full digital forensic examination has no robust standard to follow, although
 there has been no shortage of attempts.\\
 
 \gls{nist} is a technological, non-regulatory
 federal agency under the U.S. Department of Commerce (DOC).  The \gls{nist} process model (labeled \gls{nist}
-SP 800-101) lays out the digital evidence procedures in four steps: Preservation, Acquisition,
-Examination and Analysis, and Reporting\cite{ajijola2014review}.  These four steps provide the
+SP 800-101) lays out the digital evidence procedures in four steps \cite{ajijola2014review}:
+
+\begin{enumerate}
+  \item {\em Preservation} -- searching, recognition, documentation, and collection of digital evidence
+  \item {\em Acquisition} -- creating a copy of the digital media and storing the original device
+  \item {\em Examination and Analysis} -- process of uncovering digital evidence and analyzing the results
+  (typically done in a digital forensics lab environment)
+  \item {\em Reporting} -- detailed summary of all steps taken and analysis conclusions
+  (includes information about tools and techniques utilized in the entire process)
+\end{enumerate}
+
+These four steps provide the
 forensic steps for the digital evidence process model as a suggested way to evaluate mobile
 device information.\\
 
-The \gls{nist} guidelines\cite{ayers2014guidelines} documenting a digital forensics process were published
+The \gls{nist} guidelines \cite{ayers2014guidelines} documenting a digital forensics process were published
 in 2014 and included several different types of digital evidence such as mobile phones and computers.
 However, \gls{nist} focuses on the analysis portion of the science, but leaves the collection
 and reporting aspects unexplored.\\
 
-The \gls{iso} published a set of guidelines\cite{ISO27037}
+The \gls{iso} published a set of guidelines \cite{ISO27037}
 in 2012 that primarily focused on collection and handling aspects of digital evidence.\\
 
-Ajijola et al provided a thorough review in 2014\cite{ajijola2014review} of the \gls{nist} SP
+Ajijola et al provided a thorough review in 2014 \cite{ajijola2014review} of the \gls{nist} SP
 800-101 Revision 1 guidelines titled \uline{Guidelines on Mobile Devices Forensics} and
 \gls{iso}/IEC 27037 titled \uline{Guidelines for Identification, Collection, Acquisition, and
 Preservation of Digital Evidence}.  Their recommendation was a combined approach that 
@@ -610,8 +620,8 @@ become digital forensic investigators.  The typical learning takes place over
 a full year of classes and hands-on work through one of several federal or 
 law enforcement agencies.  These lead to certifications like Digital Evidence
 First Responder (DEFR), Digital Evidence Specialist (DES), or Digital Forensic
-Investigator (DFI).  This training is not standardized across the world, but is a 
-good geographically localized standard.\\
+Investigator (DFI).  This training is not standardized across the world, but  
+serves as a good standard within the community of those it certifies.\\
 
 \subsubsection{Process and Procedure Standardization}
 
@@ -628,7 +638,7 @@ Response Team (CART), the Scientific Working Group on Digital Evidence (SWGDE), 
 Technical Working Group on Digital Evidence (TWGDE), and the National Institute of
 Justice (NIJ).  Since their respective inceptions, they have all strived and 
 contributed to standardization on approaches and methods for 
-the handling and processing of all digital evidence\cite{noblett2000recovering}.\\
+the handling and processing of all digital evidence \cite{noblett2000recovering}.\\
 
 In addition, the \gls{doj} first published 
 \uline{Electronic Crime Scene Investigation: A Guide to First Responders}
@@ -651,7 +661,7 @@ the necessary four steps for properly investigating digital evidence:
 \vspace{0.5 cm}
 
 Another approach to investigating digital evidence was the 2003
-\gls{idip}\cite{carrier2003getting},
+\gls{idip} \cite{carrier2003getting},
 proposed by Carrier, et al.  This was different from the \gls{doj} proposal and
 is a model that in their own words:
 \begin{quote}
@@ -687,9 +697,9 @@ Baryamureeba and Tushabe proposed a new model
 based on the best parts of the \gls{doj}'s \uline{Electronic Crime
 Scene Investigation}, the \uline{Abstract Digital Forensics Model}, and 
 the \gls{idip} model.  Their proposal was called the
-Enhanced Integrated Digitial Investigation Process (EIDIP)\cite{baryamureeba2004enhanced}.
+Enhanced Integrated Digitial Investigation Process (EIDIP) \cite{baryamureeba2004enhanced}.
 This model was proposed in 2004 at the annual Digital Forensic Research conference
-(DFRWS)\cite{baryamureeba2004enhanced} and included the following phases:
+(DFRWS) \cite{baryamureeba2004enhanced} and included the following phases:
 
 \vspace{0.5 cm}
 \begin{enumerate}
@@ -709,7 +719,7 @@ This model was proposed in 2004 at the annual Digital Forensic Research conferen
 
 In 2006, Rogers et al proposed a reliable, repeatable process 
 model designed specifically for digital evidence triage called
-\gls{cfftpm}\cite{rogers2006computer}. It was created in partnership
+\gls{cfftpm} \cite{rogers2006computer}. It was created in partnership
 with Purdue University's Cyber Forensics and Computer and Information
 Technology Departments, along with the National White Collar Crime
 Center. The process was derived from several other military and law enforcement models
@@ -717,12 +727,12 @@ including \gls{idip}, Digital Crime Scene Analysis (DCSA),
 and a military Operations Order (OpOrd).  In coordination with the Southern Indiana 
 Assistant U.S. Attorney's office and 
 USADA Steve Debrota, Rogers et al implemented and reported
-on the success of the \gls{cfftpm}\cite{rogers2006computer}.  This amalgamation of approaches is still inspiring 
+on the success of the \gls{cfftpm} \cite{rogers2006computer}.  This amalgamation of approaches is still inspiring 
 the latest trends in Digital Forensic approaches.\\
 
 Another researcher, Shaw et al, analyzed the Association of Chief Police Officers (ACPO)
 and focused on the second step (Capture) as the primary guideline for evidential
-integrity\cite{shaw2013practical}.  They strongly suggest compliance with
+integrity \cite{shaw2013practical}.  They strongly suggest compliance with
 digital forensics best practices, like the ones provided in the ACPO.  Their final approach
 and recommendation was to combine Linux utilities with a simplistic interface to standardize
 the output and enable investigators who may not have full digitial forensic backgrounds
@@ -730,16 +740,16 @@ to perform triage on potential digital evidence.\\
 
 The ACPO, a private company that helped establish and
 develop policing practices in England, Wales, and Northern Ireland for many years,
-put together a \uline{Good Practice Guide for Digital Evidence}\cite{williams2012acpo} in 2012 that outlines some
+put together a \uline{Good Practice Guide for Digital Evidence} \cite{williams2012acpo} in 2012 that outlines some
 recommended procedures for dealing with digital evidence.  As with other methodologies, this guide
 explains utilizing a four step approach: Plan, Capture, Analyze, Present.\\
 
 The \gls{iso}/IEC 27037 guidelines (completed in 2012) provide an attempt at an internationally 
 recognized approach,
 with the goal of making it easier to compare, combine, and contrast
-results for out-of-jurisdiction cases and for data scientists' research\cite{ISO27037}.  It provides a
+results for out-of-jurisdiction cases and for data scientists' research \cite{ISO27037}.  It provides a
 common reference line for 
-digital forensics\cite{ajijola2014review}.  But, it is not meant to replace laws or regulations.
+digital forensics \cite{ajijola2014review}.  But, it is not meant to replace laws or regulations.
 The main purpose is to provide practical
 assistance for investigations involving potential digital evidence, while preventing digital
 evidence corruption.  This
@@ -757,7 +767,7 @@ into a system of processes and procedures intended for use in their own faciliti
 Many organizations have home-grown solutions passed down from senior members of the digital forensics
 team to the newer team members.  Not having a universally recognized and accepted standard 
 leads to complications and difficulties when digital evidence needs to be shared across other
-jurisdictions and boundaries\cite{ajijola2014review}.\\
+jurisdictions and boundaries \cite{ajijola2014review}.\\
 
 The SEAKER device could be utilized to standardize an approach to the triage phase of 
 digital media device investigation.  It is also easily altered to conform to an existing reporting
@@ -787,8 +797,10 @@ prosecutors.\\
 \subsubsection{Digital Evidence Triage}
 
 Rogers et al (2006) seems to be among the first researchers to formally propose a
-triage phase in digital forensic investigations\cite{rogers2006computer}.  The process 
-(\gls{cfftpm}) is broken up into phases (see Figure~\ref{fig:CFFTPM}). 
+triage phase in digital forensic investigations \cite{rogers2006computer}.  The process 
+(\gls{cfftpm}) is broken up into phases (see Figure~\ref{fig:CFFTPM}) and specifically
+focused on the Microsoft Windows\texttrademark platform, as it was the prevailing
+home computer operating system at the time. 
 The main phases consist of Planning, Triage, Usage/User
 Profiles, Chronology/Timeline, Internet Activity, and Case-Specific Evidence.
 Usage/User Profiles are broken down into three sub-phases: Home Directory, File
@@ -809,16 +821,16 @@ The process of triaging digital evidence is an especially effective method
 when implemented on-scene at \gls{searchwarrant} execution time.  The \gls{cfftpm}  proposed
 by Rogers et al was created to enhance the investigators ability to obtain
 useful information at execution time of a warrant at the suspect's dwelling or place
-of work\cite{rogers2006computer}.  The process is designed to be used in the first
+of work \cite{rogers2006computer}.  The process is designed to be used in the first
 few hours of the investigation, especially during the first suspect interview and
 search execution phase of the investigation.  It is known that suspects are more
 likely to divulge more information and be more cooperative in that environment
-(Yeschke 2003\cite{yeschke2003art}).  As well, location of and presentation with
+(Yeschke 2003 \cite{yeschke2003art}).  As well, location of and presentation with
 suspect ``triggers'' from the potential evidence increase the suspect's willingness
-to talk and cooperate while on site\cite{rogers2006computer}.\\
+to talk and cooperate while on site \cite{rogers2006computer}.\\
 
 The research done by Hitchcock et al also concludes that on-scene triage is
-useful\cite{hitchcock2016tiered}.  They sought to expedite the process of
+useful \cite{hitchcock2016tiered}.  They sought to expedite the process of
 sending digital evidence for analysis and results.  One of their goals is to enable
 more field triage of digital evidence to reduce the amount collected, and act
 specifically on pertinent digital information.  They recommended that some
@@ -836,19 +848,19 @@ field of digital forensics continues to expand.  These areas pose a great challe
 but also new opportunities for investigative research and potential understanding
 of cases.  Lillis et al researched cloud storage and found some areas of opportunity
 to expand the digital forensics landscape, for instance parallel processing,
-distibuted computing, GPU/FPGA utilization, and others\cite{lillis2016current}.
+distibuted computing, GPU/FPGA utilization, and others \cite{lillis2016current}.
 These areas for increasing the efficiency of ditigal forensics can be explored
 further due to the substantially reduced I/O limitations in cloud storage.\\
 
 Another potential augmentation to the digital evidence triage method was proposed by
 Shaw et al and seeks to standardize on an approach they dubbed {\em enhanced
-previewing}\cite{shaw2013practical}.  Enhanced previewing seeks to solve some of the problems
+previewing} \cite{shaw2013practical}.  Enhanced previewing seeks to solve some of the problems
 associated with typical triage approaches, but may fall short due to the extended time
-necessary to complete the processing involved\cite{jusas2017methods}.\\
+necessary to complete the processing involved \cite{jusas2017methods}.\\
 
 Shaw's et al enhanced previewing starts with an open source, CD-bootable image of
 GNU/Linux and enhances its features to include boot-time application launching, and
-a simple to use interface with minimal ability to deviate from task\cite{shaw2013practical}.
+a simple to use interface with minimal ability to deviate from task \cite{shaw2013practical}.
 This bootable CD is intended to be placed into evidenciary computer
 systems and booted using a series of BIOS modifications or boot-time interruptions.
 This mechanism to boot the system off of a bootable CD is difficult, and where the
@@ -861,11 +873,11 @@ connections are not typically setup to boot by default.\\
 
 As is the case in other research, Shaw et al extolls the need to reduce digital
 forensic evidence analysis backlogs, especially with the evolution of big data and
-the proliferation of digital devices\cite{shaw2013practical}.\\
+the proliferation of digital devices \cite{shaw2013practical}.\\
 
 The enhanced previewing concept has valuable merit, in that the collection mechanisms
 are thorough.  Using the GNU/Linux based system and having written code for it, Shaw 
-et al utilized some well thought-out approaches\cite{shaw2013practical}.  First, all
+et al utilized some well thought-out approaches \cite{shaw2013practical}.  First, all
 hard drives from the evidentiary system are mounted into the GNU/Linux filesystem as
 read-only, thereby eliminating the need for write-blockers.  As well, the entire hard
 drive is evaluated, including the file system, all partitions, unallocated space,
@@ -879,7 +891,7 @@ lengthy process due to large backlogs and the associated delays in evaluating th
 evidence.  Another concern exists that inadequately trained people will be charged
 with performing on-scene digital evidence triage and mishandling or incorrectly
 evaluating results will cause evidence spoilage. Other concerns are the potential high
-cost of software and training\cite{shaw2013practical}.\\
+cost of software and training \cite{shaw2013practical}.\\
 
 \subsubsection{Aquisition Methodology}
 
@@ -901,7 +913,7 @@ device is designed to do both in a very timely fashion, with comprehensive searc
 When a \gls{searchwarrant} is being executed, the SEAKER device is intended to be used to help
 manage the triage process of the potential digital evidence.  This helps on-scene investigators
 determine priority, potential to contain crime-related evidence, whether or not to seize the
-device into custody, and documentation of the digital media\cite{hitchcock2016tiered}.\\ 
+device into custody, and documentation of the digital media \cite{hitchcock2016tiered}.\\ 
 
 The set of processes and procedures for training and usage of the SEAKER device is well
 documented in the appendix, but could also be supplemented by more specific guidelines that
@@ -935,7 +947,7 @@ collection statistics, but does not include specific digital media content.\\
 
 Previous versions of analysis included specific types of operating systems.
 Rogers' et al research in 2006 covered the primary machine type at the time: the standard
-Windows machine\cite{rogers2006computer}.  Unfortunately, focusing on a single operating system
+Windows machine \cite{rogers2006computer}.  Unfortunately, focusing on a single operating system
 leads to an outdated model over time, since the processes and procedures become obsolete as
 new technology arises.  Along with the proliferation of \gls{iot} devices, new technologies
 also have emerged as more mainstream that need to be incorporated into a more generalized
@@ -946,7 +958,7 @@ variant of Debian.\\
 Other versions of analysis research deal directly with specific types of devices.
 Ajijola et al reviewed the \gls{nist} guidelines that provide an in-depth
 look into mobile devices, helping to explain the technology involved and its
-relationship to the forensic process\cite{ajijola2014review}. This is useful, but not a complete analysis
+relationship to the forensic process \cite{ajijola2014review}. This is useful, but not a complete analysis
 guideline for law enforcement investigators.\\
 
 The SEAKER device currently supports multiple operating systems, as well as multiple
@@ -995,7 +1007,7 @@ the SEAKER device make it an ideal digital forensics triage device.  The ability
 non-digitial forensic specialists to apply this technology is crucial to its feasability.
 Hitchcock et al proposed and evaluated a ``tiered forensic
 methodology'' model that defines a process of digital forensic triage utilizing non-digital
-evidence specialists\cite{hitchcock2016tiered}.  They would be considered the first tier of
+evidence specialists \cite{hitchcock2016tiered}.  They would be considered the first tier of
 investigation and their
 contributions are considered extremely helpful in the initial stages of a \gls{searchwarrant}.
 The next tier is when the already-triaged digital evidence is sent for full evaluation from
@@ -1004,11 +1016,11 @@ The potential evidence would be sent to a certified facility that can perform fu
 forensic analysis, called a \gls{tcu}.\\
 
 This tiered approach is based on a Computer Forensic Field Triage Process Model proposed
-by Rogers et al\cite{rogers2006computer} and the international standard \gls{iso} 27037
+by Rogers et al \cite{rogers2006computer} and the international standard \gls{iso} 27037
 (Information Technology - Security Techniques - Guidelines for identification, collection,
 aquisition, and presentation of digital evidence). The process model breaks down the six
 phases of digital evidence categorization, which Hitchcock et al
-loosely based their four phase approach on\cite{hitchcock2016tiered}.  The four phases are: planning, assessment,
+loosely based their four phase approach on \cite{hitchcock2016tiered}.  The four phases are: planning, assessment,
 reporting, and threshold.  The \gls{iso} 27037 standard specifically attempts to address the need
 to minimize the risk of potential digital evidence being spoiled by mishandling, while also
 attempting to maximize the evidentiary value of digital evidence collection.\\
@@ -1017,32 +1029,32 @@ Utilizing a tiered approach is not without risks.  One concern is the accidental
 of an item of digital evidence that is important to the investigation.  Another is the
 level of computer skills and training of the Digital Field Triage (DFT) expert.  An attempt
 could be made to mitigate the latter with training and management process, while providing
-evidence that the former is a common misconception in most cases\cite{rogers2006computer}.\\
+evidence that the former is a common misconception in most cases \cite{rogers2006computer}.\\
 
 Of course, the simplification of aquisition and analysis for use in a triage phase is also
 not a full analysis. Certain factors related to recent advancement in technologies can cause
 the SEAKER device to under-inform and potentially miss critical information.  One
 example of missing potential evidence is when encrypted, compressed files or folders
-are located\cite{shaw2013practical}.  Others include hidden or encrypted partitions,
+are located \cite{shaw2013practical}.  Others include hidden or encrypted partitions,
 password protected files and folders, images and videos obscured by significantly altering
 the filenames and extensions, and use of rare, specialized operating systems. However,
 these issues can all easily be overcome by marking the digital media as suspect and noting
 it for review in the second tier at the lab.\\
 
 This process cannot and does not supersede the ability or need to perform a full forensic
-examination at a full-featured digital forensic lab\cite{rogers2006computer} or \gls{tcu}.  This
+examination at a full-featured digital forensic lab \cite{rogers2006computer} or \gls{tcu}.  This
 step is essential and necessary to fully consider all of the digital evidence that can
 be obtained by full analysis.\\
 
 Other research also indicates that combining the best pieces of process models and reviewing
 latest digital forensic devices and methods are great ways to maintain adherence to 
-good practices\cite{ajijola2014review}.  In 2014, Ajijola et al proposed a new process model
+good practices \cite{ajijola2014review}.  In 2014, Ajijola et al proposed a new process model
 that is a hybrid of both \gls{nist} recommendations and \gls{iso} standards
 with the resulting combination being much more effective than either of its individual
-parts\cite{ajijola2014review}.\\
+parts \cite{ajijola2014review}.\\
 
 In the research for combining the \gls{nist} and \gls{iso} guidelines, Ajijola et al
-explores the commonality, differences, and limitations of each model\cite{ajijola2014review}.  Although both models
+explores the commonality, differences, and limitations of each model \cite{ajijola2014review}.  Although both models
 follow the Auditability, Repeatability, Reproducibility, and Justifiability requirements, as
 well as the Confidentiality, Integrity, and Availability standards, they individually lack some
 necessary phases to enable them to be used separately.  The \gls{nist} process model lacks the
@@ -1051,7 +1063,7 @@ and Reporting aspects of a full Digital Evidence processing model.\\
 
 The combination of these two approaches, as suggested by Ajijola et al,
 provides a new five step approach: Identification, Collection and Acquisition, Preservation,
-Examination and Analysis, and Reporting\cite{ajijola2014review}. These steps provide a more comprehensive approach that
+Examination and Analysis, and Reporting \cite{ajijola2014review}. These steps provide a more comprehensive approach that
 law enforcement can use to fulfill its evidenciary duties in an investigation.  When both
 process methods are used, the goals approach a full set of tasks from initial on-scene
 evalutation to the end of the in-lab digital forensics investigation.\\
@@ -1070,7 +1082,7 @@ Digital forensic labs and \glspl{tcu} are currently heavily inundated with cases
 analysis and reporting of digital evidence.  To compound the problem, the amount of
 data being created is growing astronomically.  The International Data Corporation
 (IDC) forecasts that by 2025 the global datasphere will grow to 163ZB (see
-Figure~\ref{fig:IOT}) (that is a trillion gigabytes)\cite{IDCDataAge2017}. That's ten times the 16.1ZB
+Figure~\ref{fig:IOT}) (that is a trillion gigabytes) \cite{IDCDataAge2017}. That's ten times the 16.1ZB
 of data generated in 2016. All this data will unlock unique user experiences and
 a new world of business opportunities.\\
 
@@ -1086,22 +1098,22 @@ related to the amount of data being created.  As Lillis et al
 explores in their research, there are three main factors involved in the digital
 forensic backlog: increasing number of devices seized per case, increased number of
 cases involving digitial evidence, and the increasing volume of data per digital
-media\cite{lillis2016current}.  This has lead to a growing and already substantial backlog in digital
-forensic investigations.\\
+media \cite{lillis2016current}.  This has lead to a growing and already substantial
+backlog in digital forensic investigations.\\
 
-As well, in Hitchcock's et al research\cite{hitchcock2016tiered}, they identified
+As well, in Hitchcock's et al research \cite{hitchcock2016tiered}, they identified
 a large and growing backlog of digital evidence.  They indicated that the extra
 time required due to the backlog has led to problems in the law enforcement
 community with regards to collecting, analyzing, reporting, and prosecuting.\\
 
 Another effect of this increased delay and backlog is that cases become inactive,
 waiting for new leads.  A more aggressive approach to solving the backlog could
-help prevent dismissals, cold cases, and potentially more societal harm from a
-potentially corrupt suspect of investigation.\\
+help prevent dismissals, cold cases, and future societal harm from unprosecuted 
+criminals.\\
 
 Raghavan has accumulated a list of 5 major challenges
 that the digital forensics community is facing and continue to add to the backlog
-problem\cite{raghavan2013digital}.  The first is the complexity of binary data
+problem \cite{raghavan2013digital}.  The first is the complexity of binary data
 aquisition, i.e. low level
 data aquisition through digital media duplication.  This challenge causes the need
 for sophisticated data reduction techniques.\\
@@ -1110,20 +1122,23 @@ Another complexity is the diversity of data and lack of standard examination
 techniques.  The plethora of operating systems and file formats has been
 increasing and is posing a more and more significant challenge over time.\\
 
-The consistency and correlation problem is yet another challenge.  This is a
+Raghavan explored the second major challenge of consistency and correlation.  This is a
 problem resulting from the current digital media investigation triage tools not
 providing the entire picture to investigators.  Only part of the whole picture
-is provided when these tools find digital evidence.\\
+is provided when triage tools are utilized to find digital evidence.  The
+digital evidence from the full digital forensic investigation, usually performed 
+in a lab environment, must be understood in order to provide a more comprehensive
+picture of the crime(s).\\
 
 Another issue that Raghavan proposed is the volume of data to sort
-through\cite{raghavan2013digital}.  The sheer amount of data that exists per user is increasing
-at an alarming rate\cite{rogers2006computer}, and has lead to a very large backlog of digital
+through \cite{raghavan2013digital}.  The sheer amount of data that exists per user is increasing
+at an alarming rate \cite{rogers2006computer}, and has lead to a very large backlog of digital
 evidence to investigate.  These delays have even caused some cases to be dismissed.
 This challenge is exacerbated by the lack of adequate automation for digesting the
 data.\\
 
 The last challenge proposed by Raghavanis the timeline synchronization issue with
-digital evidence\cite{raghavan2013digital}.  Since the evidence could be
+digital evidence \cite{raghavan2013digital}.  Since the evidence could be
 collected in different time zones, with different timestamp formats, clock skew,
 etc., lining up the events in order can be challenging or infeasible.\\
 
@@ -1133,8 +1148,8 @@ of when digital media devices are prioritized, excluded (due to lack of
 evidentiary leads), and the digitial forensics backlog can be reduced.\\
 
 The \gls{iot} also poses new challenges and could significantly
-increase the backlog.  \gls{iot} devices are estimated to number near 40 billion by
-2020, contributing to the overwhelming amount of digital data.  Since these devices
+increase the backlog.  \gls{iot} devices are estimated to number more than 40 billion by
+2020 \cite{abi2014iot}, contributing to the overwhelming amount of digital data.  Since these devices
 tend to have more non-persistent memory and less storage, this causes added
 complexity for gathering and analysis.  This is a good case for expanding the 
 potential uses of the SEAKER device to include more digital media devices.
@@ -1143,7 +1158,7 @@ challenged, leading to loss of data over time, and the necessity of implementing
 on-scene triage.\\
 
 The backlog and delays in case reporting are contributing to a common problem of
-time sensitivity\cite{hitchcock2016tiered}, especially related to being charged
+time sensitivity \cite{hitchcock2016tiered}, especially related to being charged
 with a crime and the legal process.  Some countries have given their citizens a
 right to a ``speedy'' trial.  As well, some of the same countries have statutes
 of limitation (limits on how long after the crime was committed to resolve the
@@ -1174,13 +1189,13 @@ the SEAKER device, has the opportunity to expand it's influence on the initial
 investigation phase by expanding to incorporate digital evidence from
 \gls{iot} and cloud storage devices.\\
 
-The research of Hitchcock et al\cite{hitchcock2016tiered} should be referenced as a good
+The research of Hitchcock et al \cite{hitchcock2016tiered} should be referenced as a good
 process starting point for new digital forensic labs.  As well, the SEAKER device is a 
 great tools to enhance the existing law enforcement arsenal of digital forensic tools.\\
 
 The SEAKER portable triage device can help by evaluating crucial
 aspects of the file system and prevent the on-site investigators from skipping or
-de-prioritizing critical potential evidence\cite{rogers2006computer}.  This is done by
+de-prioritizing critical potential evidence \cite{rogers2006computer}.  This is done by
 collecting all of the filenames and locations of the entire media device and preparing
 the SEAKER search mechanism.  The search mechanism is accessed via \gls{wifi} from 
 investigator phones, tablets, or laptops.  Once connected to the SEAKER's \gls{wifi}
@@ -1193,7 +1208,7 @@ well formatted for browsing in an expandable tree-sectioned web page.\\
 The SEAKER portable triage device can help eliminate some of the existing and
 potential future problems that many jurisdictions face.  With shrinking budgets,
 the lack of digital forensics specialists, coupled with the lack of technical prowess
-of the on-site investigators and proper on-scene lab equipment\cite{rogers2006computer},
+of the on-site investigators and proper on-scene lab equipment \cite{rogers2006computer},
 this new technology can easily and immediately benefit the law enforcement community.\\
 
 \section{Background}
@@ -1203,7 +1218,7 @@ In a labratory environment, digital forensics investigators have the ability to 
 a tremendous amount of material that is potential evidence.  This includes anything 
 digitally stored on the evidentiary media from
 explicity illegal files, to \gls{ip} address connections, to a digital chronology of
-events.\cite{raghavan2013digital}\cite{rogers2006computer}
+events \cite{raghavan2013digital} \cite{rogers2006computer}.
 The software and hardware necessary to perform the
 in-depth, full evaluation of the media are specialized for digital forensics 
 work, but typically are costly, don't travel well, and can take many hours for
@@ -1428,9 +1443,10 @@ functionality left.\\
 \subsubsection{Web Server}
 
 The author chose the Apache web server, since it is a standard Unix-based operating system
-choice for serving web pages.  It also supports backend coding opportunities when 
-coupled with a server-side code execution program like PHP.  Setting this up was
-done by the author and was included as a part of the setup script.\\
+choice for serving web pages and can easily be included in the \gls{rpi} environment using
+the Raspbian package manager command line: \verb|apt-get install apache2|.  It also supports
+backend coding opportunities when coupled with a server-side code execution program like PHP.
+Setting this up was done by the author and was included as a part of the setup script.\\
 
 A few steps were needed to implement the web server.  The first was to
 load the Apache and PHP packages coinciding with the Raspbian operating system.  
@@ -1457,13 +1473,15 @@ to perform searches on the digital devices.  The main idea here was to have a
 password-protected closed network where the potential evidence could be searched.
 This was included as a part of the setup script.\\
 
-The steps involved here were complicated and difficult to setup properly.  As
+The steps involved here were complicated and difficult to set up properly.  As
 with the web server, the proper Raspbian operating system packages needed to be
 acquired and installed.  In addition, the setup of those packages required 
 setting up DHCP, WPA, the wireless NIC, and the access point daemon.  Setting
 these up mainly required adding and altering text configuration files.  
-Unfortunately, researching the Internet was not much help, which lead to a
-lot of trial and error testing by the author to make sure it all worked.\\
+As is common in the Computer Science field, researching the Internet was not
+much help.  This lead the author to experiment extensively with these packages'
+settings, using trial and error to ensure the system was correctly configured
+to the specifications of the SEAKER device.\\
 
 Finally, this process required a reboot, which was able to be postponed until
 the end of the setup script.\\
@@ -1508,7 +1526,8 @@ Since one of the goals of the SEAKER project was speed of collection, a test
 was performed by the author that
 measured the built-in mechanisms vs the simple C program.  The simple C program
 was by far the fastest, beating the other two methods by an average of 26\%
-(see Table~\ref{tab:CollectionAlgorithmData} for data).
+(see Table~\ref{tab:CollectionAlgorithmData} on
+page~\pageref{tab:CollectionAlgorithmData} for data).
 The author's theory on why this is the case is that the other programs have many
 built-in options and functionalities that are not utilized.  Those extra
 functionalities have unnecessary code switches and therefore extra
@@ -1633,7 +1652,7 @@ form-factor computer with average computing power. It is a powerful
 educational and research tool that follows the
 standard ``von Neumann architecture'' by 
 incorporating three main components: input/output devices, memory, and a 
-central processing unit.  Models 3 and 3 B+ of the \gls{rpi} were used
+central processing unit.  Models 3 and 3B+ of the \gls{rpi} were used
 for creation and testing of the SEAKER project. More information can be
 found at {\tt http://raspberrypi.org}.
 
@@ -1647,7 +1666,7 @@ collection phase happens because of having to store the results.
 A ``class 10'' or better cards have produced results more quickly than
 other cards with slower write speeds.
 
-(3)~{\em Powered \gls{usb} to \gls{sata} adaptor} - These devices are faily common, and
+(3)~{\em Powered \gls{usb} to \gls{sata} adaptor} - These devices are fairly common, and
 allow a \gls{sata} style hard drive to be connected to a computer through the
 standard \gls{usb} port.  This enables \gls{sata} style hard drives to be connected
 to the SEAKER device.  It is important to note that the \gls{usb} ports on the
@@ -1676,11 +1695,13 @@ project, including the setup script, as an auto-mount script
 for automatic {\em aquisition} and in the PHP code to obtain and
 push search details to the output HTML.
 
-(2)~{\em c} - The c programming language is a mid-to-high level
-language for writing computer programs.  This was used in two
-locations to provide programs for media content collection
-and for a late added feature to control a light-bar of LEDs that
-plugs into the GPIO port of the \gls{rpi}.
+(2)~{\em C} - The C programming language is a mid-to-high level
+language for writing computer programs.  This was used for two
+applications: a program for digital media content collection 
+(see the code in Appendix section~\ref{lst:CollectionCode}
+on page~\pageref{lst:CollectionCode}),
+and for a late-addition feature to control a light-bar of LEDs that
+plugs into a controllable, customizable I/O port of the \gls{rpi}.
 
 (3)~{\em HTML} - A tag (or element) based system of organizing
 information to be shown in a web browser.
@@ -1710,7 +1731,7 @@ the searching mechanism plays a vital role in the project.
 
 \subsubsection {Raspbian Operating System}
 
-(1)~{\em Raspbian Linux (a Debian distro)} - One of the standard
+(1)~{\em Raspbian Linux (a Debian distribution)} - One of the standard
 operating systems that support the \gls{rpi} hardware.  It is
 derived from the Debian operating system.  There are two versions
 available for every release: Full and Lite.  The full version
@@ -1720,6 +1741,8 @@ only a minimum of packages, no built-in user interface (with the
 exception of a command line), and no initial guided setup.  In
 order to keep the SEAKER project as uncomplicated as possible, 
 the Lite version of the Raspbian operating system was chosen.
+The releases called {\em Jessie} (2017) and {\em Stretch} (2018)
+were the most recent at the time and were both supported.
 
 (2)~{\em grep} - A command-line utility included
 with almost every UNIX-based operating system.  It is widely
@@ -1749,16 +1772,25 @@ that enables a programming language for server-side coding.
 (6)~{\em Rules file for auto-mounting} - The {\em udev} utility 
 is a userspace device manager for Linux-based operating systems. 
 One mechanism of device control is to write a simple script file
-called a ``rules'' file
-(similar to a shell script) that enables the device manager
+called a ``rules file''
+(similar to a shell script; see the code in Appendix section~\ref{lst:udevRules}
+on page~\pageref{lst:udevRules}) that enables the device manager
 to automatically control the specified device(s).  Because 
 the SEAKER project is intended to auto-mount digital media and
 launch a collection script to gather the information
 from it, a rules file was created during the setup script
 that enables the device manager to automatically perform
-these tasks.
+these tasks.  As this project progresses to support more
+digital media types, this file will be the main area of focus.
 
 \subsubsection{Collaboration Tools}
+
+The collaboration tools were mainly utilized during the initial
+development process to allow the students, professor, and \gls{schttf}
+staff to communicate, exchange information, and plan activities.  Some
+of the use of these tools were continued to be used for deployment of
+the setup script, versioning control systems for the codebase, and
+communication of the SEAKER project progress.\\
 
 (1)~{\em Gliffy} - A free Google Chrome application that enables the diagramming
 of charts, graphs, flowcharts, and other drawing templates.  This tool
@@ -1804,7 +1836,7 @@ the initial Raspbian Lite operating system onto the Micro SD card.  It is a
 tool for copying a disk image from an image file to a 
 Micro SD card.  Another tool is an NTFS reader/writer driver like {\em Paragon
 NTFS}.  It is necessary in order to access the newly copied image of Raspbian Lite
-on the Micro SD Card.
+on the Micro SD card.
 This is used to copy the setup script and enable \gls{ssh} access to the \gls{rpi}.
 Finally, a command line program like {\em terminal} can be used to remotely and
 securely connect to the \gls{rpi} after the Micro SD card is installed and the 
@@ -1816,7 +1848,7 @@ setup script is a Windows computer, a program like {\em Win32DiskImager} is used
 the initial Raspbian Lite operating system onto the Micro SD card.  It is a tool
 for copying a disk image from a file onto a Micro SD card.
 Another required action is to access the newly copied image of
-Raspbian Lite on the Micro SD Card. This is necessary to copy the setup script
+Raspbian Lite on the Micro SD card. This is necessary to copy the setup script
 and enable \gls{ssh} access to the \gls{rpi}.
 Finally, a \gls{ssh} program like {\em Putty} can be used to remotely and
 securely connect to the \gls{rpi} after the Micro SD card is installed and the 
@@ -1869,13 +1901,40 @@ successful in utilizing the SEAKER, as well as the iPad used in the demonstratio
 
 \subsection{Results}
 
-TODO:\\
+\subsubsection{Data Saturation and Its Effect on Collection Latency}
 
-graph of latency\\
+The results of this collection timing (Figure~\ref{fig:SaturationLatency})
+were gathered using the SEAKER device and a single hard drive for the media device.
+Only one media device was used to reduce the variables in the experiment and focus
+solely on the data size and collection timing.
 
-estimates of time vs data Gb\\
+Experiment details:
 
-examples of running on Frank disks\\
+\begin{itemize}
+  \item {\em Hardware} -- Raspberry Pi 3B+, Class 10 Micro SD card
+  \item {\em Operating System} -- Raspbian Stretch Lite, version 2018-06-27
+  \item {\em Media Device} -- Western Digital My Passport\texttrademark, 500GB
+  \item {\em Setup} -- All time measurements are using the Linux 
+  command \verb|time| from the start of the execution of the \verb|collect_files|
+  program until it completed.  \verb|collect_files| was run automatically
+  using the standard operation of the SEAKER device (i.e. plugging in the hard
+  drive via USB to the \gls{rpi}).
+  \item {\em Resulting Data} -- The experiment data is listed in
+  Table~\ref{tab:SaturationLatencyData} on page~\pageref{tab:SaturationLatencyData}
+\end{itemize}
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=13cm]{images/SaturationVsLatency.png}
+  \caption{Data Saturation vs Collection Latency}
+  \label{fig:SaturationLatency}
+  \end{center}
+\end{figure}
+
+As expected, the time necessary to collect the file and directory information directly
+correlates to the amount consumed on the digital media device.  The linear relationship
+gives us good information about increasing data size and how it affects the time required
+for the collection code to complete.\\
 
 \section{Conclusions and Future Work}
 \label{sect-conclusionAndFutureWork}
@@ -1936,7 +1995,9 @@ serial number is not visible to SEAKER. This is a problem which requires some cr
 
 SEAKER could also take a picture when a drive is plugged in, and associate that picture with the search
 results, for instance, but this solution requires that investigators position each storage device in front of
-a camera; this approach requires a camera, and moreover it is tedious and error-prone.\\
+a camera.  This approach requires a specialized camera, made exclusively for the \gls{rpi}.  Moreover,
+it is tedious and error-prone, especially because many hard drives and digital media have the same look
+and may be difficult to visually distinguish.\\
 
 When a search finds a hit (i.e., a matched expression or file extension), investigators may want to
 view the corresponding file. As SEAKER is currently set up, this would require them to manually find and open the file. Speed
@@ -1954,21 +2015,21 @@ want to search simply for all images, videos, etc. SEAKER could minimize the wor
 allowing for preset groups of search terms, which can be created and edited by administrators. For
 example, an admin could create an ``images'' group which causes SEAKER to include jpg, pdf, png...\\
 
-We are very interested in a ``Data Carving'' option. Data carving is the identification and extraction
+A very interesting area of future research is ``Data Carving''. Data carving is the identification and extraction
 of files from unallocated clusters using file signatures. A file signature, also commonly referred to as a
 magic number, is a constant numerical or text value used to identify a file format. The object of carving
-is to identify and extract (carve) the file based on this signature information alone. We are interested in
+is to identify and extract (carve) the file based on this signature information alone. The main interest is in
 hidden files (which are sometimes easy to locate, as for example in UNIX with \verb|ls -a| command) and
 deleted files, which is more tricky as the files can be partially overwritten. A partially overwritten file may
 still constitute valuable evidence: for example, a portion of an image can be taken as solid evidence that
 the entire image was on the disk at some point. How can one establish whether a portion of an image
 comes from a particular image? It seems that the only way to accomplish that is by visual inspection,
 and having an investigator recognize the original image. In order to automate this process one could
-attempt one of two things: build a massive database of frequently circulating (say, CP) images, and
+attempt one of two things: build a massive database of frequently-circulating illegal images, and
 hashing different formats of these images (.pdf, .jpg, .giff, .tiff, etc.), as well as different resolutions,
 and chunks of standard sizes (say, 64Kb). This still seems like a shot in the dark. The second approach
 is to define something akin to fuzzy hashes, the type of hashes that are used to recognize variants of the
-same malware. This new type of fuzzy hashing would be invariant under differingb formats, or standard
+same malware. This new type of fuzzy hashing would be invariant under differing formats, or standard
 resolutions, and chunks of an image could be identified by close proximity to the original hash. Hits
 would be still confirmed visually to avoid false positives; a bigger issue would be false negatives.\\
 
@@ -1999,9 +2060,19 @@ process and could be more useful if searched in stages.  Here are a few:
 
 \vspace{0.5 cm}
 \begin{itemize}
-  \item LibForensics -- {\tt http://code.google.com/p/libforensics/}
-  \item Volatile Memory search -- (Volatility: {\tt http://code.google.com/p/volatility/}) and (WindowsSCOPE: {\tt http://www.windowsscope.com/})
-  \item Oxygen for mobile -- {\tt http://www.oxygen-forensic.com/en/features}
+  \item LibForensics ({\tt http://code.google.com/p/libforensics/}) --
+  a Python library for developing digital forensics applications and
+  is licensed under the GNU Lesser General Public License
+  \item Volatility ({\tt https://github.com/volatilityfoundation/volatility}) --
+  a memory extraction utility framework written in Pythong designed to
+  obtain digital artifacts from volatile memory (RAM)
+  \item WindowsSCOPE ({\tt http://www.windowsscope.com/}) -- 
+  a Microsoft Windows\texttrademark\\
+  based memory forensics analysis tool designed specifically with security breaches
+  in mind
+  \item Oxygen Forensic Detective ({\tt http://www.oxygen-forensic.com/en}) -- 
+  all-in-one forensic software tool to extract and analyze data from mobile
+  devices and their off-device related data
 \end{itemize}
 \vspace{0.5 cm}
 
@@ -2013,11 +2084,11 @@ came to mind.  This is by no means a comprehensive list, but it is a start:
 \begin{itemize}
   \item More supported media types
   \item Add AJAX (or similar technology) to give live feedback for search and collection
-  \item Create RESTful API for using Raspberry Pi
+  \item Create web service calls for using the Raspberry Pi
   \item Clean up HTML code, use CSS
   \item Write SEAKER iPhone/iPad/Android apps to connect to Raspberry Pi and perform searches, edit keywords, etc.
   \item Use heap memory instead of stack memory for path
-  \item Better way to skip . and .. (possibly always skip first two directory entries?)
+  \item Better way to skip current and parent directories (\verb|.| and \verb|..|) by (possibly) skipping the first two directory entries
   \item Reduce size of file/directory listing file. This may involve changing how to \verb|grep| or implementing custom \verb|grep|
   \item Possibly store files in a database instead of a file
   \item Implement the ability to connect to Raspberry Pi using Bluetooth instead of \gls{wifi}
@@ -2025,7 +2096,7 @@ came to mind.  This is by no means a comprehensive list, but it is a start:
   \item Use a better wireless network adapter for better range. These adapters are inexpensive.
   \item Implement Linux setup with puppet/cfengine/salt/etc.
   \item Better error messages about why drive could not be read
-  \item Add a “Blinkt!” light panel to show visual status of the Raspberry Pi
+  \item Complete the “Blinkt!” light panel integration to show visual status of the Raspberry Pi
   \item Check the health (SMART status) of the hard drive before scanning
   \item Add support for RAID, mSATA, SCSI hard drives (\verb|mdadm| is a RAID driver for Unix-based systems)
   \item Read directly from rawdisk to find file list to speed up collect
@@ -2057,7 +2128,7 @@ came to mind.  This is by no means a comprehensive list, but it is a start:
     \item fraud
     \item customizable (corporate / military)
   \end{itemize}
-  \item OS lockdown (raspbian)
+  \item OS lockdown (Raspbian)
   \item Decrypting encrypted devices (password entry location, assessment without password)
   \item Utilize forensics as a service
   \item Integrate with Microsoft's photoDNA cloud service
@@ -2125,7 +2196,7 @@ Digital forensics and academia would both benefit greatly from increased collabo
 offer relatively inexpensive development in exchange for real-world experience and the opportunity to
 create something which will be used. As a side effect more students would consider digital forensics
 as a career, resulting in some level of alleviation of the problems mentioned in the second quote in the
-introduction\cite{hitchcock2016tiered}.
+introduction \cite{hitchcock2016tiered}.
 
 
 \section{Appendix}
@@ -2135,7 +2206,8 @@ introduction\cite{hitchcock2016tiered}.
 The following set of instructions will detail how to setup the SEAKER
 environment for the first time. There are three install options that
 enable SEAKER creators to prepare the device.  See
-Table~\ref{tab:RequiredSoftware}
+Table~\ref{tab:RequiredSoftware} on page~\pageref{tab:RequiredSoftware}
+for more details.
 
 \vspace{0.5 cm}
 \begin{enumerate}
@@ -2235,7 +2307,7 @@ outlines the general process, while the specific steps are listed below.
   Map to the Raspbian Stretch Lite file
   location, choose the Micro SD card as the destination, and select to burn
   the image. (Refer to the chosen imaging software documentation for
-  specific instructions on using this tool.)  Do not remove the micro SD
+  specific instructions on using this tool.)  Do not remove the Micro SD
   card from the computer.
   \item Map to the Micro SD card (Finder for Mac, File Explorer for Windows).
   Copy \verb|ssh|, \verb|prep.sh|, and the \verb|seakerfiles| folder onto the Micro SD card's
@@ -2399,7 +2471,7 @@ processing of the scene.\\
 (5)~The user process flow is documented in the following
 figure~\ref{fig:user_process_flow}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \begin{center}
   \includegraphics[width=10cm]{images/UserProcessFlow.png}
   \caption{The functionality of SEAKER from the user perspective}
@@ -2410,16 +2482,23 @@ figure~\ref{fig:user_process_flow}.
 \newpage
 \subsection{Code}
 \subsubsection{Directory and Filename Collection Code (in C)}
-\lstinputlisting[language=bash]{code/collect_files.c}
+\lstinputlisting[language=c]{code/collect_files.c}
+\label{lst:CollectionCode}
+
+\newpage
+\subsubsection{udev rules file for automount}
+\lstinputlisting[language=bash]{code/99-auto-mount.rules}
+\label{lst:udevRules}
 
 \newpage
 \subsection{Results of Testing}
-\subsubsection{Collection Timing}
+\subsubsection{Collection Algorithm Timing Data}
 
-For testing purposes, ls was optimized to utilize as few time-consuming
-options as possible, including the {\tt -f} option that prevents sorting
-and {\tt -A} for skipping current and parent directories (\verb|.| and
-\verb|..|) in the results. Here are the actual functions tested:
+For fairness and testing purposes, ls was optimized to utilize as few
+time-consuming options as possible, including the {\tt -f} option that
+prevents sorting and {\tt -A} for skipping current and parent
+directories (\verb|.| and \verb|..|) in the results. Here are the
+actual functions tested:
 
 \vspace{0.1 cm}
 \begin{verbatim}
@@ -2461,7 +2540,27 @@ and directory listing applications:
   \label{tab:CollectionAlgorithmData}
 \end{center}
 
-TODO: add more result data\\
+\newpage
+\subsubsection{Data Saturation vs Timing Latency Data}
+
+\begin{center}
+  \tiny
+    \begin{tabular}{|l|l|l|r|r|c|c|r|}
+    \hline
+    \textbf{label} & \textbf{UUID}    & \textbf{type} & \multicolumn{1}{l|}{\textbf{capacity}} & \multicolumn{1}{l|}{\textbf{available space}} & \multicolumn{1}{l|}{\textbf{used space}} & \multicolumn{1}{l|}{\textbf{used space}} & \multicolumn{1}{l|}{\textbf{collect time}} \\ \hline
+    My Passport    & C0100754100750B8 & ntfs          & 466G                                   & 424G                                          & 42                                       & 10\%                                     & 0m8.623s                                   \\ \hline
+    My Passport    & C0100754100750B8 & ntfs          & 466G                                   & 366G                                          & 100                                      & 22\%                                     & 0m38.682s                                  \\ \hline
+    My Passport    & C0100754100750B8 & ntfs          & 466G                                   & 337G                                          & 129                                      & 28\%                                     & 0m54.258s                                  \\ \hline
+    My Passport    & C0100754100750B8 & ntfs          & 466G                                   & 249G                                          & 217                                      & 47\%                                     & 1m34.964s                                  \\ \hline
+    My Passport    & C0100754100750B8 & ntfs          & 466G                                   & 162G                                          & 304                                      & 66\%                                     & 2m16.988s                                  \\ \hline
+    My Passport    & C0100754100750B8 & ntfs          & 466G                                   & 75G                                           & 391                                      & 85\%                                     & 2m59.572s                                  \\ \hline
+    \end{tabular}
+  \captionof{table}{Data Saturation vs Collection Timing Data}
+  \label{tab:SaturationLatencyData}
+\end{center}
+
+
+
 
 \newpage
 \bibliographystyle{plain}
