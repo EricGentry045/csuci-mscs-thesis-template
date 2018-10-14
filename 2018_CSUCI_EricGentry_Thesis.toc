@@ -33,13 +33,15 @@
 \contentsline {subsection}{\numberline {4.1}Prototype Demonstration}{58}
 \contentsline {subsection}{\numberline {4.2}Results}{60}
 \contentsline {subsubsection}{\numberline {4.2.1}Data Saturation and Its Effect on Collection Latency}{60}
-\contentsline {section}{\numberline {5}Conclusions and Future Work}{61}
-\contentsline {section}{\numberline {6}Appendix}{73}
-\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{73}
-\contentsline {subsection}{\numberline {6.2}SEAKER Usage}{79}
-\contentsline {subsection}{\numberline {6.3}Code}{84}
-\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{84}
-\contentsline {subsubsection}{\numberline {6.3.2}udev rules file for automount}{85}
-\contentsline {subsection}{\numberline {6.4}Results of Testing}{86}
-\contentsline {subsubsection}{\numberline {6.4.1}Collection Algorithm Timing Data}{86}
-\contentsline {subsubsection}{\numberline {6.4.2}Data Saturation vs Timing Latency Data}{87}
+\contentsline {subsubsection}{\numberline {4.2.2}Drive Format Type Comparisons}{62}
+\contentsline {section}{\numberline {5}Conclusions and Future Work}{64}
+\contentsline {section}{\numberline {6}Appendix}{75}
+\contentsline {subsection}{\numberline {6.1}SEAKER Setup}{75}
+\contentsline {subsection}{\numberline {6.2}SEAKER Usage}{81}
+\contentsline {subsection}{\numberline {6.3}Code}{86}
+\contentsline {subsubsection}{\numberline {6.3.1}Directory and Filename Collection Code (in C)}{86}
+\contentsline {subsubsection}{\numberline {6.3.2}udev rules file for automount}{88}
+\contentsline {subsection}{\numberline {6.4}Results of Testing}{89}
+\contentsline {subsubsection}{\numberline {6.4.1}Collection Algorithm Timing Data}{89}
+\contentsline {subsubsection}{\numberline {6.4.2}Data Saturation vs Timing Latency Data}{90}
+\contentsline {subsubsection}{\numberline {6.4.3}Collection Time by Drive Type Data}{91}

@@ -297,7 +297,7 @@
 5pt depth 0pt %
          \vrule height 3pt width .5pt depth 0pt}}}}
 \newcommand{\hook}{\intprod}
-\def\&{\wedge}
+% \def\&{\wedge}  % commented because & in c code was not working
 % \def\s{\sigma}
 \def\a{\alpha}
 \def\b{\beta}
@@ -1906,7 +1906,7 @@ successful in utilizing the SEAKER, as well as the iPad used in the demonstratio
 The results of this collection timing (Figure~\ref{fig:SaturationLatency})
 were gathered using the SEAKER device and a single hard drive for the media device.
 Only one media device was used to reduce the variables in the experiment and focus
-solely on the data size and collection timing.
+solely on the data size and collection timing.\\
 
 Experiment details:
 
@@ -1914,12 +1914,13 @@ Experiment details:
   \item {\em Hardware} -- Raspberry Pi 3B+, Class 10 Micro SD card
   \item {\em Operating System} -- Raspbian Stretch Lite, version 2018-06-27
   \item {\em Media Device} -- Western Digital My Passport\texttrademark, 500GB
+  \item {\em Drive Format Type} -- NTFS
   \item {\em Setup} -- All time measurements are using the Linux 
   command \verb|time| from the start of the execution of the \verb|collect_files|
   program until it completed.  \verb|collect_files| was run automatically
   using the standard operation of the SEAKER device (i.e. plugging in the hard
   drive via USB to the \gls{rpi}).
-  \item {\em Resulting Data} -- The experiment data is listed in
+  \item {\em Reference Data} -- The experiment data is listed in
   Table~\ref{tab:SaturationLatencyData} on page~\pageref{tab:SaturationLatencyData}
 \end{itemize}
 
@@ -1935,6 +1936,45 @@ As expected, the time necessary to collect the file and directory information di
 correlates to the amount consumed on the digital media device.  The linear relationship
 gives us good information about increasing data size and how it affects the time required
 for the collection code to complete.\\
+
+\subsubsection{Drive Format Type Comparisons}
+
+The results of the drive format type comparisons (Figure~\ref{fig:DriveType}) were
+gathered using the SEAKER device and a single hard drive for the media device.  Only
+one media device was used to reduce the variables in the experiment and focus solely
+on the timing for each drive format type.\\
+
+Experiment details:
+
+\begin{itemize}
+  \item {\em Hardware} -- Raspberry Pi 3B+, Class 10 Micro SD card
+  \item {\em Operating System} -- Raspbian Stretch Lite, version 2018-06-27
+  \item {\em Media Device} -- Western Digital My Passport\texttrademark, 500GB
+  \item {\em Setup} -- All time measurements are using the Linux 
+  command \verb|time| from the start of the execution of the \verb|collect_files|
+  program until it completed.  \verb|collect_files| was run automatically
+  using the standard operation of the SEAKER device (i.e. plugging in the hard
+  drive via USB to the \gls{rpi}).
+  \item {\em Reference Data} -- The experiment data is listed in
+  Table~\ref{tab:DriveTypeData} on page~\pageref{tab:DriveTypeData}
+\end{itemize}
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=13cm]{images/TimeVsDriveType.png}
+  \caption{Collection Time by Drive Format Type}
+  \label{fig:DriveType}
+  \end{center}
+\end{figure}
+
+The resulting times of the different format types all go up linearly with the 
+amount of data, as indicated in the collection timing graph
+(Figure~\ref{fig:SaturationLatency}).
+The one surprise is the HFS+ format type, which is significantly
+faster when collecting the filenames and folders on the drive.  This can be
+attributed to the fact that HFS+ maintains a Catalog File which contains the 
+entire file and folder structure.  Other operating systems rely on system or user
+level indexing that is not integrated into the filesystem itself.
 
 \section{Conclusions and Future Work}
 \label{sect-conclusionAndFutureWork}
@@ -2396,7 +2436,7 @@ protected and matches the one specified in the prep.sh script file.\\
   \includegraphics[width=6cm]{images/seaker-hh-screen-1.jpg}
   \caption{iPhone WIFI connection to SEAKER}
   \label{fig:screen-1}
-  \end{center}
+  \end{center} 
 \end{figure}
 
 (2)~At the same time the investigator may connect all the media
@@ -2559,6 +2599,59 @@ and directory listing applications:
   \label{tab:SaturationLatencyData}
 \end{center}
 
+\newpage
+\subsubsection{Collection Time by Drive Type Data}
+
+\begin{center}
+  \tiny
+    \begin{tabular}{|c|r|r|r|r|r|c|r|r|r|r|}
+    \cline{1-5} \cline{7-11}
+    \textbf{Drive Saturation} & \multicolumn{1}{c|}{\textbf{NTFS}} & \multicolumn{1}{c|}{\textbf{ExFat}} & \multicolumn{1}{c|}{\textbf{Fat32}} & \multicolumn{1}{c|}{\textbf{HFS+}} & \multicolumn{1}{c|}{\textbf{}} & \textbf{Drive Saturation} & \multicolumn{1}{c|}{\textbf{NTFS}} & \multicolumn{1}{c|}{\textbf{ExFat}} & \multicolumn{1}{c|}{\textbf{Fat32}} & \multicolumn{1}{c|}{\textbf{HFS+}} \\ \cline{1-5} \cline{7-11} 
+    10\%                      & 8.623                              & 16.531                              & 10.418                              & 1.772                              &                                & 51\%                      & 104.450                            & 86.558                              & 61.454                              & 10.180                             \\ \cline{1-5} \cline{7-11} 
+    11\%                      & 14.413                             & 18.257                              & 11.851                              & 2.087                              &                                & 52\%                      & 106.498                            & 88.256                              & 62.659                              & 10.380                             \\ \cline{1-5} \cline{7-11} 
+    12\%                      & 15.723                             & 19.916                              & 12.928                              & 2.277                              &                                & 53\%                      & 108.546                            & 89.953                              & 63.864                              & 10.579                             \\ \cline{1-5} \cline{7-11} 
+    13\%                      & 17.034                             & 21.576                              & 14.005                              & 2.467                              &                                & 54\%                      & 110.594                            & 91.650                              & 65.069                              & 10.779                             \\ \cline{1-5} \cline{7-11} 
+    14\%                      & 18.344                             & 23.236                              & 15.082                              & 2.656                              &                                & 55\%                      & 112.642                            & 93.347                              & 67.410                              & 10.978                             \\ \cline{1-5} \cline{7-11} 
+    15\%                      & 19.654                             & 24.896                              & 16.160                              & 2.846                              &                                & 56\%                      & 114.690                            & 95.045                              & 69.559                              & 11.178                             \\ \cline{1-5} \cline{7-11} 
+    16\%                      & 20.965                             & 26.555                              & 17.237                              & 3.036                              &                                & 57\%                      & 116.738                            & 96.742                              & 70.801                              & 11.378                             \\ \cline{1-5} \cline{7-11} 
+    17\%                      & 22.275                             & 28.215                              & 18.314                              & 3.225                              &                                & 58\%                      & 118.787                            & 98.439                              & 72.043                              & 11.577                             \\ \cline{1-5} \cline{7-11} 
+    18\%                      & 23.585                             & 29.875                              & 19.392                              & 3.415                              &                                & 59\%                      & 120.835                            & 100.136                             & 73.285                              & 11.777                             \\ \cline{1-5} \cline{7-11} 
+    19\%                      & 24.895                             & 31.660                              & 21.144                              & 3.843                              &                                & 60\%                      & 122.883                            & 101.834                             & 74.528                              & 11.976                             \\ \cline{1-5} \cline{7-11} 
+    20\%                      & 26.206                             & 33.921                              & 22.972                              & 3.935                              &                                & 61\%                      & 124.931                            & 103.531                             & 75.770                              & 12.176                             \\ \cline{1-5} \cline{7-11} 
+    21\%                      & 27.516                             & 35.617                              & 24.120                              & 4.132                              &                                & 62\%                      & 126.979                            & 105.228                             & 77.012                              & 12.376                             \\ \cline{1-5} \cline{7-11} 
+    22\%                      & 38.682                             & 37.313                              & 25.269                              & 4.328                              &                                & 63\%                      & 129.027                            & 106.925                             & 78.254                              & 12.704                             \\ \cline{1-5} \cline{7-11} 
+    23\%                      & 42.505                             & 39.009                              & 26.417                              & 4.525                              &                                & 64\%                      & 131.075                            & 108.622                             & 79.496                              & 12.993                             \\ \cline{1-5} \cline{7-11} 
+    24\%                      & 44.353                             & 40.705                              & 27.566                              & 4.722                              &                                & 65\%                      & 133.123                            & 111.720                             & 80.738                              & 13.196                             \\ \cline{1-5} \cline{7-11} 
+    25\%                      & 46.201                             & 42.401                              & 28.715                              & 4.918                              &                                & 66\%                      & 136.988                            & 113.506                             & 81.980                              & 13.400                             \\ \cline{1-5} \cline{7-11} 
+    26\%                      & 48.049                             & 44.097                              & 29.863                              & 5.115                              &                                & 67\%                      & 140.304                            & 115.226                             & 83.222                              & 13.603                             \\ \cline{1-5} \cline{7-11} 
+    27\%                      & 49.897                             & 45.793                              & 31.012                              & 5.312                              &                                & 68\%                      & 142.398                            & 116.946                             & 84.465                              & 13.806                             \\ \cline{1-5} \cline{7-11} 
+    28\%                      & 54.258                             & 48.322                              & 32.160                              & 5.354                              &                                & 69\%                      & 144.492                            & 118.666                             & 85.707                              & 14.009                             \\ \cline{1-5} \cline{7-11} 
+    29\%                      & 57.395                             & 49.321                              & 33.309                              & 5.637                              &                                & 70\%                      & 146.587                            & 120.386                             & 86.949                              & 14.212                             \\ \cline{1-5} \cline{7-11} 
+    30\%                      & 59.374                             & 51.022                              & 34.457                              & 5.832                              &                                & 71\%                      & 148.681                            & 122.105                             & 88.191                              & 14.415                             \\ \cline{1-5} \cline{7-11} 
+    31\%                      & 61.354                             & 52.723                              & 35.606                              & 6.026                              &                                & 72\%                      & 150.775                            & 123.825                             & 89.433                              & 14.618                             \\ \cline{1-5} \cline{7-11} 
+    32\%                      & 63.333                             & 54.423                              & 36.755                              & 6.220                              &                                & 73\%                      & 152.869                            & 125.545                             & 91.879                              & 14.821                             \\ \cline{1-5} \cline{7-11} 
+    33\%                      & 65.312                             & 56.124                              & 37.903                              & 6.415                              &                                & 74\%                      & 154.963                            & 127.265                             & 94.803                              & 15.024                             \\ \cline{1-5} \cline{7-11} 
+    34\%                      & 67.291                             & 57.825                              & 39.052                              & 6.609                              &                                & 75\%                      & 157.057                            & 128.985                             & 96.085                              & 15.227                             \\ \cline{1-5} \cline{7-11} 
+    35\%                      & 69.270                             & 59.526                              & 40.200                              & 6.804                              &                                & 76\%                      & 159.151                            & 130.704                             & 97.366                              & 15.430                             \\ \cline{1-5} \cline{7-11} 
+    36\%                      & 71.249                             & 61.226                              & 41.349                              & 6.998                              &                                & 77\%                      & 161.245                            & 132.424                             & 98.647                              & 15.633                             \\ \cline{1-5} \cline{7-11} 
+    37\%                      & 73.228                             & 62.927                              & 43.820                              & 7.192                              &                                & 78\%                      & 163.339                            & 134.144                             & 99.928                              & 15.836                             \\ \cline{1-5} \cline{7-11} 
+    38\%                      & 75.208                             & 64.628                              & 45.789                              & 7.387                              &                                & 79\%                      & 165.433                            & 135.864                             & 101.209                             & 16.039                             \\ \cline{1-5} \cline{7-11} 
+    39\%                      & 77.187                             & 66.329                              & 46.994                              & 7.581                              &                                & 80\%                      & 167.528                            & 137.584                             & 102.490                             & 16.242                             \\ \cline{1-5} \cline{7-11} 
+    40\%                      & 79.166                             & 68.029                              & 48.199                              & 7.776                              &                                & 81\%                      & 169.622                            & 139.303                             & 103.771                             & 16.556                             \\ \cline{1-5} \cline{7-11} 
+    41\%                      & 81.145                             & 69.730                              & 49.404                              & 7.970                              &                                & 82\%                      & 171.716                            & 141.023                             & 105.052                             & 16.704                             \\ \cline{1-5} \cline{7-11} 
+    42\%                      & 83.124                             & 71.431                              & 50.609                              & 8.164                              &                                & 83\%                      & 173.810                            & 142.743                             & 106.334                             & 16.908                             \\ \cline{1-5} \cline{7-11} 
+    43\%                      & 85.103                             & 73.132                              & 51.814                              & 8.359                              &                                & 84\%                      & 175.904                            & 144.549                             & 107.615                             & 17.112                             \\ \cline{1-5} \cline{7-11} 
+    44\%                      & 87.083                             & 74.832                              & 53.019                              & 8.553                              &                                & 85\%                      & 179.572                            & 146.226                             & 108.896                             & 17.315                             \\ \cline{1-5} \cline{7-11} 
+    45\%                      & 89.062                             & 76.533                              & 54.224                              & 8.748                              &                                & 86\%                      & 180.888                            & 147.947                             & 110.177                             & 17.519                             \\ \cline{1-5} \cline{7-11} 
+    46\%                      & 91.041                             & 78.234                              & 55.429                              & 9.088                              &                                & 87\%                      & 182.992                            & 149.667                             & 111.458                             & 17.723                             \\ \cline{1-5} \cline{7-11} 
+    47\%                      & 94.964                             & 78.757                              & 56.634                              & 9.382                              &                                & 88\%                      & 185.095                            & 151.387                             & 112.739                             & 17.926                             \\ \cline{1-5} \cline{7-11} 
+    48\%                      & 98.306                             & 81.467                              & 57.839                              & 9.581                              &                                & 89\%                      & 187.198                            & 153.107                             & 114.020                             & 18.130                             \\ \cline{1-5} \cline{7-11} 
+    49\%                      & 100.354                            & 83.164                              & 59.044                              & 9.781                              &                                & 90\%                      & 189.302                            & 154.828                             & 115.301                             & 18.334                             \\ \cline{1-5} \cline{7-11} 
+    50\%                      & 102.402                            & 84.861                              & 60.249                              & 9.980                              &                                & 91\%                      & 191.405                            & 156.548                             & 118.631                             & 18.538                             \\ \cline{1-5} \cline{7-11} 
+    \end{tabular}
+  \captionof{table}{Collection Time by Drive Type Data}
+  \label{tab:DriveTypeData}
+\end{center}
 
 
 
