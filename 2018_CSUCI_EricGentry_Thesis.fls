@@ -3,7 +3,7 @@ INPUT /usr/local/texlive/2017/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.tex
-OUTPUT 2018_CSUCI_EricGentry_Thesis.log
+OUTPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.log
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/size12.clo
@@ -211,11 +211,11 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/supertabular/supertabular.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/supertabular/supertabular.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-INPUT definitions.tex
-INPUT definitions.tex
-INPUT 2018_CSUCI_EricGentry_Thesis.aux
-INPUT 2018_CSUCI_EricGentry_Thesis.aux
-OUTPUT 2018_CSUCI_EricGentry_Thesis.aux
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/definitions.tex
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/definitions.tex
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.aux
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.aux
+OUTPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.aux
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -253,31 +253,31 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-OUTPUT 2018_CSUCI_EricGentry_Thesis.pdf
+OUTPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.pdf
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT DistributionLicense.pdf
-INPUT DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
-INPUT DistributionLicense.pdf
-INPUT ./DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/DistributionLicense.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -294,51 +294,51 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT 2018_CSUCI_EricGentry_Thesis.toc
-INPUT 2018_CSUCI_EricGentry_Thesis.toc
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.toc
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.toc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-OUTPUT 2018_CSUCI_EricGentry_Thesis.toc
-INPUT 2018_CSUCI_EricGentry_Thesis.lof
-INPUT 2018_CSUCI_EricGentry_Thesis.lof
+OUTPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.toc
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.lof
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.lof
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-OUTPUT 2018_CSUCI_EricGentry_Thesis.lof
-INPUT 2018_CSUCI_EricGentry_Thesis.lot
-INPUT 2018_CSUCI_EricGentry_Thesis.lot
-OUTPUT 2018_CSUCI_EricGentry_Thesis.lot
+OUTPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.lof
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.lot
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.lot
+OUTPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.lot
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT images/IDIP.png
-INPUT ./images/IDIP.png
-INPUT ./images/IDIP.png
-INPUT images/CFFTPM.png
-INPUT ./images/CFFTPM.png
-INPUT ./images/CFFTPM.png
-INPUT images/IOT_chart.jpg
-INPUT ./images/IOT_chart.jpg
-INPUT ./images/IOT_chart.jpg
-INPUT images/seaker-hh-screen-2.png
-INPUT ./images/seaker-hh-screen-2.png
-INPUT ./images/seaker-hh-screen-2.png
-INPUT images/seaker-hh-screen-3.png
-INPUT ./images/seaker-hh-screen-3.png
-INPUT ./images/seaker-hh-screen-3.png
-INPUT images/DefaultKeywords.png
-INPUT ./images/DefaultKeywords.png
-INPUT ./images/DefaultKeywords.png
-INPUT images/ProcessFlow.png
-INPUT ./images/ProcessFlow.png
-INPUT ./images/ProcessFlow.png
-INPUT images/SaturationVsLatency.png
-INPUT ./images/SaturationVsLatency.png
-INPUT ./images/SaturationVsLatency.png
-INPUT images/TimeVsDriveType.png
-INPUT ./images/TimeVsDriveType.png
-INPUT ./images/TimeVsDriveType.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/IDIP.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/IDIP.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/IDIP.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/CFFTPM.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/CFFTPM.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/CFFTPM.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/IOT_chart.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/IOT_chart.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/IOT_chart.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-2.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-2.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-2.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-3.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-3.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-3.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/DefaultKeywords.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/DefaultKeywords.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/DefaultKeywords.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/ProcessFlow.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/ProcessFlow.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/ProcessFlow.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/SaturationVsLatency.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/SaturationVsLatency.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/SaturationVsLatency.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/TimeVsDriveType.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/TimeVsDriveType.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/TimeVsDriveType.png
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
@@ -346,45 +346,45 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT images/SeakerCreation.png
-INPUT ./images/SeakerCreation.png
-INPUT ./images/SeakerCreation.png
-INPUT code/config.sh
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/SeakerCreation.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/SeakerCreation.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/SeakerCreation.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/config.sh
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT code/config.sh
-INPUT code/config.sh
-INPUT images/seaker-hh-screen-1.jpg
-INPUT ./images/seaker-hh-screen-1.jpg
-INPUT ./images/seaker-hh-screen-1.jpg
-INPUT images/seaker-hh-screen-2.jpg
-INPUT ./images/seaker-hh-screen-2.jpg
-INPUT ./images/seaker-hh-screen-2.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/config.sh
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/config.sh
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-1.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-1.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-1.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-2.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-2.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-2.jpg
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
-INPUT images/seaker-hh-screen-3.jpg
-INPUT ./images/seaker-hh-screen-3.jpg
-INPUT ./images/seaker-hh-screen-3.jpg
-INPUT images/UserProcessFlow.png
-INPUT ./images/UserProcessFlow.png
-INPUT ./images/UserProcessFlow.png
-INPUT code/collect_files.c
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-3.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-3.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/seaker-hh-screen-3.jpg
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/UserProcessFlow.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/UserProcessFlow.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/images/UserProcessFlow.png
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/collect_files.c
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT code/collect_files.c
-INPUT code/collect_files.c
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/collect_files.c
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/collect_files.c
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
-INPUT code/99-auto-mount.rules
-INPUT code/99-auto-mount.rules
-INPUT code/99-auto-mount.rules
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/99-auto-mount.rules
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/99-auto-mount.rules
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/code/99-auto-mount.rules
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT 2018_CSUCI_EricGentry_Thesis.bbl
-INPUT 2018_CSUCI_EricGentry_Thesis.bbl
-INPUT 2018_CSUCI_EricGentry_Thesis.aux
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.bbl
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.bbl
+INPUT /Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.aux
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb
