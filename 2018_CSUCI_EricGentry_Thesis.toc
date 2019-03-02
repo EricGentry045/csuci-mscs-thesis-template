@@ -6,9 +6,9 @@
 \contentsline {subsubsection}{\numberline {1.2.2}Process and Procedure Standardization}{9}
 \contentsline {subsubsection}{\numberline {1.2.3}Reactive Digital Forensic Investigation Processes}{14}
 \contentsline {subsubsection}{\numberline {1.2.4}Digital Evidence Triage}{15}
-\contentsline {subsubsection}{\numberline {1.2.5}Aquisition Methodology}{20}
+\contentsline {subsubsection}{\numberline {1.2.5}Acquisition Methodology}{20}
 \contentsline {subsubsection}{\numberline {1.2.6}Analysis Methodology}{21}
-\contentsline {subsubsection}{\numberline {1.2.7}Combined Aquisition and Analysis Methodologies}{23}
+\contentsline {subsubsection}{\numberline {1.2.7}Combined acquisition and Analysis Methodologies}{23}
 \contentsline {subsubsection}{\numberline {1.2.8}Digital Evidence Backlog}{27}
 \contentsline {subsubsection}{\numberline {1.2.9}How SEAKER Can Help}{31}
 \contentsline {section}{\numberline {2}Background}{33}

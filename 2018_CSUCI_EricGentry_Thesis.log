@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 FEB 2019 07:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 MAR 2019 15:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1001,12 +1001,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1173--1179
 
  []
 
-
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 1180--1184
 
  []
 
-[31]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1185--1189
 
  []
@@ -1254,8 +1254,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1577--1582
  []
 
 
-Overfull \hbox (34.42227pt too wide) in paragraph at lines 1583--1588
-\OT1/cmr/m/n/10.95 by not pro-vid-ing a link to it. The full path to it (\OT1/cmtt/m/n/10.95 http://seaker01.local/keywords.php\OT1/cmr/m/n/10.95 )
+Overfull \hbox (66.05563pt too wide) in paragraph at lines 1583--1588
+\OT1/cmr/m/n/10.95 cealed by not pro-vid-ing a link to it. The full path to it (\OT1/cmtt/m/n/10.95 http://seaker01.local/keywords.php\OT1/cmr/m/n/10.95 )
  []
 
 
@@ -1603,7 +1603,7 @@ Here is how much of TeX's memory you used:
  1142 hyphenation exceptions out of 8191
  48i,18n,100p,3343b,1606s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "/Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.pdf" (106 pages, 1311880 bytes).
+Output written on "/Users/ericgentry/Desktop/Google Drive/College/Thesis/csuci-mscs-thesis-template/2018_CSUCI_EricGentry_Thesis.pdf" (106 pages, 1311838 bytes).
 PDF statistics:
  437 PDF objects out of 1000 (max. 8388607)
  286 compressed objects within 3 object streams
