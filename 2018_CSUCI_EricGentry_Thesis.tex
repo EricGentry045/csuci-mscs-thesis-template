@@ -475,7 +475,7 @@ digital evidence, as well as other items of consequence.\\
 the potential mishandling of evidence.  Before anything can be done, the location must be considered
 secure and free of potential threats for the investigators.  Once a scene is
 secured at a location involving electronic evidence, three activities
-take place simultaneously: the search for physical evidence, the search of the physical evidence
+may take place simultaneously: the search for physical evidence, the search of the physical evidence
 itself for electronic evidence, and the interviewing of involved parties.\\
 
 The physical and digital evidence can guide the interviewing of the suspect(s), but also
@@ -521,7 +521,7 @@ that is intended to overcome the need for a full digital
 forensic lab equipment suite to be brought into the field.  The SEAKER device was conceived and 
 produced at the \gls{csuci} campus in a 
 Masters level Cyber Security class (COMP 524, Summer 2017) in direct collaboration with the
-\gls{schttf} division of the \gls{vcda} office.\\
+\gls{schttf} division of the Ventura County Distric Attorney's Office.\\
 
 
 \subsubsection{Author's Contributions}
@@ -538,7 +538,7 @@ The author's direct contributions to the SEAKER device project:
   Security class project to \gls{schttf}, \gls{csuci} department heads, and local community leaders
   \item Presented the SEAKER device as a thesis project at the April 2018 \gls{csuci} Cyber Security Event
   to \gls{csuci} President
-  Erika Beck, California State Assembly Member Jacqui Irwin, Ventura County Sherriff's Department,
+  Erika Beck, California State Assembly Member Jacqui Irwin, Ventura County Sheriff's Department,
   and other local community leaders
   \item Co-authored a conference paper \cite{gentry2018seaker} on the SEAKER project and the technology behind it
   \item Updated and enhanced the SEAKER device functionality to support the latest Raspbian operating system (Stretch
@@ -868,6 +868,10 @@ This process of enhanced previewing does not take into account any \gls{iot} dev
 cloud-based storage. It also assumes that there is a DVD drive or USB port available and
 working, as well as the ability to access the computer's BIOS settings, as those
 connections are not typically setup to boot by default.\\
+
+There are also other existing triage software such as EnCase, Blacklight, Forensic
+Explorer and Internet Evidence Finder.  These also require use of the existing computers
+at the scene and are not among the explored topics here.
 
 As is the case in other research, Shaw et al extolls the need to reduce digital
 forensic evidence analysis backlogs, especially with the evolution of big data and
@@ -1232,19 +1236,21 @@ they typically
 bring a subset of their lab environment with them to start deciphering
 the digital information and attempt to perform a triage analysis.\\
 
-In a coordinated effort with the lead investigator at \gls{schttf} and his team,
+In a coordinated effort with the supervising investigator at \gls{schttf} and his team,
 this research is an attempt to help solve some of the field environment limitations
 of digital forensics investigators.
 
 \subsection{Legal Details}
 In order for digital forensic investigators to obtain the data from a digital device,
-a \gls{searchwarrant} for that device must be obtained.  As well, law enforcement must
+a \gls{searchwarrant} for that device must usually be obtained.  Other means for proper
+search are court order, as a condition of probation or parole, or direct consent from
+the owner.    As well, law enforcement must usually 
 obtain a \gls{searchwarrant} to acquire the device for searching in the first place.
 Law enforcement must provide probable cause that a crime 
 was committed and that items connected to that crime are likely to be found 
 in the place specified by the warrant.  A judge will review the matter and if
-they are in agreement, will authorize law enforcement to search a particular location
-for specific items which are declared in the \gls{searchwarrant}.\\
+they are in agreement, will typically authorize law enforcement to search a particular
+location for specific items which are declared in the \gls{searchwarrant}.\\
 
 After a digital device has been acquired by digital forensic investigators, they
 must take special care not to alter the device's information in any way.  This 
@@ -1268,7 +1274,8 @@ write-blocking devices that are added to the list of hardware necessary to
 prevent modification of any kind to the potential digital evidence.  The Tableau
 product line is a great set of these types of devices.  Although they are made
 to be simple and easy to use, they create yet another piece of the lab that must
-be carried into the field and required to be plugged in and used.\\
+be carried into the field and required to be plugged-in and used.  As well, there
+are software write-blockers that can be installed on forensic laptops.\\
 
 For this research, the SEAKER device is intended to be used for triage investigation
 on digital devices to perform an initial search for potential digital evidence.
@@ -1580,7 +1587,8 @@ the media, including serial number, size, and other information.
 The search term \verb|searchtime| can also be used to show the time needed to find the
 full drive information as well as the time for the particular search.\\
 
-An administration page was also created for editing the default search keywords.
+An administration page was also created for editing the initial search keywords that 
+appear by default.
 This page was intended to be password protected, but was instead concealed by not
 providing a link to it.  The full path to it ({\tt http://seaker01.local/keywords.php})
 is required for access.  Once changed, the default search keywords remain permanently
@@ -1667,9 +1675,10 @@ other cards with slower write speeds.
 (3)~{\em Powered \gls{usb} to \gls{sata} adaptor} - These devices are fairly common, and
 allow a \gls{sata} style hard drive to be connected to a computer through the
 standard \gls{usb} port.  This enables \gls{sata} style hard drives to be connected
-to the SEAKER device.  It is important to note that the \gls{usb} ports on the
-\gls{rpi} do not have enough power to support powering larger hard
-drives.
+to the SEAKER device.  It is important to note that the \gls{usb} ports alone on the
+\gls{rpi} do not have enough power to support the power requirements of larger hard
+drives.  A standard "powered" \gls{usb} to \gls{sata} adaptor will enable the
+drives to be searched.
 
 (4)~{\em Router or switch} - A router or switch allows multiple computers
 to connect to each other using specialized software through network
@@ -2087,8 +2096,8 @@ of browsers that allow saving site-specific usernames and passwords.\\
 
 The \gls{schttf} has asked for some new functionality as well.  They would like the
 ability to search multiple partitions, local \gls{wifi} networks and access levels, 
-thumbnails of images and videos, support newer operating systems (APFS and
-HFS Plus), and extract \gls{ip} addresses from known suspect configuration files and 
+thumbnails of images and videos, support newer operating systems (for instance APFS),
+and extract \gls{ip} addresses from known suspect configuration files and 
 other locations.  These are just a few of the requests, but seemed to be at
 the top of their list.\\
 
